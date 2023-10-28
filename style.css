@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Niramit', sans-serif;
+font-family: 'Nunito', sans-serif;
+*/
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: .2px;
+    line-height: 1.5;
+    font-size: 18px;
+
+}
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+}
+h1,h2,h3,h4 {
+    font-family: 'DM Sans', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+a:focus, a:hover {
+    text-decoration: none;
+    color: #333;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.body-wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    height: 700px;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: -25%; /* Adjust this value to determine where the gradient ends */
+    bottom: 0;
+    width: 130%; /* Overextend the width to ensure full coverage */
+    background-image: linear-gradient(to bottom right, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    transform: skewY(-8deg); /* Adjust the skew value to change the angle */
+    transform-origin: 0% 100%;
+    z-index: -1;
+}
+
+.header-block {
+    max-width: 1240px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-block .logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    width: 150px;
+}
+.header-block .menu {
+    display: flex;
+    align-items: center;
+}
+.header-block .menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-block .menu ul li {
+    margin-left: 20px;
+}
+.header-block .menu ul li a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header-block .menu ul li a:hover {
+    color: #fff;
+}
+
+.header-block .action {
+    margin-left: auto;
+}
+/* action a like a button */
+.action a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+
+    /* Frosted Glass Effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
+
+.action a:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.action a:active {
+    transform: scale(0.95); /* Slight shrink on active */
+}
+
+.action-dark a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+
+    /* Shiny Black Glass Effect */
+    background: rgba(0, 0, 0, 0.7);  /* Semi-transparent black */
+    border: 1px solid rgba(255, 255, 255, 0.1);  /* Subtle white border */
+    backdrop-filter: blur(5px);  /* Blur effect */
+    -webkit-backdrop-filter: blur(5px);  /* For Safari */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Slight shadow */
+
+    /* Reflective Effect */
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
+}
+
+.action-dark a:hover {
+    transform: scale(1.05);  /* Slight zoom on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);  /* More pronounced shadow on hover */
+}
+
+.action-dark a:active {
+    transform: scale(0.95);  /* Slight shrink on active */
+}
+
+.app-link {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.app-link svg {
+    width: 150px;
+}
+
+.hero-block {
+    padding: 100px 0;  /* Adjust this value accordingly */
+    color: #fff;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 94px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    mix-blend-mode: color-burn;
+    opacity: 1;
+    color: #425466;
+    width: 600px;
+    letter-spacing: -0.04px;
+    line-height: 94px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #425466;
+    mix-blend-mode: color-burn;
+}
+
+.transform-content {
+    background-color: #000;
+    color: #fff;
+    width: 200%;
+    transform: rotateZ(-8deg);
+    position: absolute; /* Positioning to the bottom */
+    bottom: 174px;
+    left: -30px;
+    right: 0; /* This ensures the div stretches full width of header */
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 0;
+    font-size: 13px;
+}
+
+.marquee {
+    display: inline-block;
+    animation: marquee 250s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+/* footer fixed to bottom */
+.footer {
+    background: #000;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+    height: 250px;
+}
+.footer .footer-block {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
