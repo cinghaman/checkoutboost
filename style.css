@@ -14,7 +14,8 @@ body {
     font-family: 'Inter', sans-serif;
     letter-spacing: .2px;
     line-height: 1.5;
-    font-size: 18px;
+    font-size: 16px;
+    color: #333;
 
 }
 img, svg, video, canvas, audio, iframe, embed, object {
@@ -50,6 +51,7 @@ img {
     width: 100%;
     position: relative;
     height: 700px;
+    overflow: hidden;
 }
 .header::before {
     content: "";
@@ -193,7 +195,7 @@ img {
 .hero-content p {
     font-size: 18px;
     margin-bottom: 30px;
-    color: #425466;
+    color: #333;
     mix-blend-mode: color-burn;
 }
 
@@ -203,7 +205,7 @@ img {
     width: 200%;
     transform: rotateZ(-8deg);
     position: absolute; /* Positioning to the bottom */
-    bottom: 174px;
+    bottom: 198px;
     left: -30px;
     right: 0; /* This ensures the div stretches full width of header */
     white-space: nowrap;
@@ -221,6 +223,62 @@ img {
     0%   { transform: translateX(0%); }
     100% { transform: translateX(-50%); }
 }
+
+#widgets h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 100px;
+    max-width: 1240px;
+    text-align: left;
+    margin: 80px auto 0;
+    text-transform: uppercase;
+}
+.widget-container {
+    display: flex;
+    flex-wrap: nowrap; /* prevent wrapping for horizontal scrolling */
+    justify-content: start; /* align items at the start */
+    max-width: 1240px;
+    margin: 20px auto 20px;
+    overflow-x: auto;
+    overflow-y: visible;
+    /* Scroll Snap */
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* For Firefox */
+    row-gap: 20px;
+    padding: 20px 20px 20px 1px;
+}
+.widget-container > * {
+    flex: 0 0 auto; /* Do not grow, do not shrink, and base size on content */
+    scroll-snap-align: center;
+}
+.widget-container::-webkit-scrollbar {
+    display: none;
+}
+
+.widget-container .widget-block:first-child {
+    margin-left: 0;
+}
+
+.widget-block {
+    box-shadow: 0px 8px 48px #eee,0px 4px 8px rgba(66,71,76,.06),0px 0px 1px rgba(66,71,76,.48);
+    padding: 18px;
+    border-radius: 5px;
+    width: calc(20% - 15px *4/5);
+    margin-left: 15px;
+}
+
+.widget-block .widget-content h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.widget-block .widget-content p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 /* footer fixed to bottom */
 .footer {
     background: #000;
