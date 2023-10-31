@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Shopify">
     <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,10 +26,11 @@
                     </a>
                 </div><!-- .logo -->
                 <div class="menu">
-                    <ul>
-                        <li><a href="#features" title="Features">Features</a></li>
+                    <ul> 
+                        <li><a href="#widgets" title="Widgets">Widgets</a></li>
+                        <li><a href="#tutorials" title="Tutorials">Tutorials</a></li>
+                        <li><a href="#faq" title="Faq">Faq</a></li>
                         <li><a href="#pricing" title="Pricing">Pricing</a></li>
-                        <li><a href="#widgets" title="Demo">Widgets</a></li>
                         <li><a href="#support" title="Support">Support</a></li>
                     </ul>
                 </div>
@@ -137,7 +139,7 @@
                             <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/dev-82bdbe630a35ca679000d2177f4e32d44b5455e906f0a7ff628c3eadbee38c8e.svg" alt="widget 5">
                         </div>
                         <div class="widget-content">
-                            <h4>Recommended Products</h4>
+                            <h4>Ai Recommended Products</h4>
                             <p>Display recommended products to your customers to increase your sales.</p>
                         </div>
                     </div>
@@ -151,9 +153,93 @@
                         </div>
                     </div>
                 </div>
+            </div><!-- widgets -->
+            <div id="widgets">
+                <div class="widget-container">
+                    <div class="widget-block">
+                        <div class="widget-image">
+                            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/layers-75e27771a1461d41eeea6d3776873fcf0dca705afb334adadb0c7dc0a20b0404.svg" alt="widget 2">
+                        </div>
+                        <div class="widget-content">
+                            <h4>Custom Fields</h4>
+                            <p>Add custom fields to checkout page for gift message, delivery date/notes, etc.</p>
+                        </div>
+                    </div>
+                    <div class="widget-block">
+                        <div class="widget-image">
+                            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/infinity-ea665cc8ef4b2379465495ba43cd5cdbba88cd70dd51c6fa59aec331fd2336be.svg" alt="widget 3">
+                        </div>
+                        <div class="widget-content">
+                            <h4>Checkboxes</h4>
+                            <p>Add Checkboxes for accepting of Terms and Conditions.</p>
+                        </div>
+                    </div>
+                    <div class="widget-block">
+                        <div class="widget-image">
+                            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/partners-d453b53d9ff10a630080d24563478935f3d1b10de8eb15bef9f13fe58be3f8de.svg" alt="widget 4">
+                        </div>
+                        <div class="widget-content">
+                            <h4>Custom Content</h4>
+                            <p>Display Sale banner or any important information or just a single image.</p>
+                        </div>
+                    </div>
+                    <div class="widget-block">
+                        <div class="widget-image">
+                            <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/redesign2022/icons/dev-82bdbe630a35ca679000d2177f4e32d44b5455e906f0a7ff628c3eadbee38c8e.svg" alt="widget 5">
+                        </div>
+                        <div class="widget-content">
+                            <h4>Shopify Functions<sup>coming soon</sup></h4>
+                            <p>Used for creating custom discounts,delivery customisation, payment customisation etc .</p>
+                        </div>
+                    </div>
+                    <div class="widget-block">
+                        <div class="widget-image">
+                            <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/fc4cebbadfd9af383ccd031219260b7d.svg" alt="widget 6">
+                        </div>
+                        <div class="widget-content">
+                            <h4>Post Purchase<sup>coming soon</sup></h4>
+                            <p>Add to post purchase addtional sale with 1 click product showcase.</p>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- widgets -->
+            <div id="faq">
+                <h3>FAQ's</h3>
+                <div class="faq-container">
+                    <button class="accordion">1. What is the main purpose of the [Your App Name] app?</button>
+                    <div class="panel">
+                        <p>The [Your App Name] app is designed to optimize your Shopify checkout experience by offering various features such as custom checkout widgets, Fear Of Missing Out (FOMO) notifications, Trust Badges, Upsell options, and Recommended Products.</p>
+                    </div>
+
+                    <button class="accordion">2. Do you offer a trial period for [Your App Name]?</button>
+                    <div class="panel">
+                        <p>Yes, we do! All paid plans come with a 7-day trial period so you can explore the features and benefits of the app before committing to a paid plan.</p>
+                    </div>
+                </div>
+            </div><!-- faq -->
+            <div id="tutorials">
+
             </div>
-        </div>
+        </div><!-- main content -->
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+        <div class="footer-block">&copy;  Powered by <a href="https://thoughtbulb.dev">Thought Bulb</a></div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+      
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight){
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+      </script>
 </body>
 </html>
