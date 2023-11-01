@@ -173,6 +173,11 @@ h4 sup {
     display: inline-block;
     border-radius: 5px;
     background-color: #000;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
 }
 
 .app-link svg {
@@ -347,4 +352,44 @@ h4 sup {
 .footer .footer-block a {
     color: #fff;
     font-size: 13px;
+}
+
+@media(max-width: 920px) {
+    .widget-block {
+        width: 80%;
+    }
+    .widget-container {
+        padding: 20px;
+        margin-left: -10px;
+    }
+    #widgets h3, #faq h3 {
+        padding-left: 20px;
+    }
+    .faq-container {
+        padding: 20px;
+    }
+    .hero-content h1 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+    .hero-block {
+        padding: 50px 0;
+    }
+    .transform-content {
+        bottom: 51px;
+    }
+    .header {
+        height: 690px;
+    }
+    .header-block {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .header-block .action {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .header-block .menu {
+        margin-top: 20px;
+    }
 }
