@@ -47,6 +47,7 @@
 	--lqd-color-yellow-100: #EDEBE2;
 	--lqd-color-yellow-500: #c59801;
 	--lqd-body-text-color: #737588;
+	--lqd-color-blue-900: #000645;
 
 	--lqd-text-font-family: 'Rubik', sans-serif;
 	--lqd-text-font-size: 13px;
@@ -120,6 +121,10 @@ input[type="submit"],
 	padding-inline-end: 0;
 	padding-bottom: 18px;
 	padding-inline-start: 0;
+}
+
+.bg-blue-900 {
+    background-color: var(--lqd-color-blue-900);
 }
 
 @media (max-width: 1199px) {
