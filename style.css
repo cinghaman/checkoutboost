@@ -19,6 +19,9 @@ body {
     color: #333;
 
 }
+#tutorials, #pricing, #faq, #site-footer {
+    display: none;
+}
 img, svg, video, canvas, audio, iframe, embed, object {
     display: block;
 }
