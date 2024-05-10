@@ -19,7 +19,7 @@ body {
     color: #333;
 
 }
-#tutorials, #pricing, #faq, #site-footer {
+#tutorials, #pricing, #site-footer {
     display: none;
 }
 img, svg, video, canvas, audio, iframe, embed, object {
