@@ -186,44 +186,85 @@
 					<div class="col col-12">
 
 						<h1 style="margin-top: 10px;">Microsoft Pixel Tracking for Shopify Plus</h1>
-                        <h5>Create an Event-based Conversion Goal in Microsoft Ads</h5>
-                        <p>In Microsoft Ads, go to Tools > Conversion Goals.</p>
-                        <ul>
-                            <li>
-                            Click Create Conversion Goal.
-                        </li>
-                        <li>For Conversion Goal, select Website.</li>
-                        <li> For Conversion Goal Type, select Purchase > then Event. 
-                            <br>Note: From my support requests in some cases using destination URL option worked, 
-                            so if your use case is one of that try either events or destination URL which ever works for you.
-                            <p>Then in your Microsoft ads conversion, change it to track the destination URL to:
-                                Contains: processing?completed=true</p>
-                        </li>
-                        <li>Setup Tagging > Action > Purchase and Category > Checkout</li>
-                        <li>When do you want to track this event? Track Events on inline action</li>
-                        </ul>
-                        <p>Once you are logged into your Shopify backend go to settings > Customer Events > Add Custom Pixel</p>
-                        <p>Add the following code and replace your ID</p>
-                        <code>
-                            (function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],
-                                f=function(){var o={ti:"[REPLACE ID HERE]",
-                                 enableAutoSpaTracking: true}; o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},
-                                 n=d.createElement(t),n.src=r,n.async=1,n.onload=n .onreadystatechange=function()
-                                  {var s=this.readyState;s &&s!=="loaded"&& s!=="complete"||(f(),n.onload=n. onreadystatechange=null)},i= d.getElementsByTagName(t)[0],i. parentNode.insertBefore(n,i)})
-                                  (window,document,"script"," //bat.bing.com/bat.js","uetq");
-
-                            analytics.subscribe('checkout_completed', (event) => {
-                            window.uetq = window.uetq || [];
-                            window.uetq.push('event', 'purchase',
-                            {
-                                "event_category": "checkout",
-                                "revenue_value": event.data.checkout.totalPrice.amount,
-                                "currency": event.data.checkout.currencyCode,
-                                "em": event.data.checkout.email,
-                                "ph": event.data.checkout.phone,
-                            });
-                            });
-                        </code>
+						<h3>Create an Event-based Conversion Goal in Microsoft Ads</h3>
+						<p>Tracking conversions is a crucial aspect of digital marketing. In this guide, we will walk you through the steps to create an event-based conversion goal in Microsoft Ads. This will allow you to track important actions, such as purchases, on your website. Follow the detailed instructions below to set up your conversion tracking effectively.</p>
+						
+						<h4>Why Use Event-based Conversion Goals?</h4>
+						<p>Event-based conversion goals offer a precise way to track specific actions users take on your website. Unlike URL-based goals, which track page visits, event-based goals allow you to capture actions such as form submissions, button clicks, and product purchases. This granularity helps you understand user behavior better and optimize your campaigns for higher ROI.</p>
+						
+						<h4>Steps to Create the Conversion Goal</h4>
+						<ol>
+							<li>In Microsoft Ads, go to <strong>Tools > Conversion Goals</strong>.</li>
+							<li>Click <strong>Create Conversion Goal</strong>.</li>
+							<li>For <strong>Conversion Goal</strong>, select <strong>Website</strong>.</li>
+							<li>For <strong>Conversion Goal Type</strong>, select <strong>Purchase</strong>, then <strong>Event</strong>.</li>
+						</ol>
+						<p><strong>Note:</strong> From my support requests, in some cases using the destination URL option worked. So if your use case is one of those, try either events or destination URL, whichever works for you.</p>
+						
+						<h4>Configure Destination URL</h4>
+						<p>To ensure that your conversions are tracked accurately, configure your Microsoft Ads conversion settings to track the destination URL. This is particularly useful if your conversion action redirects to a specific URL upon completion. Follow the steps below:</p>
+						<ol>
+							<li>In your Microsoft Ads account, navigate to the conversion goal you created.</li>
+							<li>Change the tracking setting to <strong>Contains: processing?completed=true</strong>. This will track any URL containing this specific string.</li>
+						</ol>
+						
+						<h4>Setup Tagging</h4>
+						<p>Proper tagging is essential for tracking purchases accurately. In Microsoft Ads, configure the following settings:</p>
+						<ul>
+							<li><strong>Action:</strong> Purchase</li>
+							<li><strong>Category:</strong> Checkout</li>
+						</ul>
+						
+						<h4>When to Track This Event?</h4>
+						<p>It's important to specify when you want to track the event. In this case, you should track events on inline actions, such as button clicks that do not lead to a page reload. This ensures that the purchase event is recorded as soon as it happens.</p>
+						
+						<h4>Add Custom Pixel to Shopify</h4>
+						<p>To track conversions on your Shopify store, you need to add a custom pixel. Follow these steps to set it up:</p>
+						<ol>
+							<li>Log in to your Shopify backend.</li>
+							<li>Go to <strong>Settings > Customer Events > Add Custom Pixel</strong>.</li>
+							<li>Add the following code snippet and replace the placeholder ID with your actual Microsoft Ads tracking ID:</li>
+						</ol>
+						
+						<pre><code>
+						(function(w,d,t,r,u){
+							var f,n,i;
+							w[u]=w[u]||[], 
+							f=function(){
+								var o={ti:"[REPLACE ID HERE]", enableAutoSpaTracking: true}; 
+								o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
+							}, 
+							n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function() {
+								var s=this.readyState;
+								s && s!=="loaded" && s!=="complete" || (f(),n.onload=n.onreadystatechange=null)
+							},
+							i=d.getElementsByTagName(t)[0],
+							i.parentNode.insertBefore(n,i)
+						})(window,document,"script","//bat.bing.com/bat.js","uetq"); 
+						
+						analytics.subscribe('checkout_completed', (event) => { 
+							window.uetq = window.uetq || []; 
+							window.uetq.push('event', 'purchase', { 
+								"event_category": "checkout", 
+								"revenue_value": event.data.checkout.totalPrice.amount, 
+								"currency": event.data.checkout.currencyCode, 
+								"em": event.data.checkout.email, 
+								"ph": event.data.checkout.phone, 
+							}); 
+						});
+						</code></pre>
+						
+						<h4>Testing Your Setup</h4>
+						<p>After setting up your conversion tracking, it's important to test it to ensure it's working correctly. Here are some steps to test your setup:</p>
+						<ol>
+							<li>Complete a test purchase on your Shopify store.</li>
+							<li>Check the conversion data in your Microsoft Ads account to see if the event is recorded.</li>
+							<li>Use browser developer tools to inspect the network requests and verify that the tracking pixel is firing correctly.</li>
+						</ol>
+						
+						<h4>Conclusion</h4>
+						<p>Setting up event-based conversion goals in Microsoft Ads is an effective way to track important actions on your website. By following the steps outlined in this guide, you can ensure accurate tracking and gain valuable insights into user behavior. This, in turn, will help you optimize your ad campaigns for better performance and higher conversions.</p>
+						
 					</div>
 
 				</div>
