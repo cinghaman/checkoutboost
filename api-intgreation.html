@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T9GSXKCN10');
+</script>
+<meta charset="UTF-8">
+<title>Free gift with discount code on Shopify Checkout: Increase revenue and AOV: Accordions, Shopify Functions, Trust Badges, Upsells, Gifts, Discounts, Shopify Plus.</title>
+    <meta name="description" content="Free gift with discount code on Shopify Checkout wih Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
+    <meta name="keywords" content="Free gift with discount code, Shopify Checkout, Smart Checkout Widgets app, Increase Revenue, shopify app, checkout, reviews, AOV, Upsells, Recommendations, Gifts, Discounts, Shipping, Payments">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://smartcheckoutwidgets.com">
+   
+    <link rel="shortcut icon" type="image/x-icon" href="images/smart_widget_icon_for_shopify.jpg">
+    <link rel="apple-touch-icon" href="images/smart_widget_icon_for_shopify.jpg">
+    <link rel="icon" type="image/png" href="images/smart_widget_icon_for_shopify.jpg">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <meta property="og:title" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
+    <meta property="og:description" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/smartcheckout-widgets.jpg">
+    <meta property="og:url" content="https://smartcheckoutwidgets.com">
+
+
+     <!-- Twitter -->
+     <meta name="twitter:card" content="summary_large_image">
+     <meta name="twitter:title" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
+     <meta name="twitter:description" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
+     <meta name="twitter:image" content="images/smartcheckout-widgets.jpg">
+     
+     
+
+    <link rel="stylesheet" href="assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/css/utility.min.css">
+    <link rel="stylesheet" href="assets/css/demo/start-hub-3/base.css">
+    <link rel="stylesheet" href="assets/css/demo/start-hub-3/start-hub-3.css">
+    <link rel="stylesheet" href="./assets/css/demo/software.css">
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Rubik:wght@600&display=swap" rel="stylesheet">
+    <style>
+         #site-footer {
+            display: none;
+        }
+    </style>
+</head>
+
+<body data-lqd-cc="true" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="minimal" data-mobile-nav-scheme="gray" data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="light" data-mobile-logo-alignment="default" data-overlay-onmobile="false" data-disable-animations-onmobile="true">
+    <div id="wrap" class="bg-white">
+        <h4>Curl format to upload your xml to the app's endpoint</h4>
+        <code>
+            curl --location 'https://game-center.fly.dev/api/xmlprocess' \
+            --header 'X-API-KEY: xx-xxxx-xxxxx' \
+            --form 'xml=@"/Users/.../mock_game_data.xml"'</code>
+        <h4>javascript</h4>
+        <code>const myHeaders = new Headers();
+            myHeaders.append("X-API-KEY", "xxx-xxx-xxx");
+            
+            const formdata = new FormData();
+            formdata.append("xml", fileInput.files[0], "mock_game_data.xml");
+            
+            const requestOptions = {
+              method: "POST",
+              headers: myHeaders,
+              body: formdata,
+              redirect: "follow"
+            };
+            
+            fetch("https://game-center.fly.dev/api/xmlprocess", requestOptions)
+              .then((response) => response.text())
+              .then((result) => console.log(result))
+              .catch((error) => console.error(error));</code>
+              <h4>jQuery</h4>
+              <code>
+                var form = new FormData();
+form.append("xml", fileInput.files[0], "mock_game_data.xml");
+
+var settings = {
+  "url": "https://game-center.fly.dev/api/xmlprocess",
+  "method": "POST",
+  "timeout": 0,
+  "headers": {
+    "X-API-KEY": "xxx-xx-x-xxx"
+  },
+  "processData": false,
+  "mimeType": "multipart/form-data",
+  "contentType": false,
+  "data": form
+};
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+});
+              </code>
+              <h4>Node with axios</h4>
+              <code>const axios = require('axios');
+                const FormData = require('form-data');
+                const fs = require('fs');
+                let data = new FormData();
+                data.append('xml', fs.createReadStream('/Users/...path/mock_game_data.xml'));
+                
+                let config = {
+                  method: 'post',
+                  maxBodyLength: Infinity,
+                  url: 'https://game-center.fly.dev/api/xmlprocess',
+                  headers: { 
+                    'X-API-KEY': 'xxx-xxx-x-x-', 
+                    ...data.getHeaders()
+                  },
+                  data : data
+                };
+                
+                axios.request(config)
+                .then((response) => {
+                  console.log(JSON.stringify(response.data));
+                })
+                .catch((error) => {
+                  console.log(error);
+                });</code>
+                <h4>PHP</h4>
+                <code><?php
+
+                    $curl = curl_init();
+                    
+                    curl_setopt_array($curl, array(
+                      CURLOPT_URL => 'https://game-center.fly.dev/api/xmlprocess',
+                      CURLOPT_RETURNTRANSFER => true,
+                      CURLOPT_ENCODING => '',
+                      CURLOPT_MAXREDIRS => 10,
+                      CURLOPT_TIMEOUT => 0,
+                      CURLOPT_FOLLOWLOCATION => true,
+                      CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+                      CURLOPT_CUSTOMREQUEST => 'POST',
+                      CURLOPT_POSTFIELDS => array('xml'=> new CURLFILE('/Users/...path/mock_game_data.xml')),
+                      CURLOPT_HTTPHEADER => array(
+                        'X-API-KEY: xx-xxxx--xxx'
+                      ),
+                    ));
+                    
+                    $response = curl_exec($curl);
+                    
+                    curl_close($curl);
+                    echo $response;</code>
+    </div>
+
+
+</body>
+</html>
