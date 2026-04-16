@@ -955,6 +955,15 @@ h3 {
   text-transform: uppercase;
 }
 
+.footer-accordion summary {
+  cursor: default;
+  list-style: none;
+}
+
+.footer-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
 .footer-links {
   display: grid;
   gap: 13px;
@@ -1103,9 +1112,8 @@ h3 {
 
   .nav-shell-glass {
     border-radius: 28px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 16px;
+    justify-content: space-between;
+    padding: 14px 16px;
   }
 
   .hero-premium {
@@ -1145,7 +1153,37 @@ h3 {
     display: none;
   }
 
+  .site-header {
+    padding-top: 14px;
+  }
+
+  .nav-shell-glass {
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    height: 48px;
+    width: 48px;
+  }
+
+  .nav-actions {
+    flex: 1 1 auto;
+    justify-content: flex-end;
+  }
+
+  .nav-actions .btn {
+    min-height: 44px;
+    padding: 0 18px;
+    width: auto;
+  }
+
   .hero-copy-centered {
+    gap: 18px;
     justify-items: start;
     text-align: left;
   }
@@ -1155,6 +1193,29 @@ h3 {
   .final-actions,
   .brand-row {
     justify-content: flex-start;
+  }
+
+  .hero-premium {
+    padding: 22px 0 56px;
+  }
+
+  .hero-stack {
+    gap: 34px;
+  }
+
+  .hero-badge {
+    border-radius: 34px;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .hero-badge span {
+    font-size: 0.95rem;
+    padding: 12px 18px;
+  }
+
+  .hero-text {
+    font-size: 1rem;
   }
 
   .faq-intro,
@@ -1178,12 +1239,47 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .footer-nav-grid {
+    gap: 12px;
+  }
+
+  .footer-column {
+    border-top: 1px solid rgba(92, 70, 176, 0.09);
+    gap: 0;
+    padding-top: 12px;
+  }
+
+  .footer-accordion summary {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0 14px;
+  }
+
+  .footer-accordion summary::after {
+    color: var(--accent-strong);
+    content: "+";
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  .footer-accordion[open] summary::after {
+    content: "−";
+  }
+
+  .footer-accordion .footer-links {
+    padding: 0 0 8px;
+  }
+
   .footer-bottom {
     align-items: flex-start;
     flex-direction: column;
   }
 
-  .btn {
+  .hero-actions .btn,
+  .final-actions .btn {
     width: 100%;
   }
 

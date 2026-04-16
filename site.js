@@ -147,8 +147,48 @@
     });
   }
 
+  function initFooterAccordion() {
+    var items = Array.prototype.slice.call(document.querySelectorAll(".footer-accordion"));
+    if (!items.length) return;
+
+    var mobileQuery = window.matchMedia("(max-width: 720px)");
+
+    function syncFooterState() {
+      if (mobileQuery.matches) {
+        items.forEach(function (item, index) {
+          item.open = index === 0;
+        });
+      } else {
+        items.forEach(function (item) {
+          item.open = true;
+        });
+      }
+    }
+
+    items.forEach(function (item) {
+      item.addEventListener("toggle", function () {
+        if (!mobileQuery.matches || !item.open) return;
+
+        items.forEach(function (other) {
+          if (other !== item) {
+            other.open = false;
+          }
+        });
+      });
+    });
+
+    if (typeof mobileQuery.addEventListener === "function") {
+      mobileQuery.addEventListener("change", syncFooterState);
+    } else if (typeof mobileQuery.addListener === "function") {
+      mobileQuery.addListener(syncFooterState);
+    }
+
+    syncFooterState();
+  }
+
   initLenis();
   initReveal();
   initHeroCanvas();
   initFaqAccordion();
+  initFooterAccordion();
 })();
