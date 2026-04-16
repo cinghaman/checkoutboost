@@ -38,27 +38,11 @@
       });
     });
 
-    gsap.to(".hero-floating-left", {
-      y: 14,
+    gsap.to(".hero-showcase-frame", {
+      y: 10,
       repeat: -1,
       yoyo: true,
-      duration: 2.8,
-      ease: "sine.inOut"
-    });
-
-    gsap.to(".hero-floating-right", {
-      y: -16,
-      repeat: -1,
-      yoyo: true,
-      duration: 3.4,
-      ease: "sine.inOut"
-    });
-
-    gsap.to(".hero-device", {
-      y: 12,
-      repeat: -1,
-      yoyo: true,
-      duration: 3.8,
+      duration: 3.6,
       ease: "sine.inOut"
     });
 

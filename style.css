@@ -395,6 +395,12 @@ h3 {
   position: relative;
 }
 
+.hero-stage-showcase {
+  display: grid;
+  gap: 26px;
+  min-height: auto;
+}
+
 .hero-device-glow {
   background:
     radial-gradient(circle at 50% 10%, rgba(255, 255, 255, 0.9), transparent 24%),
@@ -406,19 +412,18 @@ h3 {
   position: absolute;
 }
 
-.hero-device {
+.hero-device,
+.hero-showcase-frame {
   backdrop-filter: blur(22px);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.82), rgba(248, 244, 255, 0.92));
   border: 1px solid rgba(255, 255, 255, 0.9);
   border-radius: 42px;
   box-shadow: var(--shadow-strong);
-  left: 50%;
   overflow: hidden;
   padding: 20px;
-  position: absolute;
-  top: 40px;
-  transform: translateX(-50%);
-  width: min(100%, 760px);
+  position: relative;
+  width: 100%;
+  z-index: 2;
 }
 
 .device-topbar {
@@ -439,8 +444,14 @@ h3 {
   border-radius: 24px;
 }
 
+.hero-showcase-frame img {
+  border-radius: 24px;
+  width: 100%;
+}
+
 .hero-floating,
 .hero-insight-card,
+.proof-chip,
 .metric-card,
 .premium-card,
 .feature-card,
@@ -452,6 +463,28 @@ h3 {
   background: var(--surface);
   border: 1px solid rgba(255, 255, 255, 0.8);
   box-shadow: var(--shadow);
+}
+
+.hero-proof-strip {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+  z-index: 2;
+}
+
+.proof-chip {
+  border-radius: 24px;
+  display: grid;
+  gap: 8px;
+  min-height: 158px;
+  padding: 22px;
+}
+
+.proof-chip strong {
+  font-family: "Sora", sans-serif;
+  font-size: 1.34rem;
+  line-height: 1.12;
 }
 
 .hero-floating {
@@ -647,6 +680,11 @@ h3 {
   width: 100%;
 }
 
+.soft-panel-showcase {
+  min-height: 0;
+  padding: 16px;
+}
+
 .soft-panel-compact {
   align-items: center;
   display: grid;
@@ -672,6 +710,10 @@ h3 {
 
 .metrics-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.metrics-showcase {
+  margin-bottom: 28px;
 }
 
 .metric-card strong {
@@ -1027,19 +1069,12 @@ h3 {
     display: none;
   }
 
-  .hero-stage {
-    min-height: 820px;
-  }
-
-  .hero-floating-left {
-    left: 10px;
-  }
-
-  .hero-floating-right {
-    right: 10px;
+  .hero-stage-showcase {
+    min-height: auto;
   }
 
   .premium-grid-hero,
+  .hero-proof-strip,
   .metrics-grid,
   .pricing-grid-premium,
   .blog-grid-premium,
@@ -1082,42 +1117,18 @@ h3 {
     font-size: clamp(2.35rem, 10vw, 3.6rem);
   }
 
-  .hero-stage {
-    min-height: 860px;
-  }
-
-  .hero-device {
-    width: calc(100% - 24px);
-  }
-
-  .hero-floating {
-    max-width: 220px;
-  }
-
-  .hero-insight-card {
-    grid-template-columns: 1fr;
-    width: calc(100% - 24px);
-  }
-
-  .hero-lottie {
-    justify-self: start;
+  .hero-stage-showcase {
+    min-height: auto;
   }
 
   .premium-grid-hero,
+  .hero-proof-strip,
   .metrics-grid,
   .pricing-grid-premium,
   .blog-grid-premium,
   .post-grid,
   .video-grid {
     grid-template-columns: 1fr;
-  }
-
-  .soft-panel-compact {
-    grid-template-columns: 1fr;
-  }
-
-  .feature-lottie {
-    justify-self: center;
   }
 
   .footer-nav-grid {
@@ -1152,38 +1163,15 @@ h3 {
   }
 
   .hero-stage {
-    min-height: 920px;
+    min-height: auto;
   }
 
   .hero-device-glow {
     inset: 20px 0 0;
   }
 
-  .hero-floating-left,
-  .hero-floating-right {
-    left: 0;
-    max-width: none;
-    position: relative;
-    right: auto;
-    top: auto;
-  }
-
-  .hero-stage {
-    display: grid;
-    gap: 16px;
-  }
-
-  .hero-device,
-  .hero-insight-card {
-    left: auto;
-    position: relative;
-    top: auto;
-    transform: none;
-    width: 100%;
-  }
-
-  .hero-insight-card {
-    bottom: auto;
+  .hero-stage-showcase {
+    gap: 18px;
   }
 
   .footer-nav-grid {
