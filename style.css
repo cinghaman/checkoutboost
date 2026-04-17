@@ -27,10 +27,15 @@
   --space-section: 112px;
   --space-group: 56px;
   --space-element: 24px;
+  --focus-ring: 0 0 0 3px rgba(111, 80, 233, 0.18), 0 0 0 1px rgba(84, 55, 186, 0.7);
 }
 
 html {
   scroll-behavior: auto;
+}
+
+body {
+  min-width: 320px;
 }
 
 body {
@@ -97,6 +102,30 @@ img {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+main[id],
+section[id] {
+  scroll-margin-top: 112px;
+}
+
+.skip-link {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(112, 79, 232, 0.18);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  color: var(--ink);
+  left: 20px;
+  padding: 12px 16px;
+  position: fixed;
+  top: 16px;
+  transform: translateY(-160%);
+  transition: transform 0.2s ease;
+  z-index: 40;
+}
+
+.skip-link:focus-visible {
+  transform: translateY(0);
 }
 
 .shell {
@@ -203,6 +232,21 @@ a {
   color: var(--accent-strong);
 }
 
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+.btn:focus-visible {
+  border-radius: 18px;
+  box-shadow: var(--focus-ring);
+  outline: none;
+}
+
+.nav a:focus-visible,
+.footer-links a:focus-visible,
+.text-link:focus-visible {
+  color: var(--accent-strong);
+}
+
 .nav-actions {
   display: flex;
   gap: 12px;
@@ -223,6 +267,13 @@ a {
 
 .btn:hover {
   transform: translateY(-2px);
+}
+
+.btn:active,
+.text-link:active,
+.nav a:active,
+.footer-links a:active {
+  transform: translateY(0);
 }
 
 .btn-primary {
@@ -481,6 +532,11 @@ h3 {
   padding: 22px;
 }
 
+.proof-chip span {
+  display: block;
+  max-width: 26ch;
+}
+
 .proof-chip strong {
   font-family: "Sora", sans-serif;
   font-size: 1.34rem;
@@ -559,6 +615,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
+  justify-content: flex-end;
 }
 
 .section {
@@ -730,6 +787,7 @@ h3 {
 .pricing-card {
   display: grid;
   gap: 10px;
+  align-content: start;
 }
 
 .pricing-card h3 {
@@ -833,6 +891,7 @@ h3 {
   justify-content: space-between;
   line-height: 1.28;
   list-style: none;
+  min-height: 72px;
   padding: 24px 26px;
 }
 
@@ -958,6 +1017,7 @@ h3 {
 .footer-accordion summary {
   cursor: default;
   list-style: none;
+  min-height: 44px;
 }
 
 .footer-accordion summary::-webkit-details-marker {
@@ -1004,6 +1064,11 @@ h3 {
 .reveal {
   opacity: 0;
   transform: translateY(30px);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .page-hero,
@@ -1142,6 +1207,11 @@ h3 {
   .footer-nav-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  main[id],
+  section[id] {
+    scroll-margin-top: 32px;
+  }
 }
 
 @media (max-width: 720px) {
@@ -1191,7 +1261,8 @@ h3 {
   .hero-badge,
   .hero-actions,
   .final-actions,
-  .brand-row {
+  .brand-row,
+  .brand-pills {
     justify-content: flex-start;
   }
 
@@ -1212,6 +1283,14 @@ h3 {
   .hero-badge span {
     font-size: 0.95rem;
     padding: 12px 18px;
+  }
+
+  .proof-chip,
+  .pricing-card,
+  .blog-card,
+  .premium-card,
+  .metric-card {
+    padding: 24px;
   }
 
   .hero-text {
@@ -1280,6 +1359,7 @@ h3 {
 
   .hero-actions .btn,
   .final-actions .btn {
+    min-height: 48px;
     width: 100%;
   }
 
@@ -1290,5 +1370,29 @@ h3 {
   .final-cta-shell {
     grid-template-columns: 1fr;
     padding: 30px 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .btn:hover,
+  .text-link:hover {
+    transform: none;
   }
 }

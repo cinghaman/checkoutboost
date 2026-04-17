@@ -19,11 +19,17 @@
   }
 
   function initReveal() {
-    if (typeof gsap === "undefined") return;
+    var revealEls = document.querySelectorAll(".reveal");
+
+    if (prefersReduced || typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
+      revealEls.forEach(function (el) {
+        el.classList.add("is-visible");
+      });
+      return;
+    }
 
     gsap.registerPlugin(ScrollTrigger);
 
-    var revealEls = document.querySelectorAll(".reveal");
     revealEls.forEach(function (el, index) {
       gsap.to(el, {
         opacity: 1,
@@ -61,7 +67,7 @@
   }
 
   function initHeroCanvas() {
-    if (typeof THREE === "undefined") return;
+    if (prefersReduced || typeof THREE === "undefined") return;
 
     var canvas = document.getElementById("hero-canvas");
     if (!canvas) return;

@@ -52,6 +52,7 @@
   </script>
 </head>
 <body class="homepage">
+  <a class="skip-link" href="#main-content">Skip to content</a>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
   <div class="ambient ambient-three"></div>
@@ -65,7 +66,7 @@
           <span class="brand-subtitle">Checkout gifting for Shopify</span>
         </span>
       </a>
-      <nav class="nav nav-pill">
+      <nav class="nav nav-pill" aria-label="Primary">
         <a href="#gifting">Gifting</a>
         <a href="#capabilities">Capabilities</a>
         <a href="#pricing">Pricing</a>
@@ -77,7 +78,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content">
     <section class="hero hero-premium">
       <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
       <div class="shell hero-stack">
@@ -368,7 +369,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="shell footer-shell">
+      <div class="shell footer-shell">
       <div class="footer-grid">
         <div class="footer-brand-block">
           <a class="brand brand-footer" href="https://smartcheckoutwidgets.com/">
@@ -381,7 +382,7 @@
           <p class="footer-copy">Checkout gifting, upsells, trust signals, and merchandising tools for Shopify Plus merchants focused on higher order value.</p>
           <p class="footer-byline">Product by <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></p>
         </div>
-        <div class="footer-nav-grid">
+        <nav class="footer-nav-grid" aria-label="Footer">
           <details class="footer-column footer-accordion" open>
             <summary class="footer-heading">Product</summary>
             <div class="footer-links">
@@ -407,7 +408,7 @@
               <a href="mailto:admin@thoughtbulb.dev">Support</a>
             </div>
           </details>
-        </div>
+        </nav>
       </div>
       <div class="footer-bottom">
         <p>Built for Shopify Plus merchants focused on gifting, upsells, and checkout clarity.</p>
