@@ -45,6 +45,20 @@ Secondary actions may support the install decision, but they should always feed 
 - reviewing pricing
 - checking compatibility or FAQ
 
+## Growth and discoverability goals
+
+The redesign must improve not just visual quality, but search and answer-surface performance.
+
+This includes:
+- classic SEO for core commercial and informational queries
+- AEO readiness for answer engines and AI-assisted search experiences
+- social/link preview quality through stronger preview imagery and metadata
+
+The site should be easy to understand as:
+- a Shopify checkout merchandising app
+- a Shopify Plus gifting and upsell tool
+- a tool ecommerce agencies can recommend and install for merchants
+
 ## Tone
 
 Technical editorial.
@@ -75,6 +89,8 @@ The redesigned site should:
 - use stronger editorial hierarchy and document rhythm
 - reduce reliance on decorative glow, glass, and “floating” UI styling
 - remain clear and complete with motion reduced or disabled
+- improve topical clarity for search engines and answer engines
+- strengthen social preview quality for links shared in Slack, X, LinkedIn, and search results
 
 ## Redesign boundaries
 
@@ -172,6 +188,7 @@ Writing behavior:
 - headlines should read like claims, positions, or operating principles
 - avoid generic startup-copy cadence
 - avoid excessive eyebrow/section-label repetition
+- use search-facing phrasing where it improves clarity, especially around Shopify Plus, checkout gifts, upsells, checkout merchandising, and agency/operator workflows
 
 ### Motion
 
@@ -197,6 +214,14 @@ Secondary CTA:
 - routes into supporting decision material
 - never competes visually with install CTA
 
+### Messaging discipline
+
+Messaging should follow product-positioning rules that support both conversion and discoverability:
+- use natural operator and agency language instead of generic SaaS jargon
+- describe the product against the status quo, not abstract category language
+- keep page-level language consistent enough that users and search engines can summarize the product the same way
+- prioritize concrete workflow phrasing over vague claims like “streamline” or “optimize”
+
 ## Page families
 
 ### 1. Homepage family
@@ -207,6 +232,7 @@ Intent:
 - top of page makes the install case quickly
 - rest of page reads like a structured operational brief
 - argument is built through capability framing, checkout control, proof, pricing, FAQ, and install CTA
+- page must clearly answer what the app is, who it is for, and why it is better than doing checkout merchandising manually or with narrower tools
 
 Visual behavior:
 - fewer equal-weight card grids
@@ -220,6 +246,7 @@ Blog uses a `Long Document` family.
 Intent:
 - feel like field notes for agencies and operators
 - prioritize reading over marketing theatrics
+- capture mid-funnel search intent around gifting, checkout upsells, Shopify Plus checkout customization, trust messaging, and related operator workflows
 
 Visual behavior:
 - stronger title block
@@ -259,6 +286,80 @@ The following may vary:
 - proof section structure
 - content density between homepage and content pages
 
+## SEO and AEO requirements
+
+The redesign must treat SEO and answer-engine readiness as part of the product surface.
+
+### SEO requirements
+
+- Every page must have a unique title tag and meta description aligned to page intent.
+- Canonical URLs must remain explicit and correct.
+- Heading structure must be disciplined: one clear H1, then semantic H2/H3 hierarchy.
+- Core pages must target distinct search intent instead of overlapping heavily.
+- Internal linking should reinforce page relationships between homepage, pricing, FAQ, blog guides, and install surfaces.
+- Images must use meaningful alt text tied to product capability or page context.
+- Existing structured data should be reviewed and expanded where appropriate instead of left as a minimal stub.
+
+### AEO requirements
+
+- Key pages should answer high-intent questions directly in short, extractable language.
+- FAQ content should be written to work for both humans and answer systems.
+- Body copy should contain concise definition-style and comparison-ready passages where relevant.
+- The homepage should clearly state the category, audience, and primary jobs-to-be-done in plain language.
+- Blog pages should include scannable summaries, strong subheads, and direct answers near the top of the article where useful.
+- The site should avoid vague positioning language that makes it hard for answer systems to summarize what the product does.
+
+### Structured data requirements
+
+At minimum, the redesign plan should account for:
+- Organization schema
+- SoftwareApplication schema
+- Article schema on blog posts
+- FAQPage schema where FAQ sections remain appropriate
+- Breadcrumb-style structure only if it matches actual page architecture
+
+### Search-surface content requirements
+
+The redesign should explicitly support:
+- ecommerce agency discovery
+- Shopify Plus operator discovery
+- branded product discovery
+- informational blog discovery
+- install-intent queries that compare manual checkout merchandising against app-supported workflows
+
+## Social preview and image-preview requirements
+
+The redesign must include a deliberate preview-image system, not an incidental screenshot choice.
+
+### Requirements
+
+- Homepage needs a stronger Open Graph / Twitter preview image aligned to the new design system.
+- Blog pages need consistent article-preview imagery or a defined preview-image treatment.
+- Preview images should be legible at small sizes and support product recognition quickly.
+- Preview imagery should avoid cluttered full-page screenshots as the only solution.
+- The preview system should be reusable across future marketing pages.
+
+### Preview-image direction
+
+Preview images should feel like:
+- product-credible
+- typographically strong
+- visually consistent with the site system
+- optimized for social cards and search previews rather than full desktop layouts
+
+Possible pattern:
+- short claim
+- product crop or UI fragment
+- disciplined accent usage
+- strong brand identifier
+
+### Deliverable expectation
+
+The implementation plan should include:
+- shared preview-image art direction
+- asset requirements for homepage and blog previews
+- metadata wiring for Open Graph and Twitter cards
+
 ## Implementation approach
 
 This is a non-destructive redesign.
@@ -266,10 +367,11 @@ This is a non-destructive redesign.
 Implementation model:
 1. create `design.md` as the locked system definition
 2. create `tokens.css` as the portable shared token layer
-3. refit `style.css` to the new system
-4. simplify `site.js` where needed to match the new motion stance
-5. redesign Phase 1 pages against the locked system
-6. roll the system into Phase 2 pages
+3. define SEO/AEO and preview-image system requirements inside the shared site system
+4. refit `style.css` to the new system
+5. simplify `site.js` where needed to match the new motion stance
+6. redesign Phase 1 pages against the locked system
+7. roll the system into Phase 2 pages
 
 ## File responsibilities
 
@@ -284,6 +386,8 @@ Source of truth for:
 - motion stance
 - CTA voice
 - page-level allowances
+- SEO/AEO content rules
+- preview-image direction
 
 ### `tokens.css`
 
@@ -307,6 +411,7 @@ Shared visual implementation for:
 - nav/footer
 - page-family patterns
 - responsive behavior
+- search-surface readability and scannability conventions
 
 ### `site.js`
 
@@ -317,6 +422,17 @@ Only keep what supports:
 
 Any decorative motion that conflicts with the new system should be removed or reduced.
 
+### Page metadata and preview assets
+
+Each page should be reviewed for:
+- title tag
+- meta description
+- canonical
+- Open Graph fields
+- Twitter card fields
+- preview image path
+- relevant structured data
+
 ## Verification requirements
 
 The redesign is only complete when it passes all of the following:
@@ -326,6 +442,9 @@ The redesign is only complete when it passes all of the following:
 - motion-off experience still feels complete
 - no page drifts back into old pastel-glass language
 - typography and spacing remain consistent across page families
+- metadata is page-specific and not duplicated blindly
+- homepage and blog previews render credibly as social cards
+- answer-ready sections are present where they materially help discoverability
 
 Target widths:
 - 320 px
@@ -354,6 +473,19 @@ Mitigation:
 - explicitly remove pastel-glow/glass defaults
 - shift palette, hierarchy, and section rhythm at the system level first
 
+### Risk: redesign improves visuals but weakens search clarity
+
+Mitigation:
+- make category and audience language explicit in the system
+- keep page intent distinct across homepage, blog, and secondary pages
+- include SEO/AEO review in the implementation plan rather than treating it as post-launch cleanup
+
+### Risk: preview images remain generic screenshots
+
+Mitigation:
+- define preview-image art direction before implementation
+- treat OG/Twitter imagery as shared system output, not per-page improvisation
+
 ### Risk: redesign becomes too austere and loses warmth
 
 Mitigation:
@@ -374,8 +506,9 @@ The following are not part of this redesign unless requested later:
 ## Recommended next step
 
 Create the locked site system in `design.md`, then write an implementation plan for:
-1. shared tokens and visual shell
-2. homepage redesign
-3. blog/content family redesign
-4. utility page redesign
-5. Phase 2 legacy-page rollout
+1. shared tokens, messaging rules, and visual shell
+2. SEO/AEO and preview-image system
+3. homepage redesign
+4. blog/content family redesign
+5. utility page redesign
+6. Phase 2 legacy-page rollout
