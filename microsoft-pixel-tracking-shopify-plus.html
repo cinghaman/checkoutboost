@@ -1,287 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T9GSXKCN10');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Microsoft Pixel Tracking for Shopify Plus | Smart Checkout Widgets</title>
+  <meta name="description" content="Set up Microsoft Ads event-based conversion tracking on Shopify Plus checkout.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/microsoft-pixel-tracking-shopify-plus.html">
+  <meta property="og:title" content="Microsoft Pixel Tracking on Shopify Plus | Smart Checkout Widgets">
+  <meta property="og:description" content="Notes on Microsoft pixel tracking for Shopify Plus checkout and post-purchase surfaces.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/microsoft-pixel-tracking-shopify-plus.html">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/default.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/default.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="Smart Checkout Widgets — Shopify Plus checkout gifts and upsells">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Microsoft Pixel Tracking on Shopify Plus | Smart Checkout Widgets">
+  <meta name="twitter:description" content="Notes on Microsoft pixel tracking for Shopify Plus checkout and post-purchase surfaces.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/default.webp">
+  <meta name="twitter:image:alt" content="Smart Checkout Widgets — Shopify Plus checkout gifts and upsells">
 
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'G-T9GSXKCN10');
-	</script>
-	<meta charset="UTF-8">
-	<title>Microsft ads coversions tracking Shopify, Customer Pixels, Shopify Pixels app</title>
-	<meta name="description"
-		content="Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
-	<meta name="keywords"
-		content="Smart Checkout Widgets app, Increase Revenue, shopify app, checkout, reviews, AOV, Upsells, Recommendations, Gifts, Discounts, Shipping, Payments">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<link rel="canonical" href="https://smartcheckoutwidgets.com/microsoft-pixel-tracking-shopify-plus.html">
-
-	<link rel="shortcut icon" type="image/x-icon" href="images/smart_widget_icon_for_shopify.jpg">
-	<link rel="apple-touch-icon" href="images/smart_widget_icon_for_shopify.jpg">
-	<link rel="icon" type="image/png" href="images/smart_widget_icon_for_shopify.jpg">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	
-	<meta property="og:title" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
-	<meta property="og:description" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
-	<meta property="og:type" content="website">
-	<meta property="og:image" content="/images/smartcheckout-widgets.jpg">
-	<meta property="og:url" content="https://smartcheckoutwidgets.com">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Microsoft Pixel Tracking on Shopify Plus",
+  "description": "Notes on Microsoft pixel tracking for Shopify Plus checkout and post-purchase surfaces.",
+  "url": "https://smartcheckoutwidgets.com/microsoft-pixel-tracking-shopify-plus.html",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  }
+}
+  </script>
 
 
-	 <!-- Twitter -->
-	 <meta name="twitter:card" content="summary_large_image">
-	 <meta name="twitter:title" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
-	 <meta name="twitter:description" content="Free gift with discount code on Shopify Checkout with Smart Checkout Widgets is a Shopify app that helps you increase your store's AOV and sales with  upsell, recommended products, and more.">
-	 <meta name="twitter:image" content="/images/smartcheckout-widgets.jpg">
-	 
-	<link rel="stylesheet" href="assets/vendors/liquid-icon/lqd-essentials/lqd-essentials.min.css">
-	<link rel="stylesheet" href="assets/css/theme.min.css">
-	<link rel="stylesheet" href="assets/css/utility.min.css">
-	<link rel="stylesheet" href="assets/css/demo/start-hub-3/base.css">
-	<link rel="stylesheet" href="assets/css/demo/start-hub-3/start-hub-3.css">
-	<link rel="stylesheet" href="./assets/css/demo/software.css">
 
-	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Rubik:wght@600&display=swap"
-		rel="stylesheet">
-	<style>
-		#tutorials,
-		#pricing,
-		#faq,
-		#site-footer {
-			display: none;
-		}
-	</style>
+
+
+  <link rel="stylesheet" href="/style.css">
+
 </head>
+<body class="page-inner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+      <a class="nav__link" href="/videos.html">Videos</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+  </nav>
+  <main id="main-content">
+    <section class="page-hero">
+      <div class="page-hero-copy">
+        <span class="eyebrow">◇ integration</span>
+        <h1>Microsoft pixel tracking for Shopify Plus</h1>
+        <p>Event-based conversion goals for purchase tracking in Microsoft Ads.</p>
+      </div>
+    </section>
+    <section class="post-layout"><article class="post-content">
+        <p>Track purchase conversions in Microsoft Ads with an event-based goal tied to Shopify checkout completion.</p>
+        <h2>Why event-based goals</h2>
+        <p>URL-only goals miss inline actions. Event-based goals capture purchases when the checkout completed event fires.</p>
+        <h2>Create the conversion goal</h2>
+        <ol>
+          <li>In Microsoft Ads, go to <strong>Tools → Conversion Goals</strong>.</li>
+          <li>Click <strong>Create conversion goal</strong>.</li>
+          <li>Select <strong>Website</strong>, then <strong>Purchase</strong>, then <strong>Event</strong>.</li>
+        </ol>
+        <p>If events are unavailable in your account, try a destination URL goal containing <code>processing?completed=true</code> as a fallback.</p>
+        <h2>Tagging</h2>
+        <ul><li><strong>Action:</strong> Purchase</li><li><strong>Category:</strong> Checkout</li></ul>
+        <h2>Add the pixel in Shopify</h2>
+        <ol>
+          <li>Shopify admin → <strong>Settings → Customer events → Add custom pixel</strong>.</li>
+          <li>Paste the UET snippet and replace the tracking ID placeholder.</li>
+          <li>Subscribe to <code>checkout_completed</code> and push the purchase event with order value and currency.</li>
+        </ol>
+        <pre><code>(function(w,d,t,r,u){
+  var f,n,i;
+  w[u]=w[u]||[];
+  f=function(){
+    var o={ti:"YOUR_UET_ID", enableAutoSpaTracking: true};
+    o.q=w[u];w[u]=new UET(o);w[u].push("pageLoad")
+  },
+  n=d.createElement(t);n.src=r;n.async=1;
+  n.onload=n.onreadystatechange=function(){
+    var s=this.readyState;
+    s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)
+  },
+  i=d.getElementsByTagName(t)[0];
+  i.parentNode.insertBefore(n,i)
+})(window,document,"script","//bat.bing.com/bat.js","uetq");
 
-<body data-lqd-cc="true" data-mobile-nav-breakpoint="1199" data-mobile-nav-style="minimal" data-mobile-nav-scheme="gray"
-	data-mobile-nav-trigger-alignment="right" data-mobile-header-scheme="light" data-mobile-logo-alignment="default"
-	data-overlay-onmobile="false" data-disable-animations-onmobile="true">
-	<div id="wrap" class="bg-white">
-
-		<div class="lqd-sticky-placeholder hidden"></div>
-		<header id="site-header" class="main-header" data-sticky-header="true" data-sticky-values-measured="false">
-			<section class="lqd-section bg-white border-bottom border-black-10 transition-all px-10 md:hidden">
-				<div class="container-fluid p-0">
-					<div class="flex flex-wrap justify-between link-medium">
-						<div class="pl-15 py-25 module-logo flex navbar-brand-plain w-20percent">
-							<a class="navbar-brand flex p-0 relative" href="https://smartcheckoutwidgets.com/"
-								rel="home">
-								<span class="navbar-brand-inner post-rel">
-									<img width="300" class="logo-default" src="images/logo_smartcheckout.png"
-										alt="Shopify checkout UI extensibility">
-								</span>
-							</a>
-						</div>
-						<div class="flex items-center justify-end w-80percent">
-							<div class="module-primary-nav flex">
-								<div class="navbar-collapse inline-flex p-0 lqd-submenu-default-style link-14 mr-110 link-medium"
-									id="main-header-collapse" aria-expanded="false" role="navigation">
-									<ul class="main-nav flex reset-ul inline-ul lqd-menu-counter-right lqd-menu-items-inline main-nav-hover-fade-inactive"
-										data-submenu-options='{"toggleType": "fade", "handler": "mouse-in-out"}'
-										data-localscroll="true" data-localscroll="true"
-										data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
-										<li class="menu-item-has-children">
-											<a class="text-blue-600" href="https://smartcheckoutwidgets.com/#widgets">
-												<span>Widgets</span>
-											</a>
-										</li>
-
-										<li>
-											<a class="text-blue-600" href="https://smartcheckoutwidgets.com/#tutorials">
-												Tutorials
-											</a>
-										</li>
-										<li>
-											<a class="text-blue-600"
-												href="https://smartcheckoutwidgets.com/#faq">FAQ's</a>
-										</li>
-										<li>
-											<a class="text-blue-600"
-												href="https://smartcheckoutwidgets.com/#pricing">Pricing</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<a href="https://apps.shopify.com/smart-checkout-widgets"
-								class="btn btn-solid btn-sm btn-hover-txt-switch-change btn-hover-txt-switch btn-hover-txt-switch-y btn-icon-right text-13 rounded-4 text-white bg-primary"
-								data-localscroll="true">
-								<span class="btn-txt" data-text="Download" data-split-text="true"
-									data-split-options='{"type": "chars, words"}'>Get the App</span>
-								<span class="btn-icon text-1/5em -rotate-45">
-									<i aria-hidden="true" class="lqd-icn-ess icon-ion-ios-arrow-round-forward"></i>
-								</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="lqd-mobile-sec relative">
-				<div class="bg-white lqd-mobile-sec-inner navbar-header flex items-stretch w-full">
-					<div class="lqd-mobile-modules-container empty"></div>
-					<button type="button"
-						class="navbar-toggle collapsed nav-trigger style-mobile flex relative items-center justify-end p-0 bg-transparent border-none text-13"
-						data-ld-toggle="true" data-bs-toggle="collapse" data-bs-target="#lqd-mobile-sec-nav"
-						aria-expanded="false"
-						data-toggle-options='{ "changeClassnames":  {"html":  "mobile-nav-activated"} }'>
-						<span class="sr-only">Menu</span>
-						<span class="bars inline-block relative z-1">
-							<span class="bars-inner flex flex-col w-full h-full">
-								<span class="bar inline-block"></span>
-								<span class="bar inline-block"></span>
-								<span class="bar inline-block"></span>
-							</span>
-						</span>
-					</button>
-					<a class="navbar-brand flex relative" href="https://smartcheckoutwidgets.com">
-						<span class="navbar-brand-inner">
-							<img width="250" class="logo-default" src="images/logo.png"
-								alt="Shopify checkout UI extensibility">
-						</span>
-					</a>
-				</div>
-				<div class="lqd-mobile-sec-nav w-full absolute z-10">
-					<div class="mobile-navbar-collapse navbar-collapse collapse w-full" id="lqd-mobile-sec-nav"
-						aria-expanded="false" role="navigation">
-						<ul id="mobile-primary-nav" class="reset-ul lqd-mobile-main-nav main-nav nav"
-							data-localscroll="true"
-							data-localscroll-options='{"itemsSelector":"> li > a", "trackWindowScroll": true, "includeParentAsOffset": true}'>
-							<li class="">
-								<a href="#widgets">
-									Widgets
-								</a>
-							</li>
-							<li>
-								<a href="#tutorials">Tutorials</a>
-							</li>
-							<li>
-								<a href="#pricing">Pricing</a>
-							</li>
-							<li>
-								<a href="#faq">FAQ</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</header>
-
-		<main class="content bg-white" id="lqd-site-content">
-			<div class="container">
-				<div class="row justify-center">
-					<div class="col col-12">
-
-						<h1 style="margin-top: 10px;">Microsoft Pixel Tracking for Shopify Plus</h1>
-						<h3>Create an Event-based Conversion Goal in Microsoft Ads</h3>
-						<p>Tracking conversions is a crucial aspect of digital marketing. In this guide, we will walk you through the steps to create an event-based conversion goal in Microsoft Ads. This will allow you to track important actions, such as purchases, on your website. Follow the detailed instructions below to set up your conversion tracking effectively.</p>
-						
-						<h4>Why Use Event-based Conversion Goals?</h4>
-						<p>Event-based conversion goals offer a precise way to track specific actions users take on your website. Unlike URL-based goals, which track page visits, event-based goals allow you to capture actions such as form submissions, button clicks, and product purchases. This granularity helps you understand user behavior better and optimize your campaigns for higher ROI.</p>
-						
-						<h4>Steps to Create the Conversion Goal</h4>
-						<ol>
-							<li>In Microsoft Ads, go to <strong>Tools > Conversion Goals</strong>.</li>
-							<li>Click <strong>Create Conversion Goal</strong>.</li>
-							<li>For <strong>Conversion Goal</strong>, select <strong>Website</strong>.</li>
-							<li>For <strong>Conversion Goal Type</strong>, select <strong>Purchase</strong>, then <strong>Event</strong>.</li>
-						</ol>
-						<p><strong>Note:</strong> From my support requests, in some cases using the destination URL option worked. So if your use case is one of those, try either events or destination URL, whichever works for you.</p>
-						
-						<h4>Configure Destination URL</h4>
-						<p>To ensure that your conversions are tracked accurately, configure your Microsoft Ads conversion settings to track the destination URL. This is particularly useful if your conversion action redirects to a specific URL upon completion. Follow the steps below:</p>
-						<ol>
-							<li>In your Microsoft Ads account, navigate to the conversion goal you created.</li>
-							<li>Change the tracking setting to <strong>Contains: processing?completed=true</strong>. This will track any URL containing this specific string.</li>
-						</ol>
-						
-						<h4>Setup Tagging</h4>
-						<p>Proper tagging is essential for tracking purchases accurately. In Microsoft Ads, configure the following settings:</p>
-						<ul>
-							<li><strong>Action:</strong> Purchase</li>
-							<li><strong>Category:</strong> Checkout</li>
-						</ul>
-						
-						<h4>When to Track This Event?</h4>
-						<p>It's important to specify when you want to track the event. In this case, you should track events on inline actions, such as button clicks that do not lead to a page reload. This ensures that the purchase event is recorded as soon as it happens.</p>
-						
-						<h4>Add Custom Pixel to Shopify</h4>
-						<p>To track conversions on your Shopify store, you need to add a custom pixel. Follow these steps to set it up:</p>
-						<ol>
-							<li>Log in to your Shopify backend.</li>
-							<li>Go to <strong>Settings > Customer Events > Add Custom Pixel</strong>.</li>
-							<li>Add the following code snippet and replace the placeholder ID with your actual Microsoft Ads tracking ID:</li>
-						</ol>
-						
-						<pre><code>
-						(function(w,d,t,r,u){
-							var f,n,i;
-							w[u]=w[u]||[], 
-							f=function(){
-								var o={ti:"[REPLACE ID HERE]", enableAutoSpaTracking: true}; 
-								o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")
-							}, 
-							n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function() {
-								var s=this.readyState;
-								s && s!=="loaded" && s!=="complete" || (f(),n.onload=n.onreadystatechange=null)
-							},
-							i=d.getElementsByTagName(t)[0],
-							i.parentNode.insertBefore(n,i)
-						})(window,document,"script","//bat.bing.com/bat.js","uetq"); 
-						
-						analytics.subscribe('checkout_completed', (event) => { 
-							window.uetq = window.uetq || []; 
-							window.uetq.push('event', 'purchase', { 
-								"event_category": "checkout", 
-								"revenue_value": event.data.checkout.totalPrice.amount, 
-								"currency": event.data.checkout.currencyCode, 
-								"em": event.data.checkout.email, 
-								"ph": event.data.checkout.phone, 
-							}); 
-						});
-						</code></pre>
-						
-						<h4>Testing Your Setup</h4>
-						<p>After setting up your conversion tracking, it's important to test it to ensure it's working correctly. Here are some steps to test your setup:</p>
-						<ol>
-							<li>Complete a test purchase on your Shopify store.</li>
-							<li>Check the conversion data in your Microsoft Ads account to see if the event is recorded.</li>
-							<li>Use browser developer tools to inspect the network requests and verify that the tracking pixel is firing correctly.</li>
-						</ol>
-						
-						<h4>Conclusion</h4>
-						<p>Setting up event-based conversion goals in Microsoft Ads is an effective way to track important actions on your website. By following the steps outlined in this guide, you can ensure accurate tracking and gain valuable insights into user behavior. This, in turn, will help you optimize your ad campaigns for better performance and higher conversions.</p>
-						
-					</div>
-
-				</div>
-			</div>
-		</main>
-		<div class="footer">
-			<div class="container">
-				<div class="row justify-center">
-					<div class="col col-12">
-						<div class="footer-block">&copy; Powered by <a href="https://thoughtbulb.dev">Thought Bulb</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="c6ce9585-187d-471e-a0ba-150354e2d6e8";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
-
+analytics.subscribe('checkout_completed', (event) => {
+  window.uetq = window.uetq || [];
+  window.uetq.push('event', 'purchase', {
+    event_category: "checkout",
+    revenue_value: event.data.checkout.totalPrice.amount,
+    currency: event.data.checkout.currencyCode
+  });
+});</code></pre>
+        <h2>Test the setup</h2>
+        <ol>
+          <li>Complete a test order on your store.</li>
+          <li>Confirm the conversion appears in Microsoft Ads.</li>
+          <li>Inspect network requests to verify the pixel fires on checkout completion.</li>
+        </ol>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+        </div>
+      </article></section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is gifting and merchandising for teams who'd rather <em>convert</em> than patch coupons.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/blog/">Guides</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/videos.html">Videos</a></li>
+            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>© 2026 Thought Bulb · Built for Shopify Plus checkout</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/site.js"></script>
+  <script type="text/javascript">
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "c6ce9585-187d-471e-a0ba-150354e2d6e8";
+    (function () {
+      var d = document;
+      var s = d.createElement("script");
+      s.src = "https://client.crisp.chat/l.js";
+      s.async = 1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
 </body>
-
 </html>

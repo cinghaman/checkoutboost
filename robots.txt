@@ -1,4 +1,28 @@
+# https://smartcheckoutwidgets.com/robots.txt
 User-agent: *
 Allow: /
 
+# AI search & citation crawlers (allow for discoverability)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://smartcheckoutwidgets.com/sitemap.xml
+
+# Machine-readable context for AI agents
+# https://smartcheckoutwidgets.com/llms.txt
+# https://smartcheckoutwidgets.com/pricing.md

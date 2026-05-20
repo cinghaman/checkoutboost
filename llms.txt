@@ -1,0 +1,56 @@
+# Smart Checkout Widgets
+
+> Shopify Plus checkout app for automatic gifts, customer-choice rewards, upsells, BOGO, trust badges, payment customization, and Thank You / Order Status content.
+
+## Product
+
+- **Name:** Smart Checkout Widgets
+- **Site:** https://smartcheckoutwidgets.com/
+- **Shopify App Store:** https://apps.shopify.com/smart-checkout-widgets
+- **Built by:** Thought Bulb (https://thoughtbulb.dev)
+- **Support:** admin@thoughtbulb.dev
+
+## Who it is for
+
+Shopify Plus merchants (and all stores for Thank You / Order Status content widgets) who want checkout-native gifting and merchandising without coupon-code friction.
+
+## Core capabilities
+
+- Automatic free gifts at checkout thresholds
+- Customer-choice gift selection
+- Checkout upsells
+- BOGO and automatic discount campaigns in checkout
+- Trust badges, banners, accordions, custom fields
+- Payment method hide, rename, reorder (Shopify Plus)
+- Thank You and Order Status page content widgets (all Shopify stores)
+
+## Pricing (summary)
+
+See https://smartcheckoutwidgets.com/pricing.md for structured tiers.
+
+- **Starter:** Free to install; up to 100 orders
+- **Growth:** $29/month or $290/year; 7-day trial; up to 1,000 orders
+- **Advanced:** $59/month; 7-day trial; up to 5,000 orders
+- **Plus / enterprise:** Contact for higher volume
+
+Public listing: https://apps.shopify.com/smart-checkout-widgets
+
+## Comparison
+
+- https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps.html
+
+## Guides (blog)
+
+- https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts.html
+- https://smartcheckoutwidgets.com/blog/customer-choice-free-gift-shopify-checkout.html
+- https://smartcheckoutwidgets.com/blog/shopify-checkout-gift-strategy-aov.html
+- https://smartcheckoutwidgets.com/blog/shopify-checkout-upsells.html
+- https://smartcheckoutwidgets.com/blog/shopify-checkout-bogo-automatic-discounts.html
+- https://smartcheckoutwidgets.com/blog/shopify-checkout-trust-badges-payment.html
+- https://smartcheckoutwidgets.com/blog/shopify-plus-checkout-extensibility-guide.html
+- https://smartcheckoutwidgets.com/blog/shopify-thank-you-order-status-widgets.html
+
+## Optional
+
+- Privacy: https://smartcheckoutwidgets.com/privacy.html
+- Videos: https://smartcheckoutwidgets.com/videos.html
