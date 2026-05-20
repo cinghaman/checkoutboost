@@ -3,27 +3,11 @@
 
   function initReveal() {
     var revealEls = document.querySelectorAll(".reveal");
-
-    if (prefersReduced || typeof gsap === "undefined" || typeof ScrollTrigger === "undefined") {
-      revealEls.forEach(function (el) {
-        el.classList.add("is-visible");
-      });
-      return;
-    }
-
-    gsap.registerPlugin(ScrollTrigger);
-
-    revealEls.forEach(function (el, index) {
-      gsap.to(el, {
-        opacity: 1,
-        y: 0,
-        duration: 0.45,
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: el,
-          start: "top 90%"
-        }
-      });
+    revealEls.forEach(function (el) {
+      el.classList.add("is-visible");
+      if (!prefersReduced) {
+        el.style.transition = "opacity 180ms ease, transform 180ms ease";
+      }
     });
   }
 
