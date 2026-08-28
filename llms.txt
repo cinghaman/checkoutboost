@@ -9,6 +9,7 @@ Last reviewed: 2026-08-28.
 ## Primary resources
 
 - [Smart Checkout Widgets homepage](https://smartcheckoutwidgets.com/): Product overview, capabilities, plans, frequently asked questions, and installation path.
+- [Documentation](https://smartcheckoutwidgets.com/docs/): How to configure widgets, checkout gifts, upsells, shipping and payment method rules, rule conditions, plan order limits, and troubleshooting.
 - [Smart Checkout Widgets on the Shopify App Store](https://apps.shopify.com/smart-checkout-widgets): Public app listing and installation page.
 - [Pricing and plan limits](https://smartcheckoutwidgets.com/pricing.md): Machine-readable details for Starter, Growth, Advanced, and enterprise plans.
 - [Shopify checkout gift apps comparison](https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps.html): Comparison criteria for evaluating Shopify checkout gifting apps.

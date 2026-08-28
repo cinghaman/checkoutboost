@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-T9GSXKCN10');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation | Smart Checkout Widgets for Shopify Plus</title>
+  <meta name="description" content="Official Smart Checkout Widgets documentation: checkout gifts, upsells, trust badges, custom fields, shipping and payment method rules, conditions, and order limits for Shopify Plus.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/docs/">
+  <link rel="describedby" href="/llms.txt" type="text/plain" title="llms.txt">
+
+  <meta property="og:title" content="Smart Checkout Widgets Documentation">
+  <meta property="og:description" content="How to set up checkout gifts, upsells, trust messaging, custom fields, and shipping and payment method rules in Shopify Plus checkout.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/docs/">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/default.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Smart Checkout Widgets documentation for Shopify Plus checkout">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smart Checkout Widgets Documentation">
+  <meta name="twitter:description" content="Set up checkout gifts, upsells, trust badges, custom fields, and shipping and payment rules in Shopify Plus checkout.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/default.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Smart Checkout Widgets Documentation",
+    "description": "How to configure checkout gifts, upsells, trust messaging, custom fields, and shipping and payment method customizations for Shopify Plus checkout.",
+    "url": "https://smartcheckoutwidgets.com/docs/",
+    "inLanguage": "en",
+    "image": "https://smartcheckoutwidgets.com/images/og/default.webp",
+    "author": {"@type": "Organization", "name": "Smart Checkout Widgets", "url": "https://smartcheckoutwidgets.com"},
+    "publisher": {
+      "@type": "Organization",
+      "name": "Smart Checkout Widgets",
+      "url": "https://smartcheckoutwidgets.com",
+      "parentOrganization": {"@type": "Organization", "name": "Thought Bulb", "url": "https://thoughtbulb.dev"}
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://smartcheckoutwidgets.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Documentation",
+        "item": "https://smartcheckoutwidgets.com/docs/"
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does this require Shopify Plus?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Checkout UI extensions \u2014 the widgets \u2014 require Shopify Plus, because Shopify limits checkout customization to Plus. Shipping and payment method rules work on all plans."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does it work with checkout.liquid?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, and it does not need to. The app uses Shopify's checkout extensibility, which is the supported replacement for checkout.liquid."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I hide the \"Pick up\" option entirely?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Shopify allows hiding individual pickup locations but not the delivery method itself. See Pickup locations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will my rules survive a Shopify checkout update?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Rules are stored against your shop and applied by Shopify Functions at checkout, so they are unaffected by theme or checkout template changes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my configuration if I uninstall?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Widgets and rules stop applying immediately. Re-installing restores your shop's settings, so an accidental uninstall is recoverable."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Docs-only layout. Everything else — type, colour, nav, footer — comes from
+       style.css and tokens.css so this page ages with the rest of the site. */
+    .docs-layout {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: var(--space-2xl) var(--space-xl) var(--space-4xl);
+      display: grid;
+      grid-template-columns: 240px minmax(0, 1fr);
+      gap: var(--space-3xl);
+      align-items: start;
+    }
+    @media (max-width: 900px) {
+      /* minmax(0, 1fr), not 1fr: a 1fr track keeps an implicit min-width of auto,
+         so the widest thing on the page — a table with nowrap headers — sets the
+         column width and pushes the whole document past the viewport. */
+      .docs-layout {
+        grid-template-columns: minmax(0, 1fr);
+        gap: var(--space-xl);
+        padding-inline: var(--space-md);
+      }
+    }
+
+    .docs-toc {
+      position: sticky;
+      top: var(--space-xl);
+      max-height: calc(100vh - var(--space-2xl));
+      overflow-y: auto;
+      font-size: var(--text-sm);
+    }
+    .docs-toc h2 {
+      font-family: var(--font-display);
+      font-size: var(--text-xs);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-ink-2);
+      margin: 0 0 var(--space-sm);
+    }
+    .docs-toc ol { list-style: none; margin: 0 0 var(--space-lg); padding: 0; }
+    .docs-toc li { margin: 0; }
+    .docs-toc a {
+      display: block;
+      padding: 4px 0 4px var(--space-sm);
+      border-left: 2px solid transparent;
+      color: var(--color-ink-1);
+      text-decoration: none;
+      line-height: 1.4;
+    }
+    .docs-toc a:hover { color: var(--color-ink-0); border-left-color: var(--color-ink-3); }
+    .docs-toc a.is-current { color: var(--color-accent); border-left-color: var(--color-accent); }
+
+    /* On desktop the list is always visible and the summary is redundant, so the
+       disclosure is flattened. On mobile it stays a real <details>, closed by
+       default — eleven links otherwise fill the first screen before the reader
+       reaches a word of the documentation. */
+    .docs-toc__disclosure > ol { display: block; }
+    .docs-toc summary { display: none; }
+
+    @media (max-width: 900px) {
+      /* Declared last on purpose: the base `.docs-toc` rule below the first
+         media query re-asserts sticky at equal specificity, so the reset has to
+         come after it in source order. */
+      .docs-toc {
+        position: static;
+        max-height: none;
+        overflow: visible;
+        border: var(--rule-soft);
+        border-radius: var(--radius-md);
+        background: var(--color-paper-1);
+      }
+      .docs-toc summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: var(--space-sm);
+        padding: var(--space-md);
+        font-family: var(--font-display);
+        font-size: var(--text-sm);
+        font-weight: 600;
+        color: var(--color-ink-0);
+        cursor: pointer;
+        list-style: none;
+      }
+      .docs-toc summary::-webkit-details-marker { display: none; }
+      .docs-toc summary::after {
+        content: "";
+        width: 8px; height: 8px;
+        border-right: 2px solid currentColor;
+        border-bottom: 2px solid currentColor;
+        transform: rotate(45deg) translate(-2px, -2px);
+        transition: transform 150ms var(--ease-out, ease);
+      }
+      .docs-toc__disclosure[open] summary::after { transform: rotate(-135deg) translate(-2px, -2px); }
+      .docs-toc__disclosure:not([open]) > ol { display: none; }
+      .docs-toc__disclosure > ol { padding: 0 var(--space-md) var(--space-md); margin: 0; }
+      .docs-toc h2 { display: none; }
+    }
+
+    .docs-content { max-width: 74ch; }
+    .docs-content h2 { scroll-margin-top: var(--space-xl); }
+    .docs-content h3 { scroll-margin-top: var(--space-xl); }
+
+    /* Callouts: a note, a caution, and a hard limit read differently. */
+    .callout {
+      border: var(--rule-soft);
+      border-left: 3px solid var(--color-accent);
+      background: var(--color-paper-1);
+      border-radius: var(--radius-md);
+      padding: var(--space-md) var(--space-md) var(--space-md) var(--space-lg);
+      margin: var(--space-lg) 0;
+    }
+    .callout p:last-child { margin-bottom: 0; }
+    .callout strong { color: var(--color-ink-0); }
+    .callout--warn { border-left-color: var(--color-warning); }
+    .callout--limit { border-left-color: var(--color-ink-2); }
+
+    .docs-table-wrap { overflow-x: auto; margin: var(--space-lg) 0; }
+    .docs-table { border-collapse: collapse; width: 100%; font-size: var(--text-sm); }
+    .docs-table th, .docs-table td {
+      text-align: left;
+      padding: var(--space-sm);
+      border-bottom: var(--rule-hair);
+      vertical-align: top;
+    }
+    .docs-table th {
+      font-family: var(--font-display);
+      font-weight: 600;
+      color: var(--color-ink-0);
+      white-space: nowrap;
+    }
+    .docs-table code { font-size: 0.9em; }
+
+    .docs-lede {
+      font-size: var(--text-md);
+      color: var(--color-ink-1);
+      line-height: 1.6;
+      margin-bottom: var(--space-xl);
+    }
+    /* Both selectors are doubled up on purpose: `.post-content p` sets
+       `margin: 0 0 …`, which outranks a single class and collapsed the space
+       above this rule so it drew straight through the buttons. */
+    .docs-content .section-cta {
+      flex-wrap: wrap;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-xl);
+    }
+    .docs-content .docs-updated {
+      font-size: var(--text-xs);
+      color: var(--color-ink-2);
+      margin: var(--space-2xl) 0 0;
+      padding-top: var(--space-lg);
+      border-top: var(--rule-hair);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#docs-main">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links" id="nav-links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+      <a class="nav__link" href="/videos.html">Videos</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+
+  <header class="page-hero">
+    <div class="page-hero-copy">
+      <p class="eyebrow">Documentation</p>
+      <h1>Smart Checkout Widgets</h1>
+      <p>Everything the app can do in Shopify checkout — gifts, upsells, trust messaging, custom fields, and rules that rename, hide or reorder shipping and payment methods.</p>
+    </div>
+  </header>
+
+  <div class="docs-layout">
+    <aside class="docs-toc" aria-label="On this page">
+      <details class="docs-toc__disclosure">
+        <summary>On this page</summary>
+      <ol>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#quickstart">Quickstart</a></li>
+        <li><a href="#widgets">Widgets</a></li>
+        <li><a href="#gifts">Checkout gifts</a></li>
+        <li><a href="#upsells">Upsells</a></li>
+        <li><a href="#shipping-rules">Shipping method rules</a></li>
+        <li><a href="#payment-rules">Payment method rules</a></li>
+        <li><a href="#conditions">Conditions reference</a></li>
+        <li><a href="#plans">Plans and order limits</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ol>
+      </details>
+    </aside>
+
+    <main class="docs-content post-content" id="docs-main">
+
+      <p class="docs-lede">
+        Smart Checkout Widgets adds merchandising to Shopify checkout: gifts that appear
+        automatically or by coupon, upsells, trust badges, custom fields, and rules that
+        change which shipping and payment methods a buyer sees. It runs on Shopify's own
+        checkout extensibility, so nothing here depends on <code>checkout.liquid</code>.
+      </p>
+
+      <h2 id="overview">Overview</h2>
+      <p>
+        The app has three parts, and it helps to keep them separate when you are planning a setup.
+      </p>
+      <ul>
+        <li><strong>Widgets</strong> render content inside checkout — badges, banners, fields, upsells, gifts.</li>
+        <li><strong>Shipping method rules</strong> rename, hide or reorder the delivery options Shopify offers.</li>
+        <li><strong>Payment method rules</strong> do the same for payment methods.</li>
+      </ul>
+      <p>
+        Widgets are additive: you place them and they show. Rules are subtractive and
+        conditional: they act on options Shopify has already produced, and only when the
+        conditions you set are met.
+      </p>
+
+      <div class="callout">
+        <p>
+          <strong>Checkout editor placement.</strong> Widgets appear where you place the app
+          block in Shopify's checkout editor. Installing the app does not put anything in
+          front of buyers until a block is placed and a widget is created.
+        </p>
+      </div>
+
+      <h2 id="quickstart">Quickstart</h2>
+      <ol>
+        <li>Install the app from the <a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify App Store</a>.</li>
+        <li>Open <strong>Settings → Checkout → Customize</strong> in your Shopify admin.</li>
+        <li>Add the Smart Checkout Widgets app block where you want content to appear.</li>
+        <li>Save the checkout profile.</li>
+        <li>Back in the app, create your first widget and enable it.</li>
+      </ol>
+      <p>
+        Changes to a widget publish to checkout as soon as you save. You do not need to
+        re-publish the checkout profile after the block is placed once.
+      </p>
+
+      <h2 id="widgets">Widgets</h2>
+      <p>
+        Twelve widget types are available, and <strong>every one is included on every plan</strong>.
+        Plans differ only by monthly order volume, not by feature.
+      </p>
+
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead>
+            <tr><th>Widget</th><th>What it does</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Trust badges</td><td>Badge row with your own images and labels — secure payment, returns, guarantees.</td></tr>
+            <tr><td>Payment icons</td><td>Displays accepted card and wallet icons.</td></tr>
+            <tr><td>Custom banner</td><td>A highlighted message block, for shipping cut-offs or promotions.</td></tr>
+            <tr><td>Custom content</td><td>Free-form rich content where a banner is too rigid.</td></tr>
+            <tr><td>Accordion</td><td>Collapsible sections — returns policy, delivery FAQs — without crowding checkout.</td></tr>
+            <tr><td>Consent check</td><td>A checkbox buyers must tick, for terms or age confirmation.</td></tr>
+            <tr><td>Custom fields</td><td>Extra inputs captured at checkout and written to the order.</td></tr>
+            <tr><td>Line item fields</td><td>Per-product inputs — engraving text, gift notes.</td></tr>
+            <tr><td>Line item options</td><td>Lets buyers change variant or quantity from inside checkout.</td></tr>
+            <tr><td>Cart value progress</td><td>A progress meter toward a threshold, such as free shipping.</td></tr>
+            <tr><td>Upsell</td><td>Offers additional products in checkout. See <a href="#upsells">Upsells</a>.</td></tr>
+            <tr><td>Gifts</td><td>Automatic or coupon-triggered free products. See <a href="#gifts">Checkout gifts</a>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="widget-basics">Creating and disabling a widget</h3>
+      <p>
+        Each widget is created, named and configured independently, and can be disabled
+        without deleting it. Disabling removes it from checkout immediately while keeping
+        its configuration, which is the safer way to pause something mid-campaign.
+      </p>
+
+      <h2 id="gifts">Checkout gifts</h2>
+      <p>
+        Gifts add a free product to the order at checkout. There are two ways to trigger one,
+        and they behave differently.
+      </p>
+
+      <h3 id="automatic-gifts">Automatic gifts</h3>
+      <p>
+        The gift is added when the cart meets the rule you set — a spend threshold, or the
+        presence of particular products. The buyer does nothing.
+      </p>
+
+      <h3 id="coupon-gifts">Coupon gifts</h3>
+      <p>
+        The gift is tied to a discount code. When the buyer applies the code, the gift is
+        added; if the code is removed, the gift is removed with it.
+      </p>
+
+      <div class="callout callout--warn">
+        <p>
+          <strong>Gift variants should be priced normally in your catalogue.</strong> The app
+          discounts the gift at checkout. If the variant is priced at zero in the catalogue
+          instead, there is no price to discount, so a gift that fails to be removed is given
+          away at zero rather than reverting to full price.
+        </p>
+      </div>
+
+      <h3 id="customer-choice-gifts">Customer choice</h3>
+      <p>
+        Rather than fixing one gift, you can offer several and let the buyer pick. You can cap
+        how many items they may choose, so a "pick 2 of 6" promotion stays within its margin.
+      </p>
+
+      <h2 id="upsells">Upsells</h2>
+      <p>
+        The upsell widget offers additional products inside checkout. Buyers add them without
+        leaving the page, so the offer does not interrupt the flow the way a pre-purchase
+        upsell does.
+      </p>
+      <p>
+        Upsells can be targeted with the same product-level thinking as gifts — offer an
+        accessory only when the matching product is in the cart, rather than to everyone.
+      </p>
+
+      <h2 id="shipping-rules">Shipping method rules</h2>
+      <p>
+        A shipping method rule changes the delivery options Shopify has already calculated.
+        Three actions are available:
+      </p>
+      <ul>
+        <li><strong>Rename</strong> — "Standard Shipping" becomes "Arrives in 3–5 days".</li>
+        <li><strong>Show / hide</strong> — remove options that do not apply.</li>
+        <li><strong>Re-order</strong> — move an option to a chosen position.</li>
+      </ul>
+
+      <h3 id="apply-to">Apply to</h3>
+      <p>
+        Every rule has an <strong>Apply to</strong> scope that limits which kind of delivery
+        option it can touch: all options, shipping rates, local delivery, carrier pickup
+        points, local pickup locations, or retail.
+      </p>
+      <p>
+        Scope matters when names collide. A store with a "Warsaw" pickup location and a
+        "Warsaw Warehouse" shipping rate can target one without disturbing the other only by
+        scoping the rule.
+      </p>
+
+      <h3 id="pickup-locations">Pickup locations</h3>
+      <p>
+        Local pickup locations can be renamed and hidden individually, the same as shipping
+        rates. Scope the rule to <strong>Local pickup locations only</strong> and match the
+        location's name, or use <code>*</code> to match every pickup location at once.
+      </p>
+
+      <div class="callout callout--limit">
+        <p>
+          <strong>Shopify does not allow hiding a delivery method itself.</strong> You can hide
+          individual pickup locations, but not the "Pick up" tab. Hiding every location may
+          leave the tab visible with nothing inside it. This is a platform limitation, not an
+          app one, and no checkout app can work around it.
+        </p>
+      </div>
+
+      <h3 id="matching">How matching works</h3>
+      <p>
+        Rules match on the option's name, case-insensitively, and match anywhere in the name —
+        so <code>Express</code> matches "Express Shipping" and "Express Saver". <strong>Every</strong>
+        matching option is affected, not just the first.
+      </p>
+
+      <h2 id="payment-rules">Payment method rules</h2>
+      <p>
+        Payment method rules work identically — rename, show/hide, re-order — applied to the
+        payment methods at checkout. The most common use is hiding cash on delivery above a
+        cart value, or for particular countries.
+      </p>
+      <p>
+        Payment and shipping rules share the same condition set, so a rule means the same
+        thing in either place.
+      </p>
+
+      <h2 id="conditions">Conditions reference</h2>
+      <p>
+        Conditions decide whether a rule applies. Combine them with <strong>Always</strong>,
+        <strong>Any</strong>, <strong>All</strong>, <strong>None</strong>, or
+        <strong>Any not</strong>.
+      </p>
+
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead>
+            <tr><th>Group</th><th>Conditions</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cart</td><td>Total amount, subtotal amount, quantity, order weight</td></tr>
+            <tr><td>Customer</td><td>Tag, is logged in, is not logged in, order count, total spent</td></tr>
+            <tr><td>Products</td><td>Has a digital product, has a physical product, product tag, collection</td></tr>
+            <tr><td>Address</td><td>Country, state / province, city, ZIP / postal code</td></tr>
+            <tr><td>Date &amp; time</td><td>Day of week, date</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 id="condition-notes">Things worth knowing</h3>
+      <ul>
+        <li>
+          <strong>Lists.</strong> Text conditions accept comma-separated values and match any
+          of them, so <code>PL, DE, FR</code> is one condition rather than three.
+        </li>
+        <li>
+          <strong>Customer conditions need a signed-in customer.</strong> Tag, order count and
+          total spent never match a guest checkout, because there is no customer record to
+          read.
+        </li>
+        <li>
+          <strong>Missing data never matches.</strong> If checkout has not collected a value
+          yet, conditions on it are false — including negative ones. "City is not Warsaw" is
+          false when no city has been entered, rather than true.
+        </li>
+        <li>
+          <strong>Weight is in grams</strong>, whatever unit your variants use.
+        </li>
+      </ul>
+
+      <h2 id="plans">Plans and order limits</h2>
+      <p>
+        Every plan includes every widget and every rule type. The only difference is how many
+        orders per month the plan covers.
+      </p>
+
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead>
+            <tr><th>Plan</th><th>Monthly</th><th>Yearly</th><th>Monthly orders</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Starter</td><td>$19</td><td>$228</td><td>Up to 100</td></tr>
+            <tr><td>Growth</td><td>$29</td><td>$348</td><td>Up to 1,000</td></tr>
+            <tr><td>Advanced</td><td>$59</td><td>$708</td><td>Unlimited</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Yearly billing is discounted 20% against the listed annual price.</p>
+
+      <div class="callout callout--warn">
+        <p>
+          <strong>Going over your order limit.</strong> Widgets are disabled once a store passes
+          25% over its plan's monthly limit, not the moment the limit is reached. Upgrading
+          re-enables them automatically — you do not need to contact support or reconfigure
+          anything.
+        </p>
+      </div>
+
+      <h2 id="troubleshooting">Troubleshooting</h2>
+
+      <h3 id="widget-not-showing">A widget is not appearing in checkout</h3>
+      <ol>
+        <li>Confirm the app block is placed in <strong>Settings → Checkout → Customize</strong>.</li>
+        <li>Confirm the widget is enabled, not just saved.</li>
+        <li>Check your order volume against your plan — see <a href="#plans">Plans and order limits</a>.</li>
+      </ol>
+
+      <h3 id="rule-not-firing">A shipping or payment rule is not doing anything</h3>
+      <ol>
+        <li>
+          Check the <strong>Apply to</strong> scope. A rule scoped to pickup locations will
+          never match a shipping rate, however the name is spelled.
+        </li>
+        <li>
+          Check the condition. Customer conditions do not match guest checkouts, and a
+          condition on data checkout has not collected yet is false.
+        </li>
+        <li>
+          Check the name you typed actually appears in the option's name at checkout.
+          Matching is on the displayed name.
+        </li>
+      </ol>
+
+      <h3 id="gift-not-removed">A gift stayed in the order after the coupon was removed</h3>
+      <p>
+        This is why gift variants should carry a normal catalogue price — see the note under
+        <a href="#coupon-gifts">Coupon gifts</a>. If you see it happen, contact support with
+        the order number.
+      </p>
+
+      <h2 id="faq">FAQ</h2>
+
+      <h3>Does this require Shopify Plus?</h3>
+      <p>
+        Checkout UI extensions — the widgets — require Shopify Plus, because Shopify limits
+        checkout customization to Plus. Shipping and payment method rules work on all plans.
+      </p>
+
+      <h3>Does it work with checkout.liquid?</h3>
+      <p>
+        No, and it does not need to. The app uses Shopify's checkout extensibility, which is
+        the supported replacement for <code>checkout.liquid</code>.
+      </p>
+
+      <h3>Can I hide the "Pick up" option entirely?</h3>
+      <p>
+        No. Shopify allows hiding individual pickup locations but not the delivery method
+        itself. See <a href="#pickup-locations">Pickup locations</a>.
+      </p>
+
+      <h3>Will my rules survive a Shopify checkout update?</h3>
+      <p>
+        Yes. Rules are stored against your shop and applied by Shopify Functions at checkout,
+        so they are unaffected by theme or checkout template changes.
+      </p>
+
+      <h3>What happens to my configuration if I uninstall?</h3>
+      <p>
+        Widgets and rules stop applying immediately. Re-installing restores your shop's
+        settings, so an accidental uninstall is recoverable.
+      </p>
+
+      <div class="section-cta">
+        <a class="btn btn--primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install Smart Checkout Widgets</a>
+        <a class="btn btn--ghost" href="mailto:admin@thoughtbulb.dev">Ask a question</a>
+      </div>
+
+      <p class="docs-updated">
+        Something missing or wrong here? Email
+        <a href="mailto:admin@thoughtbulb.dev">admin@thoughtbulb.dev</a> and we will fix it.
+      </p>
+
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is gifting and merchandising for teams who'd rather <em>convert</em> than patch coupons.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/compare/shopify-checkout-gift-apps.html">App comparison</a></li>
+            <li><a href="/videos.html">Videos</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy.html">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>&copy; 2026 Thought Bulb &middot; Built for Shopify Plus checkout</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Highlights the section currently in view. Progressive enhancement only —
+    // the table of contents is plain anchor links without it.
+    (function () {
+      var links = Array.prototype.slice.call(document.querySelectorAll('.docs-toc a'));
+      if (!links.length || !('IntersectionObserver' in window)) return;
+
+      var byId = {};
+      var targets = [];
+      links.forEach(function (link) {
+        var el = document.getElementById(link.getAttribute('href').slice(1));
+        if (el) { byId[el.id] = link; targets.push(el); }
+      });
+
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          links.forEach(function (l) { l.classList.remove('is-current'); });
+          if (byId[entry.target.id]) byId[entry.target.id].classList.add('is-current');
+        });
+      }, { rootMargin: '0px 0px -75% 0px', threshold: 0 });
+
+      targets.forEach(function (t) { observer.observe(t); });
+    })();
+  </script>
+  <script src="/site.js" defer></script>
+</body>
+</html>
