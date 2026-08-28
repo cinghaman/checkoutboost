@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f6f4ed"/><circle cx="1030" cy="80" r="330" fill="#d9f7c9"/>
+  <path d="M0 560C250 440 450 690 720 530s370-100 480-40v185H0Z" fill="#111b16"/>
+  <text x="76" y="96" fill="#317a4b" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">BLACK FRIDAY 2026</text>
+  <text x="72" y="196" fill="#111b16" font-family="Georgia,serif" font-size="70" font-weight="700">Checkout</text><text x="72" y="275" fill="#111b16" font-family="Georgia,serif" font-size="70" font-weight="700">launch checklist</text>
+  <g transform="translate(780 175)" fill="none" stroke="#111b16" stroke-width="13" stroke-linecap="round"><rect width="270" height="315" rx="30" fill="#fff"/><path d="m45 76 18 18 35-40m-53 92 18 18 35-40m-53 92 18 18 35-40M125 77h96m-96 70h96m-96 70h96"/></g>
+  <text x="75" y="625" fill="#f6f4ed" font-family="Arial,sans-serif" font-size="27" font-weight="700">SMART CHECKOUT WIDGETS</text>
+</svg>

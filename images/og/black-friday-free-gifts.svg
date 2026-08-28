@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f6f4ed"/><circle cx="1050" cy="30" r="360" fill="#ffd7b8"/><circle cx="60" cy="660" r="280" fill="#d9f7c9"/>
+  <text x="76" y="96" fill="#b4491e" font-family="Arial,sans-serif" font-size="23" font-weight="700" letter-spacing="4">BLACK FRIDAY PLAYBOOK</text>
+  <text x="72" y="196" fill="#111b16" font-family="Georgia,serif" font-size="70" font-weight="700">Free gifts</text><text x="72" y="275" fill="#111b16" font-family="Georgia,serif" font-size="70" font-weight="700">without chaos</text>
+  <g transform="translate(800 215)"><rect x="0" y="65" width="260" height="215" rx="16" fill="#111b16"/><rect x="-20" y="25" width="300" height="70" rx="14" fill="#317a4b"/><path d="M130 25v255M45 25c-48-65 47-87 85 0m85 0c48-65-47-87-85 0" fill="none" stroke="#f6f4ed" stroke-width="17" stroke-linecap="round"/></g>
+  <text x="75" y="625" fill="#111b16" font-family="Arial,sans-serif" font-size="27" font-weight="700">SMART CHECKOUT WIDGETS</text>
+</svg>
