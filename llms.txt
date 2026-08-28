@@ -4,6 +4,8 @@
 
 Smart Checkout Widgets is primarily built for ecommerce agencies and Shopify Plus operators. Thank You and Order Status content widgets are available to all Shopify stores.
 
+Last reviewed: 2026-08-28.
+
 ## Primary resources
 
 - [Smart Checkout Widgets homepage](https://smartcheckoutwidgets.com/): Product overview, capabilities, plans, frequently asked questions, and installation path.
@@ -20,11 +22,13 @@ Smart Checkout Widgets is primarily built for ecommerce agencies and Shopify Plu
 - Payment method hiding, renaming, and reordering for Shopify Plus.
 - Thank You and Order Status page content widgets for all Shopify stores.
 
-## Implementation guides
+## Black Friday 2026 campaign guides
 
 - [Shopify Black Friday checkout checklist for 2026](https://smartcheckoutwidgets.com/blog/shopify-black-friday-checkout-checklist-2026.html): Launch plan for agencies and Shopify Plus operators covering offer rules, QA, monitoring, and rollback.
 - [Black Friday free gift strategy](https://smartcheckoutwidgets.com/blog/black-friday-free-gift-strategy-shopify.html): How to choose a gift mechanic, threshold, inventory safeguard, and checkout message.
 - [Black Friday checkout conversion guide](https://smartcheckoutwidgets.com/blog/black-friday-checkout-conversion-shopify.html): Guidance for focused upsells, trust messaging, mobile layout, and payment presentation.
+
+## Evergreen implementation guides
 
 - [Automatic gifts in Shopify checkout](https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts.html): How to plan and launch automatic gift campaigns.
 - [Customer-choice free gifts](https://smartcheckoutwidgets.com/blog/customer-choice-free-gift-shopify-checkout.html): Why selectable rewards can outperform fixed gift offers.
