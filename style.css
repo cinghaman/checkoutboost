@@ -79,6 +79,14 @@ button, input, select { font: inherit; color: inherit; }
   font-size: var(--text-sm);
 }
 
+/* Nav items were shrinking rather than the pill growing, so the brand and the
+   CTA wrapped onto two lines once a sixth link was added. */
+.nav__brand,
+.nav__cta,
+.nav__link { white-space: nowrap; }
+.nav__brand,
+.nav__cta { flex-shrink: 0; }
+
 .nav__brand {
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -119,9 +127,67 @@ button, input, select { font: inherit; color: inherit; }
 .nav__cta:hover { background: var(--color-accent); border-color: var(--color-accent); transform: translateY(-1px); }
 .nav__cta:active { transform: translateY(0); }
 
-@media (max-width: 760px) {
-  .nav__links { display: none; }
-  .nav { padding: 6px; width: 90%; justify-content: space-between; }
+/* Mobile navigation.
+   The links used to be display:none below 760px with nothing in their place, so
+   every page except the homepage became a dead end on a phone. They now collapse
+   behind a disclosure button. Pages that have not yet had the button added to
+   their markup are unaffected by these rules. */
+.nav__toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--color-ink-0);
+  cursor: pointer;
+}
+.nav__toggle:hover { background: var(--color-paper-2); }
+.nav__toggle svg { width: 18px; height: 18px; display: block; }
+.nav__toggle .nav__toggle-close,
+.nav__toggle[aria-expanded="true"] .nav__toggle-open { display: none; }
+.nav__toggle[aria-expanded="true"] .nav__toggle-close { display: block; }
+
+@media (max-width: 900px) {
+  /* The desktop rule keeps 18px of left padding so the mark is not flush to the
+     pill; `padding: 6px` had dropped it. And with three items, space-between
+     parks the CTA in the middle — the brand takes the free space instead, so the
+     CTA and the menu button group together on the right. */
+  .nav {
+    padding: 6px 6px 6px 16px;
+    width: 90%;
+    justify-content: flex-start;
+    gap: var(--space-xs);
+    flex-wrap: wrap;
+  }
+  .nav__brand { margin-right: auto; }
+  .nav__toggle { display: inline-flex; order: 3; }
+  .nav__cta { order: 2; }
+
+  .nav__links {
+    display: none;
+    order: 4;
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: var(--space-2xs);
+    padding: var(--space-sm) var(--space-xs) var(--space-xs);
+    margin-top: var(--space-xs);
+    border-top: var(--rule-hair);
+  }
+  /* radius-pill is 999px, which reads as a pill only while the nav is one row
+     tall. Once the menu opens the nav becomes a block and the same radius
+     rounds it into a circle. */
+  .nav.is-open { border-radius: var(--radius-lg); }
+  .nav.is-open .nav__links { display: flex; }
+  .nav__links .nav__link {
+    display: block;
+    padding: var(--space-sm);
+    border-radius: var(--radius-sm);
+  }
+  .nav__links .nav__link:hover { background: var(--color-paper-2); }
 }
 
 /* ───────── hero · Marquee Hero ───────── */
@@ -1411,9 +1477,12 @@ a.text-link:hover { color: var(--color-ink-0); }
   margin: 0 0 var(--space-xs);
 }
 
+/* The nav is fixed at top:18px, so the first band of every page has to clear it.
+   .hero reserves 140px for exactly this; these reserved var(--space-2xl) — 48px —
+   and the nav landed on top of their headings on all eight pages using them. */
 .page-hero,
 .post-hero {
-  padding: var(--space-2xl) 0 var(--space-xl);
+  padding: 140px 0 var(--space-xl);
   border-bottom: var(--rule-hair);
 }
 

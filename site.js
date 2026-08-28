@@ -45,3 +45,24 @@
     });
   }
 })();
+
+/* Mobile navigation.
+   The links collapse behind a button below 900px. Pages whose markup has no
+   .nav__toggle are simply skipped. */
+(function () {
+  var nav = document.querySelector(".nav");
+  var toggle = nav && nav.querySelector(".nav__toggle");
+  if (!toggle) return;
+
+  toggle.addEventListener("click", function () {
+    var open = nav.classList.toggle("is-open");
+    toggle.setAttribute("aria-expanded", String(open));
+  });
+
+  // Following a link should not leave the menu open behind the new page.
+  nav.addEventListener("click", function (event) {
+    if (!event.target.closest(".nav__link")) return;
+    nav.classList.remove("is-open");
+    toggle.setAttribute("aria-expanded", "false");
+  });
+})();
