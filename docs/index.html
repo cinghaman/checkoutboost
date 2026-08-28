@@ -183,6 +183,17 @@
     .docs-toc__disclosure > ol { display: block; }
     .docs-toc summary { display: none; }
 
+    @media (min-width: 901px) {
+      /* `display: block` on the <ol> is enough for older engines, but current
+         Chrome/Safari/Firefox hide a closed <details> through the UA rule
+         `::details-content { content-visibility: hidden }`, which a child's
+         display cannot reach. Without this the sidebar column renders empty. */
+      .docs-toc__disclosure::details-content {
+        content-visibility: visible;
+        block-size: auto;
+      }
+    }
+
     @media (max-width: 900px) {
       /* Declared last on purpose: the base `.docs-toc` rule below the first
          media query re-asserts sticky at equal specificity, so the reset has to
