@@ -28,14 +28,19 @@ NAV = """  <a class="skip-link" href="#main-content">Skip to content</a>
       <img src="/images/logo-mark.svg" alt="" width="22" height="22">
       Smart Checkout
     </a>
-    <div class="nav__links">
+    <div class="nav__links" id="nav-links">
       <a class="nav__link" href="/#workbench">Product</a>
       <a class="nav__link" href="/#features">Features</a>
       <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
       <a class="nav__link" href="/blog/">Blog</a>
       <a class="nav__link" href="/videos.html">Videos</a>
     </div>
     <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
   </nav>"""
 
 FOOTER = """  <footer class="footer">
@@ -84,17 +89,7 @@ FOOTER = """  <footer class="footer">
   </footer>"""
 
 CRISP = """  <script src="/site.js"></script>
-  <script type="text/javascript">
-    window.$crisp = [];
-    window.CRISP_WEBSITE_ID = "c6ce9585-187d-471e-a0ba-150354e2d6e8";
-    (function () {
-      var d = document;
-      var s = d.createElement("script");
-      s.src = "https://client.crisp.chat/l.js";
-      s.async = 1;
-      d.getElementsByTagName("head")[0].appendChild(s);
-    })();
-  </script>"""
+  <script src="https://agentmatica.com/loader.js" data-widget-src="https://agentmatica.com/widget.js" data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94" id="agentmatica-widget-script" defer></script>"""
 
 
 def render(
@@ -109,15 +104,18 @@ def render(
     secondary_label: Optional[str] = None,
     secondary_href: str = "/blog/",
     faqs: Optional[List[Dict[str, str]]] = None,
+    date_iso: str = "2026-05-20",
 ) -> str:
     canonical = f"https://smartcheckoutwidgets.com/blog/{slug}"
     sec = ""
     if secondary_label:
         sec = f'<a class="btn btn-secondary" href="{secondary_href}">{secondary_label}</a>'
     social = seo.social_meta(
-        title=title, description=description, canonical=canonical, og_type="article"
+        title=title, description=description, canonical=canonical, og_type="article",
+        date_published=date_iso, date_modified=date_iso,
     )
-    schemas = seo.article_schema(headline=h1, description=description, url=canonical)
+    schemas = seo.article_schema(headline=h1, description=description, url=canonical,
+                                 date_published=date_iso, date_modified=date_iso)
     faq_block = ""
     if faqs:
         schemas += "\n" + seo.faq_schema(faqs)
@@ -134,6 +132,7 @@ def render(
   <link rel="canonical" href="{canonical}">
 {social}
 {schemas}
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site context">
 {FONTS}
 </head>
 <body class="page-inner">

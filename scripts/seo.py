@@ -36,14 +36,16 @@ def social_meta(
     og_type: str = "website",
     image: str = PREVIEW_IMAGE,
     image_alt: str = PREVIEW_ALT,
+    date_published: str = "2026-05-20",
+    date_modified: str = "2026-05-20",
 ) -> str:
     t, d, c = _esc(title), _esc(description), _esc(canonical)
     img, alt = _esc(image), _esc(image_alt)
     article_times = ""
     if og_type == "article":
-        article_times = """
-  <meta property="article:published_time" content="2026-05-20">
-  <meta property="article:modified_time" content="2026-05-20">"""
+        article_times = f"""
+  <meta property="article:published_time" content="{date_published}">
+  <meta property="article:modified_time" content="{date_modified}">"""
     return f"""  <meta property="og:title" content="{t}">
   <meta property="og:description" content="{d}">
   <meta property="og:type" content="{og_type}">

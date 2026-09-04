@@ -4,7 +4,7 @@
 
 Smart Checkout Widgets is primarily built for ecommerce agencies and Shopify Plus operators. Thank You and Order Status content widgets are available to all Shopify stores.
 
-Last reviewed: 2026-08-28.
+Last reviewed: 2026-09-04.
 
 ## Primary resources
 
@@ -28,6 +28,13 @@ Last reviewed: 2026-08-28.
 - [Shopify Black Friday checkout checklist for 2026](https://smartcheckoutwidgets.com/blog/shopify-black-friday-checkout-checklist-2026.html): Launch plan for agencies and Shopify Plus operators covering offer rules, QA, monitoring, and rollback.
 - [Black Friday free gift strategy](https://smartcheckoutwidgets.com/blog/black-friday-free-gift-strategy-shopify.html): How to choose a gift mechanic, threshold, inventory safeguard, and checkout message.
 - [Black Friday checkout conversion guide](https://smartcheckoutwidgets.com/blog/black-friday-checkout-conversion-shopify.html): Guidance for focused upsells, trust messaging, mobile layout, and payment presentation.
+
+## 2026 buyer and campaign guides
+
+- [5 best Shopify checkout apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-checkout-apps-2026.html): Compare five checkout apps by job: gifting, native customization, full-funnel upsells, post-purchase revenue, and free-gift campaigns.
+- [5 best Shopify free gift apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-free-gift-apps-2026.html): A transparent comparison of five gift-with-purchase apps, organized by where the gift appears and how much campaign control you need.
+- [9 Black Friday strategies for Shopify stores in 2026](https://smartcheckoutwidgets.com/blog/black-friday-shopify-strategies-2026.html): Build a measurable BFCM system from campaign click to checkout, rather than stacking unrelated discounts at the last minute.
+- [How to use CartRocket pre-loaded cart links for Shopify campaigns](https://smartcheckoutwidgets.com/blog/cartrocket-preloaded-cart-links-shopify.html): Use CartRocket to remove steps between a high-intent campaign click and a checkout-ready Shopify cart, while preserving offer rules and attribution.
 
 ## Evergreen implementation guides
 
