@@ -71,6 +71,7 @@ FOOTER = """  <footer class="footer">
           <h5>Company</h5>
           <ul>
             <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="https://cartrocket.dev" target="_blank" rel="noopener noreferrer">CartRocket</a></li>
             <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
           </ul>
         </div>
