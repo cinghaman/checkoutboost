@@ -4,7 +4,7 @@
 
 Smart Checkout Widgets is primarily built for ecommerce agencies and Shopify Plus operators. Thank You and Order Status content widgets are available to all Shopify stores.
 
-Last reviewed: 2026-09-04.
+Last reviewed: 2026-09-08.
 
 ## Primary resources
 
@@ -35,6 +35,10 @@ Last reviewed: 2026-09-04.
 - [5 best Shopify free gift apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-free-gift-apps-2026.html): A transparent comparison of five gift-with-purchase apps, organized by where the gift appears and how much campaign control you need.
 - [9 Black Friday strategies for Shopify stores in 2026](https://smartcheckoutwidgets.com/blog/black-friday-shopify-strategies-2026.html): Build a measurable BFCM system from campaign click to checkout, rather than stacking unrelated discounts at the last minute.
 - [How to use CartRocket pre-loaded cart links for Shopify campaigns](https://smartcheckoutwidgets.com/blog/cartrocket-preloaded-cart-links-shopify.html): Use CartRocket to remove steps between a high-intent campaign click and a checkout-ready Shopify cart, while preserving offer rules and attribution.
+
+## Product merchandising guides
+
+- [Shopify product swatches and variant images](https://smartcheckoutwidgets.com/blog/shopify-product-swatches-variant-images.html): How Craftshift’s Rubik Combined Listings connects separate products and Rubik Variant Images filters a product gallery. Includes illustrated examples, app selection guidance, and a storefront QA checklist.
 
 ## Evergreen implementation guides
 
