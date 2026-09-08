@@ -194,9 +194,6 @@ STATIC_PAGES = [
     ("blog/index.html", "Smart Checkout Widgets Blog | Shopify Checkout Gifts and AOV Guides",
      "Read Smart Checkout Widgets articles on Shopify checkout gifts, automatic gifting, customer-choice free gifts, upsells, BOGO, trust content, and checkout extensibility.",
      seo.SITE + "/blog/", "website", "blog_index"),
-    ("videos.html", "Smart Checkout Widgets Videos | Shopify Checkout Demos",
-     "Watch demo videos for Smart Checkout Widgets — automatic gifts, customer-choice rewards, and checkout merchandising on Shopify Plus.",
-     seo.SITE + "/videos.html", "website", "page"),
     ("privacy.html", "Privacy Policy | Smart Checkout Widgets",
      "Privacy policy for Smart Checkout Widgets and Thought Bulb.",
      seo.SITE + "/privacy.html", "website", "page"),
@@ -339,7 +336,6 @@ def write_sitemap() -> None:
     urls = [
         seo.SITE + "/",
         seo.SITE + "/blog/",
-        seo.SITE + "/videos.html",
         seo.SITE + "/privacy.html",
         seo.SITE + "/cro-techniques.html",
         seo.SITE + "/microsoft-pixel-tracking-shopify-plus.html",

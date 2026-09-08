@@ -32,7 +32,6 @@ NAV = """  <a class="skip-link" href="#main-content">Skip to content</a>
       <a class="nav__link" href="/#features">Features</a>
       <a class="nav__link" href="/#pricing">Pricing</a>
       <a class="nav__link" href="/blog/">Blog</a>
-      <a class="nav__link" href="/videos.html">Videos</a>
     </div>
     <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
   </nav>"""
@@ -56,7 +55,6 @@ FOOTER = """  <footer class="footer">
           <h5>Resources</h5>
           <ul>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/videos.html">Videos</a></li>
             <li><a href="/privacy.html">Privacy</a></li>
             <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
           </ul>
@@ -224,15 +222,6 @@ videos_body = f"""  <main id="main-content">
 {inner_cta(secondary="Browse blog")}
   </main>"""
 
-(ROOT / "videos.html").write_text(
-    page(
-        "Smart Checkout Widgets Videos | Shopify Checkout Gift Demos",
-        "Watch Smart Checkout Widgets videos and product walkthroughs for Shopify checkout gifts, upsells, and merchant setup.",
-        "https://smartcheckoutwidgets.com/videos.html",
-        videos_body,
-    ),
-    encoding="utf-8",
-)
 
 
 def article_page(title, desc, canonical, eyebrow, h1, content_html, cta_secondary=None, cta_secondary_href="/blog/"):
@@ -324,8 +313,8 @@ articles = {
         </ul>
         <h2>Position the full system</h2>
         <p>Smart Checkout Widgets is stronger when presented as one system for gifting and checkout merchandising — more differentiated than a flat list of widgets.</p>""",
-        "Watch videos",
-        "/videos.html",
+        "Browse blog",
+        "/blog/",
     ),
 }
 
@@ -572,10 +561,9 @@ fetch("https://game-center.fly.dev/api/xmlprocess", requestOptions)
       </div>
       <div class="page-panel" style="margin-top: var(--space-xl);">
         <h2>Explore the product</h2>
-        <p>Watch setup videos, read gifting guides, or install the app to configure your first offer.</p>
+        <p>Read the gifting guides, browse the docs, or install the app to configure your first offer.</p>
         <div class="section-cta">
           <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
-          <a class="btn btn-secondary" href="/videos.html">Videos</a>
           <a class="btn btn-secondary" href="/blog/">Blog</a>
         </div>
       </div>
