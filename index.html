@@ -76,6 +76,76 @@
         "description": "Free to install Starter plan on the Shopify App Store",
         "url": "https://apps.shopify.com/smart-checkout-widgets"
       }
+    },
+    {
+          "@type": "FAQPage",
+          "@id": "https://smartcheckoutwidgets.com/#faq",
+          "mainEntity": [
+                {
+                      "@type": "Question",
+                      "name": "Does Smart Checkout Widgets require Shopify Plus?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "The in-checkout widgets (gifts, upsells, trust badges, custom fields, banners) require Shopify Plus, because Shopify limits checkout customization to Plus. Thank You and Order Status page widgets, and the shipping and payment method rules, work on every Shopify plan."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Is there a free plan or trial?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Starter is free to install and covers up to 100 orders a month with every widget and rule type included. Growth and Advanced come with a 7-day free trial."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What is the difference between the plans?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Every plan includes all 12 widgets and all shipping and payment rules. Plans differ only by monthly order volume: Starter up to 100, Growth up to 1,000, Advanced unlimited. Yearly billing saves 20%."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "How do automatic gifts work in Shopify checkout?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "You set a rule such as a spend threshold or specific products in the cart. When the cart meets it, the app adds the gift product at checkout and discounts it to free. No code is needed. Gifts can also be tied to a discount code, and you can let the customer choose from several gifts with a cap on how many they take."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I hide, rename or reorder shipping and payment methods?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes. Rules run as Shopify Functions and can hide, rename or re-order delivery options and payment methods based on cart total, quantity, weight, customer tag, order count, product tag, collection, country, province, city, postcode, day of week or date. Shipping rules can be scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Can I hide the Pick up option entirely?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No app can. Shopify allows hiding individual pickup locations but not the Pick up delivery method itself."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "What happens when I go over my plan's order limit?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Widgets pause once a store passes 25% over its monthly limit, not the moment it is reached. Upgrading re-enables them automatically, and they also switch back on when a new month starts."
+                      }
+                },
+                {
+                      "@type": "Question",
+                      "name": "Does it work with checkout.liquid?",
+                      "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "No, and it does not need to. The app uses Shopify checkout extensibility, the supported replacement for checkout.liquid, so nothing breaks when Shopify updates checkout."
+                      }
+                }
+          ]
     }
   ]
 }
@@ -287,9 +357,9 @@
             <div class="stats__note">Free to install on the Shopify App Store — up to 100 orders on Starter.</div>
           </div>
           <div class="stats__card">
-            <div class="stats__num">7<small>day</small></div>
-            <div class="stats__label">paid plan trial</div>
-            <div class="stats__note">Growth and Advanced plans include a 7-day free trial on the listing.</div>
+            <div class="stats__num">12</div>
+            <div class="stats__label">widgets on every plan</div>
+            <div class="stats__note">Every widget and every shipping or payment rule is included on every plan. Plans differ only by monthly order volume.</div>
           </div>
         </div>
       </div>
@@ -363,14 +433,11 @@
             <div class="tier__name">Starter</div>
             <div class="tier__price"><span>Free to install</span></div>
             <ul class="tier__features">
-              <li>Automatic discount</li>
-              <li>Gifting &amp; discounts</li>
-              <li>Upsell on checkout</li>
-              <li>Shipping &amp; payment reorder/rename</li>
-              <li>Custom fields</li>
-              <li>Custom banner and content</li>
-              <li>Payment icons</li>
-              <li>Up to 100 orders</li>
+              <li>All 12 widgets, including gifts and upsells</li>
+              <li>Shipping &amp; payment rules: hide, rename, re-order</li>
+              <li>Pickup location rules</li>
+              <li>Thank You &amp; Order Status page widgets</li>
+              <li>Up to 100 monthly orders</li>
             </ul>
             <a class="btn btn--ghost" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer" style="margin-top: auto;">Install free</a>
           </article>
@@ -384,13 +451,10 @@
             </div>
             <p class="tier__annual">or $278.40/year · save 20%</p>
             <ul class="tier__features">
-              <li>Starter plan features</li>
-              <li>Gifts &amp; discounts</li>
-              <li>Upsells</li>
-              <li>Accordions</li>
-              <li>Content widget</li>
-              <li>Custom form fields</li>
-              <li>Thank You / Order Status page</li>
+              <li>Everything in Starter</li>
+              <li>All 12 widgets, including gifts and upsells</li>
+              <li>Shipping &amp; payment rules</li>
+              <li>Thank You &amp; Order Status page widgets</li>
               <li>Up to 1,000 monthly orders</li>
             </ul>
             <a class="btn btn--primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer" style="margin-top: auto;">Start 7-day trial</a>
@@ -404,9 +468,9 @@
             </div>
             <p class="tier__annual">or $566.40/year · save 20%</p>
             <ul class="tier__features">
-              <li>Growth plan features</li>
-              <li>Gifts &amp; discounts</li>
-              <li>Thank You &amp; Order Status page</li>
+              <li>Everything in Growth</li>
+              <li>All 12 widgets and every rule type</li>
+              <li>Thank You &amp; Order Status page widgets</li>
               <li>Unlimited monthly orders</li>
             </ul>
             <p class="tier__trial">7-day free trial</p>
@@ -414,7 +478,7 @@
           </article>
         </div>
 
-        <p class="pricing__legal">All charges are billed in USD. Recurring charges are billed every 30 days.</p>
+        <p class="pricing__legal">All charges are billed in USD. Recurring charges are billed every 30 days, or yearly at a 20% discount. Starter is free and needs no subscription. Growth and Advanced include a 7-day free trial.</p>
       </div>
     </section>
 
@@ -472,6 +536,51 @@
       </div>
     </section>
 
+    <section class="faq" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">◇ faq</span>
+            <h2>Questions merchants ask before installing.</h2>
+          </div>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Does Smart Checkout Widgets require Shopify Plus?</summary>
+            <p>The in-checkout widgets (gifts, upsells, trust badges, custom fields, banners) require Shopify Plus, because Shopify limits checkout customization to Plus. Thank You and Order Status page widgets, and the shipping and payment method rules, work on every Shopify plan.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is there a free plan or trial?</summary>
+            <p>Starter is free to install and covers up to 100 orders a month with every widget and rule type included. Growth and Advanced come with a 7-day free trial.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What is the difference between the plans?</summary>
+            <p>Every plan includes all 12 widgets and all shipping and payment rules. Plans differ only by monthly order volume: Starter up to 100, Growth up to 1,000, Advanced unlimited. Yearly billing saves 20%.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do automatic gifts work in Shopify checkout?</summary>
+            <p>You set a rule such as a spend threshold or specific products in the cart. When the cart meets it, the app adds the gift product at checkout and discounts it to free. No code is needed. Gifts can also be tied to a discount code, and you can let the customer choose from several gifts with a cap on how many they take.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I hide, rename or reorder shipping and payment methods?</summary>
+            <p>Yes. Rules run as Shopify Functions and can hide, rename or re-order delivery options and payment methods based on cart total, quantity, weight, customer tag, order count, product tag, collection, country, province, city, postcode, day of week or date. Shipping rules can be scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I hide the Pick up option entirely?</summary>
+            <p>No app can. Shopify allows hiding individual pickup locations but not the Pick up delivery method itself.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What happens when I go over my plan's order limit?</summary>
+            <p>Widgets pause once a store passes 25% over its monthly limit, not the moment it is reached. Upgrading re-enables them automatically, and they also switch back on when a new month starts.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it work with checkout.liquid?</summary>
+            <p>No, and it does not need to. The app uses Shopify checkout extensibility, the supported replacement for checkout.liquid, so nothing breaks when Shopify updates checkout.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
     <section class="cta">
       <div class="container">
         <div class="cta__panel">
@@ -501,6 +610,7 @@
             <li><a href="/#workbench">Console</a></li>
             <li><a href="/#features">Features</a></li>
             <li><a href="/#pricing">Pricing</a></li>
+            <li><a href="/#faq">FAQ</a></li>
           </ul>
         </div>
         <div class="footer__col">

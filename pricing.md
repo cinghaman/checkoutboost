@@ -1,32 +1,36 @@
 # Pricing — Smart Checkout Widgets
 
-Source: Shopify App Store listing and https://smartcheckoutwidgets.com/#pricing (verify on listing before purchase).
+Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-09-09.
+
+Every plan includes every widget (12 types) and every shipping and payment method rule. Plans differ only by monthly order volume. Growth and Advanced include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
 
 ## Starter
 
-- **Price:** $0 / free to install
-- **Order limit:** Up to 100 orders
-- **Trial:** N/A (free tier)
-- **Includes:** Core checkout widgets for qualifying stores; see app listing for feature scope on Starter
+- **Price:** Free. No subscription is created.
+- **Order limit:** Up to 100 orders per month
+- **Includes:** All widgets and all rule types
 
 ## Growth
 
-- **Price:** $29 USD / month, or $290 USD / year (billed annually on listing)
-- **Order limit:** Up to 1,000 orders
+- **Price:** $29 USD / month, or $278.40 USD / year
+- **Order limit:** Up to 1,000 orders per month
 - **Trial:** 7-day free trial
-- **Includes:** Expanded widget set vs Starter; see Shopify App Store for current feature list
+- **Includes:** All widgets and all rule types
 
 ## Advanced
 
-- **Price:** $59 USD / month
-- **Order limit:** Up to 5,000 orders
+- **Price:** $59 USD / month, or $566.40 USD / year
+- **Order limit:** Unlimited
 - **Trial:** 7-day free trial
-- **Includes:** Full feature set for high-volume merchants; see Shopify App Store for current feature list
+- **Includes:** All widgets and all rule types
 
-## Shopify Plus / high volume
+## Order limits
 
-- **Price:** Contact merchant support or app developer for plans above Advanced limits
-- **Note:** Full checkout UI customization requires Shopify Plus. Thank You and Order Status **content** widgets are available on all Shopify stores per product documentation.
+Widgets are paused once a store passes 25% over its plan's monthly limit, not at the limit itself. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed or paused.
+
+## Shopify plan requirements
+
+Checkout UI widgets require Shopify Plus, because Shopify limits checkout customization to Plus. Thank You and Order Status page widgets, and the shipping and payment method rules (Shopify Functions), work on every Shopify plan.
 
 ## Install
 

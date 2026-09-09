@@ -4,14 +4,14 @@
 
 Smart Checkout Widgets is primarily built for ecommerce agencies and Shopify Plus operators. Thank You and Order Status content widgets are available to all Shopify stores.
 
-Last reviewed: 2026-09-08.
+Last reviewed: 2026-09-09.
 
 ## Primary resources
 
 - [Smart Checkout Widgets homepage](https://smartcheckoutwidgets.com/): Product overview, capabilities, plans, frequently asked questions, and installation path.
 - [Documentation](https://smartcheckoutwidgets.com/docs/): How to configure widgets, checkout gifts, upsells, shipping and payment method rules, rule conditions, plan order limits, and troubleshooting.
 - [Smart Checkout Widgets on the Shopify App Store](https://apps.shopify.com/smart-checkout-widgets): Public app listing and installation page.
-- [Pricing and plan limits](https://smartcheckoutwidgets.com/pricing.md): Machine-readable details for Starter, Growth, Advanced, and enterprise plans.
+- [Pricing and plan limits](https://smartcheckoutwidgets.com/pricing.md): Machine-readable details for Starter, Growth, and Advanced plans.
 - [Shopify checkout gift apps comparison](https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps.html): Comparison criteria for evaluating Shopify checkout gifting apps.
 
 ## Core capabilities
@@ -20,7 +20,8 @@ Last reviewed: 2026-09-08.
 - Customer-choice gift selection at checkout.
 - Checkout upsells and BOGO or automatic discount campaigns.
 - Trust badges, banners, accordions, custom fields, and payment icons.
-- Payment method hiding, renaming, and reordering for Shopify Plus.
+- Payment method rules (hide, rename, reorder) with cart, customer, product, address and date conditions, on every Shopify plan.
+- Shipping method rules with the same actions and conditions, scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.
 - Thank You and Order Status page content widgets for all Shopify stores.
 
 ## Black Friday 2026 campaign guides
@@ -40,6 +41,12 @@ Last reviewed: 2026-09-08.
 
 - [Shopify product swatches and variant images](https://smartcheckoutwidgets.com/blog/shopify-product-swatches-variant-images.html): How Craftshift’s Rubik Combined Listings connects separate products and Rubik Variant Images filters a product gallery. Includes illustrated examples, app selection guidance, and a storefront QA checklist.
 
+## Checkout rules and cart guides
+
+- [How to hide, rename and reorder shipping methods in Shopify checkout](https://smartcheckoutwidgets.com/blog/hide-rename-reorder-shipping-methods-shopify-checkout.html): Rename vague shipping rates, hide couriers that do not fit the order, and put the option you want first, with rules that work on every Shopify plan.
+- [How to hide cash on delivery in Shopify checkout by cart value, country or customer](https://smartcheckoutwidgets.com/blog/hide-cash-on-delivery-shopify-checkout.html): Cash on delivery drives refusals and return costs. Here is how to show it only where it makes sense, using payment method rules that run on any Shopify plan.
+- [Free shipping progress bar in Shopify checkout: setup, thresholds and what to pair it with](https://smartcheckoutwidgets.com/blog/free-shipping-progress-bar-shopify-checkout.html): A progress bar turns a shipping threshold into a goal the buyer can see. How to set one up in checkout, pick the threshold, and pair it with a gift.
+
 ## Evergreen implementation guides
 
 - [Automatic gifts in Shopify checkout](https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts.html): How to plan and launch automatic gift campaigns.
@@ -54,10 +61,10 @@ Last reviewed: 2026-09-08.
 
 ## Plans
 
-- **Starter:** Free to install; up to 100 orders.
-- **Growth:** $29 per month or $290 per year; 7-day trial; up to 1,000 orders.
-- **Advanced:** $59 per month; 7-day trial; up to 5,000 orders.
-- **Plus / enterprise:** Contact Smart Checkout Widgets for higher-volume requirements.
+- **Starter:** Free; up to 100 orders per month.
+- **Growth:** $29 per month or $278.40 per year; up to 1,000 orders per month.
+- **Advanced:** $59 per month or $566.40 per year; unlimited orders.
+- Every plan includes every widget and every rule type. Growth and Advanced include a 7-day free trial.
 
 ## Optional resources
 

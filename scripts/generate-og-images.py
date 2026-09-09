@@ -69,6 +69,21 @@ SPECS = {
         "lines": ["Shopify checkout gift", "apps compared (2026)"],
         "accent": ACCENT,
     },
+    "shipping-rules": {
+        "eyebrow": "Shipping rules",
+        "lines": ["Hide, rename & reorder", "shipping methods"],
+        "accent": ACCENT,
+    },
+    "hide-cod": {
+        "eyebrow": "Payment rules",
+        "lines": ["Hide cash on delivery", "by cart, country or customer"],
+        "accent": COMPANION,
+    },
+    "cart-progress": {
+        "eyebrow": "Cart progress",
+        "lines": ["Free shipping progress bar", "in Shopify checkout"],
+        "accent": ACCENT_SOFT,
+    },
 }
 
 SLUG_TO_OG = {
