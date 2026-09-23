@@ -105,7 +105,7 @@ def render(
     faqs: Optional[List[Dict[str, str]]] = None,
     date_iso: str = "2026-05-20",
 ) -> str:
-    canonical = f"https://smartcheckoutwidgets.com/blog/{slug}"
+    canonical = f"https://smartcheckoutwidgets.com/blog/{slug.removesuffix('.html')}/"
     sec = ""
     if secondary_label:
         sec = f'<a class="btn btn-secondary" href="{secondary_href}">{secondary_label}</a>'

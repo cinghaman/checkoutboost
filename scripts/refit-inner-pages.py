@@ -258,7 +258,7 @@ articles = {
     "blog/automatic-shopify-checkout-gifts.html": (
         "How to Launch Automatic Gifts in Shopify Checkout | Smart Checkout Widgets",
         "Learn how automatic gifts in Shopify checkout reduce friction, simplify merchant setup, and create stronger promotional campaigns.",
-        "https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts.html",
+        "https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts/",
         "automatic gifting",
         "How to launch automatic gifts in Shopify checkout",
         """        <p>Automatic gifting matters because it removes the weakest part of many promotional campaigns: manual setup that relies too heavily on discount-code mechanics and merchant workarounds.</p>
@@ -277,7 +277,7 @@ articles = {
     "blog/customer-choice-free-gift-shopify-checkout.html": (
         "Why Customer-Choice Free Gifts Work Better in Shopify Checkout | Smart Checkout Widgets",
         "Learn why allowing customers to pick their own free gift in Shopify checkout can increase perceived value and improve gifting campaigns.",
-        "https://smartcheckoutwidgets.com/blog/customer-choice-free-gift-shopify-checkout.html",
+        "https://smartcheckoutwidgets.com/blog/customer-choice-free-gift-shopify-checkout/",
         "customer choice",
         "Why customer-choice free gifts outperform fixed offers",
         """        <p>When every shopper receives the same free gift, the reward can feel generic. Customer-choice gifting lets the promotion adapt to different preferences without adding coupon friction.</p>
@@ -296,7 +296,7 @@ articles = {
     "blog/shopify-checkout-gift-strategy-aov.html": (
         "A Practical Shopify Checkout Gift Strategy for Higher AOV | Smart Checkout Widgets",
         "Connect free gifts, upsells, and trust signals into one checkout system that supports stronger average order value.",
-        "https://smartcheckoutwidgets.com/blog/shopify-checkout-gift-strategy-aov.html",
+        "https://smartcheckoutwidgets.com/blog/shopify-checkout-gift-strategy-aov/",
         "AOV strategy",
         "A practical Shopify checkout gift strategy for higher AOV",
         """        <p>Many checkout experiments underperform because they are treated as isolated widgets. A stronger approach coordinates reward, persuasion, and clarity.</p>
@@ -350,7 +350,7 @@ privacy_body = f"""  <main id="main-content">
     page(
         "Privacy Policy | Smart Checkout Widgets",
         "Privacy Policy for Smart Checkout Widgets and smartcheckoutwidgets.com.",
-        "https://smartcheckoutwidgets.com/privacy.html",
+        "https://smartcheckoutwidgets.com/privacy/",
         privacy_body,
     ),
     encoding="utf-8",
@@ -385,7 +385,7 @@ cro_content = """        <p>In competitive e-commerce, conversion rate optimizat
     page(
         "10 CRO Strategies for E-Commerce Checkout | Smart Checkout Widgets",
         "Conversion rate optimization strategies for e-commerce checkout, gifting, and merchandising.",
-        "https://smartcheckoutwidgets.com/cro-techniques.html",
+        "https://smartcheckoutwidgets.com/cro-techniques/",
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
@@ -461,7 +461,7 @@ analytics.subscribe('checkout_completed', (event) => {
     page(
         "Microsoft Pixel Tracking for Shopify Plus | Smart Checkout Widgets",
         "Set up Microsoft Ads event-based conversion tracking on Shopify Plus checkout.",
-        "https://smartcheckoutwidgets.com/microsoft-pixel-tracking-shopify-plus.html",
+        "https://smartcheckoutwidgets.com/microsoft-pixel-tracking-shopify-plus/",
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
@@ -510,7 +510,7 @@ fetch("https://game-center.fly.dev/api/xmlprocess", requestOptions)
     page(
         "API Integration | Smart Checkout Widgets",
         "API integration examples for Smart Checkout Widgets XML processing endpoint.",
-        "https://smartcheckoutwidgets.com/api-intgreation.html",
+        "https://smartcheckoutwidgets.com/api-intgreation/",
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
@@ -532,7 +532,7 @@ fetch("https://game-center.fly.dev/api/xmlprocess", requestOptions)
     page(
         "Shopify Ecosystem & Partners | Smart Checkout Widgets",
         "Smart Checkout Widgets works with Shopify Plus checkout extensibility and the Shopify app ecosystem.",
-        "https://smartcheckoutwidgets.com/tech-partners.html",
+        "https://smartcheckoutwidgets.com/tech-partners/",
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">

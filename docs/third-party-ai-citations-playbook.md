@@ -66,7 +66,7 @@ AI and humans both trust concrete review text over star-only ratings.
 
 ## P1 — Owned comparison page (high AI citation format)
 
-**Live page:** https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps.html — refresh quarterly and when competitors change pricing.
+**Live page:** https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps/ — refresh quarterly and when competitors change pricing.
 
 **Structure AI systems extract well:**
 1. H1: “Shopify checkout gift apps compared (2026)”

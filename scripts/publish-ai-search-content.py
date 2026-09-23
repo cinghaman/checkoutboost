@@ -162,11 +162,11 @@ if POSTS[0]["slug"] not in index:
     index = index.replace(marker, marker + cards, 1)
 for p in reversed(POSTS):
     needle = '      "itemListElement": ['
-    if f'https://smartcheckoutwidgets.com/blog/{p["slug"]}' not in index:
+    if f'https://smartcheckoutwidgets.com/blog/{p["slug"].removesuffix(".html")}/' not in index:
         item = f'''\n        {{
           "@type": "ListItem",
           "position": 1,
-          "url": "https://smartcheckoutwidgets.com/blog/{p["slug"]}",
+          "url": "https://smartcheckoutwidgets.com/blog/{p["slug"].removesuffix(".html")}/",
           "name": "{p["h1"]}"
         }},'''
         index = index.replace(needle, needle + item, 1)
@@ -182,7 +182,7 @@ index_path.write_text(index, encoding="utf-8")
 
 sitemap_path = ROOT / "sitemap.xml"
 sitemap = sitemap_path.read_text(encoding="utf-8")
-entries = "".join(f'''  <url>\n    <loc>https://smartcheckoutwidgets.com/blog/{p["slug"]}</loc>\n    <lastmod>{DATE_ISO}</lastmod>\n  </url>\n''' for p in POSTS)
+entries = "".join(f'''  <url>\n    <loc>https://smartcheckoutwidgets.com/blog/{p["slug"].removesuffix(".html")}/</loc>\n    <lastmod>{DATE_ISO}</lastmod>\n  </url>\n''' for p in POSTS)
 if POSTS[0]["slug"] not in sitemap:
     sitemap = sitemap.replace('</urlset>', entries + '</urlset>')
 sitemap = sitemap.replace('<loc>https://smartcheckoutwidgets.com/blog/</loc>\n    <lastmod>2026-08-28</lastmod>', f'<loc>https://smartcheckoutwidgets.com/blog/</loc>\n    <lastmod>{DATE_ISO}</lastmod>')
@@ -190,7 +190,7 @@ sitemap_path.write_text(sitemap, encoding="utf-8")
 
 llms_path = ROOT / "llms.txt"
 llms = llms_path.read_text(encoding="utf-8")
-section = """\n## 2026 buyer and campaign guides\n\n""" + "\n".join(f'- [{p["h1"]}](https://smartcheckoutwidgets.com/blog/{p["slug"]}): {p["summary"]}' for p in POSTS) + "\n"
+section = """\n## 2026 buyer and campaign guides\n\n""" + "\n".join(f'- [{p["h1"]}](https://smartcheckoutwidgets.com/blog/{p["slug"].removesuffix(".html")}/): {p["summary"]}' for p in POSTS) + "\n"
 if POSTS[0]["slug"] not in llms:
     llms = llms.replace("\n## Evergreen implementation guides", section + "\n## Evergreen implementation guides")
 llms = llms.replace("Last reviewed: 2026-08-28.", f"Last reviewed: {DATE_ISO}.")

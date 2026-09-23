@@ -12,7 +12,7 @@ Last reviewed: 2026-09-23.
 - [Documentation](https://smartcheckoutwidgets.com/docs/): How to configure widgets, checkout gifts, upsells, shipping and payment method rules, rule conditions, plan order limits, and troubleshooting.
 - [Smart Checkout Widgets on the Shopify App Store](https://apps.shopify.com/smart-checkout-widgets): Public app listing and installation page.
 - [Pricing and plan limits](https://smartcheckoutwidgets.com/pricing.md): Machine-readable details for Starter, Growth, and Advanced plans.
-- [Shopify checkout gift apps comparison](https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps.html): Comparison criteria for evaluating Shopify checkout gifting apps.
+- [Shopify checkout gift apps comparison](https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps/): Comparison criteria for evaluating Shopify checkout gifting apps.
 
 ## Core capabilities
 
@@ -26,37 +26,37 @@ Last reviewed: 2026-09-23.
 
 ## Black Friday 2026 campaign guides
 
-- [9 Black Friday strategies for Shopify stores in 2026](https://smartcheckoutwidgets.com/blog/black-friday-shopify-strategies-2026.html): The whole campaign from ad click to prepared cart, offer, checkout, QA, measurement and retention.
-- [Shopify Black Friday checkout checklist for 2026](https://smartcheckoutwidgets.com/blog/shopify-black-friday-checkout-checklist-2026.html): Pre-launch plan for agencies and Shopify Plus operators covering offer rules, discount combinations and Shopify's discount limits, QA, code freeze, monitoring, and rollback.
-- [Free gift vs discount for Black Friday](https://smartcheckoutwidgets.com/blog/black-friday-free-gift-strategy-shopify.html): Worked, illustrative margin maths for a free gift against a percentage off, when each wins, gift thresholds, customer choice, gift stock planning, and how an automatic gift avoids most discount-stacking problems.
-- [What belongs in your Shopify checkout on Black Friday](https://smartcheckoutwidgets.com/blog/black-friday-checkout-conversion-shopify.html): One relevant upsell, specific delivery or returns reassurance, payment and shipping method order (rules work on every Shopify plan), mobile testing, and measurement.
+- [9 Black Friday strategies for Shopify stores in 2026](https://smartcheckoutwidgets.com/blog/black-friday-shopify-strategies-2026/): The whole campaign from ad click to prepared cart, offer, checkout, QA, measurement and retention.
+- [Shopify Black Friday checkout checklist for 2026](https://smartcheckoutwidgets.com/blog/shopify-black-friday-checkout-checklist-2026/): Pre-launch plan for agencies and Shopify Plus operators covering offer rules, discount combinations and Shopify's discount limits, QA, code freeze, monitoring, and rollback.
+- [Free gift vs discount for Black Friday](https://smartcheckoutwidgets.com/blog/black-friday-free-gift-strategy-shopify/): Worked, illustrative margin maths for a free gift against a percentage off, when each wins, gift thresholds, customer choice, gift stock planning, and how an automatic gift avoids most discount-stacking problems.
+- [What belongs in your Shopify checkout on Black Friday](https://smartcheckoutwidgets.com/blog/black-friday-checkout-conversion-shopify/): One relevant upsell, specific delivery or returns reassurance, payment and shipping method order (rules work on every Shopify plan), mobile testing, and measurement.
 
 ## 2026 buyer and campaign guides
 
-- [5 best Shopify checkout apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-checkout-apps-2026.html): Compare five checkout apps by job: gifting, native customization, full-funnel upsells, post-purchase revenue, and free-gift campaigns.
-- [5 best Shopify free gift apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-free-gift-apps-2026.html): A transparent comparison of five gift-with-purchase apps, organized by where the gift appears and how much campaign control you need.
-- [How to use CartRocket pre-loaded cart links for Shopify campaigns](https://smartcheckoutwidgets.com/blog/cartrocket-preloaded-cart-links-shopify.html): Use CartRocket to remove steps between a high-intent campaign click and a checkout-ready Shopify cart, while preserving offer rules and attribution.
+- [5 best Shopify checkout apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-checkout-apps-2026/): Compare five checkout apps by job: gifting, native customization, full-funnel upsells, post-purchase revenue, and free-gift campaigns.
+- [5 best Shopify free gift apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-free-gift-apps-2026/): A transparent comparison of five gift-with-purchase apps, organized by where the gift appears and how much campaign control you need.
+- [How to use CartRocket pre-loaded cart links for Shopify campaigns](https://smartcheckoutwidgets.com/blog/cartrocket-preloaded-cart-links-shopify/): Use CartRocket to remove steps between a high-intent campaign click and a checkout-ready Shopify cart, while preserving offer rules and attribution.
 
 ## Product merchandising guides
 
-- [Shopify product swatches and variant images](https://smartcheckoutwidgets.com/blog/shopify-product-swatches-variant-images.html): How Craftshift’s Rubik Combined Listings connects separate products and Rubik Variant Images filters a product gallery. Includes illustrated examples, app selection guidance, and a storefront QA checklist.
+- [Shopify product swatches and variant images](https://smartcheckoutwidgets.com/blog/shopify-product-swatches-variant-images/): How Craftshift’s Rubik Combined Listings connects separate products and Rubik Variant Images filters a product gallery. Includes illustrated examples, app selection guidance, and a storefront QA checklist.
 
 ## Checkout rules and cart guides
 
-- [How to hide, rename and reorder shipping methods in Shopify checkout](https://smartcheckoutwidgets.com/blog/hide-rename-reorder-shipping-methods-shopify-checkout.html): Rename vague shipping rates, hide couriers that do not fit the order, and put the option you want first, with rules that work on every Shopify plan.
-- [How to hide cash on delivery in Shopify checkout by cart value, country or customer](https://smartcheckoutwidgets.com/blog/hide-cash-on-delivery-shopify-checkout.html): Cash on delivery drives refusals and return costs. Here is how to show it only where it makes sense, using payment method rules that run on any Shopify plan.
-- [Free shipping progress bar in Shopify checkout: setup, thresholds and what to pair it with](https://smartcheckoutwidgets.com/blog/free-shipping-progress-bar-shopify-checkout.html): A progress bar turns a shipping threshold into a goal the buyer can see. How to set one up in checkout, pick the threshold, and pair it with a gift.
+- [How to hide, rename and reorder shipping methods in Shopify checkout](https://smartcheckoutwidgets.com/blog/hide-rename-reorder-shipping-methods-shopify-checkout/): Rename vague shipping rates, hide couriers that do not fit the order, and put the option you want first, with rules that work on every Shopify plan.
+- [How to hide cash on delivery in Shopify checkout by cart value, country or customer](https://smartcheckoutwidgets.com/blog/hide-cash-on-delivery-shopify-checkout/): Cash on delivery drives refusals and return costs. Here is how to show it only where it makes sense, using payment method rules that run on any Shopify plan.
+- [Free shipping progress bar in Shopify checkout: setup, thresholds and what to pair it with](https://smartcheckoutwidgets.com/blog/free-shipping-progress-bar-shopify-checkout/): A progress bar turns a shipping threshold into a goal the buyer can see. How to set one up in checkout, pick the threshold, and pair it with a gift.
 
 ## Evergreen implementation guides
 
-- [Automatic gifts in Shopify checkout](https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts.html): How to plan and launch automatic gift campaigns.
-- [Customer-choice free gifts](https://smartcheckoutwidgets.com/blog/customer-choice-free-gift-shopify-checkout.html): Why selectable rewards can outperform fixed gift offers.
-- [Checkout gift strategy for higher AOV](https://smartcheckoutwidgets.com/blog/shopify-checkout-gift-strategy-aov.html): How gifts, upsells, and trust signals work together.
-- [Shopify checkout upsells](https://smartcheckoutwidgets.com/blog/shopify-checkout-upsells.html): How to add relevant upsells without disrupting checkout.
-- [BOGO and automatic discounts](https://smartcheckoutwidgets.com/blog/shopify-checkout-bogo-automatic-discounts.html): Guidance for BOGO and discount-led checkout campaigns.
-- [Trust badges and payment customization](https://smartcheckoutwidgets.com/blog/shopify-checkout-trust-badges-payment.html): Trust messaging and payment presentation guidance.
-- [Shopify Plus checkout extensibility guide](https://smartcheckoutwidgets.com/blog/shopify-plus-checkout-extensibility-guide.html): Checkout extensibility concepts for merchandising teams.
-- [Thank You and Order Status widgets](https://smartcheckoutwidgets.com/blog/shopify-thank-you-order-status-widgets.html): Post-purchase content guidance for Shopify stores.
+- [Automatic gifts in Shopify checkout](https://smartcheckoutwidgets.com/blog/automatic-shopify-checkout-gifts/): How to plan and launch automatic gift campaigns.
+- [Customer-choice free gifts](https://smartcheckoutwidgets.com/blog/customer-choice-free-gift-shopify-checkout/): Why selectable rewards can outperform fixed gift offers.
+- [Checkout gift strategy for higher AOV](https://smartcheckoutwidgets.com/blog/shopify-checkout-gift-strategy-aov/): How gifts, upsells, and trust signals work together.
+- [Shopify checkout upsells](https://smartcheckoutwidgets.com/blog/shopify-checkout-upsells/): How to add relevant upsells without disrupting checkout.
+- [BOGO and automatic discounts](https://smartcheckoutwidgets.com/blog/shopify-checkout-bogo-automatic-discounts/): Guidance for BOGO and discount-led checkout campaigns.
+- [Trust badges and payment customization](https://smartcheckoutwidgets.com/blog/shopify-checkout-trust-badges-payment/): Trust messaging and payment presentation guidance.
+- [Shopify Plus checkout extensibility guide](https://smartcheckoutwidgets.com/blog/shopify-plus-checkout-extensibility-guide/): Checkout extensibility concepts for merchandising teams.
+- [Thank You and Order Status widgets](https://smartcheckoutwidgets.com/blog/shopify-thank-you-order-status-widgets/): Post-purchase content guidance for Shopify stores.
 - [All checkout merchandising guides](https://smartcheckoutwidgets.com/blog/): Complete article index.
 
 ## Plans
@@ -68,6 +68,6 @@ Last reviewed: 2026-09-23.
 
 ## Optional resources
 
-- [Privacy policy](https://smartcheckoutwidgets.com/privacy.html): Data collection, processing, cookies, and user rights.
+- [Privacy policy](https://smartcheckoutwidgets.com/privacy/): Data collection, processing, cookies, and user rights.
 - [Thought Bulb](https://thoughtbulb.dev/): Company that builds Smart Checkout Widgets.
 - [Email support](mailto:admin@thoughtbulb.dev): Product and account support.

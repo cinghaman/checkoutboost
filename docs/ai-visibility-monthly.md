@@ -33,7 +33,7 @@ Copy each query into **Google** (note AI Overview), **ChatGPT** (with browsing o
 | 19 | Shopify app checkout widgets comparison |
 | 20 | Thought Bulb Shopify checkout |
 
-**Owned comparison URL to watch:** https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps.html
+**Owned comparison URL to watch:** https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps/
 
 Optional CSV log: copy `docs/ai-visibility-log-template.csv` each month.
 
