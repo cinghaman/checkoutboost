@@ -1189,6 +1189,8 @@ button, input, select { font: inherit; color: inherit; }
   padding-top: var(--space-md);
 }
 
+.footer__legal a { color: inherit; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: color-mix(in oklch, currentColor 35%, transparent); }
+.footer__legal a:hover { color: var(--color-accent); text-decoration-color: currentColor; }
 .footer__legal .wordmark { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; font-size: var(--text-base); color: var(--color-ink-0); }
 
 @media (max-width: 760px) { .footer__legal { flex-direction: column; gap: var(--space-sm); align-items: flex-start; } }

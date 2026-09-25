@@ -76,7 +76,7 @@ FOOTER = """  <footer class="footer">
       </div>
       <div class="footer__legal">
         <span class="wordmark">Smart Checkout Widgets</span>
-        <span>© 2026 Thought Bulb · Built for Shopify checkout, every plan</span>
+        <span>© 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> · Built for Shopify checkout, every plan</span>
       </div>
     </div>
   </footer>"""
