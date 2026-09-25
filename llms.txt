@@ -45,6 +45,8 @@ Last reviewed: 2026-09-25.
 
 - [How to hide, rename and reorder shipping methods in Shopify checkout](https://smartcheckoutwidgets.com/blog/hide-rename-reorder-shipping-methods-shopify-checkout/): Rename vague shipping rates, hide couriers that do not fit the order, and put the option you want first, with rules that work on every Shopify plan.
 - [How to hide cash on delivery in Shopify checkout by cart value, country or customer](https://smartcheckoutwidgets.com/blog/hide-cash-on-delivery-shopify-checkout/): Cash on delivery drives refusals and return costs. Here is how to show it only where it makes sense, using payment method rules that run on any Shopify plan.
+- [Shopify is removing the Checkout Blocks branding editor on December 31, 2026: what to do](https://smartcheckoutwidgets.com/blog/shopify-checkout-blocks-branding-editor-removal/): The Checkout Blocks branding editor goes away on December 31, 2026. What it controlled, who is affected, your three options, and a migration checklist to finish before Black Friday.
+- [Smart Checkout Widgets vs Checkout Plus (2026): features, pricing and Shopify Plus requirements](https://smartcheckoutwidgets.com/compare/smart-checkout-widgets-vs-checkout-plus/): An honest comparison of Smart Checkout Widgets and Checkout Plus: every feature side by side, what each costs at your order volume, and when to choose each.
 - [Free shipping progress bar in Shopify checkout: setup, thresholds and what to pair it with](https://smartcheckoutwidgets.com/blog/free-shipping-progress-bar-shopify-checkout/): A progress bar turns a shipping threshold into a goal the buyer can see. How to set one up in checkout, pick the threshold, and pair it with a gift.
 
 ## Evergreen implementation guides
