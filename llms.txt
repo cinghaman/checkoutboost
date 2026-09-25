@@ -1,10 +1,10 @@
 # Smart Checkout Widgets
 
-> Smart Checkout Widgets is a Shopify checkout merchandising app for automatic gifts, customer-choice rewards, upsells, BOGO offers, trust content, payment customization, and Thank You and Order Status widgets.
+> Smart Checkout Widgets is a Shopify checkout customizer for every plan: payment and shipping method rules (hide, rename, reorder, including hiding Cash on Delivery) and Thank You and Order Status page widgets on any Shopify plan, plus automatic gifts, customer-choice rewards, upsells and custom fields in checkout on Shopify Plus.
 
-Smart Checkout Widgets is primarily built for ecommerce agencies and Shopify Plus operators. Thank You and Order Status content widgets are available to all Shopify stores.
+Payment and shipping rules and Thank You and Order Status widgets work on Basic, Shopify, Advanced and Plus. Widgets on the checkout page itself need Shopify Plus, because Shopify only allows checkout-page customization on Plus. Eight one-click templates cover the most common payment and shipping rules.
 
-Last reviewed: 2026-09-23.
+Last reviewed: 2026-09-25.
 
 ## Primary resources
 

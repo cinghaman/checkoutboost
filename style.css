@@ -1845,3 +1845,62 @@ a.text-link:hover { color: var(--color-ink-0); }
 
 .faq { padding: var(--space-2xl) 0; }
 .faq .faq-list { max-width: 72ch; }
+
+/* Feature plan tag · which Shopify plans a feature works on.
+   Every-plan features lead the grid; Plus-only ones say so up front. */
+.feature__plan {
+  align-self: flex-start;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  color: oklch(42% 0.12 145);
+  background: color-mix(in oklch, var(--color-success) 16%, var(--color-paper-0));
+}
+.feature__plan--plus {
+  color: var(--color-accent);
+  background: var(--color-accent-tint);
+}
+
+/* Feature art · a checkout option list with one rule applied */
+.art-list {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(180deg, var(--color-paper-0), var(--color-paper-1));
+}
+.art-list span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 9px 12px;
+  border-radius: var(--radius-sm);
+  border: var(--rule-soft);
+  background: var(--color-paper-0);
+  font-size: var(--text-sm);
+  color: var(--color-ink-1);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.art-list span b {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 2px 7px;
+  border-radius: var(--radius-pill);
+}
+.art-list .is-off {
+  color: var(--color-ink-3);
+  background: repeating-linear-gradient(135deg, var(--color-paper-1) 0 6px, var(--color-paper-2) 6px 12px);
+}
+.art-list .is-off b { color: oklch(48% 0.16 25); background: oklch(95% 0.03 25); }
+.art-list .is-on { border-color: var(--color-accent-soft); color: var(--color-ink-0); }
+.art-list .is-on b { color: var(--color-accent); background: var(--color-accent-tint); }

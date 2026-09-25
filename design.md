@@ -69,13 +69,21 @@ The palette should read as warm near-white paper, deep navy-charcoal ink, and a 
 
 ## Audience
 
-- Primary: ecommerce agencies
-- Secondary: Shopify Plus operators
+- Primary: Shopify merchants on any plan (Basic, Shopify, Advanced, Plus) who install apps themselves
+- Secondary: ecommerce agencies and Shopify Plus operators
+
+Changed 2026-09-25. Most installs are non-Plus stores, and they were leaving within
+minutes because every page sold a Plus-only app. Agencies install for Plus stores, but
+only a store admin can leave an App Store review, so the self-serve merchant is the one
+the site must win.
 
 ## Product framing
 
 The site should be easy to summarize as:
 
-- a Shopify Plus checkout merchandising app
-- a Shopify checkout gifts and upsells tool
-- a tool agencies can recommend and install for merchants
+- a Shopify checkout customizer that works on every plan
+- payment and shipping method rules (hide Cash on Delivery, rename shipping rates) and Thank You / Order Status page blocks, on any plan
+- checkout gifts, upsells and custom fields on Shopify Plus
+
+Lead with what works on every plan. Name Plus only where Shopify actually requires it,
+and tag features with the plans they work on rather than warning about Plus.
