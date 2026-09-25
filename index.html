@@ -157,7 +157,7 @@
 
 
 
-  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/style.css?v=20260925c">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -278,37 +278,41 @@
           </p>
         </div>
 
-        <div class="bench" role="img" aria-label="Smart Checkout Widgets admin preview">
+        <div class="bench">
           <div class="bench__rail">
             <div class="bench__brand">
               <img src="/images/logo-mark.svg" alt="" width="18" height="18">
               Smart Checkout
             </div>
-            <div class="bench__nav">
-              <div class="bench__navitem" aria-current="page">
-                <svg class="glyph" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 2l1.2 3.6H13l-3 2.2 1.1 3.6L8 9.2 4.9 11.4 6 7.8 3 5.6h3.8z"/></svg>
-                Gift offers
-              </div>
-              <div class="bench__navitem">
-                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="1.5"/><path d="M2 6h12M6 2v12"/></svg>
+            <div class="bench__nav" role="group" aria-label="Preview a screen">
+              <button type="button" class="bench__navitem" data-bench-src="/images/listing/panel-2.webp" data-bench-alt="Hide Cash on Delivery on orders over $500" data-bench-title="Payment rules" data-bench-plan="every" aria-pressed="true">
+                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="M2 6.5h12"/></svg>
                 Payment rules
-              </div>
-              <div class="bench__navitem">
-                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="2" width="10" height="12" rx="1.5"/><path d="M5 5h6M5 8h6M5 11h4"/></svg>
+              </button>
+              <button type="button" class="bench__navitem" data-bench-src="/images/listing/panel-3.webp" data-bench-alt="Shipping rate renamed with delivery times; express hidden at weekends" data-bench-title="Shipping rules" data-bench-plan="every" aria-pressed="false">
+                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" aria-hidden="true"><path d="M1.5 4h8v6.5h-8zM9.5 6.5h3l2 2v2h-5z"/><circle cx="4.5" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/></svg>
                 Shipping rules
-              </div>
-              <div class="bench__navitem">
-                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 13l4-4 3 3 4-6"/></svg>
-                Performance
-              </div>
+              </button>
+              <button type="button" class="bench__navitem" data-bench-src="/images/listing/panel-4.webp" data-bench-alt="Dashboard with ready-made payment and shipping rule templates" data-bench-title="Rule templates" data-bench-plan="every" aria-pressed="false">
+                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="1.5"/><path d="M2 6h12M6 6v8"/></svg>
+                Rule templates
+              </button>
+              <button type="button" class="bench__navitem" data-bench-src="/images/listing/panel-5.webp" data-bench-alt="Thank you page with a discount banner, trust badges and an FAQ" data-bench-title="Thank you page" data-bench-plan="every" aria-pressed="false">
+                <svg class="glyph" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="8" r="6"/><path d="M5.2 8.2l2 2 3.6-4"/></svg>
+                Thank you page
+              </button>
+              <button type="button" class="bench__navitem" data-bench-src="/images/listing/panel-6.webp" data-bench-alt="Plus checkout with a free-shipping progress bar, free gift picker and upsell" data-bench-title="Gifts &amp; upsells" data-bench-plan="plus" aria-pressed="false">
+                <svg class="glyph" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 2l1.2 3.6H13l-3 2.2 1.1 3.6L8 9.2 4.9 11.4 6 7.8 3 5.6h3.8z"/></svg>
+                Gifts &amp; upsells
+              </button>
             </div>
           </div>
 
           <div class="bench__main">
             <div class="bench__statrow">
               <div class="bench__stat">
-                <div class="label">Active offers</div>
-                <div class="value"><span id="bench-offers">3</span></div>
+                <div class="label">Rule templates</div>
+                <div class="value">8</div>
               </div>
               <div class="bench__stat">
                 <div class="label">App Store rating</div>
@@ -316,14 +320,14 @@
               </div>
               <div class="bench__stat">
                 <div class="label">Starter</div>
-                <div class="value">Free<small> to install</small></div>
+                <div class="value">Free<small> up to 100 orders</small></div>
               </div>
             </div>
 
             <div class="bench__chart">
-              <h4>Rule templates · <span class="live">preview</span></h4>
-              <figure style="margin: 0; border-radius: var(--radius-md); overflow: hidden; border: var(--rule-hair);">
-                <img src="/images/listing/slide-4.webp" alt="Dashboard with ready-made payment and shipping rule templates" width="1600" height="900" style="width: 100%; height: auto; display: block;">
+              <h4><span id="bench-title">Payment rules</span> <span class="feature__plan" id="bench-plan">Every Shopify plan</span></h4>
+              <figure class="bench__screen">
+                <img id="bench-screen" src="/images/listing/panel-2.webp" alt="Hide Cash on Delivery on orders over $500" width="1200" height="760">
               </figure>
             </div>
           </div>
@@ -688,7 +692,7 @@
     </div>
   </footer>
 
-  <script src="/site.js"></script>
+  <script src="/site.js?v=20260925c"></script>
   <script
     src="https://agentmatica.com/loader.js"
     data-widget-src="https://agentmatica.com/widget.js"

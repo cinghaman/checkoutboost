@@ -245,7 +245,7 @@ def inject_after_canonical(html: str, block: str) -> str:
 
 
 def inject_before_stylesheet(html: str, block: str) -> str:
-    m = re.search(r'(\s*<link rel="stylesheet" href="/style.css">)', html)
+    m = re.search(r'(\s*<link rel="stylesheet" href="/style.css?v=20260925c">)', html)
     if m:
         return html[: m.start()] + "\n" + block + "\n" + html[m.start() :]
     m = re.search(r"</head>", html)

@@ -66,3 +66,32 @@
     toggle.setAttribute("aria-expanded", "false");
   });
 })();
+
+/* Console tabs · the homepage "console" rail switches the screen preview.
+   Each tab carries its image, alt text, title and plan; the next image is
+   warmed on hover so the swap never flashes. */
+(function () {
+  var tabs = document.querySelectorAll("[data-bench-src]");
+  var screen = document.getElementById("bench-screen");
+  var title = document.getElementById("bench-title");
+  var plan = document.getElementById("bench-plan");
+  if (!tabs.length || !screen) return;
+
+  function warm(tab) { var img = new Image(); img.src = tab.getAttribute("data-bench-src"); }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("mouseenter", function () { warm(tab); }, { once: true });
+    tab.addEventListener("focus", function () { warm(tab); }, { once: true });
+    tab.addEventListener("click", function () {
+      tabs.forEach(function (t) { t.setAttribute("aria-pressed", String(t === tab)); });
+      screen.src = tab.getAttribute("data-bench-src");
+      screen.alt = tab.getAttribute("data-bench-alt");
+      if (title) title.textContent = tab.getAttribute("data-bench-title").replace("&amp;", "&");
+      if (plan) {
+        var plus = tab.getAttribute("data-bench-plan") === "plus";
+        plan.textContent = plus ? "Shopify Plus" : "Every Shopify plan";
+        plan.classList.toggle("feature__plan--plus", plus);
+      }
+    });
+  });
+})();

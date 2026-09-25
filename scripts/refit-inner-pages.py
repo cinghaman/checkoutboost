@@ -11,7 +11,7 @@ import seo  # noqa: E402
 FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">"""
+  <link rel="stylesheet" href="/style.css?v=20260925c">"""
 
 GTAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
   <script>
@@ -117,7 +117,7 @@ def page(title, description, canonical, body_main, og_type="website", extra_head
 {NAV}
 {body_main}
 {FOOTER}
-  <script src="/site.js"></script>
+  <script src="/site.js?v=20260925c"></script>
 {CRISP}
 </body>
 </html>

@@ -20,7 +20,7 @@ GTAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9G
 FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">"""
+  <link rel="stylesheet" href="/style.css?v=20260925c">"""
 
 NAV = """  <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="nav" aria-label="Primary">
@@ -90,7 +90,7 @@ FOOTER = """  <footer class="footer">
     </div>
   </footer>"""
 
-CRISP = """  <script src="/site.js"></script>
+CRISP = """  <script src="/site.js?v=20260925c"></script>
   <script src="https://agentmatica.com/loader.js" data-widget-src="https://agentmatica.com/widget.js" data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94" id="agentmatica-widget-script" defer></script>"""
 
 

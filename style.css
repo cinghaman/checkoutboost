@@ -1,4 +1,4 @@
-@import url("./tokens.css");
+@import url("./tokens.css?v=20260925c");
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; overflow-x: clip; }
@@ -1921,3 +1921,17 @@ a.text-link:hover { color: var(--color-ink-0); }
 .hero__h1 .italic-accent { font-weight: 800; }
 .cta__title em { font-family: var(--font-display); font-style: normal; font-weight: inherit; color: var(--color-companion); }
 .testimonial__quote { font-family: var(--font-display); font-style: normal; font-weight: 600; }
+
+/* Console tabs · the rail items are real buttons that switch the screen. */
+button.bench__navitem {
+  font: inherit;
+  border: 0;
+  background: none;
+  width: 100%;
+  text-align: left;
+}
+.bench__navitem[aria-pressed="true"] { background: var(--color-paper-2); color: var(--color-ink-0); font-weight: 600; }
+.bench__navitem:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 1px; }
+.bench__chart h4 { display: flex; align-items: center; gap: var(--space-sm); flex-wrap: wrap; }
+.bench__screen { margin: 0; border-radius: var(--radius-md); overflow: hidden; border: var(--rule-hair); background: var(--color-paper-0); }
+.bench__screen img { width: 100%; height: auto; display: block; }
