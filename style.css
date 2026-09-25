@@ -15,8 +15,7 @@ body {
   font-size: var(--text-base);
   line-height: 1.55;
   background:
-    radial-gradient(1200px 600px at 12% -10%, color-mix(in oklch, var(--color-accent-tint) 70%, transparent), transparent 60%),
-    radial-gradient(900px 500px at 88% 8%, color-mix(in oklch, var(--color-companion) 35%, transparent), transparent 55%),
+    radial-gradient(1100px 700px at 92% -12%, color-mix(in oklch, var(--color-accent-tint) 90%, transparent), transparent 62%),
     var(--color-paper-0);
   background-attachment: fixed;
 }
@@ -253,7 +252,7 @@ button, input, select { font: inherit; color: inherit; }
 
 .hero__h1 {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 800;
   font-size: var(--text-5xl);
   line-height: 0.96;
   letter-spacing: -0.03em;
@@ -407,7 +406,7 @@ button, input, select { font: inherit; color: inherit; }
 .invoice__total .num {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-ink-0);
   letter-spacing: -0.01em;
 }
@@ -489,7 +488,7 @@ button, input, select { font: inherit; color: inherit; }
 
 .logos__row > div {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: var(--text-md);
   letter-spacing: -0.02em;
   text-align: center;
@@ -527,7 +526,7 @@ button, input, select { font: inherit; color: inherit; }
 .section-head__title {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.05;
   margin: var(--space-sm) 0 0;
@@ -615,7 +614,7 @@ button, input, select { font: inherit; color: inherit; }
 .bench__stat .value {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin-top: 4px;
   display: flex;
@@ -709,7 +708,7 @@ button, input, select { font: inherit; color: inherit; }
 .stats__num {
   font-family: var(--font-display);
   font-size: clamp(2.8rem, 6vw, 4.5rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1;
   display: inline-flex;
@@ -841,13 +840,13 @@ button, input, select { font: inherit; color: inherit; }
 .art-invoice .sheet:nth-child(1) { top: 20%; left: 14%; transform: rotate(-4deg); z-index: 1; }
 .art-invoice .sheet:nth-child(2) { top: 16%; left: 22%; transform: rotate(2deg); z-index: 2; }
 .art-invoice .sheet:nth-child(3) { top: 12%; left: 30%; transform: rotate(-1deg); z-index: 3; background: var(--color-accent-tint); }
-.art-invoice .sheet b { display: block; color: var(--color-ink-0); font-size: 12px; margin-bottom: 6px; font-family: var(--font-display); font-weight: 600; }
+.art-invoice .sheet b { display: block; color: var(--color-ink-0); font-size: 12px; margin-bottom: 6px; font-family: var(--font-display); font-weight: 700; }
 .art-invoice .sheet em { font-style: normal; color: var(--color-accent); font-weight: 600; font-size: 14px; }
 
 .feature__title {
   font-family: var(--font-display);
   font-size: var(--text-lg);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0;
 }
@@ -974,7 +973,7 @@ button, input, select { font: inherit; color: inherit; }
 .tier__price {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
   display: flex;
   align-items: baseline;
@@ -1117,7 +1116,7 @@ button, input, select { font: inherit; color: inherit; }
 .cta__title {
   font-family: var(--font-display);
   font-size: clamp(2.4rem, 6vw, 5rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1;
   margin: 0 0 var(--space-md);
@@ -1145,7 +1144,7 @@ button, input, select { font: inherit; color: inherit; }
 .footer__statement {
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4.5vw, 3.2rem);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
   max-width: 22ch;
@@ -1190,7 +1189,7 @@ button, input, select { font: inherit; color: inherit; }
   padding-top: var(--space-md);
 }
 
-.footer__legal .wordmark { font-family: var(--font-display); font-weight: 600; letter-spacing: -0.02em; font-size: var(--text-base); color: var(--color-ink-0); }
+.footer__legal .wordmark { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.02em; font-size: var(--text-base); color: var(--color-ink-0); }
 
 @media (max-width: 760px) { .footer__legal { flex-direction: column; gap: var(--space-sm); align-items: flex-start; } }
 
@@ -1270,7 +1269,7 @@ button, input, select { font: inherit; color: inherit; }
 .checkout-card__gift em {
   font-family: var(--font-display);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-accent);
   display: block;
   margin-bottom: 4px;
@@ -1383,7 +1382,7 @@ button, input, select { font: inherit; color: inherit; }
 .blog-card h3 {
   font-family: var(--font-display);
   font-size: var(--text-md);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0;
   line-height: 1.25;
@@ -1497,7 +1496,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .post-hero h1 {
   font-family: var(--font-display);
   font-size: var(--text-4xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.05;
   margin: var(--space-sm) 0 var(--space-md);
@@ -1553,7 +1552,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .post-card h3 {
   font-family: var(--font-display);
   font-size: var(--text-md);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0;
   line-height: 1.25;
@@ -1643,7 +1642,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .video-card h3 {
   font-family: var(--font-display);
   font-size: var(--text-md);
-  font-weight: 600;
+  font-weight: 700;
   margin: var(--space-xs) 0 var(--space-sm);
 }
 
@@ -1663,7 +1662,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .page-panel h2 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   margin: 0 0 var(--space-sm);
 }
@@ -1679,7 +1678,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .post-content h2 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--color-ink-0);
   margin: var(--space-2xl) 0 var(--space-md);
@@ -1690,7 +1689,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .post-content h4 {
   font-family: var(--font-display);
   font-size: var(--text-lg);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--color-ink-0);
   margin: var(--space-xl) 0 var(--space-sm);
 }
@@ -1715,7 +1714,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .post-faq h2 {
   font-family: var(--font-display);
   font-size: var(--text-xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--color-ink-0);
   margin: 0 0 var(--space-md);
@@ -1826,7 +1825,7 @@ a.text-link:hover { color: var(--color-ink-0); }
 .inner-cta__panel h2 {
   font-family: var(--font-display);
   font-size: var(--text-2xl);
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.03em;
   margin: 0 0 var(--space-sm);
 }
@@ -1850,19 +1849,19 @@ a.text-link:hover { color: var(--color-ink-0); }
    Every-plan features lead the grid; Plus-only ones say so up front. */
 .feature__plan {
   align-self: flex-start;
-  font-family: var(--font-mono);
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-family: var(--font-body);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
-  padding: 4px 10px;
+  padding: 5px 11px;
   border-radius: var(--radius-pill);
-  color: oklch(42% 0.12 145);
-  background: color-mix(in oklch, var(--color-success) 16%, var(--color-paper-0));
+  color: #0f8a5f;
+  background: #dcf5ea;
 }
 .feature__plan--plus {
-  color: var(--color-accent);
-  background: var(--color-accent-tint);
+  color: #9a5b00;
+  background: #fdf0d5;
 }
 
 /* Feature art · a checkout option list with one rule applied */
@@ -1904,3 +1903,19 @@ a.text-link:hover { color: var(--color-ink-0); }
 .art-list .is-off b { color: oklch(48% 0.16 25); background: oklch(95% 0.03 25); }
 .art-list .is-on { border-color: var(--color-accent-soft); color: var(--color-ink-0); }
 .art-list .is-on b { color: var(--color-accent); background: var(--color-accent-tint); }
+
+
+/* Listing look · accent words are a bold violet word in the display face, not a
+   serif italic — the same treatment as the App Store listing slides. */
+.italic-accent,
+.section-head__title em,
+.footer__statement em,
+.logos__row .l-1 {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: inherit;
+  letter-spacing: inherit;
+}
+.hero__h1 .italic-accent { font-weight: 800; }
+.cta__title em { font-family: var(--font-display); font-style: normal; font-weight: inherit; color: var(--color-companion); }
+.testimonial__quote { font-family: var(--font-display); font-style: normal; font-weight: 600; }
