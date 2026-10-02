@@ -334,6 +334,7 @@
         <li><a href="#upsells">Upsells</a></li>
         <li><a href="#shipping-rules">Shipping method rules</a></li>
         <li><a href="#payment-rules">Payment method rules</a></li>
+        <li><a href="#order-editing">Order editing</a></li>
         <li><a href="#conditions">Conditions reference</a></li>
         <li><a href="#plans">Plans and order limits</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
@@ -553,6 +554,50 @@
         thing in either place.
       </p>
 
+      <h2 id="order-editing">Order editing</h2>
+      <p>
+        On the Pro plan, customers can change their own order on the Thank you and Order status
+        pages for a time you choose after they buy. It works on every Shopify plan except
+        Starter, because it runs on those two pages rather than in checkout. Development stores
+        can use it free for testing.
+      </p>
+      <h3 id="order-editing-setup">Setting it up</h3>
+      <ol>
+        <li>Open <strong>Order Editing</strong> in the app, tick <em>Let customers edit their orders</em>, choose the edit window and the changes to allow, and save.</li>
+        <li>Click <strong>Allow access</strong> to grant the two optional permissions: <em>edit orders</em> (needed for variant swaps) and <em>manage fulfillment orders</em> (needed for holds). Address changes, lower quantities and cancellations work without them.</li>
+        <li>Use <strong>Add to Thank you page</strong> and <strong>Add to Order status page</strong> to open Shopify's checkout editor, add the <em>Order editing</em> app block, and save.</li>
+      </ol>
+      <h3 id="order-editing-changes">What customers can change</h3>
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead><tr><th>Change</th><th>Rules</th><th>Money</th></tr></thead>
+          <tbody>
+            <tr><td>Shipping address</td><td>Same country only. The order must need shipping.</td><td>None</td></tr>
+            <tr><td>Swap variant</td><td>Another in-stock variant of the same product at the same price. Not on discounted lines.</td><td>None. The swap is only saved if Shopify's new total equals the old one.</td></tr>
+            <tr><td>Lower quantity / remove item</td><td>Paid orders only. Removing the last item is a cancellation instead.</td><td>Refunded to the original payment method, calculated by Shopify</td></tr>
+            <tr><td>Cancel order</td><td>Any unfulfilled order.</td><td>Full refund, stock restocked</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Editing stops as soon as the window ends, any item is fulfilled, or the order is cancelled
+        or closed. Gift cards, subscription items and free gifts from Smart Checkout Widgets are
+        never editable. POS and draft orders are not offered editing.
+      </p>
+      <h3 id="order-editing-hold">Fulfillment hold</h3>
+      <p>
+        With <em>Hold new orders until the edit window ends</em> on, every new order gets a
+        fulfillment hold that says when it will be released. The app releases it automatically
+        when the window ends. You can release it yourself at any time from the order page in
+        Shopify; nothing else is affected.
+      </p>
+      <h3 id="order-editing-tracking">Seeing what changed</h3>
+      <p>
+        Edited orders are tagged <code>Customer edited</code>, and Shopify emails the customer
+        about refunds and cancellations as usual. The Order Editing page lists the last 50 edits,
+        refusals, holds and releases.
+      </p>
+
       <h2 id="conditions">Conditions reference</h2>
       <p>
         Conditions decide whether a rule applies. Combine them with <strong>Always</strong>,
@@ -599,8 +644,8 @@
       <h2 id="plans">Plans and order limits</h2>
       <p>
         Every plan includes every widget and every rule type. Starter, Growth and Advanced differ
-        only by how many orders per month they cover; Pro adds the checkout branding editor for
-        Shopify Plus stores.
+        only by how many orders per month they cover; Pro adds self-serve order editing (every
+        Shopify plan) and the checkout branding editor for Shopify Plus stores.
       </p>
 
       <div class="docs-table-wrap">
@@ -612,7 +657,7 @@
             <tr><td>Starter</td><td>Free</td><td>Free</td><td>Up to 100</td></tr>
             <tr><td>Growth</td><td>$29</td><td>$278.40</td><td>Up to 1,000</td></tr>
             <tr><td>Advanced</td><td>$59</td><td>$566.40</td><td>Unlimited</td></tr>
-            <tr><td>Pro</td><td>$99</td><td>$950.40</td><td>Unlimited, plus checkout branding (Plus stores)</td></tr>
+            <tr><td>Pro</td><td>$99</td><td>$950.40</td><td>Unlimited, plus order editing and checkout branding (Plus stores)</td></tr>
           </tbody>
         </table>
       </div>

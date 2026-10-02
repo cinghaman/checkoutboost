@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://smartcheckoutwidgets.com/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/docs/</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/</loc>
@@ -111,6 +111,10 @@
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/shopify-product-swatches-variant-images/</loc>
     <lastmod>2026-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://smartcheckoutwidgets.com/blog/shopify-customer-order-editing/</loc>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/shopify-checkout-blocks-branding-editor-removal/</loc>
