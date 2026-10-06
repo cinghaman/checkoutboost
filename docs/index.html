@@ -416,6 +416,19 @@
         </table>
       </div>
 
+      <h3 id="stock-urgency">Stock urgency (Pro)</h3>
+      <p>
+        On the Pro plan, a thirteenth widget shows a badge such as <em>Only 4 left - selling
+        fast!</em> under each checkout item whose stock is at or below a number you choose.
+        Set the threshold, the message (<code>{{count}}</code> becomes the number left), the
+        colour and the icon, then add the app block to the item list in Shopify's checkout
+        editor. It needs Shopify Plus, because it runs on the checkout page.
+      </p>
+      <p>
+        The count is always your real inventory. Items that don't track stock, or that keep
+        selling when out of stock, never show a badge, and neither do free gifts.
+      </p>
+
       <h3 id="widget-basics">Creating and disabling a widget</h3>
       <p>
         Each widget is created, named and configured independently, and can be disabled
@@ -575,6 +588,7 @@
             <tr><td>Shipping address</td><td>Same country only. The order must need shipping.</td><td>None</td></tr>
             <tr><td>Swap variant</td><td>Another in-stock variant of the same product at the same price. Not on discounted lines.</td><td>None. The swap is only saved if Shopify's new total equals the old one.</td></tr>
             <tr><td>Lower quantity / remove item</td><td>Paid orders only. Removing the last item is a cancellation instead.</td><td>Refunded to the original payment method, calculated by Shopify</td></tr>
+            <tr><td>Request a removal</td><td>Offered instead of the row above when the order has a discount or free gift. One request at a time.</td><td>None by the app. The request appears on the order in your Shopify admin, and you decide whether to remove and refund.</td></tr>
             <tr><td>Cancel order</td><td>Any unfulfilled order.</td><td>Full refund, stock restocked</td></tr>
           </tbody>
         </table>
@@ -596,6 +610,8 @@
         Edited orders are tagged <code>Customer edited</code>, and Shopify emails the customer
         about refunds and cancellations as usual. The Order Editing page lists the last 50 edits,
         refusals, holds and releases.
+        Removal requests are not tagged, because nothing on the order changed; Shopify marks
+        the order as having a requested edit, and you resolve or decline it there.
       </p>
 
       <h2 id="conditions">Conditions reference</h2>
@@ -645,7 +661,8 @@
       <p>
         Every plan includes every widget and every rule type. Starter, Growth and Advanced differ
         only by how many orders per month they cover; Pro adds self-serve order editing (every
-        Shopify plan) and the checkout branding editor for Shopify Plus stores.
+        Shopify plan), plus the stock urgency widget and the checkout branding editor for
+        Shopify Plus stores.
       </p>
 
       <div class="docs-table-wrap">
@@ -657,7 +674,7 @@
             <tr><td>Starter</td><td>Free</td><td>Free</td><td>Up to 100</td></tr>
             <tr><td>Growth</td><td>$29</td><td>$278.40</td><td>Up to 1,000</td></tr>
             <tr><td>Advanced</td><td>$59</td><td>$566.40</td><td>Unlimited</td></tr>
-            <tr><td>Pro</td><td>$99</td><td>$950.40</td><td>Unlimited, plus order editing and checkout branding (Plus stores)</td></tr>
+            <tr><td>Pro</td><td>$99</td><td>$950.40</td><td>Unlimited, plus order editing; stock urgency and checkout branding on Plus stores</td></tr>
           </tbody>
         </table>
       </div>
