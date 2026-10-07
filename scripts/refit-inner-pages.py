@@ -146,7 +146,6 @@ def inner_cta(primary="Install on Shopify", primary_href="https://apps.shopify.c
 blog_index_body = f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ blog</span>
         <h1>Guides for checkout gifting and <em style="font-family: var(--font-italic); font-style: italic; font-weight: 400; color: var(--color-accent);">AOV</em>.</h1>
         <p>Practical articles on automatic gifts, customer-choice rewards, and checkout strategies for Shopify Plus merchants.</p>
       </div>
@@ -190,7 +189,6 @@ blog_index_body = f"""  <main id="main-content">
 videos_body = f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ videos</span>
         <h1>Product walkthroughs and gifting demos.</h1>
         <p>Use this page for embeds, setup tutorials, and checkout gifting demos that push merchants toward the Shopify app listing.</p>
       </div>
@@ -234,7 +232,6 @@ def article_page(title, desc, canonical, eyebrow, h1, content_html, cta_secondar
     body = f"""  <main id="main-content">
     <section class="post-hero">
       <div class="post-hero-copy">
-        <span class="eyebrow">◇ {eyebrow}</span>
         <h1>{h1}</h1>
         <div class="meta-row">
           <span>Smart Checkout Widgets</span>
@@ -339,7 +336,6 @@ privacy_article = privacy_src[start : end + len("</article>")] if start != -1 el
 privacy_body = f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ legal</span>
         <h1>Privacy Policy</h1>
         <p>How Smart Checkout Widgets collects, uses, and protects your information.</p>
       </div>
@@ -392,7 +388,6 @@ cro_content = """        <p>In competitive e-commerce, conversion rate optimizat
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ guide</span>
         <h1>10 CRO strategies that convert browsers into buyers</h1>
         <p>Practical conversion tactics with emphasis on checkout clarity, trust, and reward mechanics.</p>
       </div>
@@ -468,7 +463,6 @@ analytics.subscribe('checkout_completed', (event) => {
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ integration</span>
         <h1>Microsoft pixel tracking for Shopify Plus</h1>
         <p>Event-based conversion goals for purchase tracking in Microsoft Ads.</p>
       </div>
@@ -517,7 +511,6 @@ fetch("https://game-center.fly.dev/api/xmlprocess", requestOptions)
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ developers</span>
         <h1>API integration</h1>
         <p>Reference examples for uploading XML to the processing endpoint.</p>
       </div>
@@ -539,7 +532,6 @@ fetch("https://game-center.fly.dev/api/xmlprocess", requestOptions)
         f"""  <main id="main-content">
     <section class="page-hero">
       <div class="page-hero-copy">
-        <span class="eyebrow">◇ ecosystem</span>
         <h1>Built for the Shopify Plus checkout stack</h1>
         <p>Smart Checkout Widgets uses checkout extensibility, Shopify Functions, and native checkout UI — no theme hacks required.</p>
       </div>

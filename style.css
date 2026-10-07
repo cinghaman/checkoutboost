@@ -40,17 +40,6 @@ button, input, select { font: inherit; color: inherit; }
   padding-inline: var(--space-xl);
 }
 
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--color-ink-2);
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-xs);
-}
-
 .italic-accent {
   font-family: var(--font-italic);
   font-style: italic;

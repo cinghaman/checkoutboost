@@ -142,7 +142,6 @@ def render(
   <main id="main-content">
     <section class="post-hero">
       <div class="post-hero-copy">
-        <span class="eyebrow">◇ {eyebrow}</span>
         <h1>{h1}</h1>
         <div class="meta-row">
           <span>Updated {date}</span>
