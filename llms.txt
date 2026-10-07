@@ -67,7 +67,8 @@ Last reviewed: 2026-09-25.
 - **Starter:** Free; up to 100 orders per month.
 - **Growth:** $29 per month or $278.40 per year; up to 1,000 orders per month.
 - **Advanced:** $59 per month or $566.40 per year; unlimited orders.
-- Every plan includes every widget and every rule type. Growth and Advanced include a 7-day free trial.
+- **Pro:** $99 per month or $950.40 per year; unlimited orders, plus customer order editing on every Shopify plan, and the stock urgency widget and checkout branding editor on Shopify Plus.
+- Paid plans can limit a gift to specific customers. Each store gets one 7-day free trial of a paid plan.
 
 ## Optional resources
 
