@@ -1,6 +1,6 @@
 # Smart Checkout Widgets
 
-> Smart Checkout Widgets is a Shopify checkout customizer for every plan: payment and shipping method rules (hide, rename, reorder, including hiding Cash on Delivery) and Thank You and Order Status page widgets on any Shopify plan, plus automatic gifts, customer-choice rewards, upsells and custom fields in checkout on Shopify Plus.
+> Smart Checkout Widgets is a Shopify checkout customizer for every plan: payment and shipping method rules (hide, rename, reorder, including hiding Cash on Delivery) and Thank You and Order Status page widgets on any Shopify plan, plus automatic gifts, customer-choice rewards, upsells and custom fields in checkout on Shopify Plus. It works with Shopify Sidekick, which can read its rules, gifts and widgets.
 
 Payment and shipping rules and Thank You and Order Status widgets work on Basic, Shopify, Advanced and Plus. Widgets on the checkout page itself need Shopify Plus, because Shopify only allows checkout-page customization on Plus. Eight one-click templates cover the most common payment and shipping rules.
 
@@ -45,6 +45,7 @@ Last reviewed: 2026-09-25.
 
 - [How to hide, rename and reorder shipping methods in Shopify checkout](https://smartcheckoutwidgets.com/blog/hide-rename-reorder-shipping-methods-shopify-checkout/): Rename vague shipping rates, hide couriers that do not fit the order, and put the option you want first, with rules that work on every Shopify plan.
 - [How to hide cash on delivery in Shopify checkout by cart value, country or customer](https://smartcheckoutwidgets.com/blog/hide-cash-on-delivery-shopify-checkout/): Cash on delivery drives refusals and return costs. Here is how to show it only where it makes sense, using payment method rules that run on any Shopify plan.
+- [Ask Shopify Sidekick why a payment method is missing](https://smartcheckoutwidgets.com/blog/shopify-sidekick-checkout-rules/): Sidekick can read your payment and shipping rules, gifts and widgets, and tell you which rule hides or renames a method.
 - [Show real low-stock badges in Shopify checkout](https://smartcheckoutwidgets.com/blog/shopify-checkout-low-stock-badge/): An "Only 3 left" badge under each checkout item, using your real inventory. How it works, what you can change, and when a low-stock note helps.
 - [See what your checkout gifts and upsells earn](https://smartcheckoutwidgets.com/blog/shopify-checkout-gift-upsell-results/): Gift and upsell orders, revenue and average order value from your own Shopify orders, on every plan, and how to read the gift comparison honestly.
 - [Let customers edit their own Shopify orders](https://smartcheckoutwidgets.com/blog/shopify-customer-order-editing/): Shopify has no self-serve order editing. How customers can change the address, swap a size, lower a quantity or cancel from the Thank you and Order status pages, on every Shopify plan.
