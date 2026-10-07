@@ -10,14 +10,14 @@
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentation | Smart Checkout Widgets for Shopify Plus</title>
-  <meta name="description" content="Official Smart Checkout Widgets documentation: checkout gifts, upsells, trust badges, custom fields, shipping and payment method rules, conditions, and order limits for Shopify Plus.">
+  <title>Documentation | Smart Checkout Widgets for Shopify</title>
+  <meta name="description" content="Official Smart Checkout Widgets documentation: checkout gifts, upsells, trust badges, custom fields, shipping and payment method rules, conditions, and order limits for Shopify checkout on every plan.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://smartcheckoutwidgets.com/docs/">
   <link rel="describedby" href="/llms.txt" type="text/plain" title="llms.txt">
 
   <meta property="og:title" content="Smart Checkout Widgets Documentation">
-  <meta property="og:description" content="How to set up checkout gifts, upsells, trust messaging, custom fields, and shipping and payment method rules in Shopify Plus checkout.">
+  <meta property="og:description" content="How to set up checkout gifts, upsells, trust messaging, custom fields, and shipping and payment method rules in Shopify checkout.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://smartcheckoutwidgets.com/docs/">
   <meta property="og:site_name" content="Smart Checkout Widgets">
@@ -25,10 +25,10 @@
   <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/default.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Smart Checkout Widgets documentation for Shopify Plus checkout">
+  <meta property="og:image:alt" content="Smart Checkout Widgets documentation for Shopify checkout">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Smart Checkout Widgets Documentation">
-  <meta name="twitter:description" content="Set up checkout gifts, upsells, trust badges, custom fields, and shipping and payment rules in Shopify Plus checkout.">
+  <meta name="twitter:description" content="Set up checkout gifts, upsells, trust badges, custom fields, and shipping and payment rules in Shopify checkout.">
   <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/default.webp">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,7 +41,7 @@
     "@context": "https://schema.org",
     "@type": "TechArticle",
     "headline": "Smart Checkout Widgets Documentation",
-    "description": "How to configure checkout gifts, upsells, trust messaging, custom fields, and shipping and payment method customizations for Shopify Plus checkout.",
+    "description": "How to configure checkout gifts, upsells, trust messaging, custom fields, and shipping and payment method customizations for Shopify checkout.",
     "url": "https://smartcheckoutwidgets.com/docs/",
     "inLanguage": "en",
     "image": "https://smartcheckoutwidgets.com/images/og/default.webp",
@@ -86,7 +86,7 @@
         "name": "Does this require Shopify Plus?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Checkout UI extensions \u2014 the widgets \u2014 require Shopify Plus, because Shopify limits checkout customization to Plus. Shipping and payment method rules work on all plans."
+          "text": "No. Shipping and payment rules, gift discounts, the Thank you and Order status page widgets, order editing and Results work on every Shopify plan. Plus is needed for widgets on the checkout page itself, for adding gifts to the cart at checkout, and for checkout branding, because Shopify only allows those on Plus."
         }
       },
       {
@@ -94,7 +94,7 @@
         "name": "Does it work with checkout.liquid?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No, and it does not need to. The app uses Shopify's checkout extensibility, which is the supported replacement for checkout.liquid."
+          "text": "No, and it doesn't need to. The app uses Shopify's checkout extensibility, which replaces checkout.liquid."
         }
       },
       {
@@ -118,7 +118,7 @@
         "name": "What happens to my configuration if I uninstall?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Widgets and rules stop applying immediately. Re-installing restores your shop's settings, so an accidental uninstall is recoverable."
+          "text": "Widgets and rules stop applying straight away. Shopify requires us to erase the shop's data 48 hours after an uninstall, so reinstalling within that window and reactivating your plan restores your widgets. After 48 hours the configuration has to be set up again."
         }
       }
     ]
@@ -317,7 +317,7 @@
   <header class="page-hero">
     <div class="page-hero-copy">
       <h1>Smart Checkout Widgets</h1>
-      <p>Everything the app can do in Shopify checkout — gifts, upsells, trust messaging, custom fields, and rules that rename, hide or reorder shipping and payment methods.</p>
+      <p>How to set up shipping and payment rules, checkout widgets, gifts, order editing and checkout branding.</p>
     </div>
   </header>
 
@@ -334,6 +334,9 @@
         <li><a href="#shipping-rules">Shipping method rules</a></li>
         <li><a href="#payment-rules">Payment method rules</a></li>
         <li><a href="#order-editing">Order editing</a></li>
+        <li><a href="#branding">Checkout branding</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#sidekick">Sidekick</a></li>
         <li><a href="#conditions">Conditions reference</a></li>
         <li><a href="#plans">Plans and order limits</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
@@ -345,83 +348,103 @@
     <main class="docs-content post-content" id="docs-main">
 
       <p class="docs-lede">
-        Smart Checkout Widgets adds merchandising to Shopify checkout: gifts that appear
-        automatically or by coupon, upsells, trust badges, custom fields, and rules that
-        change which shipping and payment methods a buyer sees. It runs on Shopify's own
-        checkout extensibility, so nothing here depends on <code>checkout.liquid</code>.
+        Smart Checkout Widgets customizes Shopify checkout and the pages after it. It hides,
+        renames and reorders shipping and payment methods, adds blocks such as trust badges,
+        upsells and custom fields, and gives away free gifts. It is built on Shopify's checkout
+        extensibility and Shopify Functions, so nothing here depends on <code>checkout.liquid</code>.
       </p>
 
       <h2 id="overview">Overview</h2>
-      <p>
-        The app has three parts, and it helps to keep them separate when you are planning a setup.
-      </p>
-      <ul>
-        <li><strong>Widgets</strong> render content inside checkout — badges, banners, fields, upsells, gifts.</li>
-        <li><strong>Shipping method rules</strong> rename, hide or reorder the delivery options Shopify offers.</li>
-        <li><strong>Payment method rules</strong> do the same for payment methods.</li>
-      </ul>
-      <p>
-        Widgets are additive: you place them and they show. Rules are subtractive and
-        conditional: they act on options Shopify has already produced, and only when the
-        conditions you set are met.
-      </p>
-
-      <div class="callout">
-        <p>
-          <strong>Checkout editor placement.</strong> Widgets appear where you place the app
-          block in Shopify's checkout editor. Installing the app does not put anything in
-          front of buyers until a block is placed and a widget is created.
-        </p>
+      <p>The app's menu has these sections:</p>
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead><tr><th>Section</th><th>What it does</th><th>Where it works</th></tr></thead>
+          <tbody>
+            <tr><td>Widgets</td><td>Blocks you place in checkout or on the Thank you and Order status pages.</td><td>Every Shopify plan on Thank you and Order status; the checkout page needs Plus</td></tr>
+            <tr><td>Checkout Gifts</td><td>Free products given by an automatic discount or a discount code.</td><td>Every Shopify plan; adding the gift to the cart for the shopper needs Plus</td></tr>
+            <tr><td>Payment Customizations</td><td>Hide, rename or reorder payment methods.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Shipping Customizations</td><td>Hide, rename or reorder delivery options.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Order Editing</td><td>Lets customers change their own order after buying. Pro plan.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Results</td><td>Orders, revenue, gifts and upsells over the last 7, 30 or 90 days.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Checkout Branding</td><td>Edits checkout colours, fonts, buttons and layout. Pro plan.</td><td>Shopify Plus</td></tr>
+          </tbody>
+        </table>
       </div>
+      <p>
+        Widgets add something to the page as soon as you place them. Shipping and payment rules
+        work the other way: they change options Shopify has already produced, and only when
+        their conditions are met.
+      </p>
 
       <h2 id="quickstart">Quickstart</h2>
       <ol>
         <li>Install the app from the <a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify App Store</a>.</li>
-        <li>Open <strong>Settings → Checkout → Customize</strong> in your Shopify admin.</li>
-        <li>Add the Smart Checkout Widgets app block where you want content to appear.</li>
-        <li>Save the checkout profile.</li>
-        <li>Back in the app, create your first widget and enable it.</li>
+        <li>For a rule, open <strong>Payment Customizations</strong> or <strong>Shipping Customizations</strong>, or start from one of the templates on the app's home page. Rules apply as soon as you save.</li>
+        <li>For a widget, create it under <strong>Widgets</strong>, then open <strong>Settings &gt; Checkout &gt; Customize</strong> in your Shopify admin.</li>
+        <li>Pick the page (Checkout, Thank you or Order status), add the Smart Checkout Widgets app block where you want it, choose your widget in the block's settings, and save.</li>
       </ol>
       <p>
-        Changes to a widget publish to checkout as soon as you save. You do not need to
-        re-publish the checkout profile after the block is placed once.
+        Nothing appears in front of shoppers until a block is placed. Once it is, changes you
+        save to the widget show up without publishing the checkout again.
       </p>
+
+      <h3 id="rule-templates">Rule templates</h3>
+      <p>
+        The home page has eight ready-made rules. Each opens the rule editor already filled
+        in and unsaved, so you can adjust it before anything changes at checkout.
+      </p>
+      <ul>
+        <li>Payment: hide cash on delivery on large orders, offer it only in your own country, hide it for guest checkouts, or rename it.</li>
+        <li>Shipping: add delivery times to a rate's name, hide a rate on heavy orders, hide a rate when the cart has oversized (tagged) products, or hide express shipping at weekends.</li>
+      </ul>
 
       <h2 id="widgets">Widgets</h2>
       <p>
-        Twelve widget types are available, and <strong>every one is included on every plan</strong>.
-        Plans differ only by monthly order volume, not by feature.
+        Eleven widget types are on every plan, and the Pro plan adds a twelfth, Stock urgency.
       </p>
 
       <div class="docs-table-wrap">
         <table class="docs-table">
           <thead>
-            <tr><th>Widget</th><th>What it does</th></tr>
+            <tr><th>Widget</th><th>What it does</th><th>Pages</th></tr>
           </thead>
           <tbody>
-            <tr><td>Trust badges</td><td>Badge row with your own images and labels — secure payment, returns, guarantees.</td></tr>
-            <tr><td>Payment icons</td><td>Displays accepted card and wallet icons.</td></tr>
-            <tr><td>Custom banner</td><td>A highlighted message block, for shipping cut-offs or promotions.</td></tr>
-            <tr><td>Custom content</td><td>Free-form rich content where a banner is too rigid.</td></tr>
-            <tr><td>Accordion</td><td>Collapsible sections — returns policy, delivery FAQs — without crowding checkout.</td></tr>
-            <tr><td>Consent check</td><td>A checkbox buyers must tick, for terms or age confirmation.</td></tr>
-            <tr><td>Custom fields</td><td>Extra inputs captured at checkout and written to the order.</td></tr>
-            <tr><td>Line item fields</td><td>Per-product inputs — engraving text, gift notes.</td></tr>
-            <tr><td>Line item options</td><td>Lets buyers change variant or quantity from inside checkout.</td></tr>
-            <tr><td>Cart value progress</td><td>A progress meter toward a threshold, such as free shipping.</td></tr>
-            <tr><td>Upsell</td><td>Offers additional products in checkout. See <a href="#upsells">Upsells</a>.</td></tr>
-            <tr><td>Gifts</td><td>Automatic or coupon-triggered free products. See <a href="#gifts">Checkout gifts</a>.</td></tr>
+            <tr><td>Trust badges</td><td>A row of badges with your own images and labels, for secure payment, returns or guarantees.</td><td>All</td></tr>
+            <tr><td>Payment icons</td><td>The card and wallet logos you accept.</td><td>All</td></tr>
+            <tr><td>Custom banner</td><td>An image with text above, below or beside it, and an optional link.</td><td>All</td></tr>
+            <tr><td>Custom content</td><td>Free-form content where a banner is too rigid.</td><td>All</td></tr>
+            <tr><td>Accordion</td><td>Collapsible sections, such as a returns policy or delivery questions.</td><td>All</td></tr>
+            <tr><td>Upsell</td><td>Offers more products. See <a href="#upsells">Upsells</a>.</td><td>All</td></tr>
+            <tr><td>Consent check</td><td>A checkbox buyers must tick, for terms or age confirmation.</td><td>Checkout (Plus)</td></tr>
+            <tr><td>Custom fields</td><td>Extra inputs saved to the order.</td><td>Checkout (Plus)</td></tr>
+            <tr><td>Line item fields</td><td>Inputs per product, such as engraving text or a gift note.</td><td>Checkout (Plus)</td></tr>
+            <tr><td>Line item options</td><td>Lets buyers change variant or quantity inside checkout.</td><td>Checkout (Plus)</td></tr>
+            <tr><td>Progress bar</td><td>Progress toward a cart value, such as free shipping.</td><td>Checkout (Plus)</td></tr>
+            <tr><td>Stock urgency</td><td>Pro plan. See below.</td><td>Checkout (Plus)</td></tr>
           </tbody>
         </table>
       </div>
+      <p>
+        Shopify only lets Plus stores add apps to the checkout page itself. The Thank you and
+        Order status pages are open to every plan, so the widgets marked "All" work on any
+        store. The others write to the cart or the checkout and only do their job before the
+        order is placed, which is why they need Plus. The editor marks them "Plus checkout only"
+        when your store is not on Plus.
+      </p>
+      <p>
+        Upsell, Custom fields, Line item fields, Line item options and Progress bar can have
+        display conditions: show the widget only when the cart contains a product or a tagged
+        product, or when the cart value is above or below an amount. In the checkout editor,
+        each block can also be hidden on desktop, tablet or mobile.
+      </p>
 
       <h3 id="stock-urgency">Stock urgency (Pro)</h3>
       <p>
-        On the Pro plan, a thirteenth widget shows a badge such as <em>Only 4 left - selling
-        fast!</em> under each checkout item whose stock is at or below a number you choose.
-        Set the threshold, the message (<code>{{count}}</code> becomes the number left), the
-        colour and the icon, then add the app block to the item list in Shopify's checkout
-        editor. It needs Shopify Plus, because it runs on the checkout page.
+        Shows a badge such as <em>Only 4 left - selling fast!</em> under each checkout item
+        whose stock is at or below a number you choose. Set the threshold, the message
+        (<code>{{count}}</code> becomes the number left), the colour and the icon, then add the
+        app block to the item list in Shopify's checkout editor. It needs Shopify Plus, because
+        it runs on the checkout page.
       </p>
       <p>
         The count is always your real inventory. Items that don't track stock, or that keep
@@ -430,95 +453,82 @@
 
       <h3 id="widget-basics">Creating and disabling a widget</h3>
       <p>
-        Each widget is created, named and configured independently, and can be disabled
-        without deleting it. Disabling removes it from checkout immediately while keeping
-        its configuration, which is the safer way to pause something mid-campaign.
+        Each widget is created, named and configured on its own, and can be disabled without
+        deleting it. Disabling takes it off the page at once and keeps its settings, which is
+        the safer way to pause something mid-campaign.
       </p>
 
       <h2 id="gifts">Checkout gifts</h2>
       <p>
-        Gifts add a free product to the order at checkout. There are two ways to trigger one,
-        and they behave differently.
+        Gifts are Shopify discounts that make a product free. Create them under
+        <strong>Checkout Gifts</strong>, then add the <strong>Smart Gift</strong> app block to
+        the <strong>Order summary</strong> section of the checkout page in Shopify's checkout
+        editor. On Shopify Plus the block adds and removes the gift for the shopper. On other
+        plans there is no checkout block, but the discount still makes the gift free when the
+        shopper adds the gift product to the cart themselves.
       </p>
 
       <h3 id="automatic-gifts">Automatic gifts</h3>
       <p>
-        The gift is added when the cart meets the rule you set — a spend threshold, or the
-        presence of particular products. The buyer does nothing.
+        The gift is added when the cart meets the minimum you set. Automatic gifts must have a
+        minimum, either a purchase amount or a number of items. You can also stop shoppers
+        using discount codes while the gift is in the cart, with your own message of up to 100
+        characters.
       </p>
 
       <h3 id="coupon-gifts">Coupon gifts</h3>
       <p>
         The gift is tied to a discount code. When the buyer applies the code, the gift is
-        added; if the code is removed, the gift is removed with it.
+        added. If they remove the code, the gift is removed with it. A coupon gift can have a
+        minimum or none at all.
       </p>
 
       <div class="callout callout--warn">
         <p>
-          <strong>Gift variants should be priced normally in your catalogue.</strong> The app
-          discounts the gift at checkout. If the variant is priced at zero in the catalogue
-          instead, there is no price to discount, so a gift that fails to be removed is given
-          away at zero rather than reverting to full price.
+          <strong>Price gift variants normally in your catalogue.</strong> The app discounts
+          the gift at checkout. If the variant costs zero in the catalogue, there is no price to
+          discount, so a gift that fails to be removed ships for free instead of reverting to
+          full price.
         </p>
       </div>
 
       <h3 id="gift-rules">Rules every gift follows</h3>
       <ul>
-        <li>
-          <strong>One gift coupon at a time.</strong> A second gift code entered on top of the
-          first is rejected, so two campaigns can never stack their gifts.
-        </li>
-        <li>
-          <strong>Combinable by default.</strong> Gift discounts combine with product, order
-          and shipping discounts unless you turn that off on the discount.
-        </li>
-        <li>
-          <strong>Customer eligibility.</strong> A gift can be limited to specific customers or
-          customer segments, the same as any Shopify discount.
-        </li>
-        <li>
-          <strong>Minimum requirements</strong> can be a spend threshold or specific products,
-          variants or collections that must be in the cart.
-        </li>
-        <li>
-          <strong>Cloning.</strong> An existing gift discount can be duplicated from its list
-          page, which is the quickest way to set up a variant of a working campaign.
-        </li>
-        <li>
-          <strong>Re-save after changing gifts.</strong> After you edit the gift products on a
-          discount, save it again so the checkout picks up the new setup.
-        </li>
+        <li>Only one gift coupon works at a time. A second gift code entered on top of the first is rejected, so two campaigns can't stack their gifts.</li>
+        <li>Gift discounts always combine with product, order and shipping discounts. There is no setting to change this.</li>
+        <li>A minimum is a purchase amount or a number of items, counted across the whole cart, specific products, or specific collections.</li>
+        <li>On paid plans a gift can be limited to specific customers. On Starter every gift is open to all customers.</li>
+        <li>You can duplicate a gift from its list page, which is the quickest way to start a variation of a working campaign.</li>
+        <li>After you change the gift products on a discount, save it again so checkout picks up the new setup.</li>
       </ul>
 
       <h3 id="customer-choice-gifts">Customer choice</h3>
       <p>
-        Rather than fixing one gift, you can offer several and let the buyer pick. You can cap
-        how many items they may choose, so a "pick 2 of 6" promotion stays within its margin.
-        The selection message above the options is editable, and you can show or hide the
-        variant price next to each gift.
+        Instead of one fixed gift, you can offer several and let the buyer pick. You can cap
+        how many they may choose, so a "pick 2 of 6" promotion stays within its margin. The
+        message above the options is editable, and you can show or hide each gift's price.
       </p>
 
       <h2 id="upsells">Upsells</h2>
       <p>
-        The upsell widget offers additional products inside checkout. Buyers add them without
-        leaving the page, so the offer does not interrupt the flow the way a pre-purchase
-        upsell does.
+        The upsell widget offers more products. In checkout, buyers add them without leaving
+        the page. On the Thank you and Order status pages, which every plan can use, each offer
+        links to a new cart with that product, as a "buy again" offer.
       </p>
       <p>
-        Upsells can be targeted with the same product-level thinking as gifts — offer an
-        accessory only when the matching product is in the cart, rather than to everyone.
+        Products can come from a list you pick, from collections or from product tags. You can
+        cap how many show in total and per collection, hide items that are out of stock, on
+        sale, tagged or below a minimum price, and choose whether variants show separately,
+        combined or not at all. Display conditions let you show an accessory only when the
+        matching product is in the cart.
       </p>
 
       <h2 id="shipping-rules">Shipping method rules</h2>
       <p>
-        A shipping method rule changes the delivery options Shopify has already calculated.
-        Three actions are available:
+        A shipping method rule changes the delivery options Shopify has already calculated. It
+        can rename an option ("Standard Shipping" becomes "Arrives in 3 to 5 days"), hide it,
+        or move it to a set position in the list.
       </p>
-      <ul>
-        <li><strong>Rename</strong> — "Standard Shipping" becomes "Arrives in 3–5 days".</li>
-        <li><strong>Show / hide</strong> — remove options that do not apply.</li>
-        <li><strong>Re-order</strong> — move an option to a chosen position.</li>
-      </ul>
 
       <h3 id="apply-to">Apply to</h3>
       <p>
@@ -528,97 +538,146 @@
       </p>
       <p>
         Scope matters when names collide. A store with a "Warsaw" pickup location and a
-        "Warsaw Warehouse" shipping rate can target one without disturbing the other only by
+        "Warsaw Warehouse" shipping rate can only target one without touching the other by
         scoping the rule.
       </p>
 
       <h3 id="pickup-locations">Pickup locations</h3>
       <p>
-        Local pickup locations can be renamed and hidden individually, the same as shipping
-        rates. Scope the rule to <strong>Local pickup locations only</strong> and match the
-        location's name, or use <code>*</code> to match every pickup location at once.
+        Local pickup locations can be renamed and hidden one by one, the same as shipping rates.
+        Scope the rule to <strong>Local pickup locations only</strong> and match the location's
+        name.
       </p>
 
       <div class="callout callout--limit">
         <p>
-          <strong>Shopify does not allow hiding a delivery method itself.</strong> You can hide
-          individual pickup locations, but not the "Pick up" tab. Hiding every location may
-          leave the tab visible with nothing inside it. This is a platform limitation, not an
-          app one, and no checkout app can work around it.
+          <strong>Shopify does not let apps hide a delivery method itself.</strong> You can hide
+          individual pickup locations, but not the "Pick up" tab. If you hide every location,
+          the tab may stay visible with nothing in it. No checkout app can get around this.
         </p>
       </div>
 
       <h3 id="matching">How matching works</h3>
       <p>
-        Rules match on the option's name, case-insensitively, and match anywhere in the name —
-        so <code>Express</code> matches "Express Shipping" and "Express Saver". <strong>Every</strong>
-        matching option is affected, not just the first.
+        Rules match on the option's displayed name, ignoring case, anywhere in the name. So
+        <code>Express</code> matches "Express Shipping" and "Express Saver", and every option
+        that matches is affected. <code>*</code> matches every option in the rule's scope.
+      </p>
+      <p>
+        When several entries in a rename rule match the same option, an entry equal to the
+        option's full name wins. Otherwise the longest match wins.
       </p>
 
       <h2 id="payment-rules">Payment method rules</h2>
       <p>
-        Payment method rules work identically — rename, show/hide, re-order — applied to the
-        payment methods at checkout. The most common use is hiding cash on delivery above a
-        cart value, or for particular countries.
-      </p>
-      <p>
-        Payment and shipping rules share the same condition set, so a rule means the same
+        Payment method rules rename, hide and reorder payment methods the same way. The most
+        common use is hiding cash on delivery above a cart value or in certain countries.
+        Payment and shipping rules share one set of conditions, so a condition means the same
         thing in either place.
       </p>
 
       <h2 id="order-editing">Order editing</h2>
       <p>
-        On the Pro plan, customers can change their own order on the Thank you and Order status
-        pages for a time you choose after they buy. It works on every Shopify plan except
-        Starter, because it runs on those two pages rather than in checkout. Development stores
-        can use it free for testing.
+        Order editing is part of the Pro plan and works on every Shopify plan, because it runs on
+        the Thank you and Order status pages rather than in checkout. Customers can change their
+        own order there for a time you choose after they buy. Development stores can use it for
+        free while testing.
       </p>
       <h3 id="order-editing-setup">Setting it up</h3>
       <ol>
         <li>Open <strong>Order Editing</strong> in the app, tick <em>Let customers edit their orders</em>, choose the edit window and the changes to allow, and save.</li>
-        <li>Click <strong>Allow access</strong> to grant the two optional permissions: <em>edit orders</em> (needed for variant swaps) and <em>manage fulfillment orders</em> (needed for holds). Address changes, lower quantities and cancellations work without them.</li>
+        <li>Click <strong>Allow access</strong> to grant two optional permissions: <em>edit orders</em> (needed for variant swaps) and <em>manage fulfillment orders</em> (needed for holds). Address changes, lower quantities and cancellations work without them.</li>
         <li>Click <strong>Add to Thank you page</strong> to open Shopify's checkout editor on that page.</li>
         <li>In the left sidebar, under <strong>Main</strong>, click <strong>Add block</strong> and pick <em>Order editing</em> from the Apps list.</li>
-        <li>Drag the block so it sits <strong>below Order details</strong> (and its Customer information) and <strong>above Action</strong>, then click <strong>Save</strong>.</li>
-        <li>Click <strong>Add to Order status page</strong> and place the block in the same spot, below Order details, then save again.</li>
+        <li>Drag the block below <strong>Order details</strong> (and its Customer information) and above <strong>Action</strong>, then click <strong>Save</strong>.</li>
+        <li>Click <strong>Add to Order status page</strong>, put the block in the same place, and save again.</li>
       </ol>
       <p>
-        That spot puts the editing panel right under the order the customer just checked, before
-        the buttons at the bottom of the page. Customers only see the block while their order can
-        still be edited, so it is safe to leave in place.
+        There the editing panel sits right under the order the customer just reviewed, above
+        the buttons at the bottom of the page. Customers only see the block while their order
+        can still be edited, so you can leave it in place.
       </p>
       <h3 id="order-editing-changes">What customers can change</h3>
       <div class="docs-table-wrap">
         <table class="docs-table">
           <thead><tr><th>Change</th><th>Rules</th><th>Money</th></tr></thead>
           <tbody>
-            <tr><td>Shipping address</td><td>Same country only. The order must need shipping.</td><td>None</td></tr>
-            <tr><td>Swap variant</td><td>Another in-stock variant of the same product at the same price. Not on discounted lines.</td><td>None. The swap is only saved if Shopify's new total equals the old one.</td></tr>
-            <tr><td>Lower quantity / remove item</td><td>Paid orders only. Removing the last item is a cancellation instead.</td><td>Refunded to the original payment method, calculated by Shopify</td></tr>
-            <tr><td>Request a removal</td><td>Offered instead of the row above when the order has a discount or free gift. One request at a time.</td><td>None by the app. The request appears on the order in your Shopify admin, and you decide whether to remove and refund.</td></tr>
-            <tr><td>Cancel order</td><td>Any unfulfilled order.</td><td>Full refund, stock restocked</td></tr>
+            <tr><td>Shipping address</td><td>Same country and same state or province. The order must need shipping.</td><td>None</td></tr>
+            <tr><td>Swap variant</td><td>Paid orders only. Another in-stock variant of the same product at the same price. Not on discounted lines.</td><td>None. The swap is only saved if Shopify's new total equals the old one.</td></tr>
+            <tr><td>Lower quantity or remove item</td><td>Paid orders only. Removing the last item is a cancellation instead.</td><td>Refunded to the original payment method, calculated by Shopify</td></tr>
+            <tr><td>Request a removal</td><td>Offered instead of the row above when the order has a discount or a free gift. One request at a time.</td><td>None by the app. The request appears on the order in your Shopify admin, and you decide whether to remove and refund.</td></tr>
+            <tr><td>Cancel order</td><td>Any unfulfilled order.</td><td>Full refund, items restocked</td></tr>
           </tbody>
         </table>
       </div>
       <p>
-        Editing stops as soon as the window ends, any item is fulfilled, or the order is cancelled
-        or closed. Gift cards, subscription items and free gifts from Smart Checkout Widgets are
-        never editable. POS and draft orders are not offered editing.
+        Editing stops when the window ends, when any item is fulfilled, or when the order is
+        cancelled or closed. Gift cards, subscription items and free gifts from Smart Checkout
+        Widgets can't be edited, and POS and draft orders are never offered editing.
       </p>
       <h3 id="order-editing-hold">Fulfillment hold</h3>
       <p>
         With <em>Hold new orders until the edit window ends</em> on, every new order gets a
-        fulfillment hold that says when it will be released. The app releases it automatically
-        when the window ends. You can release it yourself at any time from the order page in
-        Shopify; nothing else is affected.
+        fulfillment hold that says when it will be released. The app releases it when the window
+        ends. You can release it yourself at any time from the order page in Shopify without
+        affecting anything else.
       </p>
       <h3 id="order-editing-tracking">Seeing what changed</h3>
       <p>
-        Edited orders are tagged <code>Customer edited</code>, and Shopify emails the customer
-        about refunds and cancellations as usual. The Order Editing page lists the last 50 edits,
-        refusals, holds and releases.
-        Removal requests are not tagged, because nothing on the order changed; Shopify marks
-        the order as having a requested edit, and you resolve or decline it there.
+        Edited orders are tagged <code>Customer edited</code>. Shopify emails the customer
+        about variant swaps, refunds and cancellations. The Order Editing page lists the last
+        50 edits, refusals, holds and releases.
+      </p>
+      <p>
+        Removal requests are not tagged, because nothing on the order has changed yet. Shopify
+        marks the order as having a requested edit, and you accept or decline it there.
+      </p>
+
+      <h2 id="branding">Checkout branding (Pro)</h2>
+      <p>
+        <strong>Checkout Branding</strong> edits the look of your live checkout. Shopify only
+        lets apps do this on Plus stores, so it needs the Pro plan and Shopify Plus.
+        Development stores can try it on any plan. Below Plus, the page links to Shopify's own
+        checkout editor instead. The first time you open it, the app asks for permission to read
+        and edit your checkout configuration.
+      </p>
+      <p>The editor covers six areas:</p>
+      <ul>
+        <li>Colours: accent, buttons, errors, page background and text, the Pay now button and its hover colour, and the header and order summary backgrounds.</li>
+        <li>Typography: base size from 12 to 18px, the heading scale, size, weight and case for the first three heading levels, and letter spacing.</li>
+        <li>Buttons: corner radius, padding, border, case and weight for primary and secondary buttons, and the corner radius of express checkout buttons.</li>
+        <li>Corners and form fields: corner radii, field borders, labels inside or above fields, and checkbox and product thumbnail corners.</li>
+        <li>Header and footer: logo alignment and width, dividers, padding, breadcrumbs, the cart link, footer alignment and policy links.</li>
+        <li>Sections: background, border, corner radius and shadow for the main area and the order summary, and the order summary divider.</li>
+      </ul>
+      <p>
+        The page loads your current settings, including anything set earlier in Checkout
+        Blocks. Saving publishes straight to your live checkout. A blank field means Shopify's
+        default, and <strong>Undo last save</strong> puts back exactly what your last save
+        changed.
+      </p>
+
+      <h2 id="results">Results</h2>
+      <p>
+        The <strong>Results</strong> page shows what the app did for your orders over the last
+        7, 30 or 90 days, on every plan. It counts from the first order the app recorded after
+        install.
+      </p>
+      <ul>
+        <li>Totals: orders, revenue and average order value.</li>
+        <li>Gifts: orders with a gift, gifts given and their value, and the average value of orders with a gift next to orders without one. That comparison is not the same as proof the gift caused the difference.</li>
+        <li>Upsells: orders with an upsell, items sold and revenue. Only items added with the checkout Upsell block count. Clicks on Thank you page offers are not counted yet.</li>
+        <li>Block views for each widget type on checkout, Thank you and Order status.</li>
+      </ul>
+
+      <h2 id="sidekick">Sidekick</h2>
+      <p>
+        If your store uses Shopify Sidekick, you can ask it about your Smart Checkout Widgets
+        setup. It can explain which payment or shipping rule hides, renames or reorders a
+        method and when (for example, why cash on delivery is missing), list your gift
+        campaigns with their status and dates, list your widgets and the pages they show on,
+        and suggest a rule template. Sidekick only reads. To change something it gives you a
+        link to the app, and nothing changes until you save there.
       </p>
 
       <h2 id="conditions">Conditions reference</h2>
@@ -645,31 +704,19 @@
 
       <h3 id="condition-notes">Things worth knowing</h3>
       <ul>
-        <li>
-          <strong>Lists.</strong> Text conditions accept comma-separated values and match any
-          of them, so <code>PL, DE, FR</code> is one condition rather than three.
-        </li>
-        <li>
-          <strong>Customer conditions need a signed-in customer.</strong> Tag, order count and
-          total spent never match a guest checkout, because there is no customer record to
-          read.
-        </li>
-        <li>
-          <strong>Missing data never matches.</strong> If checkout has not collected a value
-          yet, conditions on it are false — including negative ones. "City is not Warsaw" is
-          false when no city has been entered, rather than true.
-        </li>
-        <li>
-          <strong>Weight is in grams</strong>, whatever unit your variants use.
-        </li>
+        <li>Address conditions accept comma-separated values and match any of them, so <code>PL, DE, FR</code> is one condition rather than three.</li>
+        <li>A customer tag condition checks one tag. Add another condition for a second tag. Product tag and collection can each appear once per rule.</li>
+        <li>A date condition takes one date, written YYYY-MM-DD.</li>
+        <li>Tag, order count and total spent need a signed-in customer. They never match a guest checkout, because there is no customer record to read.</li>
+        <li>Missing data never matches. If checkout hasn't collected a value yet, conditions on it are false, including negative ones: "City is not Warsaw" is false when no city has been entered.</li>
+        <li>Weight is in grams, whatever unit your variants use.</li>
       </ul>
 
       <h2 id="plans">Plans and order limits</h2>
       <p>
-        Every plan includes every widget and every rule type. Starter, Growth and Advanced differ
-        only by how many orders per month they cover; Pro adds self-serve order editing (every
-        Shopify plan), plus the stock urgency widget and the checkout branding editor for
-        Shopify Plus stores.
+        Starter, Growth and Advanced differ by how many orders a month they cover, and paid plans
+        also let you limit a gift to specific customers. Pro adds order editing on every Shopify
+        plan, and the stock urgency widget and checkout branding on Shopify Plus.
       </p>
 
       <div class="docs-table-wrap">
@@ -681,85 +728,86 @@
             <tr><td>Starter</td><td>Free</td><td>Free</td><td>Up to 100</td></tr>
             <tr><td>Growth</td><td>$29</td><td>$278.40</td><td>Up to 1,000</td></tr>
             <tr><td>Advanced</td><td>$59</td><td>$566.40</td><td>Unlimited</td></tr>
-            <tr><td>Pro</td><td>$99</td><td>$950.40</td><td>Unlimited, plus order editing; stock urgency and checkout branding on Plus stores</td></tr>
+            <tr><td>Pro</td><td>$99</td><td>$950.40</td><td>Unlimited, plus order editing, stock urgency and checkout branding</td></tr>
           </tbody>
         </table>
       </div>
-      <p>Yearly billing is 20% cheaper than twelve monthly charges. Starter needs no subscription, and Growth, Advanced and Pro include a 7-day free trial. Development stores are not billed.</p>
+      <p>
+        Yearly billing costs 20% less than twelve monthly charges. Starter needs no
+        subscription. Each store gets one 7-day free trial of a paid plan. Switching between
+        paid plans does not start a new trial, and a store that has paid before gets none.
+        Development stores are not billed.
+      </p>
 
       <div class="callout callout--warn">
         <p>
-          <strong>Going over your order limit.</strong> Widgets are disabled once a store passes
-          25% over its plan's monthly limit, not the moment the limit is reached. Upgrading
-          re-enables them automatically — you do not need to contact support or reconfigure
-          anything.
+          <strong>Going over your order limit.</strong> Once a store passes its plan's monthly
+          limit by 25%, the app's widgets stop showing. Gifts, shipping and payment rules and
+          order editing keep working. Upgrading to a plan that covers this month's orders
+          brings the widgets back automatically, with nothing to reconfigure. Stores that
+          haven't set anything up are never paused.
         </p>
       </div>
 
       <h2 id="troubleshooting">Troubleshooting</h2>
 
-      <h3 id="widget-not-showing">A widget is not appearing in checkout</h3>
+      <h3 id="widget-not-showing">A widget is not appearing</h3>
       <ol>
-        <li>Confirm the app block is placed in <strong>Settings → Checkout → Customize</strong>.</li>
-        <li>Confirm the widget is enabled, not just saved.</li>
-        <li>Check your order volume against your plan — see <a href="#plans">Plans and order limits</a>.</li>
+        <li>Check the app block is placed on that page in <strong>Settings &gt; Checkout &gt; Customize</strong>, and that the block's settings point to your widget.</li>
+        <li>Check the widget is enabled, not just saved.</li>
+        <li>If the store is not on Plus, check the widget type works outside the checkout page. See <a href="#widgets">Widgets</a>.</li>
+        <li>Check the widget's display conditions, and whether the block is hidden on that device.</li>
+        <li>Check your order volume against your plan. See <a href="#plans">Plans and order limits</a>.</li>
       </ol>
 
       <h3 id="rule-not-firing">A shipping or payment rule is not doing anything</h3>
       <ol>
-        <li>
-          Check the <strong>Apply to</strong> scope. A rule scoped to pickup locations will
-          never match a shipping rate, however the name is spelled.
-        </li>
-        <li>
-          Check the condition. Customer conditions do not match guest checkouts, and a
-          condition on data checkout has not collected yet is false.
-        </li>
-        <li>
-          Check the name you typed actually appears in the option's name at checkout.
-          Matching is on the displayed name.
-        </li>
+        <li>Check the <strong>Apply to</strong> scope. A rule scoped to pickup locations never matches a shipping rate, however the name is spelled.</li>
+        <li>Check the conditions. Customer conditions don't match guest checkouts, and a condition on data checkout hasn't collected yet is false.</li>
+        <li>Check that the name you typed appears in the option's name at checkout. Matching is on the displayed name.</li>
       </ol>
 
       <h3 id="gift-not-removed">A gift stayed in the order after the coupon was removed</h3>
       <p>
-        This is why gift variants should carry a normal catalogue price — see the note under
-        <a href="#coupon-gifts">Coupon gifts</a>. If you see it happen, contact support with
-        the order number.
+        This is why gift variants should have a normal catalogue price. See the note under
+        <a href="#coupon-gifts">Coupon gifts</a>. If it happens, email support with the order
+        number.
       </p>
 
       <h2 id="faq">FAQ</h2>
 
       <h3>Does this require Shopify Plus?</h3>
       <p>
-        Checkout UI extensions — the widgets — require Shopify Plus, because Shopify limits
-        checkout customization to Plus. Shipping and payment method rules work on all plans.
+        No. Shipping and payment rules, gift discounts, the Thank you and Order status page
+        widgets, order editing and Results work on every Shopify plan. Plus is needed for
+        widgets on the checkout page itself, for adding gifts to the cart at checkout, and for
+        checkout branding, because Shopify only allows those on Plus.
       </p>
 
       <h3>Does it work with checkout.liquid?</h3>
       <p>
-        No, and it does not need to. The app uses Shopify's checkout extensibility, which is
-        the supported replacement for <code>checkout.liquid</code>.
+        No, and it doesn't need to. The app uses Shopify's checkout extensibility, which
+        replaces <code>checkout.liquid</code>.
       </p>
 
       <h3>Can I hide the "Pick up" option entirely?</h3>
       <p>
-        No. Shopify allows hiding individual pickup locations but not the delivery method
+        No. Shopify lets apps hide individual pickup locations but not the delivery method
         itself. See <a href="#pickup-locations">Pickup locations</a>.
       </p>
 
       <h3>Will my rules survive a Shopify checkout update?</h3>
       <p>
         Yes. Rules are stored against your shop and applied by Shopify Functions at checkout,
-        so they are unaffected by theme or checkout template changes.
+        so theme or checkout template changes don't affect them.
       </p>
 
       <h3>What happens to my configuration if I uninstall?</h3>
       <p>
-        Widgets and rules stop applying immediately. Shopify requires us to erase the
-        shop's data 48 hours after an uninstall, so re-installing within that window and
-        re-activating your plan restores your widgets. After 48 hours the configuration is
-        gone and has to be recreated.
+        Widgets and rules stop applying straight away. Shopify requires us to erase the shop's
+        data 48 hours after an uninstall, so reinstalling within that window and reactivating
+        your plan restores your widgets. After 48 hours the configuration is gone and has to be
+        set up again.
       </p>
 
       <div class="section-cta">
