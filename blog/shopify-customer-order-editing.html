@@ -26,7 +26,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Guide: self-serve order editing on Shopify">
   <meta property="article:published_time" content="2026-10-02">
-  <meta property="article:modified_time" content="2026-10-02">
+  <meta property="article:modified_time" content="2026-10-07">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Let Customers Edit Their Own Shopify Orders | Smart Checkout Widgets">
   <meta name="twitter:description" content="Shopify has no self-serve order editing. How to let customers change the address, swap a size, lower a quantity or cancel from the Thank you and Order status pages — on every Shopify plan.">
@@ -52,7 +52,7 @@
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://smartcheckoutwidgets.com/blog/shopify-customer-order-editing/"},
   "image": ["https://smartcheckoutwidgets.com/images/og/thank-you-order-status.webp"],
   "datePublished": "2026-10-02",
-  "dateModified": "2026-10-02",
+  "dateModified": "2026-10-07",
   "author": {"@type": "Organization", "name": "Smart Checkout Widgets", "url": "https://smartcheckoutwidgets.com/"},
   "publisher": {"@type": "Organization", "name": "Smart Checkout Widgets", "url": "https://smartcheckoutwidgets.com/", "logo": {"@type": "ImageObject", "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"}},
   "inLanguage": "en-US",
@@ -73,7 +73,7 @@
 }
   </script>
 
-  <link rel="stylesheet" href="/style.css?v=20260925c">
+  <link rel="stylesheet" href="/style.css?v=20261007a">
 </head>
 <body class="page-inner">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -100,7 +100,7 @@
       <div class="post-hero-copy">
         <h1>Let customers edit their own Shopify orders</h1>
         <div class="meta-row">
-          <span>Published October 2, 2026</span>
+          <span>Published October 2, 2026, updated October 7</span>
           <span>Smart Checkout Widgets</span>
           <span><a href="/blog/" style="color: inherit;">All articles</a></span>
         </div>
@@ -115,12 +115,20 @@
 
 <h2>What customers can change</h2>
 <ul>
-  <li><strong>Shipping address</strong>, within the same country, so shipping rates, taxes and duties stay correct.</li>
+  <li><strong>Shipping address</strong>, within the same country and state or province, so shipping rates, taxes and duties stay correct.</li>
   <li><strong>Size, color or other option</strong>: a swap to an in-stock variant of the same product at the same price.</li>
   <li><strong>Quantity</strong>: lower it or remove an item. Shopify calculates the refund, including tax and discounts, and sends it to the original payment method.</li>
   <li><strong>Cancel the order</strong>, with a full refund and the stock put back.</li>
 </ul>
 <p>Every one of these needs no new payment from the customer. Adding items and upgrading to a pricier variant need the customer to pay the difference, and they are on the roadmap rather than half-done.</p>
+
+<h2>When a refund isn't straightforward: removal requests</h2>
+<p>Taking an item off an order that used a discount code or came with a free gift is messy. The discount may no longer apply, the gift may no longer be earned, and an automatic refund could give back the wrong amount. So on those orders the customer gets a <strong>Request removal</strong> button instead of removing the item themselves.</p>
+<figure class="post-figure post-figure--diagram">
+  <ol class="flow" aria-label="How a removal request moves from the customer to the merchant"><li class=""><strong>Customer</strong><span>Clicks Request removal on an item, on the Thank you or Order status page</span></li><li class=""><strong>Shopify order</strong><span>Shows a requested edit. Nothing changes and nothing is refunded yet</span></li><li class="is-end"><strong>You</strong><span>Accept and refund, or decline, in the Shopify admin</span></li></ol>
+  <figcaption>The customer asks, Shopify records the request on the order, and you decide.</figcaption>
+</figure>
+<p>The request uses Shopify's own requested-edit feature, so it appears on the order in your admin like any other. The app doesn't refund or tag anything. A customer can have one request open at a time.</p>
 
 <h2>How it stays safe</h2>
 <p>Orders are money, so the rules lean towards saying no:</p>
