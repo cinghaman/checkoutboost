@@ -61,7 +61,7 @@ FOOTER = """  <footer class="footer">
           <h5>Resources</h5>
           <ul>
             <li><a href="/blog/">Blog</a></li>
-            <li><a href="/privacy.html">Privacy</a></li>
+            <li><a href="/privacy/">Privacy</a></li>
             <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
           </ul>
         </div>
@@ -79,7 +79,7 @@ FOOTER = """  <footer class="footer">
         <div class="footer__col">
           <h5>Legal</h5>
           <ul>
-            <li><a href="/privacy.html">Privacy policy</a></li>
+            <li><a href="/privacy/">Privacy policy</a></li>
           </ul>
         </div>
       </div>
