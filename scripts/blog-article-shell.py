@@ -14,7 +14,7 @@ GTAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9G
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-T9GSXKCN10');
+    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) gtag('config', 'G-T9GSXKCN10');
   </script>"""
 
 FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
