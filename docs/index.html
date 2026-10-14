@@ -317,7 +317,7 @@
   <header class="page-hero">
     <div class="page-hero-copy">
       <h1>Smart Checkout Widgets</h1>
-      <p>How to set up shipping and payment rules, checkout widgets, gifts, order editing and checkout branding.</p>
+      <p>How to set up shipping and payment rules, checkout widgets, the post-purchase survey, gifts, order editing and checkout branding.</p>
     </div>
   </header>
 
@@ -329,6 +329,8 @@
         <li><a href="#overview">Overview</a></li>
         <li><a href="#quickstart">Quickstart</a></li>
         <li><a href="#widgets">Widgets</a></li>
+        <li><a href="#adding-widgets">Adding a widget to checkout</a></li>
+        <li><a href="#survey">Post-purchase survey</a></li>
         <li><a href="#gifts">Checkout gifts</a></li>
         <li><a href="#upsells">Upsells</a></li>
         <li><a href="#shipping-rules">Shipping method rules</a></li>
@@ -365,7 +367,7 @@
             <tr><td>Payment Customizations</td><td>Hide, rename or reorder payment methods.</td><td>Every Shopify plan</td></tr>
             <tr><td>Shipping Customizations</td><td>Hide, rename or reorder delivery options.</td><td>Every Shopify plan</td></tr>
             <tr><td>Order Editing</td><td>Lets customers change their own order after buying. Pro plan.</td><td>Every Shopify plan</td></tr>
-            <tr><td>Results</td><td>Orders, revenue, gifts and upsells over the last 7, 30 or 90 days.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Results</td><td>Orders, revenue, gifts, upsells and survey answers over the last 7, 30 or 90 days.</td><td>Every Shopify plan</td></tr>
             <tr><td>Checkout Branding</td><td>Edits checkout colours, fonts, buttons and layout. Pro plan.</td><td>Shopify Plus</td></tr>
           </tbody>
         </table>
@@ -385,7 +387,7 @@
         <li>Install the app from the <a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify App Store</a>.</li>
         <li>For a rule, open <strong>Payment Customizations</strong> or <strong>Shipping Customizations</strong>, or start from one of the templates on the app's home page. Rules apply as soon as you save.</li>
         <li>For a widget, create it under <strong>Widgets</strong>, then open <strong>Settings &gt; Checkout &gt; Customize</strong> in your Shopify admin.</li>
-        <li>Pick the page (Checkout, Thank you or Order status), add the Smart Checkout Widgets app block where you want it, choose your widget in the block's settings, and save.</li>
+        <li>Pick the page (Checkout, Thank you or Order status), click <strong>Add block</strong> and choose the block for your widget, then save. Which block to pick is shown next to each widget in the app. See <a href="#adding-widgets">Adding a widget to checkout</a>.</li>
       </ol>
       <p>
         Nothing appears in front of shoppers until a block is placed. Once it is, changes you
@@ -404,7 +406,9 @@
 
       <h2 id="widgets">Widgets</h2>
       <p>
-        Eleven widget types are on every plan, and the Pro plan adds a twelfth, Stock urgency.
+        Twelve widget types are on every plan, and the Pro plan adds a thirteenth, Stock urgency.
+        When you create one, the app groups them by what they are for: building trust, growing
+        order value, and collecting information.
       </p>
 
       <div class="docs-table-wrap">
@@ -419,6 +423,7 @@
             <tr><td>Custom content</td><td>Free-form content where a banner is too rigid.</td><td>All</td></tr>
             <tr><td>Accordion</td><td>Collapsible sections, such as a returns policy or delivery questions.</td><td>All</td></tr>
             <tr><td>Upsell</td><td>Offers more products. See <a href="#upsells">Upsells</a>.</td><td>All</td></tr>
+            <tr><td>Post-purchase survey</td><td>Asks buyers what led them to purchase. See <a href="#survey">Post-purchase survey</a>.</td><td>Thank you</td></tr>
             <tr><td>Consent check</td><td>A checkbox buyers must tick, for terms or age confirmation.</td><td>Checkout (Plus)</td></tr>
             <tr><td>Custom fields</td><td>Extra inputs saved to the order.</td><td>Checkout (Plus)</td></tr>
             <tr><td>Line item fields</td><td>Inputs per product, such as engraving text or a gift note.</td><td>Checkout (Plus)</td></tr>
@@ -460,6 +465,55 @@
         Each widget is created, named and configured on its own, and can be disabled without
         deleting it. Disabling takes it off the page at once and keeps its settings, which is
         the safer way to pause something mid-campaign.
+      </p>
+
+      <h2 id="adding-widgets">Adding a widget to checkout</h2>
+      <p>
+        A widget shows once its block is on the page. In <strong>Settings &gt; Checkout &gt;
+        Customize</strong>, open Checkout, Thank you or Order status, click <strong>Add block</strong>
+        and look under Smart Checkout Widgets.
+      </p>
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead><tr><th>Widget type</th><th>Block to add</th><th>Widget ID needed</th></tr></thead>
+          <tbody>
+            <tr><td>Trust badges</td><td>Trust badges</td><td>Only if you have more than one</td></tr>
+            <tr><td>Custom content</td><td>Custom content</td><td>Only if you have more than one</td></tr>
+            <tr><td>Custom banner</td><td>Custom banner</td><td>Only if you have more than one</td></tr>
+            <tr><td>Upsell</td><td>Upsell</td><td>Only if you have more than one</td></tr>
+            <tr><td>Post-purchase survey</td><td>Post-purchase survey</td><td>No</td></tr>
+            <tr><td>Every other type</td><td>Smart Checkout Widget</td><td>Yes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        A named block shows your first enabled widget of its type. If you have several, paste
+        the ID of the one you want into the block's <strong>Widget ID</strong> setting. The
+        widgets list in the app shows the block for each widget, and its ID when the block
+        needs one. Blocks placed before the named blocks existed keep working as they are.
+      </p>
+
+      <h2 id="survey">Post-purchase survey</h2>
+      <p>
+        Asks one question on the Thank you page, by default <em>What led you to purchase
+        today?</em>, and shows the answers on the <a href="#results">Results</a> page with the
+        revenue of the orders behind each one. It shows sales that analytics miss, such as a
+        shopper who asked ChatGPT for a recommendation and then typed your address.
+      </p>
+      <ol>
+        <li>Under <strong>Widgets</strong>, create a Post-purchase survey. The default answers include an AI assistant, Google, social channels, a friend and email; edit them to match how people find you, one per line, up to 20.</li>
+        <li>In the checkout editor, open the Thank you page, click <strong>Add block</strong> and choose <strong>Post-purchase survey</strong>. There is no ID to paste.</li>
+      </ol>
+      <p>
+        Answers are shown in a random order for each shopper unless you turn that off, so the
+        first answer in your list doesn't win by position. Nothing is preselected. You can add
+        a "Something else" answer where shoppers type their own, which is always last. Answering
+        is optional, and one answer is kept per checkout, so no order is counted twice.
+      </p>
+      <p>
+        It works on every Shopify plan from Basic up and on every Smart Checkout Widgets plan.
+        Answers you give while previewing in the checkout editor are never saved. Treat the
+        answers as what shoppers remember, and read them next to your analytics.
       </p>
 
       <h2 id="gifts">Checkout gifts</h2>
@@ -671,6 +725,7 @@
         <li>Totals: orders, revenue and average order value.</li>
         <li>Gifts: orders with a gift, gifts given and their value, and the average value of orders with a gift next to orders without one. That comparison is not the same as proof the gift caused the difference.</li>
         <li>Upsells: orders with an upsell, items sold and revenue. Only items added with the checkout Upsell block count. Clicks on Thank you page offers are not counted yet.</li>
+        <li>Survey answers: how many shoppers picked each answer, its share, the revenue of those orders and its share of revenue, plus the latest typed-in answers.</li>
         <li>Block views for each widget type on checkout, Thank you and Order status.</li>
       </ul>
 
@@ -757,7 +812,7 @@
 
       <h3 id="widget-not-showing">A widget is not appearing</h3>
       <ol>
-        <li>Check the app block is placed on that page in <strong>Settings &gt; Checkout &gt; Customize</strong>, and that the block's settings point to your widget.</li>
+        <li>Check the right block is placed on that page in <strong>Settings &gt; Checkout &gt; Customize</strong>. The widgets list in the app shows which block each widget needs, and the ID to paste when it needs one. See <a href="#adding-widgets">Adding a widget to checkout</a>.</li>
         <li>Check the widget is enabled, not just saved.</li>
         <li>If the store is not on Plus, check the widget type works outside the checkout page. See <a href="#widgets">Widgets</a>.</li>
         <li>Check the widget's display conditions, and whether the block is hidden on that device.</li>

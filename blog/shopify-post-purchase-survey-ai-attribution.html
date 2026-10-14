@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) gtag('config', 'G-T9GSXKCN10');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Post-Purchase Survey for ChatGPT and AI Sales Attribution | Smart Checkout Widgets</title>
+  <meta name="description" content="Sales that start in ChatGPT, Gemini or Claude usually show up as direct traffic. How one question on the Shopify Thank you page shows that channel, and how to read the answers.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/blog/shopify-post-purchase-survey-ai-attribution/">
+  <meta property="og:title" content="Shopify Post-Purchase Survey for ChatGPT and AI Sales Attribution | Smart Checkout Widgets">
+  <meta property="og:description" content="Sales that start in ChatGPT, Gemini or Claude usually show up as direct traffic. How one question on the Shopify Thank you page shows that channel, and how to read the answers.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-post-purchase-survey-ai-attribution/">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-post-purchase-survey-ai-attribution.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-post-purchase-survey-ai-attribution.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="A phone showing a Shopify Thank you page asking What led you to purchase today, with An AI assistant selected">
+  <meta property="article:published_time" content="2026-10-14">
+  <meta property="article:modified_time" content="2026-10-14">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shopify Post-Purchase Survey for ChatGPT and AI Sales Attribution | Smart Checkout Widgets">
+  <meta name="twitter:description" content="Sales that start in ChatGPT, Gemini or Claude usually show up as direct traffic. How one question on the Shopify Thank you page shows that channel, and how to read the answers.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-post-purchase-survey-ai-attribution.webp">
+  <meta name="twitter:image:alt" content="A phone showing a Shopify Thank you page asking What led you to purchase today, with An AI assistant selected">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site context">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Ask buyers where they found you: a post-purchase survey for AI-assistant sales",
+  "description": "Sales that start in ChatGPT, Gemini or Claude usually show up as direct traffic. How one question on the Shopify Thank you page shows that channel, and how to read the answers.",
+  "url": "https://smartcheckoutwidgets.com/blog/shopify-post-purchase-survey-ai-attribution/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://smartcheckoutwidgets.com/blog/shopify-post-purchase-survey-ai-attribution/"
+  },
+  "image": [
+    "https://smartcheckoutwidgets.com/images/og/shopify-post-purchase-survey-ai-attribution.webp"
+  ],
+  "datePublished": "2026-10-14",
+  "dateModified": "2026-10-14",
+  "author": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Smart Checkout Widgets Blog",
+    "url": "https://smartcheckoutwidgets.com/blog/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does the post-purchase survey need Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It runs on the Thank you page, and Thank you page blocks work on Basic, Shopify, Advanced and Plus. Shopify's Starter plan can't run Thank you page blocks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why include an AI assistant answer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A shopper who asks ChatGPT, Gemini or Claude for a recommendation and then types your address or searches your brand usually shows up as direct or branded search in analytics. Asking them is a simple way to see that channel."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can shoppers skip the question?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Answering is optional and nothing is preselected, so a shopper who skips it isn't counted for any answer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can one order be counted twice?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. One answer is kept per checkout, and once a shopper answers, the survey is replaced by your thank-you line."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate are the answers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are what shoppers remember. People misremember and pick the nearest option, so read the answers next to your analytics and watch how the shares change over time."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://smartcheckoutwidgets.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://smartcheckoutwidgets.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Ask buyers where they found you: a post-purchase survey for AI-assistant sales",
+      "item": "https://smartcheckoutwidgets.com/blog/shopify-post-purchase-survey-ai-attribution/"
+    }
+  ]
+}
+  </script>
+
+  <link rel="stylesheet" href="/style.css?v=20261014a">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links" id="nav-links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <main id="main-content">
+    <section class="post-hero">
+      <div class="post-hero-copy">
+        <h1>Ask buyers where they found you: a post-purchase survey for AI-assistant sales</h1>
+        <div class="meta-row">
+          <span>Published October 14, 2026</span>
+          <span>Smart Checkout Widgets</span>
+          <span><a href="/blog/" style="color: inherit;">All articles</a></span>
+        </div>
+      </div>
+    </section>
+    <section class="post-layout">
+      <article class="post-content">
+<figure class="post-figure">
+  <img src="/images/blog/shopify-post-purchase-survey-ai-attribution.webp" width="1600" height="895" alt="A phone showing a Shopify Thank you page asking What led you to purchase today, with An AI assistant selected" fetchpriority="high">
+  <figcaption>One question under the order confirmation. Illustration.</figcaption>
+</figure>
+<p class="lead">When someone asks ChatGPT, Gemini or Claude which brand to buy and then visits your store, your analytics rarely says so. Smart Checkout Widgets now has a post-purchase survey: one question on the Shopify Thank you page, with each answer and the revenue behind it on the app's Results page. It works on every Shopify plan from Basic up and comes with every Smart Checkout Widgets plan.</p>
+
+<h2>Why AI-assistant sales are hard to see</h2>
+<p>An assistant like ChatGPT, Gemini, Claude or Perplexity can recommend your brand without the shopper ever clicking a link to your store. They read the answer, then type your address or search your brand name. Analytics records that visit as direct traffic or branded search, and the assistant that sent them gets no credit.</p>
+<p>You can't fix that with tracking tags, because there's no click to tag. You can ask the buyer, though. The Thank you page is a good place for it, because every buyer sees it right after paying.</p>
+
+<figure class="post-figure post-figure--diagram">
+  <ol class="flow" aria-label="How a sale that starts in an AI assistant shows up in analytics and in the survey"><li><strong>Asks an assistant</strong><span>"What's a good linen tote?" The answer names your brand.</span></li><li><strong>Visits your store</strong><span>Types your address or searches your name. Analytics records direct or branded search.</span></li><li class="is-end"><strong>Answers the survey</strong><span>Picks "An AI assistant" on the Thank you page.</span></li></ol>
+  <figcaption>The survey answer fills in the step analytics can't see.</figcaption>
+</figure>
+
+<h2>What the shopper sees</h2>
+<p>Under the order confirmation, the survey asks one question. The default is <em>What led you to purchase today?</em>, with these answers:</p>
+<ul>
+  <li>An AI assistant (e.g. ChatGPT, Gemini, Claude)</li>
+  <li>Google</li>
+  <li>Instagram</li>
+  <li>TikTok</li>
+  <li>Facebook</li>
+  <li>Recommended by a friend</li>
+  <li>Recommended by an expert or professional</li>
+  <li>A link from a website or blog</li>
+  <li>Email</li>
+  <li>I already knew the brand</li>
+</ul>
+<p>The shopper picks one. Answering is optional and nothing is preselected, so someone who skips the question isn't counted for any answer. After they answer, the survey is replaced by a short thank-you line. One answer is kept per checkout, so no order is counted twice.</p>
+<p>By default the answers appear in a random order for each shopper. That way the first answer in your list doesn't win just because of where it sits. You can also add a "Something else" answer where the shopper types their own. It always comes last, whatever the order of the rest.</p>
+
+<h2>What you can change</h2>
+<ul>
+  <li>The question.</li>
+  <li>The answers, one per line, up to 20.</li>
+  <li>Whether the answers are shuffled for each shopper.</li>
+  <li>Whether to show "Something else", and what it's called.</li>
+  <li>The thank-you line shoppers see after answering.</li>
+</ul>
+
+<h2>Reading the results</h2>
+<p>Open <strong>Results</strong> in the app and pick the last 7, 30 or 90 days. For each answer you see how many shoppers picked it, its share of all answers, the revenue of those orders (the order total in your store currency) and its share of that revenue. The page also lists the latest answers shoppers typed in themselves. The same page shows your <a href="/blog/shopify-checkout-gift-upsell-results/">gift and upsell results</a>.</p>
+<p>Look at revenue as well as counts. An answer fewer shoppers pick can still bring in more revenue if their orders are bigger.</p>
+
+<h2>How much to trust the answers</h2>
+<p>A survey answer is what the shopper remembers, and memory is patchy. Someone who saw an Instagram post, asked an assistant about it and then searched your name could honestly pick any of the three. If their real answer isn't listed, they'll pick whichever comes closest. So read the answers as one signal and keep them next to your analytics.</p>
+<p>It helps to compare the two. Some merchants find more shoppers credit an AI assistant than their analytics attributes to any AI source. That gap hints at how much of your direct and branded search traffic started in a chat.</p>
+<p>A trend over a few months tells you more than one week of answers. If the AI assistant share keeps growing while your other answers hold steady, that's worth knowing even if the exact share is a little off.</p>
+
+<h2>Tips for a survey people answer</h2>
+<ul>
+  <li>Keep the list short enough to read on a phone, even though you can have up to 20 answers.</li>
+  <li>Keep an AI assistant answer, with a few names in brackets so shoppers know what it covers.</li>
+  <li>Leave shuffling on.</li>
+  <li>Keep "Something else", and read the typed answers every few weeks. If the same source keeps coming up, give it its own answer.</li>
+  <li>Change the answers rarely. Every change makes the periods before and after harder to compare.</li>
+  <li>Compare shares over 30 or 90 days, and check the revenue behind each answer as well as how often it's picked.</li>
+</ul>
+
+<h2>Set it up</h2>
+<ol>
+  <li>In Smart Checkout Widgets, open <strong>Widgets</strong> and create a <strong>Post-purchase survey</strong>. Edit the question and answers if you want to, and save.</li>
+  <li>In Shopify, go to <strong>Settings &gt; Checkout &gt; Customize</strong> and switch to the <strong>Thank you</strong> page.</li>
+  <li>Click <strong>Add block</strong>, choose <strong>Post-purchase survey</strong> and save. There's no widget ID to paste.</li>
+</ol>
+<p>Answers you give while trying it in the checkout editor preview are never saved, so testing won't skew your numbers. The <a href="/docs/#survey">survey docs</a> have the details.</p>
+
+<h2>Which plans it works on</h2>
+<p>Thank you page blocks don't need Shopify Plus, so the survey works on Basic, Shopify, Advanced and Plus. Shopify's Starter plan can't run Thank you page blocks, so it isn't available there. It's included on every Smart Checkout Widgets plan and doesn't ask for any extra post-purchase permissions. If you're deciding what else belongs on that page, see <a href="/blog/shopify-thank-you-order-status-widgets/">what to show on the Thank you and Order status pages</a>.</p>
+
+        <section class="post-faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          <div class="faq-list">
+          <details class="faq-item">
+            <summary>Does the post-purchase survey need Shopify Plus?</summary>
+            <p>No. It runs on the Thank you page, and Thank you page blocks work on Basic, Shopify, Advanced and Plus. Shopify's Starter plan can't run Thank you page blocks.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Why include an AI assistant answer?</summary>
+            <p>A shopper who asks ChatGPT, Gemini or Claude for a recommendation and then types your address or searches your brand usually shows up as direct or branded search in analytics. Asking them is a simple way to see that channel.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can shoppers skip the question?</summary>
+            <p>Yes. Answering is optional and nothing is preselected, so a shopper who skips it isn't counted for any answer.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can one order be counted twice?</summary>
+            <p>No. One answer is kept per checkout, and once a shopper answers, the survey is replaced by your thank-you line.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How accurate are the answers?</summary>
+            <p>They are what shoppers remember. People misremember and pick the nearest option, so read the answers next to your analytics and watch how the shares change over time.</p>
+          </details>
+          </div>
+        </section>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install Smart Checkout Widgets</a>
+          <a class="btn btn-secondary" href="/docs/#survey">Survey docs</a>
+          <a class="btn btn-secondary" href="/blog/shopify-thank-you-order-status-widgets/">Thank you page guide</a>
+        </div>
+      </article>
+    </section>
+    <section class="inner-cta">
+      <div class="container">
+        <div class="inner-cta__panel">
+          <h2>Ready to upgrade your checkout?</h2>
+          <p>Install Smart Checkout Widgets free: payment and shipping rules and Thank you page blocks on every Shopify plan, plus gifts and upsells in checkout on Plus.</p>
+          <div class="section-cta" style="justify-content: center; border: 0; padding-top: 0; margin-top: 0;">
+            <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+            <a class="btn btn-secondary" href="/blog/">More articles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is checkout customization for every Shopify store — rules everywhere, <em>gifts</em> on Plus.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/compare/shopify-checkout-gift-apps/">App comparison</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="https://cartrocket.dev" target="_blank" rel="noopener noreferrer">CartRocket</a></li>
+            <li><a href="https://apps.shopify.com/smart-bundles-2" target="_blank" rel="noopener noreferrer">TB Bundles</a></li>
+            <li><a href="https://agentmatica.com" target="_blank" rel="noopener noreferrer">Agentmatica</a></li>
+            <li><a href="https://hivesense.co" target="_blank" rel="noopener noreferrer">HiveSense</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy/">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Built for Shopify checkout, every plan</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/site.js?v=20260925c"></script>
+  <script
+    src="https://agentmatica.com/loader.js"
+    data-widget-src="https://agentmatica.com/widget.js"
+    data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94"
+    id="agentmatica-widget-script"
+    defer
+  ></script>
+</body>
+</html>
