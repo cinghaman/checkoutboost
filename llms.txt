@@ -24,6 +24,17 @@ Last reviewed: 2026-10-14.
 - Shipping method rules with the same actions and conditions, scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.
 - Thank You and Order Status page content widgets for all Shopify stores.
 
+## Partner guides and app comparisons (October 2026)
+
+Thought Bulb, which builds Smart Checkout Widgets, also makes Cart Rocket, TB Bundles and Agentmatica. The comparisons below were checked against each app's Shopify App Store listing or pricing page on 2026-10-14.
+
+- [Cart Rocket: shareable cart and checkout links for Shopify campaigns](https://smartcheckoutwidgets.com/blog/cartrocket-preloaded-cart-links-shopify/): Links that open the cart or checkout with discounts applied without a code, bundles at a set price, creator links and QR codes. $9 a month for one active link, $15 for unlimited, per its App Store listing.
+- [TB Bundles: build-your-own boxes, quantity breaks and mix and match](https://smartcheckoutwidgets.com/blog/tb-bundles-shopify-bundle-app/): Five bundle types, discounts enforced by Shopify Functions, real component SKUs in the cart. Free plan, then $12.99, $24.99 and $49.99 a month by bundle sales.
+- [Agentmatica: an AI sales and support agent for your Shopify store](https://smartcheckoutwidgets.com/blog/agentmatica-ai-sales-support-agent-shopify/): A web app (not a Shopify App Store app) that answers from site pages, files and the live catalog, builds carts and looks up orders. Free plan, then $29, $79 and $199 a month by replies.
+- [Shopify cart link apps compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-cart-link-apps/): Checkout Links, Cart Rocket, ZipLinks, CCL, UR: Simple Checkout Links and Cart Link Builder by Wonder, plus Shopify's free cart permalinks.
+- [Shopify bundle apps compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-bundle-apps/): Shopify Bundles, Bundler, Kaching, Fast Bundle, Simple Bundles & Kits, BOGOS and TB Bundles, by pricing model and bundle types.
+- [AI chat and shopping assistant apps for Shopify compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-ai-chat-apps/): Shopify Inbox, Agentmatica, Zipchat, Tidio, Gorgias, Rep AI, Manifest AI and Intercom Fin, by what each charges for.
+
 ## Merchant problem guides (October 2026)
 
 - [How to customize Shopify checkout without Plus in 2026](https://smartcheckoutwidgets.com/blog/customize-shopify-checkout-without-plus/): What Basic, Shopify and Advanced stores can change in checkout (branding, payment and shipping rules, gift discounts, Thank you page blocks, order editing) and what still needs Plus.
@@ -43,7 +54,6 @@ Last reviewed: 2026-10-14.
 
 - [5 best Shopify checkout apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-checkout-apps-2026/): Compare five checkout apps by job: gifting, native customization, full-funnel upsells, post-purchase revenue, and free-gift campaigns.
 - [5 best Shopify free gift apps in 2026](https://smartcheckoutwidgets.com/blog/best-shopify-free-gift-apps-2026/): A transparent comparison of five gift-with-purchase apps, organized by where the gift appears and how much campaign control you need.
-- [How to use CartRocket pre-loaded cart links for Shopify campaigns](https://smartcheckoutwidgets.com/blog/cartrocket-preloaded-cart-links-shopify/): Use CartRocket to remove steps between a high-intent campaign click and a checkout-ready Shopify cart, while preserving offer rules and attribution.
 
 ## Product merchandising guides
 

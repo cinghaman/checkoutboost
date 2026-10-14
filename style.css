@@ -2147,3 +2147,15 @@ button.bench__navitem {
 @media (prefers-reduced-motion: reduce) {
   .arch-card, .arch-card:hover { transition: none; transform: none; }
 }
+
+/* Partner and comparison posts */
+.post-content .disclosure {
+  font-size: var(--text-sm);
+  color: var(--color-ink-1);
+  background: var(--color-paper-1);
+  border-left: 3px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+.post-content .source-list { font-size: var(--text-sm); }
+.post-content .source-list li { margin-bottom: var(--space-2xs); overflow-wrap: anywhere; }
