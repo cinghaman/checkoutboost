@@ -22,6 +22,8 @@ HOST = "smartcheckoutwidgets.com"
 KEY = "137418c4e1f70ed382346b62e7457a73"
 ENDPOINT = "https://api.indexnow.org/indexnow"
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+# Cloudflare's bot protection returns 403 to the default Python-urllib user agent.
+UA = "Mozilla/5.0 (compatible; SmartCheckoutWidgetsIndexNow/1.0; +https://smartcheckoutwidgets.com/)"
 
 
 def sitemap_urls(since=None):
@@ -36,7 +38,8 @@ def sitemap_urls(since=None):
 
 def key_is_live():
     try:
-        with urllib.request.urlopen(f"https://{HOST}/{KEY}.txt", timeout=15) as r:
+        req = urllib.request.Request(f"https://{HOST}/{KEY}.txt", headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=15) as r:
             return r.read().decode().strip() == KEY
     except Exception:
         return False
@@ -62,7 +65,7 @@ def main():
     body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt",
                        "urlList": urls}).encode()
     req = urllib.request.Request(ENDPOINT, data=body, method="POST",
-                                 headers={"Content-Type": "application/json; charset=utf-8"})
+                                 headers={"Content-Type": "application/json; charset=utf-8", "User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=30) as r:
             print("IndexNow:", r.status, "(200 or 202 means accepted)")
