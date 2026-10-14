@@ -4,7 +4,7 @@
 
 Payment and shipping rules and Thank You and Order Status widgets work on Basic, Shopify, Advanced and Plus. Widgets on the checkout page itself need Shopify Plus, because Shopify only allows checkout-page customization on Plus. Eight one-click templates cover the most common payment and shipping rules.
 
-Last reviewed: 2026-09-25.
+Last reviewed: 2026-10-14.
 
 ## Primary resources
 
@@ -23,6 +23,14 @@ Last reviewed: 2026-09-25.
 - Payment method rules (hide, rename, reorder) with cart, customer, product, address and date conditions, on every Shopify plan.
 - Shipping method rules with the same actions and conditions, scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.
 - Thank You and Order Status page content widgets for all Shopify stores.
+
+## Merchant problem guides (October 2026)
+
+- [How to customize Shopify checkout without Plus in 2026](https://smartcheckoutwidgets.com/blog/customize-shopify-checkout-without-plus/): What Basic, Shopify and Advanced stores can change in checkout (branding, payment and shipping rules, gift discounts, Thank you page blocks, order editing) and what still needs Plus.
+- [Let customers fix a wrong shipping address without a support ticket](https://smartcheckoutwidgets.com/blog/customers-fix-wrong-shipping-address-shopify/): Customers correct the address on the Thank you and Order status pages within an edit window, with a fulfillment hold so nothing ships first. Same country and state only.
+- [Shopify upgraded your Thank you page: what to check and what to add back](https://smartcheckoutwidgets.com/blog/shopify-thank-you-page-upgrade-what-to-add/): After the August 2026 move of non-Plus stores to the new Thank you and Order status pages: what stopped working, what to check if sales dropped, and which blocks to add.
+- [How to cut COD returns (RTO) on a Shopify store in India](https://smartcheckoutwidgets.com/blog/reduce-cod-rto-shopify-india/): Hide cash on delivery by pincode, order value and customer history, put UPI first, and let buyers cancel before dispatch. The app does not add COD fees or partial prepayment.
+- [Turn slow-moving stock into a free gift with purchase](https://smartcheckoutwidgets.com/blog/free-gift-slow-moving-stock-shopify/): Use stock that won't sell as a threshold gift or a pick-your-gift offer, keep the margin in check, and read gift results on the Results page without over-reading them.
 
 ## Black Friday 2026 campaign guides
 
