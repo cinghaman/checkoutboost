@@ -13,18 +13,7 @@ FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css?v=20260925c">"""
 
-GTAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) {
-      gtag('config', 'G-T9GSXKCN10');
-      // Microsoft Clarity, cookieless: consent stays denied, so it sets no cookies
-      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','z0tfn76wd1');
-      clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'denied' });
-    }
-  </script>"""
+GTAG = """  <script src="/assets/js/consent.js?v=20261020a" defer></script>"""
 
 NAV = """  <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="nav" aria-label="Primary">
@@ -79,6 +68,7 @@ FOOTER = """  <footer class="footer">
           <h5>Legal</h5>
           <ul>
             <li><a href="/privacy.html">Privacy policy</a></li>
+            <li><a href="#" data-cookie-preferences>Cookie preferences</a></li>
           </ul>
         </div>
       </div>

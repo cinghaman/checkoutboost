@@ -1,0 +1,10 @@
+// Cookieless analytics endpoint for smartcheckoutwidgets.com (see index.js).
+// Deploy from this folder: npx wrangler@4 deploy
+// Secret (set by an admin, never committed): npx wrangler@4 secret put GA_MP_SECRET
+{
+  "name": "scw-events",
+  "main": "index.js",
+  "compatibility_date": "2026-09-01",
+  "workers_dev": true,
+  "observability": { "enabled": true }
+}
