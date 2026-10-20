@@ -6,7 +6,12 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) gtag('config', 'G-T9GSXKCN10');
+    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) {
+      gtag('config', 'G-T9GSXKCN10');
+      // Microsoft Clarity, cookieless: consent stays denied, so it sets no cookies
+      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','z0tfn76wd1');
+      clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'denied' });
+    }
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -114,6 +119,7 @@
 
         <h2>Cookies and tracking</h2>
         <p>We use cookies and related storage technologies to understand site usage, support functionality, and measure marketing performance. Browser settings can be used to limit or disable cookies, though some features may work less effectively.</p>
+        <p>We also use <a href="https://privacy.microsoft.com/privacystatement" rel="noopener">Microsoft Clarity</a> to see how visitors scroll, click and move through this site (heatmaps and session recordings). It runs without cookies: Clarity gives each page view its own ID and doesn't link your visits together.</p>
 
         <h2>Data retention and security</h2>
         <p>We retain information only for as long as needed to provide the service, comply with legal obligations, resolve disputes, or enforce agreements. We use administrative, technical, and organizational measures to protect data, but no system can guarantee absolute security.</p>

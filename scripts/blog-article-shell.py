@@ -14,7 +14,12 @@ GTAG = """  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9G
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) gtag('config', 'G-T9GSXKCN10');
+    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) {
+      gtag('config', 'G-T9GSXKCN10');
+      // Microsoft Clarity, cookieless: consent stays denied, so it sets no cookies
+      (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','z0tfn76wd1');
+      clarity('consentv2', { ad_Storage: 'denied', analytics_Storage: 'denied' });
+    }
   </script>"""
 
 FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
