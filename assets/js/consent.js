@@ -190,7 +190,9 @@
       ".scw-consent button:focus-visible{outline:2px solid var(--color-focus,#5b37f5);outline-offset:2px}" +
       ".scw-consent .scw-accept{background:var(--color-accent,#6d4aff);color:#fff}" +
       ".scw-consent .scw-decline{background:transparent;color:var(--color-ink-0,#17132b);border-color:var(--color-paper-3,#dcd7cc)}" +
-      ".scw-consent .scw-save{background:transparent;color:var(--color-accent,#6d4aff);border:none;text-decoration:underline;padding:10px 6px}";
+      ".scw-consent .scw-save{background:transparent;color:var(--color-accent,#6d4aff);border:none;text-decoration:underline;padding:10px 6px}" +
+      // Sit above the chat launcher in the bottom-right corner on narrow screens.
+      "@media (max-width:700px){.scw-consent{bottom:96px}}";
     var style = document.createElement("style");
     style.textContent = css;
     document.head.appendChild(style);
