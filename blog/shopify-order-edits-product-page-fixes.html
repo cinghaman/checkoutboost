@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T9GSXKCN10"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    if (location.hostname === 'smartcheckoutwidgets.com' && !navigator.webdriver && !/HeadlessChrome/.test(navigator.userAgent) && !['800x600', '1280x1200'].includes(screen.width + 'x' + screen.height)) gtag('config', 'G-T9GSXKCN10');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Shopify Order Edits Tell You About Your Product Pages | Smart Checkout Widgets</title>
+  <meta name="description" content="When customers keep swapping the same size or fixing the same address field, something before checkout is causing it. How to read your order edit log and what to fix for each pattern.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/blog/shopify-order-edits-product-page-fixes/">
+  <meta property="og:title" content="What Shopify Order Edits Tell You About Your Product Pages | Smart Checkout Widgets">
+  <meta property="og:description" content="When customers keep swapping the same size or fixing the same address field, something before checkout is causing it. How to read your order edit log and what to fix for each pattern.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-order-edits-product-page-fixes/">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-order-edits-product-page-fixes.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-order-edits-product-page-fixes.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="A Recent activity table with repeated size swap rows highlighted next to a magnifying glass over a product page">
+  <meta property="article:published_time" content="2026-10-20">
+  <meta property="article:modified_time" content="2026-10-20">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="What Shopify Order Edits Tell You About Your Product Pages | Smart Checkout Widgets">
+  <meta name="twitter:description" content="When customers keep swapping the same size or fixing the same address field, something before checkout is causing it. How to read your order edit log and what to fix for each pattern.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-order-edits-product-page-fixes.webp">
+  <meta name="twitter:image:alt" content="A Recent activity table with repeated size swap rows highlighted next to a magnifying glass over a product page">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site context">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Your order edits are a bug report: what repeated changes say about your store",
+  "description": "When customers keep swapping the same size or fixing the same address field, something before checkout is causing it. How to read your order edit log and what to fix for each pattern.",
+  "url": "https://smartcheckoutwidgets.com/blog/shopify-order-edits-product-page-fixes/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://smartcheckoutwidgets.com/blog/shopify-order-edits-product-page-fixes/"
+  },
+  "image": [
+    "https://smartcheckoutwidgets.com/images/og/shopify-order-edits-product-page-fixes.webp"
+  ],
+  "datePublished": "2026-10-20",
+  "dateModified": "2026-10-20",
+  "author": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Smart Checkout Widgets Blog",
+    "url": "https://smartcheckoutwidgets.com/blog/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where can I see which orders customers edited?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the Order editing page in Smart Checkout Widgets, under Recent activity, and in Shopify by filtering orders by the Customer edited tag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long is the edit history kept?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The activity list keeps 90 days. The Customer edited tag and staff note stay on the Shopify order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many edits on a product is too many?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Compare edits with orders for that product rather than counting edits alone. A few edits on a best seller is normal. A high share of its orders getting the same swap points at the product page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see failed or refused edits?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Refused and failed edits are listed with a badge, which shows when customers try to change orders after the window or after packing has started."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://smartcheckoutwidgets.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://smartcheckoutwidgets.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Your order edits are a bug report: what repeated changes say about your store",
+      "item": "https://smartcheckoutwidgets.com/blog/shopify-order-edits-product-page-fixes/"
+    }
+  ]
+}
+  </script>
+
+  <link rel="stylesheet" href="/style.css?v=20261014a">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links" id="nav-links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <main id="main-content">
+    <section class="post-hero">
+      <div class="post-hero-copy">
+        <h1>Your order edits are a bug report: what repeated changes say about your store</h1>
+        <div class="meta-row">
+          <span>Published October 20, 2026</span>
+          <span>Smart Checkout Widgets</span>
+          <span><a href="/blog/" style="color: inherit;">All articles</a></span>
+        </div>
+      </div>
+    </section>
+    <section class="post-layout">
+      <article class="post-content">
+<figure class="post-figure">
+  <img src="/images/blog/shopify-order-edits-product-page-fixes.webp" width="1600" height="895" alt="A Recent activity table with repeated size swap rows highlighted next to a magnifying glass over a product page" fetchpriority="high">
+  <figcaption>The same swap three times is a pattern. Illustration.</figcaption>
+</figure>
+<p class="lead">In August a merchant on the Shopify Community described tagging every order change request for two months. Almost all of them were address typos or wrong variants. The fix was upstream: address validation, and a repaired variant picker that had let people add to cart without choosing a size. Once customers <a href="/blog/shopify-customer-order-editing/">edit their own orders</a>, you get that same record without tagging anything.</p>
+
+<h2>Where to find the record</h2>
+<ul>
+  <li>The Order editing page in Smart Checkout Widgets shows how many customer edits you had in the last 30 days, and a <strong>Recent activity</strong> list with when, which order, what changed and the detail. It shows 25 rows a page and keeps 90 days. Refused and failed edits get their own badge.</li>
+  <li>In Shopify, every edited order is tagged <em>Customer edited</em> and has a staff note saying the customer changed it. Filter your orders by that tag and export them to sort by product.</li>
+</ul>
+
+<h2>Patterns and what they usually mean</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>What you see</th><th>Likely cause</th><th>What to fix</th></tr></thead>
+  <tbody>
+    <tr><td>One product swapped up a size again and again</td><td>It runs small</td><td>Add a fit note, put the size chart next to the size picker, consider relabelling</td></tr>
+    <tr><td>One product swapped down a size</td><td>It runs large</td><td>The same, the other way</td></tr>
+    <tr><td>Swaps between colours of one product</td><td>The photos don't match the real colour, or the swatch is unclear</td><td>Reshoot or colour-correct the photos, and name the colour in the swatch</td></tr>
+    <tr><td>Swaps away from the first size or colour in the list</td><td>The picker pre-selects an option, so people add to cart without choosing</td><td>Make the customer choose before Add to cart works</td></tr>
+    <tr><td>Address fixes to the second address line</td><td>Customers skip the flat or unit number</td><td>Make the field easier to notice, or add a note under it</td></tr>
+    <tr><td>Quantities lowered on the same product</td><td>A pack size or quantity box is confusing</td><td>Say what one unit is, such as "pack of 3"</td></tr>
+    <tr><td>Cancellations soon after ordering</td><td>A surprise after paying, often the delivery date or a cost</td><td>Show delivery estimates and costs before payment</td></tr>
+    <tr><td>Lots of refused edits</td><td>Customers try after the window or after packing has started</td><td>Look at the window length, and say in the confirmation email how long changes are open</td></tr>
+  </tbody>
+</table>
+</div>
+<p>Treat each row as a guess to check. Three swaps on a product that sold three hundred units is noise. Thirty is a pattern.</p>
+
+<h2>Count edits per product, not in total</h2>
+<p>A rising total edit count can just mean you sold more. What matters is the share of each product's orders that get edited. Export the <em>Customer edited</em> orders and your orders for the same period, count both by product, and compare. A product where one order in ten gets a size swap needs its page looked at.</p>
+
+<h2>A monthly 20-minute review</h2>
+<ol>
+  <li>Open the Order editing page and read through the last month's activity.</li>
+  <li>Write down any product with more than a couple of swaps, and which way they went.</li>
+  <li>Look for address fixes that repeat a field or a country.</li>
+  <li>Check refused edits, and why they were refused.</li>
+  <li>Pick one fix, make it, and check next month whether that product's edits dropped.</li>
+</ol>
+
+<h2>Why the edit log is easier to read than support email</h2>
+<p>Support email about orders is messy: different words for the same problem, threads that wander, and the request buried in paragraph three. Customer edits are structured. Every row is a specific change to a specific order, so a pattern shows up quickly. And because customers make the change themselves, your team has time to fix the cause.</p>
+
+<h2>Get the log</h2>
+<p>Order editing is part of the Smart Checkout Widgets Pro plan at $99 a month with unlimited orders, and works on every Shopify plan except Starter. Switch it on, add the Order editing block to the Thank you and Order status pages, and the log starts with the next order. If wrong sizes are the main problem, start with <a href="/blog/shopify-wrong-size-swap-after-checkout/">swap, return or cancel</a>.</p>
+
+        <section class="post-faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          <div class="faq-list">
+          <details class="faq-item">
+            <summary>Where can I see which orders customers edited?</summary>
+            <p>On the Order editing page in Smart Checkout Widgets, under Recent activity, and in Shopify by filtering orders by the Customer edited tag.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How long is the edit history kept?</summary>
+            <p>The activity list keeps 90 days. The Customer edited tag and staff note stay on the Shopify order.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How many edits on a product is too many?</summary>
+            <p>Compare edits with orders for that product rather than counting edits alone. A few edits on a best seller is normal. A high share of its orders getting the same swap points at the product page.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I see failed or refused edits?</summary>
+            <p>Yes. Refused and failed edits are listed with a badge, which shows when customers try to change orders after the window or after packing has started.</p>
+          </details>
+          </div>
+        </section>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install Smart Checkout Widgets</a>
+          <a class="btn btn-secondary" href="/blog/shopify-customer-order-editing/">Order editing guide</a>
+          <a class="btn btn-secondary" href="/blog/shopify-wrong-size-swap-after-checkout/">Wrong size guide</a>
+        </div>
+      </article>
+    </section>
+    <section class="inner-cta">
+      <div class="container">
+        <div class="inner-cta__panel">
+          <h2>Ready to upgrade your checkout?</h2>
+          <p>Install Smart Checkout Widgets free: payment and shipping rules and Thank you page blocks on every Shopify plan, plus gifts and upsells in checkout on Plus.</p>
+          <div class="section-cta" style="justify-content: center; border: 0; padding-top: 0; margin-top: 0;">
+            <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+            <a class="btn btn-secondary" href="/blog/">More articles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is checkout customization for every Shopify store — rules everywhere, <em>gifts</em> on Plus.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/compare/shopify-checkout-gift-apps/">App comparison</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="https://cartrocket.dev" target="_blank" rel="noopener noreferrer">CartRocket</a></li>
+            <li><a href="https://apps.shopify.com/smart-bundles-2" target="_blank" rel="noopener noreferrer">TB Bundles</a></li>
+            <li><a href="https://agentmatica.com" target="_blank" rel="noopener noreferrer">Agentmatica</a></li>
+            <li><a href="https://hivesense.co" target="_blank" rel="noopener noreferrer">HiveSense</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy/">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Built for Shopify checkout, every plan</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/site.js?v=20260925c"></script>
+  <script
+    src="https://agentmatica.com/loader.js"
+    data-widget-src="https://agentmatica.com/widget.js"
+    data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94"
+    id="agentmatica-widget-script"
+    defer
+  ></script>
+</body>
+</html>
