@@ -1,8 +1,8 @@
 # Pricing — Smart Checkout Widgets
 
-Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-09-09.
+Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-10-20, against the Shopify App Store listing.
 
-Every plan includes every widget (12 types) and every shipping and payment method rule. Plans differ only by monthly order volume. Growth and Advanced include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
+Starter, Growth and Advanced include 12 widget types and every shipping and payment method rule, and differ only by monthly order volume. Pro adds a 13th widget (stock urgency), customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
 
 ## Starter
 
@@ -23,6 +23,13 @@ Every plan includes every widget (12 types) and every shipping and payment metho
 - **Order limit:** Unlimited
 - **Trial:** 7-day free trial
 - **Includes:** All widgets and all rule types
+
+## Pro
+
+- **Price:** $99 USD / month, or $950.40 USD / year
+- **Order limit:** Unlimited
+- **Trial:** 7-day free trial
+- **Includes:** Everything in Advanced, plus self-serve order editing (works on every Shopify plan except Shopify Starter), low-stock badges in checkout (Shopify Plus stores) and checkout branding (Shopify Plus stores)
 
 ## Order limits
 
