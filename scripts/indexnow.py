@@ -12,6 +12,9 @@ so run this after the deploy has finished. The script also checks the key file f
 minutes before sending: a search engine that fetches the key from an edge node that is
 still serving the old deploy gets a 404, and Bing then rejects every submission with 403
 (UserForbiddedToAccessSite) without fetching the key again. If that happens, rotate the key.
+When you rotate the key, deploy the new key file on its own and wait at least 15 minutes
+before the first submission. Sevalla's US edge served a 404 for a new key file more than
+three minutes after it was live from Europe, and Bingbot fetches from the US.
 """
 import argparse
 import json
