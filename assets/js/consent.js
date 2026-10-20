@@ -118,6 +118,18 @@
     });
   }
 
+  // GA used to load for everyone, so returning visitors can still carry
+  // _ga cookies from before the banner. Expire them unless analytics is on.
+  function clearStaleGaCookies() {
+    document.cookie.split("; ").forEach(function (c) {
+      var name = c.split("=")[0];
+      if (!/^_ga($|_)|^_gid$/.test(name)) return;
+      var expire = name + "=; Max-Age=0; path=/";
+      document.cookie = expire;
+      document.cookie = expire + "; domain=." + location.hostname.replace(/^www\./, "");
+    });
+  }
+
   function applyConsent(prefs) {
     gtag("consent", "update", {
       analytics_storage: prefs.analytics ? "granted" : "denied",
@@ -128,6 +140,7 @@
       ad_personalization: prefs.marketing ? "granted" : "denied"
     });
     if (prefs.analytics) loadGA();
+    else clearStaleGaCookies();
     syncClarity(!!prefs.analytics);
   }
 
@@ -257,7 +270,10 @@
       var t = e.target.closest ? e.target.closest("[data-cookie-preferences]") : null;
       if (t) { e.preventDefault(); showBanner(true); }
     });
-    if (!saved) showBanner(false);
+    if (!saved) {
+      clearStaleGaCookies();
+      showBanner(false);
+    }
     if (!(saved && saved.analytics)) sendCookielessPageView();
     document.addEventListener("click", trackCookielessClick);
   }
