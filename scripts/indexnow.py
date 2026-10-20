@@ -8,18 +8,22 @@ Usage:
   python3 scripts/indexnow.py --dry-run       # print what would be sent
 
 The key file must be live at https://smartcheckoutwidgets.com/<KEY>.txt before submitting,
-so run this after the deploy has finished.
+so run this after the deploy has finished. The script also checks the key file for two
+minutes before sending: a search engine that fetches the key from an edge node that is
+still serving the old deploy gets a 404, and Bing then rejects every submission with 403
+(UserForbiddedToAccessSite) without fetching the key again. If that happens, rotate the key.
 """
 import argparse
 import json
 import sys
+import time
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 HOST = "smartcheckoutwidgets.com"
-KEY = "137418c4e1f70ed382346b62e7457a73"
+KEY = "e9a1612005576f209c2d864cf972d2bc"
 ENDPOINT = "https://api.indexnow.org/indexnow"
 NS = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
 # Cloudflare's bot protection returns 403 to the default Python-urllib user agent.
@@ -59,8 +63,11 @@ def main():
     print(f"{len(urls)} URL(s):", *urls, sep="\n  ")
     if args.dry_run:
         return
-    if not key_is_live():
-        sys.exit(f"Key file https://{HOST}/{KEY}.txt is not live yet. Deploy first, then rerun.")
+    for check in range(5):
+        if not key_is_live():
+            sys.exit(f"Key file https://{HOST}/{KEY}.txt is not live yet. Deploy first, then rerun.")
+        if check < 4:
+            time.sleep(30)
 
     body = json.dumps({"host": HOST, "key": KEY, "keyLocation": f"https://{HOST}/{KEY}.txt",
                        "urlList": urls}).encode()
