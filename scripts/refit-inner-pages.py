@@ -13,7 +13,7 @@ FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css?v=20260925c">"""
 
-GTAG = """  <script src="/assets/js/consent.js?v=20261020b" defer></script>"""
+GTAG = """  <script src="/assets/js/consent.js?v=20261020c" defer></script>"""
 
 NAV = """  <a class="skip-link" href="#main-content">Skip to content</a>
   <nav class="nav" aria-label="Primary">

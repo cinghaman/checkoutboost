@@ -164,7 +164,7 @@
     if (styleInjected) return;
     styleInjected = true;
     var css =
-      ".scw-consent{position:fixed;z-index:10000;left:16px;right:16px;bottom:16px;margin:0 auto;max-width:560px;" +
+      ".scw-consent{position:fixed;z-index:2147483647;left:16px;right:16px;bottom:16px;margin:0 auto;max-width:560px;" +
       "background:var(--color-paper-0,#f8f6f1);color:var(--color-ink-0,#17132b);" +
       "border:1px solid var(--color-paper-3,#dcd7cc);border-radius:var(--radius-lg,20px);" +
       "padding:20px;font:15px/1.5 var(--font-body,'Inter',system-ui,sans-serif);box-shadow:0 16px 48px rgba(23,19,43,.18)}" +

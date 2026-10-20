@@ -9,7 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 import seo  # noqa: E402
 
-GTAG = """  <script src="/assets/js/consent.js?v=20261020b" defer></script>"""
+GTAG = """  <script src="/assets/js/consent.js?v=20261020c" defer></script>"""
 
 FONTS = """  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
