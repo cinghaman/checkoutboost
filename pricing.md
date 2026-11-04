@@ -33,7 +33,7 @@ Starter, Growth and Advanced include 12 widget types and every shipping and paym
 
 ## Order limits
 
-The app pauses once a store passes 10% over its plan's monthly limit, not at the limit itself. Widgets, gifts, upsell discounts, and shipping and payment rules all switch off. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed or paused.
+The app pauses when a store goes over its plan's monthly order limit. Widgets, gifts, upsell discounts, and shipping and payment rules all switch off. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed or paused.
 
 ## Shopify plan requirements
 
