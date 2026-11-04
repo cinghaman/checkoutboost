@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/assets/js/consent.js?v=20261020d" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why a Shopify Discount Disappears at Checkout (and How to Fix It) | Smart Checkout Widgets</title>
+  <meta name="description" content="A Shopify discount that works in testing can vanish at checkout with no error. How discount combinations decide which one wins, and what to check before Black Friday.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/blog/shopify-discount-disappears-at-checkout/">
+  <meta property="og:title" content="Why a Shopify Discount Disappears at Checkout (and How to Fix It) | Smart Checkout Widgets">
+  <meta property="og:description" content="A Shopify discount that works in testing can vanish at checkout with no error. How discount combinations decide which one wins, and what to check before Black Friday.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-discount-disappears-at-checkout/">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-discount-disappears-at-checkout.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-discount-disappears-at-checkout.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="Two Shopify discounts compared, with one dropped at checkout">
+  <meta property="article:published_time" content="2026-11-05">
+  <meta property="article:modified_time" content="2026-11-05">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Why a Shopify Discount Disappears at Checkout (and How to Fix It) | Smart Checkout Widgets">
+  <meta name="twitter:description" content="A Shopify discount that works in testing can vanish at checkout with no error. How discount combinations decide which one wins, and what to check before Black Friday.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-discount-disappears-at-checkout.webp">
+  <meta name="twitter:image:alt" content="Two Shopify discounts compared, with one dropped at checkout">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why a Shopify discount disappears at checkout, and how to fix it",
+  "description": "A Shopify discount that works in testing can vanish at checkout with no error. How discount combinations decide which one wins, and what to check before Black Friday.",
+  "url": "https://smartcheckoutwidgets.com/blog/shopify-discount-disappears-at-checkout/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://smartcheckoutwidgets.com/blog/shopify-discount-disappears-at-checkout/"
+  },
+  "image": [
+    "https://smartcheckoutwidgets.com/images/og/shopify-discount-disappears-at-checkout.webp"
+  ],
+  "datePublished": "2026-11-05",
+  "dateModified": "2026-11-05",
+  "author": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Smart Checkout Widgets Blog",
+    "url": "https://smartcheckoutwidgets.com/blog/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Why does Shopify remove a discount without an error?", "acceptedAnswer": {"@type": "Answer", "text": "When two discounts can't combine, Shopify keeps the better deal for the buyer and drops the other. It treats that as normal behavior, so nothing is logged as a failure."}},
+    {"@type": "Question", "name": "Do both discounts need to allow combining?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Each discount has its own combination settings, and both must allow the other's class."}},
+    {"@type": "Question", "name": "Do app discounts follow the same rules?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Discounts created by apps, including free gifts and upsell offers, use the same product, order and shipping combination settings."}}
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="/style.css?v=20260925c">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links" id="nav-links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <main id="main-content">
+    <section class="post-hero">
+      <div class="post-hero-copy">
+        <h1>Why a Shopify discount disappears at checkout, and how to fix it</h1>
+        <div class="meta-row">
+          <span>Published November 5, 2026</span>
+          <span>Smart Checkout Widgets</span>
+          <span><a href="/blog/" style="color: inherit;">All articles</a></span>
+        </div>
+      </div>
+    </section>
+    <section class="post-layout">
+      <article class="post-content">
+<p>You set up a discount, test it, and it works. Then a sale goes live and the same discount stops showing at checkout. Nothing is broken and no error appears. Most of the time, Shopify has compared two discounts that can't run together and kept one.</p>
+<p>It tends to surface in the run-up to Black Friday, when a store adds a sitewide offer on top of gifts, upsells and bundles that have been running all year.</p>
+<h2>How Shopify decides</h2>
+<p>Shopify discounts come in three classes: product, order and shipping. Each discount has settings for which of those classes it can combine with.</p>
+<p>When two discounts apply to the same cart and aren't allowed to combine, Shopify doesn't warn anyone. It keeps the deal that is better for the buyer and drops the other. The buyer never sees that a choice was made, and neither do you.</p>
+<h2>What it looks like</h2>
+<p>Here's a case from our own testing. A store had a product discount worth €4 on an upsell, and an order discount of 20% over €200 that did not combine with product discounts. Under €200 the upsell discount worked. Over €200 Shopify kept the 20%, and the upsell showed its full price at checkout, even though the discount function had returned the €4 as expected.</p>
+<p>That last part is what makes this slow to debug. The app's logs say the discount was sent, because it was. Shopify removed it afterwards.</p>
+<h2>How to check your store</h2>
+<ol>
+  <li>Open <strong>Discounts</strong> in Shopify admin and list everything active or scheduled for your sale.</li>
+  <li>For each one, read its <strong>Combinations</strong> setting.</li>
+  <li>For any two that could hit the same cart, ask whether they are allowed to combine. Both sides have to allow it.</li>
+  <li>Build a cart that qualifies for both and look at the checkout total.</li>
+</ol>
+<p>App discounts count too. Free gift discounts, upsell offers and bundle discounts all follow the same combination settings.</p>
+<h2>Which setting to choose</h2>
+<p>Letting everything combine isn't the safe answer, because stacked discounts eat margin. Work out which combinations you are happy to pay for:</p>
+<ul>
+  <li><strong>Free gift with a sitewide percent off.</strong> Often fine if the gift is cheap, but run the numbers at your lowest qualifying cart. <a href="/blog/black-friday-free-gift-strategy-shopify/">This margin guide</a> has worked examples.</li>
+  <li><strong>Upsell discount with an order discount.</strong> Allow it if the upsell is a real add-on. Without it, your best spenders lose the offer.</li>
+  <li><strong>Two percent-off offers.</strong> Rarely worth allowing.</li>
+</ul>
+<h2>Other reasons a discount goes missing</h2>
+<ul>
+  <li><strong>It expired.</strong> Check the end date and time zone.</li>
+  <li><strong>The cart changed.</strong> A buyer removed the product that earned it.</li>
+  <li><strong>The buyer isn't eligible.</strong> Customer segments and usage limits apply.</li>
+  <li><strong>The cart is very large.</strong> Shopify Functions run under an instruction limit, so a function may skip a cart with an unusually high number of lines.</li>
+</ul>
+<p>Before a sale, add this test to your <a href="/blog/shopify-black-friday-checkout-checklist-2026/">Black Friday checkout checklist</a>: build one cart that qualifies for everything at once and read the total line by line.</p>
+
+        <section class="post-faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          <div class="faq-list">
+          <details class="faq-item">
+            <summary>Why does Shopify remove a discount without an error?</summary>
+            <p>When two discounts can't combine, Shopify keeps the better deal for the buyer and drops the other. It treats that as normal behavior, so nothing is logged as a failure.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do both discounts need to allow combining?</summary>
+            <p>Yes. Each discount has its own combination settings, and both must allow the other's class.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do app discounts follow the same rules?</summary>
+            <p>Yes. Discounts created by apps, including free gifts and upsell offers, use the same product, order and shipping combination settings.</p>
+          </details>
+          </div>
+        </section>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+          <a class="btn btn-secondary" href="/blog/shopify-checkout-upsell-rules/">Upsell rules guide</a>
+          <a class="btn btn-secondary" href="/docs/">Read the docs</a>
+        </div>
+      </article>
+    </section>
+    <section class="inner-cta">
+      <div class="container">
+        <div class="inner-cta__panel">
+          <h2>Ready to upgrade your checkout?</h2>
+          <p>Install Smart Checkout Widgets free: payment and shipping rules and Thank you page blocks on every Shopify plan, plus gifts and upsells in checkout on Plus.</p>
+          <div class="section-cta" style="justify-content: center; border: 0; padding-top: 0; margin-top: 0;">
+            <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+            <a class="btn btn-secondary" href="/blog/">More articles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is checkout customization for every Shopify store — rules everywhere, <em>gifts</em> on Plus.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/compare/shopify-checkout-gift-apps/">App comparison</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="https://cartrocket.dev" target="_blank" rel="noopener noreferrer">CartRocket</a></li>
+            <li><a href="https://apps.shopify.com/smart-bundles-2" target="_blank" rel="noopener noreferrer">TB Bundles</a></li>
+            <li><a href="https://agentmatica.com" target="_blank" rel="noopener noreferrer">Agentmatica</a></li>
+            <li><a href="https://hivesense.co" target="_blank" rel="noopener noreferrer">HiveSense</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy/">Privacy policy</a></li>
+            <li><a href="#" data-cookie-preferences>Cookie preferences</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Built for Shopify checkout, every plan</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/site.js?v=20260925c"></script>
+  <script
+    src="https://agentmatica.com/loader.js"
+    data-widget-src="https://agentmatica.com/widget.js"
+    data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94"
+    id="agentmatica-widget-script"
+    defer
+  ></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Pricing — Smart Checkout Widgets
 
-Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-10-20, against the Shopify App Store listing.
+Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-11-05, against the Shopify App Store listing.
 
 Starter, Growth and Advanced include 12 widget types and every shipping and payment method rule, and differ only by monthly order volume. Pro adds a 13th widget (stock urgency), customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
 
@@ -33,7 +33,7 @@ Starter, Growth and Advanced include 12 widget types and every shipping and paym
 
 ## Order limits
 
-Widgets are paused once a store passes 25% over its plan's monthly limit, not at the limit itself. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed or paused.
+The app pauses once a store passes 10% over its plan's monthly limit, not at the limit itself. Widgets, gifts, upsell discounts, and shipping and payment rules all switch off. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed or paused.
 
 ## Shopify plan requirements
 

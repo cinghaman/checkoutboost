@@ -19,6 +19,9 @@ Last reviewed: 2026-10-14.
 - Automatic free gifts triggered by checkout thresholds.
 - Customer-choice gift selection at checkout.
 - Checkout upsells and BOGO or automatic discount campaigns.
+- Rule-based checkout upsells (cart has X, offer Y) with per-offer discounts and CSV import.
+- Free gift codes on the cart page through an app proxy, for theme developers.
+- A private connector URL for AI assistants, with view-only and view-and-edit access.
 - Trust badges, banners, accordions, custom fields, and payment icons.
 - Payment method rules (hide, rename, reorder) with cart, customer, product, address and date conditions, on every Shopify plan.
 - Shipping method rules with the same actions and conditions, scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.
@@ -34,6 +37,12 @@ Thought Bulb, which builds Smart Checkout Widgets, also makes Cart Rocket, TB Bu
 - [Shopify cart link apps compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-cart-link-apps/): Checkout Links, Cart Rocket, ZipLinks, CCL, UR: Simple Checkout Links and Cart Link Builder by Wonder, plus Shopify's free cart permalinks.
 - [Shopify bundle apps compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-bundle-apps/): Shopify Bundles, Bundler, Kaching, Fast Bundle, Simple Bundles & Kits, BOGOS and TB Bundles, by pricing model and bundle types.
 - [AI chat and shopping assistant apps for Shopify compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-ai-chat-apps/): Shopify Inbox, Agentmatica, Zipchat, Tidio, Gorgias, Rep AI, Manifest AI and Intercom Fin, by what each charges for.
+
+## New guides (November 2026)
+
+- [Shopify checkout upsell rules: when the cart has X, offer Y](https://smartcheckoutwidgets.com/blog/shopify-checkout-upsell-rules/): Match products, collections, tags or cart total, then give each offer its own discount. Includes CSV import.
+- [Why a Shopify discount disappears at checkout, and how to fix it](https://smartcheckoutwidgets.com/blog/shopify-discount-disappears-at-checkout/): When two discounts cannot combine, Shopify quietly keeps one. What to check before a sale.
+- [Free gifts on the Shopify cart page with a gift code](https://smartcheckoutwidgets.com/blog/shopify-free-gift-cart-page/): For developers: look up a gift code through the app proxy, add the line, and let checkout keep it honest.
 
 ## Merchant problem guides (October 2026)
 

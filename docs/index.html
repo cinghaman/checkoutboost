@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentation | Smart Checkout Widgets for Shopify</title>
-  <meta name="description" content="Official Smart Checkout Widgets documentation: checkout gifts, upsells, trust badges, custom fields, shipping and payment method rules, conditions, and order limits for Shopify checkout on every plan.">
+  <meta name="description" content="Smart Checkout Widgets docs: set up checkout gifts, upsell rules, shipping and payment method rules, order editing, branding, AI assistants and order limits.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://smartcheckoutwidgets.com/docs/">
   <link rel="describedby" href="/llms.txt" type="text/plain" title="llms.txt">
@@ -333,6 +333,7 @@
         <li><a href="#branding">Checkout branding</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#sidekick">Sidekick</a></li>
+        <li><a href="#ai-assistants">AI assistants</a></li>
         <li><a href="#conditions">Conditions reference</a></li>
         <li><a href="#plans">Plans and order limits</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
@@ -561,6 +562,16 @@
         message above the options is editable, and you can show or hide each gift's price.
       </p>
 
+      <h3 id="cart-page-gifts">Gifts on the cart page</h3>
+      <p>
+        A theme developer can apply a gift code on the cart page instead of waiting for
+        checkout. The theme looks up the code at <code>/apps/scw/gift?code=YOURCODE</code> on
+        your store's domain, adds the gift with the line properties it gets back, then applies
+        the code and reads <code>discount_codes[].applicable</code> from <code>/cart.js</code>.
+        Keep the checkout block placed, because nothing removes a gift on the cart page. See
+        the <a href="/blog/shopify-free-gift-cart-page/">cart page gift guide</a>.
+      </p>
+
       <h2 id="upsells">Upsells</h2>
       <p>
         The upsell widget offers more products. In checkout, buyers add them without leaving
@@ -573,6 +584,26 @@
         sale, tagged or below a minimum price, and choose whether variants show separately,
         combined or not at all. Display conditions let you show an accessory only when the
         matching product is in the cart.
+      </p>
+
+      <h3 id="upsell-rules">Upsell rules</h3>
+      <p>
+        Rules mode replaces the single product list with "when the cart has this, offer that".
+        A rule can match products, a collection, a tag, or a cart total above or below an
+        amount, and several conditions can be combined with all or any. It offers products you
+        pick or more of the product that matched, with a quantity and an optional headline.
+      </p>
+      <ul>
+        <li><strong>Discounts.</strong> Each rule can offer full price, an amount off each unit or a percent off. The first discounted offer creates one automatic discount called "Upsell offers (Smart Checkout Widgets)". Leave it active.</li>
+        <li><strong>Order.</strong> Rules run from the top. With <strong>Stop here</strong> on, a rule that has something to show stops the rules below it.</li>
+        <li><strong>CSV.</strong> Rules import and export as CSV, and the editor shows what it found before you confirm.</li>
+        <li><strong>Testing.</strong> The cart tester shows which rules match products and a cart total you pick.</li>
+      </ul>
+      <p>
+        Offer discounts need the Add button in checkout, so they apply on Shopify Plus. If a
+        store has an order discount that doesn't combine with product discounts, Shopify can
+        drop the upsell discount. <a href="/blog/shopify-discount-disappears-at-checkout/">Here's how to check</a>.
+        You can also fill the widget with Shopify's own product recommendations.
       </p>
 
       <h2 id="shipping-rules">Shipping method rules</h2>
@@ -733,6 +764,22 @@
         link to the app, and nothing changes until you save there.
       </p>
 
+      <h2 id="ai-assistants">AI assistants</h2>
+      <p>
+        The <strong>AI Assistants</strong> page in the app gives you a private connector URL
+        for an AI assistant that supports MCP connectors. It is available on every plan. Once
+        connected, you can ask things like "Why can't customers in Spain pay cash?" or "How
+        did my free gift do last month?"
+      </p>
+      <p>Each connector has one of two access levels:</p>
+      <ul>
+        <li><strong>View only.</strong> Reads your rules, gifts, widgets, results and plan.</li>
+        <li><strong>View and edit.</strong> Also turns rules and widgets on or off and creates rules from templates. New rules start switched off unless you ask for them to be on. Gift campaigns stay read-only.</li>
+      </ul>
+      <p>
+        Treat the URL like a password. You can replace it or turn it off on the same page.
+      </p>
+
       <h2 id="conditions">Conditions reference</h2>
       <p>
         Conditions decide whether a rule applies. Combine them with <strong>Always</strong>,
@@ -795,10 +842,12 @@
       <div class="callout callout--warn">
         <p>
           <strong>Going over your order limit.</strong> Once a store passes its plan's monthly
-          limit by 25%, the app's widgets stop showing. Gifts, shipping and payment rules and
-          order editing keep working. Upgrading to a plan that covers this month's orders
-          brings the widgets back automatically, with nothing to reconfigure. Stores that
-          haven't set anything up are never paused.
+          limit by 10%, the app pauses. Widgets, gifts, upsell discounts, and shipping and
+          payment rules all switch off, and buyers see your standard shipping and payment
+          options. Checkout keeps taking orders. Everything comes back on its own when you
+          upgrade to a plan that covers this month's orders, or when the count resets on the
+          first of the month, with nothing to reconfigure. Rules you had already turned off
+          stay off. Stores that have nothing running are never paused.
         </p>
       </div>
 
