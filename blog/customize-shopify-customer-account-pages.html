@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/assets/js/consent.js?v=20261020d" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to customize Shopify customer account pages: VIP status, store credit, discount codes and more | Smart Checkout Widgets</title>
+  <meta name="description" content="Customers who sign in see a plain Orders and Profile page. Here is what you can add to them on any Shopify plan, from VIP tiers and store credit to profile questions and a code for their next order.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/blog/customize-shopify-customer-account-pages/">
+  <meta property="og:title" content="How to customize Shopify customer account pages: VIP status, store credit, discount codes and more | Smart Checkout Widgets">
+  <meta property="og:description" content="Customers who sign in see a plain Orders and Profile page. Here is what you can add to them on any Shopify plan, from VIP tiers and store credit to profile questions and a code for their next order.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/customize-shopify-customer-account-pages/">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="Guide: customizing Shopify customer account pages">
+  <meta property="article:published_time" content="2026-11-10">
+  <meta property="article:modified_time" content="2026-11-10">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to customize Shopify customer account pages: VIP status, store credit, discount codes and more | Smart Checkout Widgets">
+  <meta name="twitter:description" content="Customers who sign in see a plain Orders and Profile page. Here is what you can add to them on any Shopify plan, from VIP tiers and store credit to profile questions and a code for their next order.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta name="twitter:image:alt" content="Guide: customizing Shopify customer account pages">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+
+
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to customize Shopify customer account pages: VIP status, store credit, discount codes and more",
+  "description": "Customers who sign in see a plain Orders and Profile page. Here is what you can add to them on any Shopify plan, from VIP tiers and store credit to profile questions and a code for their next order.",
+  "url": "https://smartcheckoutwidgets.com/blog/customize-shopify-customer-account-pages/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://smartcheckoutwidgets.com/blog/customize-shopify-customer-account-pages/"
+  },
+  "image": [
+    "https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp"
+  ],
+  "datePublished": "2026-11-10",
+  "dateModified": "2026-11-10",
+  "author": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Smart Checkout Widgets Blog",
+    "url": "https://smartcheckoutwidgets.com/blog/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Can I customize Shopify customer account pages without Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Customer account app blocks work on every Shopify plan, as long as the store uses the new customer accounts."}},
+    {"@type": "Question", "name": "Can a block show only to VIP customers?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Add the audience rule \"Customer has tag\" with your VIP tag. Rules can also check order count, amount spent, time since the last order and birthday month."}},
+    {"@type": "Question", "name": "Where do profile answers go?", "acceptedAnswer": {"@type": "Answer", "text": "They show in the app. Grant one extra permission and they also go onto the customer in Shopify admin."}},
+    {"@type": "Question", "name": "Does the store credit block show a zero balance?", "acceptedAnswer": {"@type": "Answer", "text": "No. It stays hidden for customers who have no credit to spend."}},
+    {"@type": "Question", "name": "Which plans include customer account blocks?", "acceptedAnswer": {"@type": "Answer", "text": "Growth, Advanced and Pro. On Starter you can set them up, and they start showing when you upgrade."}}
+  ]
+}
+  </script>
+  <link rel="stylesheet" href="/style.css?v=20260925c">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links" id="nav-links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <main id="main-content">
+    <section class="post-hero">
+      <div class="post-hero-copy">
+        <h1>How to customize Shopify customer account pages: VIP status, store credit, discount codes and more</h1>
+        <div class="meta-row">
+          <span>Published November 10, 2026</span>
+          <span>Smart Checkout Widgets</span>
+          <span><a href="/blog/" style="color: inherit;">All articles</a></span>
+        </div>
+      </div>
+    </section>
+    <section class="post-layout">
+      <article class="post-content">
+<p>When a customer signs in to your store, Shopify shows them two pages: Orders and Profile. Both are tidy and bare. Nothing on them tells a regular customer they are one, or that they have credit waiting to be spent.</p>
+<p>Those pages accept app blocks in Shopify's new customer accounts, on every Shopify plan. This guide covers what is worth putting there and how to decide who sees it.</p>
+<h2>What you can add</h2>
+<div class="table-wrap"><table>
+    <thead><tr><th>Block</th><th>What the customer sees</th><th>Where it goes</th></tr></thead>
+    <tbody>
+      <tr><td>VIP status</td><td>Their tier, its perks, and how far they are from the next one</td><td>Profile, Orders</td></tr>
+      <tr><td>Store credit</td><td>Their balance, hidden when they have none</td><td>Profile, Orders</td></tr>
+      <tr><td>Discount code</td><td>A code to copy, with a button that applies it or a link to share</td><td>Profile, Orders, Order status, announcement bar</td></tr>
+      <tr><td>Profile fields</td><td>Your own questions, such as birthday or usual size</td><td>Profile</td></tr>
+      <tr><td>Return window</td><td>Days left to return and which items are final sale</td><td>Order status</td></tr>
+      <tr><td>Banner, content, FAQ, trust badges, upsell</td><td>The same widgets you use in checkout</td><td>Profile, Orders, Order status, footer</td></tr>
+    </tbody>
+</table></div>
+<p>Two more go in the menu on each order, Get help and Reorder items. They have <a href="/blog/shopify-customer-account-reorder-and-help/">their own guide</a>.</p>
+<h2>VIP status</h2>
+<p>You set the tiers: a name, the amount a customer has to spend (or the number of orders) to reach it, and a line about the perks. The block reads the customer's lifetime spend from Shopify and shows the tier they hold and a bar towards the next one, with the amount still to go.</p>
+<p>Keep the tiers few and the gaps reachable. Three tiers with perks a customer can name (free express shipping, early access) do more than six tiers that differ by a percent.</p>
+<h2>Store credit</h2>
+<p>If you issue Shopify store credit for returns or as a reward, customers rarely know they have it. The block shows the balance on their account page and stays hidden for customers with nothing to spend, so it never shows a zero.</p>
+<h2>A discount code for the next order</h2>
+<p>Create the code in Shopify Discounts, then put it in the block. The button applies the code and takes the customer to your store, so they don't have to type it at checkout. Switch the button to "copy a link" and the same block becomes a refer-a-friend card.</p>
+<p>A code also works as an announcement across the top of the Orders and Profile pages, which is the most visible spot in the account.</p>
+<h2>Profile fields</h2>
+<p>Ask what you would like to know, such as a birthday or a usual size. Answers show in the app, and with one extra permission they also go onto the customer in Shopify admin. Ask for a birthday with the key <code>birthday</code> and you can show a block only during the customer's birthday month.</p>
+<h2>Deciding who sees what</h2>
+<p>Every block can carry audience rules, and all of them must match:</p>
+<ul>
+  <li>Customer has a tag, or doesn't</li>
+  <li>Placed at least N orders, or fewer than N</li>
+  <li>Spent at least an amount</li>
+  <li>No order in the last N days</li>
+  <li>Birthday is this month</li>
+</ul>
+<p>That turns one discount block into three campaigns. "No order in 90 days" is a win-back offer. "Tagged VIP" is a perk. "Birthday is this month" is a birthday treat.</p>
+<p>The order count and amount spent come from Shopify's customer record. Orders still waiting for payment may not count yet, so test a rule with a customer whose numbers you know.</p>
+<h2>Setting it up</h2>
+<ol>
+  <li>Create the block in Smart Checkout Widgets and choose where it shows.</li>
+  <li>In Shopify, go to Settings, then Checkout, then Customize, and switch to a customer account page.</li>
+  <li>Click Add block and pick Account blocks. It shows every block you set for that page, so you add it once per page.</li>
+</ol>
+<p>Customer account blocks are part of the Growth, Advanced and Pro plans. They need Shopify's new customer accounts, not the legacy ones. For the pages customers see right after buying, see <a href="/blog/shopify-thank-you-order-status-widgets/">Thank you and Order status widgets</a>.</p>
+
+        <section class="post-faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          <div class="faq-list">
+          <details class="faq-item">
+            <summary>Can I customize Shopify customer account pages without Shopify Plus?</summary>
+            <p>Yes. Customer account app blocks work on every Shopify plan, as long as the store uses the new customer accounts.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can a block show only to VIP customers?</summary>
+            <p>Yes. Add the audience rule "Customer has tag" with your VIP tag. Rules can also check order count, amount spent, time since the last order and birthday month.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where do profile answers go?</summary>
+            <p>They show in the app. Grant one extra permission and they also go onto the customer in Shopify admin.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does the store credit block show a zero balance?</summary>
+            <p>No. It stays hidden for customers who have no credit to spend.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Which plans include customer account blocks?</summary>
+            <p>Growth, Advanced and Pro. On Starter you can set them up, and they start showing when you upgrade.</p>
+          </details>
+          </div>
+        </section>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+          <a class="btn btn-secondary" href="/docs/#customer-accounts">Customer account docs</a>
+        </div>
+      </article>
+    </section>
+    <section class="inner-cta">
+      <div class="container">
+        <div class="inner-cta__panel">
+          <h2>Ready to upgrade your checkout?</h2>
+          <p>Install Smart Checkout Widgets free: payment and shipping rules and Thank you page blocks on every Shopify plan, plus gifts and upsells in checkout on Plus.</p>
+          <div class="section-cta" style="justify-content: center; border: 0; padding-top: 0; margin-top: 0;">
+            <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+            <a class="btn btn-secondary" href="/blog/">More articles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is checkout customization for every Shopify store — rules everywhere, <em>gifts</em> on Plus.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/compare/shopify-checkout-gift-apps/">App comparison</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="https://cartrocket.dev" target="_blank" rel="noopener noreferrer">CartRocket</a></li>
+            <li><a href="https://apps.shopify.com/smart-bundles-2" target="_blank" rel="noopener noreferrer">TB Bundles</a></li>
+            <li><a href="https://agentmatica.com" target="_blank" rel="noopener noreferrer">Agentmatica</a></li>
+            <li><a href="https://hivesense.co" target="_blank" rel="noopener noreferrer">HiveSense</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy/">Privacy policy</a></li>
+            <li><a href="#" data-cookie-preferences>Cookie preferences</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Built for Shopify checkout, every plan</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/site.js?v=20260925c"></script>
+  <script
+    src="https://agentmatica.com/loader.js"
+    data-widget-src="https://agentmatica.com/widget.js"
+    data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94"
+    id="agentmatica-widget-script"
+    defer
+  ></script>
+</body>
+</html>

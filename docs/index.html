@@ -330,6 +330,7 @@
         <li><a href="#shipping-rules">Shipping method rules</a></li>
         <li><a href="#payment-rules">Payment method rules</a></li>
         <li><a href="#order-editing">Order editing</a></li>
+        <li><a href="#customer-accounts">Customer accounts</a></li>
         <li><a href="#branding">Checkout branding</a></li>
         <li><a href="#results">Results</a></li>
         <li><a href="#sidekick">Sidekick</a></li>
@@ -610,7 +611,26 @@
       <p>
         A shipping method rule changes the delivery options Shopify has already calculated. It
         can rename an option ("Standard Shipping" becomes "Arrives in 3 to 5 days"), hide it,
-        or move it to a set position in the list.
+        move it to a set position in the list, or show only the options you name.
+      </p>
+
+      <h3 id="show-only">Show only selected shipping methods</h3>
+      <p>
+        A <strong>Show only</strong> rule names the options to keep and hides every other option
+        in its scope while the rule applies. Use it to give rural postcodes only your rural
+        courier, or a region only the carriers that reach it. A rate you add later is hidden for
+        those buyers without editing the rule.
+      </p>
+      <p>
+        If none of the named options is offered at checkout, for example because one was
+        renamed in Shopify, the rule hides nothing. Buyers then see every option instead of
+        none, so a rename never blocks orders. To block an area on purpose, use a hide rule on
+        <code>*</code> instead.
+      </p>
+      <p>
+        The action menu next to <em>when</em> offers <strong>Show only these</strong> or
+        <strong>Show everything</strong>. The second flips the conditions: every option shows
+        when they match, and only the named ones otherwise.
       </p>
 
       <h3 id="apply-to">Apply to</h3>
@@ -716,6 +736,103 @@
         marks the order as having a requested edit, and you accept or decline it there.
       </p>
 
+      <h2 id="customer-accounts">Customer accounts</h2>
+      <p>
+        Customer account blocks put content on the pages a signed-in customer sees: Orders,
+        Profile, each order's page, the footer and the announcement bar. They are part of the
+        Growth, Advanced and Pro plans and work on every Shopify plan, in Shopify's new customer
+        accounts (not the legacy ones). On Starter you can set them up, and they start showing
+        when you upgrade.
+      </p>
+
+      <div class="docs-table-wrap">
+        <table class="docs-table">
+          <thead><tr><th>Block</th><th>What it does</th><th>Where</th></tr></thead>
+          <tbody>
+            <tr><td>VIP status</td><td>The customer's tier, its perks and progress to the next one, by lifetime spend or number of orders</td><td>Profile, Orders</td></tr>
+            <tr><td>Store credit</td><td>The customer's Shopify store credit balance. Hidden when there is none.</td><td>Profile, Orders</td></tr>
+            <tr><td>Discount code</td><td>A code to copy, with a button that applies it and opens the store, or copies a link to share</td><td>Profile, Orders, Order status, announcement bar</td></tr>
+            <tr><td>Profile fields</td><td>Your own questions: text, a date or a choice</td><td>Profile</td></tr>
+            <tr><td>Return window</td><td>Days left to return, counted from delivery (or shipping when no delivery was reported), and final-sale items by product tag</td><td>Order status</td></tr>
+            <tr><td>Get help with an order</td><td>A button on each order: your answers for the order's stage, then a topic and message</td><td>Order menu</td></tr>
+            <tr><td>Reorder items</td><td>A button on each order: pick items and quantities, then go to checkout</td><td>Order menu</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>
+        Custom banner, Custom content, Accordion, Trust badges and Upsell widgets can also be
+        placed on account pages. Open the widget and choose a page under
+        <strong>Show in customer accounts</strong>. Upsell offers there link to a new cart at the
+        normal price.
+      </p>
+
+      <h3 id="account-setup">Adding blocks to account pages</h3>
+      <ol>
+        <li>Create the block in the app (Widgets, then Create widget, under <em>Customer accounts</em>), or open a checkout widget and choose an account page for it.</li>
+        <li>In Shopify, open <strong>Settings &gt; Checkout &gt; Customize</strong> and switch to Orders, Profile or Order status in the page picker.</li>
+        <li>Click <strong>Add block</strong> and pick <em>Account blocks</em>. It shows every account block you set for that page, so you add it once per page. For the announcement bar, add it in the page's Announcement bar section.</li>
+        <li>Save the editor.</li>
+      </ol>
+      <p>
+        The <strong>Customer accounts</strong> page in the app lists your account blocks, the
+        help requests customers sent and their profile answers.
+      </p>
+
+      <h3 id="account-audience">Who sees a block</h3>
+      <p>
+        Every account block can carry audience rules, and all of them must match. With no rules,
+        every signed-in customer sees it.
+      </p>
+      <ul>
+        <li>Customer has a tag, or doesn't have a tag</li>
+        <li>Placed at least N orders, or fewer than N</li>
+        <li>Spent at least an amount, in your store currency</li>
+        <li>No order in the last N days (customers who never ordered don't match)</li>
+        <li>Birthday is this month, from a Profile fields question with the key <code>birthday</code></li>
+      </ul>
+      <p>
+        Order count and amount spent come from Shopify's customer record, which may not count
+        orders still waiting for payment.
+      </p>
+
+      <h3 id="account-order-menu">Get help and Reorder items</h3>
+      <p>
+        These two go in the menu on each order, next to Shopify's own Buy again. Add them on the
+        Order status page in the editor: <strong>Add block</strong>, then <em>Get help with an
+        order</em> and <em>Reorder items</em>. They land under <strong>Order actions</strong> and
+        also show on the Orders page.
+      </p>
+      <p>
+        <strong>Get help</strong> shows your answers first. Each answer is for every order, or only
+        orders that haven't shipped, have shipped, or were delivered. If the customer still needs
+        you, they pick a topic and write a message. The message is added to the end of the order
+        note with the date and topic, the order is tagged <code>scw-help</code>, and it appears on
+        the Customer accounts page. Each order takes up to five messages a day. When
+        <a href="#order-editing">order editing</a> is on and the order can still be changed, Get
+        help links to it first.
+      </p>
+      <p>
+        <strong>Reorder items</strong> lists the order's products that are still for sale, with a
+        quantity for each. The customer unticks what they don't want and goes to checkout with the
+        rest. Shopify's Buy again adds the whole order instead.
+      </p>
+
+      <h3 id="account-profile-fields">Profile fields</h3>
+      <p>
+        Give each question a label and a key (letters, numbers and <code>_</code>). Keep a key the
+        same once customers have answered, because answers are stored under it. Answers show on the
+        Customer accounts page. Click <strong>Also save answers on the customer in Shopify</strong>
+        in the block's settings and grant the permission, and answers are also saved to a
+        <em>Profile answers</em> field on the customer in Shopify admin.
+      </p>
+      <div class="callout callout--limit">
+        <p>
+          <strong>Customer data.</strong> Profile answers and help messages are the only things
+          customers type that the app stores. Both are deleted when Shopify sends a request to
+          erase that customer's data.
+        </p>
+      </div>
+
       <h2 id="branding">Checkout branding (Pro)</h2>
       <p>
         <strong>Checkout Branding</strong> edits the look of your live checkout. Shopify only
@@ -796,7 +913,7 @@
             <tr><td>Cart</td><td>Total amount, subtotal amount, quantity, order weight</td></tr>
             <tr><td>Customer</td><td>Tag, is logged in, is not logged in, order count, total spent</td></tr>
             <tr><td>Products</td><td>Has a digital product, has a physical product, product tag, collection</td></tr>
-            <tr><td>Address</td><td>Country, state / province, city, ZIP / postal code</td></tr>
+            <tr><td>Address</td><td>Country, state / province, city, ZIP / postal code (including ranges)</td></tr>
             <tr><td>Date &amp; time</td><td>Day of week, date</td></tr>
           </tbody>
         </table>
@@ -805,6 +922,7 @@
       <h3 id="condition-notes">Things worth knowing</h3>
       <ul>
         <li>Address conditions accept comma-separated values and match any of them, so <code>PL, DE, FR</code> is one condition rather than three.</li>
+        <li>ZIP / postal code has <strong>is in range</strong> and <strong>is not in range</strong> for numeric postcodes: <code>2000-2999</code>, <code>0800 to 0899</code>, or a list such as <code>2000-2999, 4000, 6000-6999</code>. Leading zeros count, and a US ZIP+4 such as <code>02139-1234</code> matches <code>02000-02999</code>. Postcodes with letters (UK, Canada) are never in a numeric range; use <strong>starts with</strong> for those. Polish codes carry their own hyphen, so write a range of them with "to": <code>00-001 to 09-999</code>.</li>
         <li>A customer tag condition checks one tag. Add another condition for a second tag. Product tag and collection can each appear once per rule.</li>
         <li>A date condition takes one date, written YYYY-MM-DD.</li>
         <li>Tag, order count and total spent need a signed-in customer. They never match a guest checkout, because there is no customer record to read.</li>
@@ -815,7 +933,8 @@
       <h2 id="plans">Plans and order limits</h2>
       <p>
         Starter, Growth and Advanced differ by how many orders a month they cover, and paid plans
-        also let you limit a gift to specific customers. Pro adds order editing on every Shopify
+        also let you limit a gift to specific customers and add
+        <a href="#customer-accounts">customer account blocks</a>. Pro adds order editing on every Shopify
         plan, and the stock urgency widget and checkout branding on Shopify Plus.
       </p>
 
@@ -869,6 +988,15 @@
         <li>Check that the name you typed appears in the option's name at checkout. Matching is on the displayed name.</li>
       </ol>
 
+      <h3 id="account-block-not-showing">A customer account block is not showing</h3>
+      <ol>
+        <li>Check the store uses Shopify's new customer accounts. Legacy accounts can't show app blocks.</li>
+        <li>Check the <em>Account blocks</em> app block is placed on that page in the editor, or for Get help and Reorder items, that their blocks are added on the Order status page.</li>
+        <li>Check the block's page under <strong>Show in customer accounts</strong>, and that the widget is enabled.</li>
+        <li>Check the audience rules against the customer. A rule on order count or amount spent reads Shopify's customer record.</li>
+        <li>Check the plan. Account blocks show on Growth, Advanced and Pro, and pause with everything else when a store goes over its order limit.</li>
+      </ol>
+
       <h3 id="gift-not-removed">A gift stayed in the order after the coupon was removed</h3>
       <p>
         This is why gift variants should have a normal catalogue price. See the note under
@@ -884,6 +1012,13 @@
         widgets, order editing and Results work on every Shopify plan. Plus is needed for
         widgets on the checkout page itself, for adding gifts to the cart at checkout, and for
         checkout branding, because Shopify only allows those on Plus.
+      </p>
+
+      <h3>Can I customize customer account pages without Shopify Plus?</h3>
+      <p>
+        Yes. Customer account blocks work on every Shopify plan with the new customer accounts.
+        They are part of the Growth, Advanced and Pro app plans. See
+        <a href="#customer-accounts">Customer accounts</a>.
       </p>
 
       <h3>Does it work with checkout.liquid?</h3>

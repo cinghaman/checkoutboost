@@ -83,6 +83,20 @@ SPECS = {
         "eyebrow": "Cart progress",
         "lines": ["Free shipping progress bar", "in Shopify checkout"],
         "accent": ACCENT_SOFT,
+    },    "shopify-shipping-rates-by-postcode": {
+        "eyebrow": "Shipping rules",
+        "lines": ["Show only some shipping", "rates by postcode"],
+        "accent": ACCENT,
+    },
+    "customize-shopify-customer-account-pages": {
+        "eyebrow": "Customer accounts",
+        "lines": ["VIP status, store credit", "and codes in accounts"],
+        "accent": COMPANION,
+    },
+    "shopify-customer-account-reorder-and-help": {
+        "eyebrow": "Customer accounts",
+        "lines": ["Reorder and Get help", "on every order"],
+        "accent": ACCENT,
     },
 }
 
