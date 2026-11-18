@@ -14,8 +14,8 @@
   <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-shipping-rates-by-postcode/">
   <meta property="og:site_name" content="Smart Checkout Widgets">
   <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-shipping-rates-by-postcode.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-shipping-rates-by-postcode.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Guide: showing only certain shipping rates by postcode in Shopify">
@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to show only certain shipping rates by postcode in Shopify (ranges included) | Smart Checkout Widgets">
   <meta name="twitter:description" content="Limit a courier to rural postcodes, keep same-day delivery for your own area, or block an area you can't reach. Postcode ranges and show-only rules, on every Shopify plan.">
-  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-shipping-rates-by-postcode.webp">
   <meta name="twitter:image:alt" content="Guide: showing only certain shipping rates by postcode in Shopify">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,10 +48,10 @@
     "@id": "https://smartcheckoutwidgets.com/blog/shopify-shipping-rates-by-postcode/"
   },
   "image": [
-    "https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp"
+    "https://smartcheckoutwidgets.com/images/og/shopify-shipping-rates-by-postcode.webp"
   ],
   "datePublished": "2026-11-10",
-  "dateModified": "2026-11-10",
+  "dateModified": "2026-11-18",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -87,7 +87,8 @@
     {"@type": "Question", "name": "Can I use postcode ranges?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for numeric postcodes. Use \"is in range\" with values such as 2000-2999, 0800 to 0899, or a list that mixes ranges and single codes."}},
     {"@type": "Question", "name": "What happens if I rename a rate a show-only rule names?", "acceptedAnswer": {"@type": "Answer", "text": "If none of the named rates is offered, the rule hides nothing, so buyers see every rate instead of none."}},
     {"@type": "Question", "name": "How do I stop orders from one area?", "acceptedAnswer": {"@type": "Answer", "text": "Hide every rate for those postcodes. Buyers there see that shipping isn't available, and checkout can't complete without a rate."}},
-    {"@type": "Question", "name": "Do ranges work for UK or Canadian postcodes?", "acceptedAnswer": {"@type": "Answer", "text": "No, those start with letters. Use \"starts with\" and a list of prefixes instead."}}
+    {"@type": "Question", "name": "Do ranges work for UK or Canadian postcodes?", "acceptedAnswer": {"@type": "Answer", "text": "No, those start with letters. Use \"starts with\" and a list of prefixes instead."}},
+    {"@type": "Question", "name": "Can I charge more for some postcodes?", "acceptedAnswer": {"@type": "Answer", "text": "Not with a rule alone, because rules don't change prices. Add a higher-priced rate in Shopify, then use rules so only those postcodes see it."}}
   ]
 }
   </script>
@@ -134,7 +135,7 @@
 <p>The advantage over a hide rule is that you name what stays, so a rate you add next month is hidden for those postcodes automatically. With a hide rule you would have to remember to add it.</p>
 <p>One safety catch is built in. If none of the rates you named is offered at checkout, for example because the rate was renamed in Shopify, the rule hides nothing. Buyers in that area then see every rate instead of none, so a rename never stops orders.</p>
 <h2>Hide these rates</h2>
-<p>A <strong>Hide</strong> rule works the other way round, and it is the right choice when one rate should belong to one area. Same-day delivery is the usual example: hide "Same-day" for every postcode that is not in your delivery area. Buyers in the area see it, and nobody else does.</p>
+<p>A <strong>Hide</strong> rule works the other way round, and it is the right choice when one rate should belong to one area. Same-day delivery is the usual example: hide "Same-day" for every postcode that is not in your delivery area. Buyers in the area see it, and nobody else does. This is for a same-day rate you set up yourself or get from a courier app. Shopify's own local delivery already checks the postcode against the delivery area you gave it, so it doesn't need a rule.</p>
 <p>To stop orders from an area entirely, hide every rate there: a hide rule on <code>*</code>, which matches every rate, with the postcode condition. Buyers in that area see that shipping isn't available. Checkout can't complete without a rate, so no order goes through.</p>
 <h2>Postcode ranges</h2>
 <p>Writing out every postcode is fine for ten of them and useless for a thousand. The postcode condition takes ranges:</p>
@@ -146,10 +147,13 @@
 <p>Pick <strong>is in range</strong> or <strong>is not in range</strong> as the operator. Leading zeros count, so <code>02000-02999</code> matches the US ZIP code <code>02139</code>, and the ZIP+4 form <code>02139-1234</code> matches too.</p>
 <p>Ranges only work for postcodes made of digits. For UK or Canadian postcodes, which start with letters, use <strong>starts with</strong> and a list of prefixes, such as <code>BT, PA20, TR21</code>.</p>
 <p>Polish postcodes carry their own hyphen, so <code>00-950</code> is read as one postcode. Write a range of them with "to": <code>00-001 to 09-999</code>.</p>
+<h2>Charging more for remote postcodes</h2>
+<p>Rules don't change prices. They hide, rename, reorder or show only the rates Shopify has already worked out, so they can't add a surcharge to a rate or set a different price for a postcode.</p>
+<p>You can get the same result with two rates. In Shopify's shipping settings, add a second rate to the zone at the higher price, called something like "Standard (remote areas)". Then write two rules: hide it when the postcode is not in your remote list, and hide your normal "Standard" rate when it is. Remote buyers see only the dearer rate, and everyone else sees the normal one.</p>
 <h2>Three rules that cover most stores</h2>
 <ol>
   <li><strong>Rural courier only.</strong> Show only your rural rate when the postcode is in the rural range.</li>
-  <li><strong>Same-day in town.</strong> Hide same-day delivery when the postcode is not in your city's range.</li>
+  <li><strong>Same-day in town.</strong> Hide your same-day courier rate when the postcode is not in your city's range.</li>
   <li><strong>Areas you can't serve.</strong> Hide every rate when the postcode is in the blocked list.</li>
 </ol>
 <p>Test each one with a real postcode before you rely on it. Start a checkout, type a postcode inside the range, then one outside it, and check the rates change the way you expect.</p>
@@ -177,6 +181,10 @@
           <details class="faq-item">
             <summary>Do ranges work for UK or Canadian postcodes?</summary>
             <p>No, those start with letters. Use "starts with" and a list of prefixes instead.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I charge more for some postcodes?</summary>
+            <p>Not with a rule alone, because rules don't change prices. Add a higher-priced rate in Shopify, then use rules so only those postcodes see it.</p>
           </details>
           </div>
         </section>
