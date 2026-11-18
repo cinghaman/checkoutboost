@@ -80,7 +80,7 @@
       "name": "How do I add a shipping cutoff message to Shopify checkout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Put the last order date in the shipping option's name, either by editing your flat rate names in Settings > Shipping and delivery or with a rename rule in an app. On Shopify Plus you can also add a banner block in checkout. Change both the morning after each cutoff passes."
+        "text": "Put the last order date in the shipping option's name, either by editing your flat rate names in Settings > Shipping and delivery or with a rename rule in an app. On Shopify Plus you can also add a banner block in checkout. Change both when each cutoff passes, by hand or with dated rules and banner dates set up in advance."
       }
     },
     {
@@ -104,7 +104,7 @@
       "name": "Can a checkout banner turn itself off after the cutoff?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The Smart Checkout Widgets banner has no schedule. Edit its text when a date passes and disable it after the season. Disabling takes it off the page at once and keeps the settings."
+        "text": "Yes. Give the Smart Checkout Widgets banner a Show until date and it disappears after that day, in your store's time zone. A second banner with a Show from date can take its place in the same block."
       }
     },
     {
@@ -184,7 +184,7 @@
   <img src="/images/blog/hide-rename-reorder-shipping-methods-shopify-checkout.webp" width="1600" height="895" alt="Phone delivery step with Standard renamed to Arrives in 3-5 days and one rate hidden" fetchpriority="high">
   <figcaption>The delivery step is where buyers decide if a gift will arrive in time. Illustration.</figcaption>
 </figure>
-<p class="lead">Put the last order date in the name of each shipping option, because that's the line the buyer is reading when they decide whether a gift will arrive in time. It works on every Shopify plan. On Shopify Plus you can add a banner inside checkout as well. Christmas Day is a Friday this year. Whatever your own dates turn out to be, change the wording the morning each one passes, so nobody pays for standard shipping on December 22 thinking it will make it.</p>
+<p class="lead">Put the last order date in the name of each shipping option, because that's the line the buyer is reading when they decide whether a gift will arrive in time. It works on every Shopify plan. On Shopify Plus you can add a banner inside checkout as well. Christmas Day is a Friday this year. Whatever your own dates turn out to be, the wording has to change the morning each one passes, so nobody pays for standard shipping on December 22 thinking it will make it. You can do that by hand, or set it up once with dated rules.</p>
 
 <h2>Work out one date for each delivery option</h2>
 <p>Start with each carrier's published holiday dates, then take off your own packing time. If the carrier needs the parcel by Thursday and you need two business days to pack, the last safe order day is Tuesday. Do the sum for every option you show at checkout, including local delivery and in-store pickup if you offer them.</p>
@@ -201,12 +201,12 @@
 <p>A rule matches any part of the displayed name and ignores case. A rename on "Standard" catches "Standard Shipping" and "Standard International", so check what else contains the word. The <strong>Apply to</strong> setting limits a rule to one kind of option: shipping rates, local delivery, pickup points or local pickup locations. That lets you rename a pickup location to "Collect in store, order by Dec 23" without touching a shipping rate that shares part of its name. Renaming changes the label only. The price and the carrier stay the same.</p>
 <p>Rates from a carrier or a shipping app keep the carrier's name. Shopify puts it in front of whatever name the rule sets, and apps can't remove it, so renaming a UPS rate to "Standard, order by Dec 14" shows "UPS Standard, order by Dec 14" at checkout. Flat rates you created in Shopify have no carrier name, so they show exactly what you typed. Check the full line on a phone, because the carrier name makes it longer.</p>
 <p>Conditions decide when a rule applies, and they include country, state or province and postcode. That matters when remote areas need an earlier date: one rule for most addresses, another for the postcodes your carrier reaches slowly. The guide to <a href="/blog/shopify-shipping-rates-by-postcode/">shipping rates by postcode</a> covers ranges. Conditions also include day of week and date, in your store's local time.</p>
-<p>Rules apply as soon as you save. The simplest way to handle each cutoff is to open the rule the morning after and change the name to something like "Standard, arrives after Christmas". Set a calendar reminder for it. For the full set of rename, hide and reorder rules, see <a href="/blog/hide-rename-reorder-shipping-methods-shopify-checkout/">hide, rename and reorder shipping methods</a>.</p>
+<p>Rules apply as soon as you save, and a date condition lets you set up the switch in advance. Make one rule that renames Standard to "Standard, order by Dec 14" while the date is before 2026-12-15, and a second that renames it to "Standard, arrives after Christmas" when the date is on or after 2026-12-15. The second takes over that morning in your store's time zone, and nobody has to remember to log in. Do the same for each option with its own date. "Is between" covers a window, such as 2026-12-15 to 2026-12-24. For the full set of rename, hide and reorder rules, see <a href="/blog/hide-rename-reorder-shipping-methods-shopify-checkout/">hide, rename and reorder shipping methods</a>.</p>
 
 <h2>Add a banner inside checkout on Shopify Plus</h2>
 <p>Shopify only lets apps add blocks to the information, shipping and payment steps on Plus stores. If you're on Plus, a <strong>Custom banner</strong> widget puts an image into checkout with text above, below or beside it, and an optional link to your holiday shipping page. For a single line of text, use <strong>Custom content</strong> instead.</p>
 <p>Create the widget under <strong>Widgets</strong> in the app. Then open <strong>Settings &gt; Checkout &gt; Customize</strong> in Shopify, choose the Checkout page, click <strong>Add block</strong> and pick <strong>Custom banner</strong> from the Smart Checkout Widgets blocks. Put it near the delivery section and save.</p>
-<p>The banner has no start or end date. When a cutoff passes, edit the text: saved changes show up without publishing the checkout again. When the season is over, disable the widget. That takes it off the page at once and keeps its settings for next year. If it crowds the order summary on a phone, you can hide the block on mobile, tablet or desktop in the checkout editor.</p>
+<p>Banners and Custom content have optional Show from and Show until dates, in your store's time zone. Make one banner that runs until December 14 and a second that starts on December 15, and leave the block's Widget ID empty. The block shows whichever one's dates include today, so they hand over on their own. You can still edit the text by hand: saved changes show up without publishing the checkout again. When the season is over, disable the widgets. That takes them off the page at once and keeps their settings for next year. If a banner crowds the order summary on a phone, you can hide the block on mobile, tablet or desktop in the checkout editor.</p>
 <p>The same widgets work on the Thank you and Order status pages on every Shopify plan from Basic up. They can't change the buyer's choice there, but they can tell someone who ordered after the cutoff when the parcel will really leave. I'd rather a customer read that on the Thank you page than work it out from a tracking link on December 24.</p>
 
 <h2>Wording you can copy</h2>
@@ -232,7 +232,7 @@
           <div class="faq-list">
           <details class="faq-item">
             <summary>How do I add a shipping cutoff message to Shopify checkout?</summary>
-            <p>Put the last order date in the shipping option's name, either by editing your flat rate names in Settings &gt; Shipping and delivery or with a rename rule in an app. On Shopify Plus you can also add a banner block in checkout. Change both the morning after each cutoff passes.</p>
+            <p>Put the last order date in the shipping option's name, either by editing your flat rate names in Settings &gt; Shipping and delivery or with a rename rule in an app. On Shopify Plus you can also add a banner block in checkout. Change both when each cutoff passes, by hand or with dated rules and banner dates set up in advance.</p>
           </details>
           <details class="faq-item">
             <summary>Can I show a Christmas shipping deadline without Shopify Plus?</summary>
@@ -244,7 +244,7 @@
           </details>
           <details class="faq-item">
             <summary>Can a checkout banner turn itself off after the cutoff?</summary>
-            <p>The Smart Checkout Widgets banner has no schedule. Edit its text when a date passes and disable it after the season. Disabling takes it off the page at once and keeps the settings.</p>
+            <p>Yes. Give the Smart Checkout Widgets banner a Show until date and it disappears after that day, in your store's time zone. A second banner with a Show from date can take its place in the same block.</p>
           </details>
           <details class="faq-item">
             <summary>Does renaming a shipping rate change the price?</summary>

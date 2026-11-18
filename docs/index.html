@@ -483,10 +483,23 @@
         </table>
       </div>
       <p>
-        A named block shows your first enabled widget of its type. If you have several, paste
-        the ID of the one you want into the block's <strong>Widget ID</strong> setting. The
+        A named block shows your first enabled widget of its type. If you have more than one
+        widget of that type, paste the ID of the one you want into the block's
+        <strong>Widget ID</strong> setting; an empty one picks the lowest ID, which may not be
+        the widget you meant. The
         widgets list in the app shows the block for each widget, and its ID when the block
         needs one. Blocks placed before the named blocks existed keep working as they are.
+      </p>
+      <h3 id="show-dates">Show dates</h3>
+      <p>
+        Custom banner and Custom content widgets have optional <strong>Show from</strong> and
+        <strong>Show until</strong> dates, in your store's time zone. The widget shows from the
+        first day through the end of the last, then disappears without any edits. In a Custom
+        banner or Custom content block with no Widget ID, the block shows the first widget whose
+        dates include today. So a "last days for Christmas delivery" banner that ends on
+        December 14 and an "arrives after Christmas" banner that starts on December 15 can share
+        one block and hand over on their own. Show dates only work in the named blocks; the
+        Smart Checkout Widget block ignores them.
       </p>
 
       <h2 id="survey">Post-purchase survey</h2>
@@ -622,6 +635,15 @@
           have no carrier name, so they show exactly what you typed.
         </p>
       </div>
+
+      <h3 id="cutoff-dates">Names that change on a date</h3>
+      <p>
+        To switch a name on a given day, set up two rename rules ahead of time with a
+        <a href="#condition-notes">date condition</a>: one that renames "Standard" to "Standard,
+        order by Dec 14" while the date <strong>is before</strong> 2026-12-15, and one that renames
+        it to "Standard, arrives after Christmas" when the date <strong>is on or after</strong>
+        2026-12-15. The second takes over that morning in your store's time zone.
+      </p>
 
       <h3 id="show-only">Show only selected shipping methods</h3>
       <p>
@@ -933,7 +955,7 @@
         <li>Address conditions accept comma-separated values and match any of them, so <code>PL, DE, FR</code> is one condition rather than three.</li>
         <li>ZIP / postal code has <strong>is in range</strong> and <strong>is not in range</strong> for numeric postcodes: <code>2000-2999</code>, <code>0800 to 0899</code>, or a list such as <code>2000-2999, 4000, 6000-6999</code>. Leading zeros count, and a US ZIP+4 such as <code>02139-1234</code> matches <code>02000-02999</code>. Postcodes with letters (UK, Canada) are never in a numeric range; use <strong>starts with</strong> for those. Polish codes carry their own hyphen, so write a range of them with "to": <code>00-001 to 09-999</code>.</li>
         <li>A customer tag condition checks one tag. Add another condition for a second tag. Product tag and collection can each appear once per rule.</li>
-        <li>A date condition takes one date, written YYYY-MM-DD.</li>
+        <li>Dates use your store's local date, written YYYY-MM-DD. <strong>Is on or after</strong> starts matching that morning and keeps matching, and <strong>is before</strong> stops the day before, so a rule can switch over on its own. <strong>Is between</strong> takes two dates with "to", such as <code>2026-12-15 to 2026-12-24</code>, and includes both days. <strong>Is</strong> and <strong>is not</strong> take one date or a comma-separated list.</li>
         <li>Tag, order count and total spent need a signed-in customer. They never match a guest checkout, because there is no customer record to read.</li>
         <li>Missing data never matches. If checkout hasn't collected a value yet, conditions on it are false, including negative ones: "City is not Warsaw" is false when no city has been entered.</li>
         <li>Weight is in grams, whatever unit your variants use.</li>
