@@ -98,6 +98,11 @@ SPECS = {
         "lines": ["Reorder and Get help", "on every order"],
         "accent": ACCENT,
     },
+    "shopify-how-did-you-hear-about-us-survey": {
+        "eyebrow": "Post-purchase survey",
+        "lines": ["How did you hear about us?", "Ask on the Thank you page"],
+        "accent": COMPANION,
+    },
 }
 
 SLUG_TO_OG = {

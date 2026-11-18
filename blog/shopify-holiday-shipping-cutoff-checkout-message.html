@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="/assets/js/consent.js?v=20261020d" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify Holiday Shipping Cutoff Message in Checkout (Christmas 2026) | Smart Checkout Widgets</title>
+  <meta name="description" content="Show buyers the last day to order for Christmas delivery where they choose shipping: in the rate name on any Shopify plan, and in a checkout banner on Plus.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://smartcheckoutwidgets.com/blog/shopify-holiday-shipping-cutoff-checkout-message/">
+  <meta property="og:title" content="Shopify Holiday Shipping Cutoff Message in Checkout (Christmas 2026) | Smart Checkout Widgets">
+  <meta property="og:description" content="Show buyers the last day to order for Christmas delivery where they choose shipping: in the rate name on any Shopify plan, and in a checkout banner on Plus.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-holiday-shipping-cutoff-checkout-message/">
+  <meta property="og:site_name" content="Smart Checkout Widgets">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/hide-rename-reorder-shipping-methods-shopify-checkout.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/hide-rename-reorder-shipping-methods-shopify-checkout.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:image:alt" content="Phone delivery step with Standard renamed to Arrives in 3-5 days and one rate hidden">
+  <meta property="article:published_time" content="2026-11-18">
+  <meta property="article:modified_time" content="2026-11-18">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shopify Holiday Shipping Cutoff Message in Checkout (Christmas 2026) | Smart Checkout Widgets">
+  <meta name="twitter:description" content="Show buyers the last day to order for Christmas delivery where they choose shipping: in the rate name on any Shopify plan, and in a checkout banner on Plus.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/hide-rename-reorder-shipping-methods-shopify-checkout.webp">
+  <meta name="twitter:image:alt" content="Phone delivery step with Standard renamed to Arrives in 3-5 days and one rate hidden">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site context">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Holiday shipping cutoff message in Shopify checkout: show the last order date for Christmas",
+  "description": "Show buyers the last day to order for Christmas delivery where they choose shipping: in the rate name on any Shopify plan, and in a checkout banner on Plus.",
+  "url": "https://smartcheckoutwidgets.com/blog/shopify-holiday-shipping-cutoff-checkout-message/",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://smartcheckoutwidgets.com/blog/shopify-holiday-shipping-cutoff-checkout-message/"
+  },
+  "image": [
+    "https://smartcheckoutwidgets.com/images/og/hide-rename-reorder-shipping-methods-shopify-checkout.webp"
+  ],
+  "datePublished": "2026-11-18",
+  "dateModified": "2026-11-18",
+  "author": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Smart Checkout Widgets",
+    "url": "https://smartcheckoutwidgets.com/",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"
+    }
+  },
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "Smart Checkout Widgets Blog",
+    "url": "https://smartcheckoutwidgets.com/blog/"
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I add a shipping cutoff message to Shopify checkout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Put the last order date in the shipping option's name, either by editing your flat rate names in Settings > Shipping and delivery or with a rename rule in an app. On Shopify Plus you can also add a banner block in checkout. Change both the morning after each cutoff passes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I show a Christmas shipping deadline without Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, in the shipping rate names. Flat rate names are shown at checkout on every plan, and Smart Checkout Widgets shipping rules can rename any delivery option on every plan. Only a banner block inside the checkout page needs Plus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Shopify show delivery dates at checkout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Only if you turn on estimated delivery dates under Settings > Shipping and delivery and your rates are eligible. Manual dates need a fulfillment time and eligible rates, and if checkout mixes eligible and ineligible rates, no dates show."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a checkout banner turn itself off after the cutoff?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Smart Checkout Widgets banner has no schedule. Edit its text when a date passes and disable it after the season. Disabling takes it off the page at once and keeps the settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does renaming a shipping rate change the price?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A rename changes only the label the buyer sees. The rate, its price and the carrier stay the same."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://smartcheckoutwidgets.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://smartcheckoutwidgets.com/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Holiday shipping cutoff message in Shopify checkout: show the last order date for Christmas",
+      "item": "https://smartcheckoutwidgets.com/blog/shopify-holiday-shipping-cutoff-checkout-message/"
+    }
+  ]
+}
+  </script>
+
+  <link rel="stylesheet" href="/style.css?v=20261014a">
+</head>
+<body class="page-inner">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <nav class="nav" aria-label="Primary">
+    <a href="https://smartcheckoutwidgets.com/" class="nav__brand" aria-label="Smart Checkout Widgets home">
+      <img src="/images/logo-mark.svg" alt="" width="22" height="22">
+      Smart Checkout
+    </a>
+    <div class="nav__links" id="nav-links">
+      <a class="nav__link" href="/#workbench">Product</a>
+      <a class="nav__link" href="/#features">Features</a>
+      <a class="nav__link" href="/#pricing">Pricing</a>
+      <a class="nav__link" href="/docs/">Docs</a>
+      <a class="nav__link" href="/blog/">Blog</a>
+    </div>
+    <a class="nav__cta" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install free</a>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="nav__toggle-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <svg class="nav__toggle-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </nav>
+  <main id="main-content">
+    <section class="post-hero">
+      <div class="post-hero-copy">
+        <h1>Holiday shipping cutoff message in Shopify checkout: show the last order date for Christmas</h1>
+        <div class="meta-row">
+          <span>Published November 18, 2026</span>
+          <span>Smart Checkout Widgets</span>
+          <span><a href="/blog/" style="color: inherit;">All articles</a></span>
+        </div>
+      </div>
+    </section>
+    <section class="post-layout">
+      <article class="post-content">
+<figure class="post-figure">
+  <img src="/images/blog/hide-rename-reorder-shipping-methods-shopify-checkout.webp" width="1600" height="895" alt="Phone delivery step with Standard renamed to Arrives in 3-5 days and one rate hidden" fetchpriority="high">
+  <figcaption>The delivery step is where buyers decide if a gift will arrive in time. Illustration.</figcaption>
+</figure>
+<p class="lead">Put the last order date in the name of each shipping option, because that's the line the buyer is reading when they decide whether a gift will arrive in time. It works on every Shopify plan. On Shopify Plus you can add a banner inside checkout as well. Christmas Day is a Friday this year. Whatever your own dates turn out to be, change the wording the morning each one passes, so nobody pays for standard shipping on December 22 thinking it will make it.</p>
+
+<h2>Work out one date for each delivery option</h2>
+<p>Start with each carrier's published holiday dates, then take off your own packing time. If the carrier needs the parcel by Thursday and you need two business days to pack, the last safe order day is Tuesday. Do the sum for every option you show at checkout, including local delivery and in-store pickup if you offer them.</p>
+<p>Shopify's manual delivery dates do the same sum: your fulfillment time plus the carrier's transit time, with Monday to Friday as business days and a 12 pm cutoff in the shipping origin's time zone. If you pack more slowly in December, update the fulfillment time in your settings too.</p>
+
+<h2>What Shopify shows without an app</h2>
+<p>When you add a flat rate under <strong>Settings &gt; Shipping and delivery</strong>, Shopify displays the name you type to customers at checkout. So you can change "Standard" to "Standard, order by Dec 14 for Christmas" today, with nothing installed. It stays that way for every buyer in the zone until you edit it back.</p>
+<p>A flat rate can also show a transit time, such as 3 to 5 days, but that leaves out your processing time.</p>
+<p>Then there are estimated delivery dates, under <strong>Settings &gt; Shipping and delivery &gt; Estimated delivery dates</strong>, where you choose automated or manual dates. Manual dates need a fulfillment time and eligible rates, such as flat rates with a transit time in Canada, the US, the UK, France, Italy, Spain, Germany and Australia. If checkout mixes eligible and ineligible rates, no dates show at all. Where they do show, the buyer still has to compare a date range with December 25 in their head, which is why a plain "order by" date in the name helps.</p>
+<p>For local pickup, the expected pickup time you set for each location is shown at checkout under <strong>Pick up</strong>.</p>
+
+<h2>Rename rates with a rule, on any Shopify plan</h2>
+<p>A shipping method rule in Smart Checkout Widgets renames delivery options after Shopify has calculated them, so it works on anything in the list, carrier-calculated rates included. Rules run as Shopify Functions, which every Shopify plan can use, and one of the app's templates adds delivery times to a rate's name.</p>
+<p>Matching is on the displayed name, ignoring case, anywhere in the name. A rename on "Standard" catches "Standard Shipping" and "Standard International", so check what else contains the word. The <strong>Apply to</strong> setting limits a rule to one kind of option: shipping rates, local delivery, pickup points or local pickup locations. That lets you rename a pickup location to "Collect in store, order by Dec 23" without touching a shipping rate that shares part of its name. Renaming changes the label only. The price and the carrier stay the same.</p>
+<p>Conditions decide when a rule applies, and they include country, state or province and postcode. That matters when remote areas need an earlier date: one rule for most addresses, another for the postcodes your carrier reaches slowly. The guide to <a href="/blog/shopify-shipping-rates-by-postcode/">shipping rates by postcode</a> covers ranges. Conditions also include day of week and date, in your store's local time.</p>
+<p>Rules apply as soon as you save. The simplest way to handle each cutoff is to open the rule the morning after and change the name to something like "Standard, arrives after Christmas". Set a calendar reminder for it. For the full set of rename, hide and reorder rules, see <a href="/blog/hide-rename-reorder-shipping-methods-shopify-checkout/">hide, rename and reorder shipping methods</a>.</p>
+
+<h2>Add a banner inside checkout on Shopify Plus</h2>
+<p>Shopify only lets apps add blocks to the information, shipping and payment steps on Plus stores. If you're on Plus, a <strong>Custom banner</strong> widget puts an image into checkout with text above, below or beside it, and an optional link to your holiday shipping page. For a single line of text, use <strong>Custom content</strong> instead.</p>
+<p>Create the widget under <strong>Widgets</strong> in the app. Then open <strong>Settings &gt; Checkout &gt; Customize</strong> in Shopify, choose the Checkout page, click <strong>Add block</strong> and pick <strong>Custom banner</strong> from the Smart Checkout Widgets blocks. Put it near the delivery section and save.</p>
+<p>The banner has no start or end date. When a cutoff passes, edit the text: saved changes show up without publishing the checkout again. When the season is over, disable the widget. That takes it off the page at once and keeps its settings for next year. If it crowds the order summary on a phone, you can hide the block on mobile, tablet or desktop in the checkout editor.</p>
+<p>The same widgets work on the Thank you and Order status pages on every Shopify plan from Basic up. They can't change the buyer's choice there, but they can tell someone who ordered after the cutoff when the parcel will really leave. I'd rather a customer read that on the Thank you page than work it out from a tracking link on December 24.</p>
+
+<h2>Wording you can copy</h2>
+<p>Put the date near the front and keep each name short enough to read on a phone. These use example dates, so swap in your own:</p>
+<ul>
+  <li>Standard shipping, order by Mon Dec 14 for Christmas</li>
+  <li>Express, order by Fri Dec 18 for Christmas</li>
+  <li>Pick up in store, order by Dec 23</li>
+  <li>Standard shipping, arrives after Christmas (once the standard date has passed)</li>
+</ul>
+<p>For the banner: "Last days for Christmas delivery: standard Dec 14, express Dec 18. Pick up in store until Dec 23."</p>
+
+<h2>The week before each cutoff</h2>
+<ul>
+  <li>Check every carrier's date against your list one more time.</li>
+  <li>Place a test order with a real address in each region that has its own date, and read the delivery step on a phone.</li>
+  <li>Give your support team the same dates, so their replies match checkout.</li>
+</ul>
+<p>For discounts, QA and rollback during the peak, work through the <a href="/blog/shopify-black-friday-checkout-checklist-2026/">Black Friday checkout checklist</a>.</p>
+
+        <section class="post-faq" aria-labelledby="faq-heading">
+          <h2 id="faq-heading">Frequently asked questions</h2>
+          <div class="faq-list">
+          <details class="faq-item">
+            <summary>How do I add a shipping cutoff message to Shopify checkout?</summary>
+            <p>Put the last order date in the shipping option's name, either by editing your flat rate names in Settings &gt; Shipping and delivery or with a rename rule in an app. On Shopify Plus you can also add a banner block in checkout. Change both the morning after each cutoff passes.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I show a Christmas shipping deadline without Shopify Plus?</summary>
+            <p>Yes, in the shipping rate names. Flat rate names are shown at checkout on every plan, and Smart Checkout Widgets shipping rules can rename any delivery option on every plan. Only a banner block inside the checkout page needs Plus.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Shopify show delivery dates at checkout?</summary>
+            <p>Only if you turn on estimated delivery dates under Settings &gt; Shipping and delivery and your rates are eligible. Manual dates need a fulfillment time and eligible rates, and if checkout mixes eligible and ineligible rates, no dates show.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can a checkout banner turn itself off after the cutoff?</summary>
+            <p>The Smart Checkout Widgets banner has no schedule. Edit its text when a date passes and disable it after the season. Disabling takes it off the page at once and keeps the settings.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does renaming a shipping rate change the price?</summary>
+            <p>No. A rename changes only the label the buyer sees. The rate, its price and the carrier stay the same.</p>
+          </details>
+          </div>
+        </section>
+        <div class="section-cta">
+          <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install Smart Checkout Widgets</a>
+          <a class="btn btn-secondary" href="/blog/hide-rename-reorder-shipping-methods-shopify-checkout/">Shipping method rules guide</a>
+          <a class="btn btn-secondary" href="/docs/#shipping-rules">Read the docs</a>
+        </div>
+      </article>
+    </section>
+    <section class="inner-cta">
+      <div class="container">
+        <div class="inner-cta__panel">
+          <h2>Ready to upgrade your checkout?</h2>
+          <p>Install Smart Checkout Widgets free: payment and shipping rules and Thank you page blocks on every Shopify plan, plus gifts and upsells in checkout on Plus.</p>
+          <div class="section-cta" style="justify-content: center; border: 0; padding-top: 0; margin-top: 0;">
+            <a class="btn btn-primary" href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Install on Shopify</a>
+            <a class="btn btn-secondary" href="/blog/">More articles</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__statement">
+        Smart Checkout Widgets is checkout customization for every Shopify store — rules everywhere, <em>gifts</em> on Plus.
+      </p>
+      <div class="footer__row">
+        <div class="footer__col">
+          <h5>Product</h5>
+          <ul>
+            <li><a href="/#workbench">Console</a></li>
+            <li><a href="/#features">Features</a></li>
+            <li><a href="/#pricing">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="/docs/">Documentation</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/compare/shopify-checkout-gift-apps/">App comparison</a></li>
+            <li><a href="https://apps.shopify.com/smart-checkout-widgets" target="_blank" rel="noopener noreferrer">Shopify listing</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a></li>
+            <li><a href="https://cartrocket.dev" target="_blank" rel="noopener noreferrer">CartRocket</a></li>
+            <li><a href="https://apps.shopify.com/smart-bundles-2" target="_blank" rel="noopener noreferrer">TB Bundles</a></li>
+            <li><a href="https://agentmatica.com" target="_blank" rel="noopener noreferrer">Agentmatica</a></li>
+            <li><a href="https://hivesense.co" target="_blank" rel="noopener noreferrer">HiveSense</a></li>
+            <li><a href="mailto:admin@thoughtbulb.dev">Support</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h5>Legal</h5>
+          <ul>
+            <li><a href="/privacy/">Privacy policy</a></li>
+            <li><a href="#" data-cookie-preferences>Cookie preferences</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__legal">
+        <span class="wordmark">Smart Checkout Widgets</span>
+        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Built for Shopify checkout, every plan</span>
+      </div>
+    </div>
+  </footer>
+  <script src="/site.js?v=20260925c"></script>
+  <script
+    src="https://agentmatica.com/loader.js"
+    data-widget-src="https://agentmatica.com/widget.js"
+    data-bot-id="1258cd97-e077-42d8-b7b2-998a6340ab94"
+    id="agentmatica-widget-script"
+    defer
+  ></script>
+</body>
+</html>
