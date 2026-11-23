@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Checkout branding settings next to a calendar with December 31 circled">
   <meta property="article:published_time" content="2026-09-25">
-  <meta property="article:modified_time" content="2026-09-25">
+  <meta property="article:modified_time" content="2026-11-23">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify is removing the Checkout Blocks branding editor on December 31, 2026: what to do | Smart Checkout Widgets">
   <meta name="twitter:description" content="The Checkout Blocks branding editor goes away on December 31, 2026. What it controlled, who is affected, your three options, and a migration checklist to finish before Black Friday.">
@@ -51,7 +51,7 @@
     "https://smartcheckoutwidgets.com/images/og/shopify-checkout-blocks-branding-editor-removal.webp"
   ],
   "datePublished": "2026-09-25",
-  "dateModified": "2026-09-25",
+  "dateModified": "2026-11-23",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -87,7 +87,7 @@
     {"@type": "Question", "name": "Will my checkout branding reset when the editor is removed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shopify states that existing branding settings remain unchanged. Only the ability to edit them in Checkout Blocks goes away."}},
     {"@type": "Question", "name": "What replaces the Checkout Blocks branding editor?", "acceptedAnswer": {"@type": "Answer", "text": "For simple branding, Shopify's own checkout editor, available on every plan. For advanced branding on Shopify Plus, the Checkout and Accounts Configuration API introduced in API version 2026-04, used directly or through an app."}},
     {"@type": "Question", "name": "Does this affect stores that are not on Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Checkout Blocks branding editor was only available on Shopify Plus. Other plans style checkout in Shopify's checkout editor, which is not changing."}},
-    {"@type": "Question", "name": "Is checkoutBrandingUpsert still usable?", "acceptedAnswer": {"@type": "Answer", "text": "It is deprecated in favour of checkoutAndAccountsConfigurationUpdate. If you or an app still use it, plan a move to the new API so you only migrate once."}}
+    {"@type": "Question", "name": "Is checkoutBrandingUpsert still usable?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Shopify's guide says the Checkout Branding API remains supported for checkout-only styling, though the API reference points new work to checkoutAndAccountsConfigurationUpdate. If you want one setup across checkout, customer accounts and sign-in, use the new API."}}
   ]
 }
   </script>
@@ -118,7 +118,7 @@
       <div class="post-hero-copy">
         <h1>Shopify is removing the Checkout Blocks branding editor on December 31, 2026: what to do</h1>
         <div class="meta-row">
-          <span>Published September 25, 2026</span>
+          <span>Published September 25, 2026 · Updated November 23, 2026</span>
           <span>Smart Checkout Widgets</span>
           <span><a href="/blog/" style="color: inherit;">All articles</a></span>
         </div>
@@ -129,8 +129,8 @@
 <p class="lead"><strong>Short version:</strong> Shopify is removing the Checkout Blocks branding editor on <strong>December 31, 2026</strong>. Your current branding stays exactly as it is, but after that date you cannot change it there. If you style a Shopify Plus checkout with Checkout Blocks, plan where those settings will live before your Black Friday code freeze, not after it.</p>
 
 <h2>What is changing</h2>
-<p>Shopify's help center marks the Checkout Blocks branding editor as deprecated and says it "will be removed on December 31, 2026". Existing branding settings remain unchanged, and Shopify points merchants to a migration guide for future updates. Nothing breaks on January 1. What goes away is the screen you use to <em>edit</em> the branding.</p>
-<p>At the platform level the same shift is happening for developers. In API version 2026-04 Shopify introduced the <strong>Checkout and Accounts Configuration API</strong> (<code>checkoutAndAccountsConfigurationUpdate</code>), which replaces the older Checkout Branding API (<code>checkoutBrandingUpsert</code>) and the Checkout Profile API. The new API sets branding once, with shared design tokens and components, across checkout, customer accounts and sign-in.</p>
+<p>In September 2026 Shopify's help center page for the Checkout Blocks branding editor said the editor "will be removed on December 31, 2026", that existing branding settings stay as they are, and pointed merchants to a migration guide. That page now shows the general Checkout Blocks article, which no longer mentions the editor or the date. Nothing breaks on January 1. What goes away is the screen you use to <em>edit</em> the branding.</p>
+<p>At the platform level the same shift is happening for developers. In API version 2026-04 Shopify introduced the <strong>Checkout and Accounts Configuration API</strong> (<code>checkoutAndAccountsConfigurationUpdate</code>), alongside the older Checkout Branding API (<code>checkoutBrandingUpsert</code>). Shopify's guide says the older API remains supported for checkout-only styling. The new one sets branding once, with shared design tokens and components, across checkout, customer accounts and sign-in.</p>
 
 <h2>Who this affects</h2>
 <ul>
@@ -161,7 +161,7 @@
 <p>The API exposes the full set of design tokens and component styles, and it is available only to Shopify Plus stores. You can call it from Shopify's GraphiQL app or have a developer script it. The upside is total control; the downside is that every future tweak, such as a Black Friday color scheme, needs someone who can write a GraphQL mutation.</p>
 
 <h3>3. Use an app built on the new API</h3>
-<p>Apps can give non-developers an editor on top of the same API. When you compare them, check that the app is built on <code>checkoutAndAccountsConfigurationUpdate</code> and not the deprecated branding mutation, so you do not have to migrate twice. Smart Checkout Widgets has a branding editor for Plus stores built on the new API, on the Pro plan. It opens with your current branding loaded, whoever set it, so moving off Checkout Blocks starts with opening the page.</p>
+<p>Apps can give non-developers an editor on top of the same API. When you compare them, ask whether the app uses <code>checkoutAndAccountsConfigurationUpdate</code> or the older branding mutation. The older one still works for checkout, but only the new one also covers customer accounts and sign-in, and it is the one Shopify's API reference recommends. Smart Checkout Widgets has a branding editor for Plus stores built on the new API, on the Pro plan. It opens with your current branding loaded, whoever set it, so moving off Checkout Blocks starts with opening the page.</p>
 
 <h2>Migration checklist before your Black Friday freeze</h2>
 <ol>
@@ -200,7 +200,7 @@
           </details>
           <details class="faq-item">
             <summary>Is checkoutBrandingUpsert still usable?</summary>
-            <p>It is deprecated in favour of checkoutAndAccountsConfigurationUpdate. If you or an app still use it, plan a move to the new API so you only migrate once.</p>
+            <p>Yes. Shopify's guide says the Checkout Branding API remains supported for checkout-only styling, though the API reference points new work to checkoutAndAccountsConfigurationUpdate. If you want one setup across checkout, customer accounts and sign-in, use the new API.</p>
           </details>
           </div>
         </section>
