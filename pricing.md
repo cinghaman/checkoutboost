@@ -37,7 +37,7 @@ The app pauses when a store goes over its plan's monthly order limit. Widgets, g
 
 ## Shopify plan requirements
 
-Checkout UI widgets require Shopify Plus, because Shopify limits checkout customization to Plus. Thank You and Order Status page widgets, the shipping and payment method rules (Shopify Functions) and customer account blocks work on every Shopify plan. Customer account blocks need Shopify's new customer accounts.
+Checkout UI widgets require Shopify Plus, because Shopify limits checkout customization to Plus. The shipping and payment method rules (Shopify Functions) and customer account blocks work on every Shopify plan. Thank You and Order Status page widgets work on every plan except Shopify's Starter plan. Customer account blocks need Shopify's new customer accounts.
 
 ## Install
 
