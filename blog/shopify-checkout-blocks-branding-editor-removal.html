@@ -87,7 +87,7 @@
     {"@type": "Question", "name": "Will my checkout branding reset when the editor is removed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shopify states that existing branding settings remain unchanged. Only the ability to edit them in Checkout Blocks goes away."}},
     {"@type": "Question", "name": "What replaces the Checkout Blocks branding editor?", "acceptedAnswer": {"@type": "Answer", "text": "For simple branding, Shopify's own checkout editor, available on every plan. For advanced branding on Shopify Plus, the Checkout and Accounts Configuration API introduced in API version 2026-04, used directly or through an app."}},
     {"@type": "Question", "name": "Does this affect stores that are not on Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Checkout Blocks branding editor was only available on Shopify Plus. Other plans style checkout in Shopify's checkout editor, which is not changing."}},
-    {"@type": "Question", "name": "Is checkoutBrandingUpsert still usable?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Shopify's guide says the Checkout Branding API remains supported for checkout-only styling, though the API reference points new work to checkoutAndAccountsConfigurationUpdate. If you want one setup across checkout, customer accounts and sign-in, use the new API."}}
+    {"@type": "Question", "name": "Is checkoutBrandingUpsert still usable?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for checkout-only styling. Shopify's guide says it remains supported, while the API reference marks it deprecated and points to checkoutAndAccountsConfigurationUpdate. Use the new API for anything you are building now, or if you want one setup across checkout, customer accounts and sign-in."}}
   ]
 }
   </script>
@@ -129,7 +129,7 @@
 <p class="lead"><strong>Short version:</strong> Shopify is removing the Checkout Blocks branding editor on <strong>December 31, 2026</strong>. Your current branding stays exactly as it is, but after that date you cannot change it there. If you style a Shopify Plus checkout with Checkout Blocks, plan where those settings will live before your Black Friday code freeze, not after it.</p>
 
 <h2>What is changing</h2>
-<p>In September 2026 Shopify's help center page for the Checkout Blocks branding editor said the editor "will be removed on December 31, 2026", that existing branding settings stay as they are, and pointed merchants to a migration guide. That page now shows the general Checkout Blocks article, which no longer mentions the editor or the date. Nothing breaks on January 1. What goes away is the screen you use to <em>edit</em> the branding.</p>
+<p>In September 2026 Shopify's help center page for the Checkout Blocks branding editor said the editor "will be removed on December 31, 2026". It also said existing branding settings stay as they are, and it pointed merchants to a migration guide. The same link now shows the general Checkout Blocks article, which no longer mentions the editor or the date. Nothing breaks on January 1. What goes away is the screen you use to <em>edit</em> the branding.</p>
 <p>At the platform level the same shift is happening for developers. In API version 2026-04 Shopify introduced the <strong>Checkout and Accounts Configuration API</strong> (<code>checkoutAndAccountsConfigurationUpdate</code>), alongside the older Checkout Branding API (<code>checkoutBrandingUpsert</code>). Shopify's guide says the older API remains supported for checkout-only styling. The new one sets branding once, with shared design tokens and components, across checkout, customer accounts and sign-in.</p>
 
 <h2>Who this affects</h2>
@@ -161,7 +161,7 @@
 <p>The API exposes the full set of design tokens and component styles, and it is available only to Shopify Plus stores. You can call it from Shopify's GraphiQL app or have a developer script it. The upside is total control; the downside is that every future tweak, such as a Black Friday color scheme, needs someone who can write a GraphQL mutation.</p>
 
 <h3>3. Use an app built on the new API</h3>
-<p>Apps can give non-developers an editor on top of the same API. When you compare them, ask whether the app uses <code>checkoutAndAccountsConfigurationUpdate</code> or the older branding mutation. The older one still works for checkout, but only the new one also covers customer accounts and sign-in, and it is the one Shopify's API reference recommends. Smart Checkout Widgets has a branding editor for Plus stores built on the new API, on the Pro plan. It opens with your current branding loaded, whoever set it, so moving off Checkout Blocks starts with opening the page.</p>
+<p>Apps can give non-developers an editor on top of the same API. When you compare them, ask whether the app uses <code>checkoutAndAccountsConfigurationUpdate</code> or the older branding mutation. The older one still works for checkout, but it does not cover customer accounts or sign-in, and Shopify's API reference marks it deprecated. Smart Checkout Widgets has a branding editor for Plus stores built on the new API, on the Pro plan. It opens with your current branding loaded, whoever set it, so moving off Checkout Blocks starts with opening the page.</p>
 
 <h2>Migration checklist before your Black Friday freeze</h2>
 <ol>
@@ -200,7 +200,7 @@
           </details>
           <details class="faq-item">
             <summary>Is checkoutBrandingUpsert still usable?</summary>
-            <p>Yes. Shopify's guide says the Checkout Branding API remains supported for checkout-only styling, though the API reference points new work to checkoutAndAccountsConfigurationUpdate. If you want one setup across checkout, customer accounts and sign-in, use the new API.</p>
+            <p>Yes, for checkout-only styling. Shopify's guide says it remains supported, while the API reference marks it deprecated and points to checkoutAndAccountsConfigurationUpdate. Use the new API for anything you are building now, or if you want one setup across checkout, customer accounts and sign-in.</p>
           </details>
           </div>
         </section>
