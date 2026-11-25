@@ -23,11 +23,13 @@ def video(vid, poster, title, cap):
   <figcaption>{cap}</figcaption>
 </figure>'''
 
+# replaced the same day under a new name: images are cached for 30 days
+RENAMED = {'shopify-delivery-date-picker', 'shopify-delivery-pickup-dates-florists-bakeries', 'shopify-split-shipping-rate-rules'}
 def post(slug, title, desc, og_alt, deck, minutes, cover, cover_alt, body, faqs, ctas):
     out = make(slug, title, desc, 'guide', slug, og_alt, '2026-11-25', 'Published November 25, 2026', body, faqs, ctas)
     s = out.read_text()
     # share image: the template has moved on since post_from_template was written
-    s = s.replace('/images/og/hide-cash-on-delivery-shopify-checkout.webp', f'/images/og/{slug}.webp')
+    s = s.replace('/images/og/hide-cash-on-delivery-shopify-checkout.webp', f'/images/og/{slug}{"-2" if slug in RENAMED else ""}.webp')
     s = s.replace('Checkout payment step with Cash on Delivery hidden by a rule for carts over $500', og_alt)
     s = s.replace('</h1>\n', f'</h1>\n        <p>{deck}</p>\n', 1)
     s = s.replace('<span>Smart Checkout Widgets</span>', f'<span>{minutes} min read</span>', 1)

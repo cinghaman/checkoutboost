@@ -43,7 +43,7 @@ f'''
 <p>DingDoong starts at $6.99 for 100 orders and can add a surcharge for weekend or peak-hour delivery. Buunto sets different schedules per product or collection, and adds surcharges and a postcode checker from $19.99.</p>
 <h3>Smart Checkout Widgets: a date plus the rest of checkout</h3>
 <p>Our calendar covers days, lead times, cutoffs, weekdays and closed dates, set separately for shipping, local delivery and pickup. Checkout can refuse an order without a date, on every Shopify plan.</p>
-{fig('delivery-date-calendar','A product page for a bouquet with a delivery date calendar above Add to cart','Our calendar on a Basic plan test store.')}
+{fig('delivery-date-calendar-2','A product page for a bouquet with a delivery date calendar above Add to cart','Our calendar on a Basic plan test store.')}
 <p>It doesn't have time slots, daily limits, surcharges, product rules or different days per location. If you need any of those, one of the five above is a better choice. It's also new, launched in November 2026 and with few reviews on our listing so far.</p>
 {video('BSDABRPDLUI','delivery-date-video','Shopify delivery date picker: let customers choose the day','Our calendar in 46 seconds.')}
 <p>The $29 plan also includes payment and shipping rules, Thank you page blocks, a post-purchase survey and customer account blocks. That is the reason to pick it over a cheaper calendar. The setup is in our <a href="/blog/shopify-delivery-date-picker/">delivery date guide</a>.</p>
@@ -230,7 +230,7 @@ f'''
 <h3>Smart Checkout Widgets: both, with no limit by plan</h3>
 <p>Hide, rename and reorder payment and shipping methods, or show only the shipping rates you name. Conditions include cart total, product tag, collection, customer tag, country, postcode ranges, weekday and date. Rules work inside each shipment when Shopify splits a cart.</p>
 {fig('app-payment-rule','A payment rule that shows bank deposit, cash on delivery and PayPal only to customers tagged VIP','A rule on a test store: these methods only for customers tagged VIP.')}
-{fig('split-shipping-show-only','Checkout before and after a show-only shipping rule across two shipments','A show-only rule across two shipments never leaves one empty.')}
+{fig('split-shipping-show-only-2','Checkout before and after a show-only shipping rule across two shipments','A show-only rule across two shipments never leaves one empty.')}
 <p>It can't hide express wallets such as Shop Pay, add a COD fee, use the time of day, or block an order for anything except a missing delivery date. Customer conditions only match signed-in buyers.</p>
 <h2>Test any of them in five minutes</h2>
 <ol class="post-steps">

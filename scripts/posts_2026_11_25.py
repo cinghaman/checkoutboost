@@ -11,7 +11,7 @@ f'''
 <p>Flowers, cakes and sofas all need someone at home on the right day. Shopify has no calendar for that, so the day usually ends up in the order note or in an email the next morning.</p>
 <p>Smart Checkout Widgets adds one to your product pages, cart page and cart drawer. The calendar lives in your theme, and the part that runs in checkout uses Shopify's validation rules, which are open to every plan.</p>
 {video('BSDABRPDLUI', 'delivery-date-video', 'Shopify delivery date picker: let customers choose the day', 'The whole flow in 46 seconds, from product page to checkout.')}
-{fig('delivery-date-calendar', 'A product page for a peony bouquet with a delivery date calendar above Add to cart. Mondays and Sundays are crossed out', 'A florist on a Basic plan test store. Mondays and Sundays are closed for delivery.')}
+{fig('delivery-date-calendar-2', 'A product page for a peony bouquet with a delivery date calendar above Add to cart. Mondays and Sundays are crossed out', 'A florist on a Basic plan test store. Mondays and Sundays are closed for delivery.')}
 {note('Plans', 'It works on every Shopify plan, Basic included. In the app it is part of Growth, Advanced and Pro.')}
 <h2>What the customer does</h2>
 <p>They choose how they want the order (shipping, local delivery or pickup, whichever you offer) and then a day. The choice follows them from the product page to the cart drawer and the cart page, and they can change it in any of them.</p>
@@ -146,11 +146,11 @@ f'''
 {note('Not seeing two shipments?', "With local delivery switched on, Shopify doesn't show several shipments at checkout. It also won't split a single line: five of the same shirt have to ship from one location.")}
 <h2>Show only one rate</h2>
 <p>Back to the mug and the filters, with a rule that says show only Standard.</p>
-{fig('split-shipping-show-only', 'Shopify checkout before and after a show-only rule. Shipment 1 keeps Freight and White glove, shipment 2 shows only Standard', 'Recorded on a test store.')}
+{fig('split-shipping-show-only-2', 'Shopify checkout before and after a show-only rule. Shipment 1 keeps Freight and White glove, shipment 2 shows only Standard', 'Recorded on a test store.')}
 <p>Shipment 2 keeps Standard and drops Economy. Shipment 1 has no Standard rate, so it keeps its own two and the customer can finish.</p>
 <h2>Reorder</h2>
 <p>Positions are counted from 1 inside each shipment. Move Freight and Standard to position 1, and each leads the shipment it belongs to.</p>
-{fig('split-shipping-reorder', 'Shopify checkout before and after a reorder rule. Standard moves above Economy in shipment 2', 'Shipment 1 already had Freight first. In shipment 2, Standard moves above Economy.')}
+{fig('split-shipping-reorder-2', 'Shopify checkout before and after a reorder rule. Standard moves above Economy in shipment 2', 'Shipment 1 already had Freight first. In shipment 2, Standard moves above Economy.')}
 <h2>Hide and rename</h2>
 <p>These match by name in every shipment. Take care with hide rules: if a shipment has one rate and your rule hides it, that shipment has nothing left. To offer only one rate, use a show-only rule, which never empties a shipment.</p>
 <h2>Ship and pickup in one order</h2>
