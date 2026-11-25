@@ -14,18 +14,18 @@
   <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-delivery-pickup-dates-florists-bakeries/">
   <meta property="og:site_name" content="Smart Checkout Widgets">
   <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-delivery-pickup-dates-florists-bakeries.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-delivery-pickup-dates-florists-bakeries.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
-  <meta property="og:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
+  <meta property="og:image:alt" content="Wrapped bouquets and cake boxes on a workroom bench">
   <meta property="article:published_time" content="2026-11-25">
   <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Delivery and pickup dates for florists and bakeries on Shopify: cutoffs, lead times and closed days | Smart Checkout Widgets">
   <meta name="twitter:description" content="How to set up a delivery and pickup calendar for a flower shop or bakery on Shopify, with cutoff times, lead days per method, closed dates and the questions to answer first.">
-  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta name="twitter:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-delivery-pickup-dates-florists-bakeries.webp">
+  <meta name="twitter:image:alt" content="Wrapped bouquets and cake boxes on a workroom bench">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
     "@id": "https://smartcheckoutwidgets.com/blog/shopify-delivery-pickup-dates-florists-bakeries/"
   },
   "image": [
-    "https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp"
+    "https://smartcheckoutwidgets.com/images/og/shopify-delivery-pickup-dates-florists-bakeries.webp"
   ],
   "datePublished": "2026-11-25",
   "dateModified": "2026-11-25",
@@ -83,15 +83,16 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I set different cutoff times for delivery and pickup?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lead days, the cutoff time and the days of the week are set separately for shipping, local delivery and pickup."}},
+    {"@type": "Question", "name": "Can I set different cutoff times for delivery and pickup?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup."}},
     {"@type": "Question", "name": "Can I set a lead time per product?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. The lead time applies to the whole store for each way to receive an order."}},
+    {"@type": "Question", "name": "Can each shop have its own pickup days?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Customers choose the shop at checkout, and all locations share the same pickup days, lead time and cutoff."}},
     {"@type": "Question", "name": "Can customers choose a time slot?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. They choose a day."}},
     {"@type": "Question", "name": "Can I limit how many orders I take per day?", "acceptedAnswer": {"@type": "Answer", "text": "There is no automatic limit. Add the day to your closed dates when it is full."}},
     {"@type": "Question", "name": "Which time zone is the cutoff in?", "acceptedAnswer": {"@type": "Answer", "text": "Your store's time zone, for every customer."}}
   ]
 }
   </script>
-  <link rel="stylesheet" href="/style.css?v=20260925c">
+  <link rel="stylesheet" href="/style.css?v=20261125b">
 </head>
 <body class="page-inner">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -117,17 +118,18 @@
     <section class="post-hero">
       <div class="post-hero-copy">
         <h1>Delivery and pickup dates for florists and bakeries on Shopify: cutoffs, lead times and closed days</h1>
+        <p>A bouquet for Friday is worth nothing on Saturday. Here are two shops, one with flowers and one with cakes, and the settings that fit each.</p>
         <div class="meta-row">
           <span>Published November 25, 2026</span>
-          <span>Smart Checkout Widgets</span>
+          <span>5 min read</span>
           <span><a href="/blog/" style="color: inherit;">All articles</a></span>
         </div>
       </div>
+      <figure class="post-cover"><img src="/images/blog/florist-bakery-cover.webp" width="1920" height="1086" alt="Five wrapped bouquets in buckets next to two white cake boxes on a workroom bench" fetchpriority="high"></figure>
     </section>
     <section class="post-layout">
       <article class="post-content">
-<p>A bouquet for Friday is worth nothing on Saturday. For a florist or a bakery the date is part of the product, and a Shopify checkout doesn't ask for it.</p>
-<p>This guide sets up a calendar for that kind of shop with the <a href="/blog/shopify-delivery-date-picker/">delivery date picker</a> in Smart Checkout Widgets. It works on every Shopify plan and is part of the app's paid plans.</p>
+<p>For a florist or a bakery the date is part of the product, and a Shopify checkout doesn't ask for it. This guide sets up a calendar with the <a href="/blog/shopify-delivery-date-picker/">delivery date picker</a> in Smart Checkout Widgets. It works on every Shopify plan and is part of the app's paid plans.</p>
 <h2>Answer these first</h2>
 <ul>
   <li>How long does an order take to make? That is your lead time, and it may differ for pickup and delivery.</li>
@@ -135,35 +137,55 @@
   <li>Which days do you deliver, and which days can people collect?</li>
   <li>Which dates are you closed or already full?</li>
 </ul>
-<h2>An example: a flower shop</h2>
+<h2>A flower shop</h2>
 <p>Say a shop makes bouquets the day before, delivers Tuesday to Saturday and is open for pickup Monday to Saturday.</p>
+<div class="post-pair">
+<figure class="post-figure">
+  <img src="/images/blog/florist-delivery-van.webp" width="1168" height="880" alt="Wrapped bouquets in buckets in the back of a delivery van" loading="lazy" decoding="async">
+  <figcaption>Delivery: two days ahead, order by 14:00.</figcaption>
+</figure>
+<figure class="post-figure">
+  <img src="/images/blog/bakery-cake-box.webp" width="1168" height="880" alt="A baker lowers a raspberry cake into a white box" loading="lazy" decoding="async">
+  <figcaption>Cakes need more notice than bread.</figcaption>
+</figure>
+</div>
 <div class="table-wrap"><table>
-    <thead><tr><th>Setting</th><th>Local delivery</th><th>Pickup</th></tr></thead>
+    <thead><tr><th>Setting</th><th>Delivery</th><th>Pickup</th></tr></thead>
     <tbody>
-      <tr><td>Lead days</td><td>2</td><td>1</td></tr>
+      <tr><td>Lead time</td><td>2 days</td><td>1 day</td></tr>
       <tr><td>Cutoff time</td><td>14:00</td><td>16:00</td></tr>
       <tr><td>Days of the week</td><td>Tue to Sat</td><td>Mon to Sat</td></tr>
     </tbody>
 </table></div>
+<figure class="post-figure">
+  <img src="/images/blog/delivery-date-ship-pickup.webp" width="1800" height="890" alt="The same settings in the app, with Delivery on the left and Pickup on the right" loading="lazy" decoding="async">
+  <figcaption>The same numbers in the app.</figcaption>
+</figure>
 <p>A customer ordering on Wednesday at 13:00 can have delivery on Friday. At 15:00 the cutoff has passed, so the first delivery day becomes Saturday. Pickup on Thursday is still open until 16:00. The times are the shop's, so a customer abroad sees the same days.</p>
 <figure class="post-figure">
-  <img src="/images/blog/delivery-date-chosen.webp" width="1600" height="1125" alt="A product page with Local delivery and Friday, December 11 chosen above the Add to cart button" loading="lazy" decoding="async">
-  <figcaption>After the customer chooses, the calendar closes and shows the day.</figcaption>
+  <img src="/images/blog/delivery-date-steps.webp" width="1800" height="1150" alt="The customer picks Delivery, then Friday December 11, and sees the same date in the cart drawer" loading="lazy" decoding="async">
+  <figcaption>What the customer sees. Closed days and days that are too soon are crossed out.</figcaption>
 </figure>
-<h2>An example: a bakery</h2>
-<p>A bakery that sells bread and celebration cakes has a harder question, because bread can be ready tomorrow and a cake needs four days. The lead time applies to the whole store, so there are two ways to handle it:</p>
+<h2>A bakery</h2>
+<p>Bread can be ready tomorrow and a celebration cake needs four days. The lead time applies to the whole store, so there are two ways to handle that:</p>
 <ul>
   <li>Set the lead time for the slowest product. Simple, and bread customers wait longer than they need to.</li>
   <li>Set it for the fastest product and say on the cake's page that it needs four days. You then check cake orders by hand.</li>
 </ul>
 <p>Lead times per product are not available yet, so the first way is safer if cakes are most of what you sell.</p>
+<h2>Two or more shops</h2>
+<p>Customers choose pickup and a day in the calendar, then pick the shop at checkout from the locations you have switched on for pickup in Shopify. Every location uses the same pickup days. If one shop closes on Mondays and the other doesn't, untick Monday for both, or keep Monday and say on the product page which shop is open.</p>
 <h2>Holidays and busy days</h2>
 <p>Add closed dates for public holidays and for days you can't take any more orders. A range works too, so one entry covers a week off. There is no automatic limit on orders per day, so close a busy day yourself when it is full.</p>
 <p>For Valentine's Day or Mother's Day, close the days before and after if you only deliver on the day itself.</p>
-<h2>Make the date count</h2>
-<p>Switch on <strong>Require a date before checkout</strong> if an order without a date is useless to you. Checkout then also stops a customer who picks a delivery date and later chooses pickup. Leave it off if you take orders through draft orders or checkout links, since those are checked as well. Try your express buttons, such as Shop Pay, once after you switch it on.</p>
+<h2>Require the date</h2>
+<p>Switch on Require a date before checkout if an order without a date is useless to you. Checkout then also stops a customer who picks a delivery date and later chooses pickup. Leave it off if you take orders through draft orders or checkout links, since those are checked as well. Try your express buttons, such as Shop Pay, once after you switch it on.</p>
+<figure class="post-figure">
+  <img src="/images/blog/delivery-date-checkout.webp" width="1800" height="972" alt="Checkout asking the customer to choose a delivery date first" loading="lazy" decoding="async">
+  <figcaption>An order without a date, refused at checkout.</figcaption>
+</figure>
 <p>The calendar doesn't change your shipping setup. Local delivery areas, pickup locations and their prices still come from Shopify. If some postcodes can't have delivery, a <a href="/blog/shopify-shipping-rates-by-postcode/">shipping rule by postcode</a> handles that.</p>
-<h2>In the workshop</h2>
+<h2>In the workroom</h2>
 <p>Each order shows its method and date under Additional details in Shopify admin. Add the Delivery date block to the Thank you and Order status pages too, so customers can check the day themselves.</p>
 
         <section class="post-faq" aria-labelledby="faq-heading">
@@ -171,11 +193,15 @@
           <div class="faq-list">
           <details class="faq-item">
             <summary>Can I set different cutoff times for delivery and pickup?</summary>
-            <p>Yes. Lead days, the cutoff time and the days of the week are set separately for shipping, local delivery and pickup.</p>
+            <p>Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup.</p>
           </details>
           <details class="faq-item">
             <summary>Can I set a lead time per product?</summary>
             <p>Not yet. The lead time applies to the whole store for each way to receive an order.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can each shop have its own pickup days?</summary>
+            <p>Not yet. Customers choose the shop at checkout, and all locations share the same pickup days, lead time and cutoff.</p>
           </details>
           <details class="faq-item">
             <summary>Can customers choose a time slot?</summary>
@@ -258,7 +284,7 @@
       </div>
     </div>
   </footer>
-  <script src="/site.js?v=20260925c"></script>
+  <script src="/site.js?v=20261125b"></script>
   <script
     src="https://agentmatica.com/loader.js"
     data-widget-src="https://agentmatica.com/widget.js"

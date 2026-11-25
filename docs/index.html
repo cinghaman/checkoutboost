@@ -28,7 +28,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css?v=20260925c">
+  <link rel="stylesheet" href="/style.css?v=20261125b">
 
   <script type="application/ld+json">
   {
@@ -704,21 +704,37 @@
         option's full name wins. Otherwise the longest match wins.
       </p>
 
-      <h3 id="split-shipping">Split shipments and pickup in one order</h3>
+      <h3 id="split-shipping">Split shipping</h3>
       <p>
-        When Shopify splits a cart into several shipments, or mixes shipping and store pickup,
-        each part has its own options. Rules handle that like this:
+        Split shipping shows several shipments at checkout, each with its own rates. It is a
+        Shopify feature on every plan, Basic included, for stores with more than one shipping
+        profile or location: Settings, then Shipping and delivery. Stores on shipping options by
+        market have it on already. If local delivery is switched on, Shopify doesn't show several
+        shipments.
       </p>
+      <p>Shipping rules work inside each shipment like this:</p>
       <ul>
         <li>A <strong>Show only</strong> rule keeps the named options where they are offered. A shipment that offers none of them keeps all of its own, so the customer can still check out.</li>
         <li>Reorder positions are counted from 1 inside each shipment.</li>
         <li>Hide and rename rules match by name in every shipment.</li>
-        <li>Set <strong>Apply to</strong> to shipping rates if a rule must never touch store pickup.</li>
       </ul>
+
+      <h3 id="ship-and-pickup">Ship and pickup in one order</h3>
       <p>
-        The <a href="https://youtu.be/KqUg7xFt4Hw" target="_blank" rel="noopener">split shipping video</a>
-        shows this in a checkout. Splitting a cart and mixing shipping with pickup are Shopify
-        features, and Shopify decides which stores have them.
+        This is a separate Shopify feature. It lets a customer ship some items and collect others
+        in one order, and it is only on the Plus and Enterprise plans: Settings, then Feature test
+        drives. Shopify turns it on for all eligible Plus stores on July 1, 2027.
+      </p>
+      <p>
+        Rules treat the shipped part and the pickup part separately, with the same behavior as
+        split shipping. Set <strong>Apply to</strong> to shipping rates if a rule must never touch
+        store pickup.
+      </p>
+      <p>
+        The <a href="https://youtu.be/KqUg7xFt4Hw" target="_blank" rel="noopener">video</a> shows
+        both in a checkout. Shopify's help pages:
+        <a href="https://help.shopify.com/en/manual/checkout-settings/split-shipping" target="_blank" rel="noopener">split shipping</a> and
+        <a href="https://help.shopify.com/en/manual/checkout-settings/ship-and-pickup" target="_blank" rel="noopener">ship and pickup</a>.
       </p>
 
       <h2 id="payment-rules">Payment method rules</h2>
@@ -734,6 +750,10 @@
         Shoppers choose shipping, local delivery or pickup and a date, on the product page, in
         the cart or in the cart drawer. The date is saved on the order. It is part of the paid
         plans and works on every Shopify plan.
+      </p>
+      <p>
+        If you have several pickup locations, customers choose the location at checkout. All
+        locations share the same pickup days, lead time and cutoff.
       </p>
 
       <h3 id="delivery-dates-setup">Setting it up</h3>
@@ -1242,6 +1262,6 @@
       targets.forEach(function (t) { observer.observe(t); });
     })();
   </script>
-  <script src="/site.js?v=20260925c" defer></script>
+  <script src="/site.js?v=20261125b" defer></script>
 </body>
 </html>

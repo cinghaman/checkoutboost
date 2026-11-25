@@ -5,27 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shopify split shipping: make your shipping rules work in every shipment | Smart Checkout Widgets</title>
-  <meta name="description" content="When Shopify splits a cart into several shipments, one hide or show-only rule can leave a package with no rate and block checkout. Here is how to set rules that work in each shipment, including ship and pickup in one order.">
+  <meta name="description" content="Split shipping is on every Shopify plan; ship and pickup in one order is Plus only. Here is the difference, and how to set shipping rules that leave a rate in every shipment.">
   <meta name="robots" content="index,follow">
   <link rel="canonical" href="https://smartcheckoutwidgets.com/blog/shopify-split-shipping-rate-rules/">
   <meta property="og:title" content="Shopify split shipping: make your shipping rules work in every shipment | Smart Checkout Widgets">
-  <meta property="og:description" content="When Shopify splits a cart into several shipments, one hide or show-only rule can leave a package with no rate and block checkout. Here is how to set rules that work in each shipment, including ship and pickup in one order.">
+  <meta property="og:description" content="Split shipping is on every Shopify plan; ship and pickup in one order is Plus only. Here is the difference, and how to set shipping rules that leave a rate in every shipment.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-split-shipping-rate-rules/">
   <meta property="og:site_name" content="Smart Checkout Widgets">
   <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-split-shipping-rate-rules.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-split-shipping-rate-rules.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
-  <meta property="og:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
+  <meta property="og:image:alt" content="Two parcels being packed on a bench, one with a mug and one with coffee filters">
   <meta property="article:published_time" content="2026-11-25">
   <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify split shipping: make your shipping rules work in every shipment | Smart Checkout Widgets">
-  <meta name="twitter:description" content="When Shopify splits a cart into several shipments, one hide or show-only rule can leave a package with no rate and block checkout. Here is how to set rules that work in each shipment, including ship and pickup in one order.">
-  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta name="twitter:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
+  <meta name="twitter:description" content="Split shipping is on every Shopify plan; ship and pickup in one order is Plus only. Here is the difference, and how to set shipping rules that leave a rate in every shipment.">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-split-shipping-rate-rules.webp">
+  <meta name="twitter:image:alt" content="Two parcels being packed on a bench, one with a mug and one with coffee filters">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,14 +41,14 @@
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   "headline": "Shopify split shipping: make your shipping rules work in every shipment",
-  "description": "When Shopify splits a cart into several shipments, one hide or show-only rule can leave a package with no rate and block checkout. Here is how to set rules that work in each shipment, including ship and pickup in one order.",
+  "description": "Split shipping is on every Shopify plan; ship and pickup in one order is Plus only. Here is the difference, and how to set shipping rules that leave a rate in every shipment.",
   "url": "https://smartcheckoutwidgets.com/blog/shopify-split-shipping-rate-rules/",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://smartcheckoutwidgets.com/blog/shopify-split-shipping-rate-rules/"
   },
   "image": [
-    "https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp"
+    "https://smartcheckoutwidgets.com/images/og/shopify-split-shipping-rate-rules.webp"
   ],
   "datePublished": "2026-11-25",
   "dateModified": "2026-11-25",
@@ -83,14 +83,16 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
+    {"@type": "Question", "name": "Is split shipping available on Shopify Basic?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Shopify made split shipping in checkout available to all merchants in August 2024. You need more than one shipping profile or location to use it."}},
+    {"@type": "Question", "name": "Is ship and pickup in one order available on Shopify Basic?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shopify offers it on the Plus and Enterprise plans, as a feature test drive until July 1, 2027."}},
     {"@type": "Question", "name": "Why can a shipping rule block checkout?", "acceptedAnswer": {"@type": "Answer", "text": "If a rule removes every rate from one shipment, the customer has nothing to choose there and cannot finish. A show-only rule in Smart Checkout Widgets keeps a shipment's own rates when none of the named ones is offered."}},
     {"@type": "Question", "name": "Do shipping rules apply to each shipment separately?", "acceptedAnswer": {"@type": "Answer", "text": "Show-only and reorder rules work inside each shipment. Hide and rename rules match by name in all of them."}},
     {"@type": "Question", "name": "Can a shipping rule hide store pickup by mistake?", "acceptedAnswer": {"@type": "Answer", "text": "Set the rule's Apply to scope to shipping rates and it never touches pickup."}},
-    {"@type": "Question", "name": "Do I need Shopify Plus for this?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shipping method rules work on every Shopify plan."}}
+    {"@type": "Question", "name": "Do I need Shopify Plus for the rules?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shipping method rules work on every Shopify plan."}}
   ]
 }
   </script>
-  <link rel="stylesheet" href="/style.css?v=20260925c">
+  <link rel="stylesheet" href="/style.css?v=20261125b">
 </head>
 <body class="page-inner">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -116,47 +118,94 @@
     <section class="post-hero">
       <div class="post-hero-copy">
         <h1>Shopify split shipping: make your shipping rules work in every shipment</h1>
+        <p>When one cart ships in two packages, each package has its own rates. A rule that empties one of them stops the whole order.</p>
         <div class="meta-row">
           <span>Published November 25, 2026</span>
-          <span>Smart Checkout Widgets</span>
+          <span>5 min read</span>
           <span><a href="/blog/" style="color: inherit;">All articles</a></span>
         </div>
       </div>
+      <figure class="post-cover"><img src="/images/blog/split-shipping-cover.webp" width="1920" height="1086" alt="Two parcels on a packing bench, one with a stoneware mug and one with paper coffee filters" fetchpriority="high"></figure>
     </section>
     <section class="post-layout">
       <article class="post-content">
-<p>Some Shopify carts now split into several shipments at checkout, each with its own list of rates. Some carts mix shipping with store pickup in one order. Rules that were written for a single list of rates can go wrong there. If a rule removes every rate from one shipment, the customer can't check out.</p>
-<p>The <a href="https://youtu.be/KqUg7xFt4Hw" target="_blank" rel="noopener">one-minute video</a> shows the checkout. The rest of this page explains what happens and how to set your rules.</p>
+<p>A customer buys a mug and a box of coffee filters. The mug ships by Freight or White glove, the filters by Economy or Standard, and checkout shows two shipments with a choice for each. If your shipping rule removes every option from one of them, the customer can't check out.</p>
+<figure class="post-video">
+  <div class="post-video__frame">
+    <a class="post-video__play" href="https://youtu.be/KqUg7xFt4Hw" target="_blank" rel="noopener" data-video="KqUg7xFt4Hw" data-title="Shopify split shipping and ship and pickup: make your rate rules work" aria-label="Play video: Shopify split shipping and ship and pickup: make your rate rules work">
+      <img src="/images/blog/split-shipping-video.webp" width="1280" height="720" alt="">
+      <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.5v17l14-8.5z"/></svg></span>
+    </a>
+  </div>
+  <figcaption>One minute: show-only, reorder, ship and pickup, holds and the return window.</figcaption>
+</figure>
+<h2>Split shipping or ship and pickup?</h2>
+<p>Shopify has two features that put several deliveries in one order, and they are on different plans.</p>
+<div class="table-wrap"><table>
+    <thead><tr><th></th><th>Split shipping</th><th>Ship and pickup in one order</th></tr></thead>
+    <tbody>
+      <tr><td>What it does</td><td>Shows several shipments, each with its own rates</td><td>Ships some items while the customer collects others</td></tr>
+      <tr><td>Shopify plan</td><td>Every plan, Basic included</td><td>Plus and Enterprise</td></tr>
+      <tr><td>Where to find it</td><td>Settings, Shipping and delivery, if you have more than one shipping profile or location</td><td>Settings, Feature test drives. Shopify turns it on for all eligible Plus stores on July 1, 2027</td></tr>
+      <tr><td>Our shipping rules</td><td>Work inside each shipment</td><td>Limit the shipped items, leave the pickup alone</td></tr>
+    </tbody>
+</table></div>
+<p>Shopify opened split shipping <a href="https://changelog.shopify.com/posts/split-shipping-in-checkout-is-available-to-all-merchants" target="_blank" rel="noopener">to all merchants in August 2024</a>. Its help pages cover <a href="https://help.shopify.com/en/manual/checkout-settings/split-shipping" target="_blank" rel="noopener">split shipping</a> and <a href="https://help.shopify.com/en/manual/checkout-settings/ship-and-pickup" target="_blank" rel="noopener">ship and pickup</a>. Stores that have moved to shipping options by market have split shipping on already, and the setting no longer applies to them.</p>
+<div class="post-note">
+  <p class="post-note__title">Not seeing two shipments?</p>
+  <p>With local delivery switched on, Shopify doesn't show several shipments at checkout. It also won't split a single line: five of the same shirt have to ship from one location.</p>
+</div>
 <h2>Show only one rate</h2>
-<p>Take a cart with a heavy mug that ships by Freight or White glove, and a box of filters that ships by Standard or Economy. A rule says "show only Standard".</p>
+<p>Back to the mug and the filters, with a rule that says show only Standard.</p>
 <figure class="post-figure">
-  <img src="/images/blog/split-shipping-show-only.webp" width="1600" height="900" alt="A Shopify checkout with two shipments. Shipment one keeps Freight and White glove, shipment two shows only Standard" loading="lazy" decoding="async">
+  <img src="/images/blog/split-shipping-show-only.webp" width="1800" height="1230" alt="Shopify checkout before and after a show-only rule. Shipment 1 keeps Freight and White glove, shipment 2 shows only Standard" loading="lazy" decoding="async">
   <figcaption>Recorded on a test store.</figcaption>
 </figure>
-<p>Shipment two keeps Standard and drops Economy. Shipment one has no Standard rate, so it keeps its own rates and the customer can finish. Before November 2026 the app compared the rule with all the rates at once, and shipment one could have ended up with none.</p>
+<p>Shipment 2 keeps Standard and drops Economy. Shipment 1 has no Standard rate, so it keeps its own two and the customer can finish.</p>
 <h2>Reorder</h2>
 <p>Positions are counted from 1 inside each shipment. Move Freight and Standard to position 1, and each leads the shipment it belongs to.</p>
 <figure class="post-figure">
-  <img src="/images/blog/split-shipping-reorder.webp" width="1600" height="900" alt="The same checkout with Freight first in shipment one and Standard first in shipment two" loading="lazy" decoding="async">
-  <figcaption>Freight leads one shipment and Standard leads the other.</figcaption>
+  <img src="/images/blog/split-shipping-reorder.webp" width="1800" height="1230" alt="Shopify checkout before and after a reorder rule. Standard moves above Economy in shipment 2" loading="lazy" decoding="async">
+  <figcaption>Shipment 1 already had Freight first. In shipment 2, Standard moves above Economy.</figcaption>
 </figure>
 <h2>Hide and rename</h2>
-<p>These match by name in every shipment, as they always did. Take care with hide rules: if a shipment has one rate and your rule hides it, that shipment has nothing left. When you mean "only offer this one", use a show-only rule, which never empties a shipment.</p>
+<p>These match by name in every shipment. Take care with hide rules: if a shipment has one rate and your rule hides it, that shipment has nothing left. To offer only one rate, use a show-only rule, which never empties a shipment.</p>
 <h2>Ship and pickup in one order</h2>
-<p>Where Shopify lets customers ship some items and collect others, each part has its own options. A show-only rule for a shipping rate limits the shipped items and leaves the pickup alone. To be sure a rule can never touch pickup, set its Apply to scope to shipping rates.</p>
+<p>On Plus stores with the feature on, each part of the order has its own options. A show-only rule for a shipping rate limits the shipped items and leaves the pickup alone. To be sure a rule can never touch pickup, set its Apply to scope to shipping rates.</p>
+<figure class="post-figure">
+  <img src="/images/blog/split-shipping-pickup.webp" width="1800" height="1228" alt="Checkout with one item for pickup in store and another shipped to an address" loading="lazy" decoding="async">
+  <figcaption>A Plus test store: one snowboard collected in store, the other shipped.</figcaption>
+</figure>
 <h2>After checkout</h2>
-<p>If customers can <a href="/blog/shopify-customer-order-editing/">edit their own orders</a>, every package is held until the edit window ends, and then they are all released. The return window on the customer's order page waits for the last package. With one package sent, it tells the customer the window starts once the order arrives.</p>
+<p>If customers can <a href="/blog/shopify-customer-order-editing/">edit their own orders</a>, every package is held until the edit window ends, and then they are all released.</p>
+<figure class="post-figure">
+  <img src="/images/blog/split-shipping-holds.webp" width="1800" height="1434" alt="A Shopify order with two fulfillments, each on hold until the edit window ends" loading="lazy" decoding="async">
+  <figcaption>Two packages, two holds, one release time.</figcaption>
+</figure>
+<p>The return window on the customer's order page waits for the last package. With one package sent, it says the window starts once the order arrives.</p>
+<figure class="post-figure">
+  <img src="/images/blog/split-shipping-returns.webp" width="1800" height="924" alt="Order page with the message: You will have 30 days to return items once your order arrives" loading="lazy" decoding="async">
+  <figcaption>One package sent, one to go.</figcaption>
+</figure>
 <h2>Test yours</h2>
-<ol>
+<ol class="post-steps">
   <li>Find two products that ship from different shipping profiles or locations.</li>
   <li>Put both in a cart and open the shipping step.</li>
   <li>Check that each shipment has at least one rate, with your rules on.</li>
 </ol>
-<p>Splitting carts and mixing shipping with pickup are Shopify features, and Shopify decides which stores have them. The rules work on every Shopify plan. Order editing is part of the Pro plan, and the return window block is part of the paid plans.</p>
+<p>In the app, order editing is part of the Pro plan and the return window block is part of the paid plans.</p>
 
         <section class="post-faq" aria-labelledby="faq-heading">
           <h2 id="faq-heading">Frequently asked questions</h2>
           <div class="faq-list">
+          <details class="faq-item">
+            <summary>Is split shipping available on Shopify Basic?</summary>
+            <p>Yes. Shopify made split shipping in checkout available to all merchants in August 2024. You need more than one shipping profile or location to use it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is ship and pickup in one order available on Shopify Basic?</summary>
+            <p>No. Shopify offers it on the Plus and Enterprise plans, as a feature test drive until July 1, 2027.</p>
+          </details>
           <details class="faq-item">
             <summary>Why can a shipping rule block checkout?</summary>
             <p>If a rule removes every rate from one shipment, the customer has nothing to choose there and cannot finish. A show-only rule in Smart Checkout Widgets keeps a shipment's own rates when none of the named ones is offered.</p>
@@ -170,7 +219,7 @@
             <p>Set the rule's Apply to scope to shipping rates and it never touches pickup.</p>
           </details>
           <details class="faq-item">
-            <summary>Do I need Shopify Plus for this?</summary>
+            <summary>Do I need Shopify Plus for the rules?</summary>
             <p>No. Shipping method rules work on every Shopify plan.</p>
           </details>
           </div>
@@ -242,7 +291,7 @@
       </div>
     </div>
   </footer>
-  <script src="/site.js?v=20260925c"></script>
+  <script src="/site.js?v=20261125b"></script>
   <script
     src="https://agentmatica.com/loader.js"
     data-widget-src="https://agentmatica.com/widget.js"

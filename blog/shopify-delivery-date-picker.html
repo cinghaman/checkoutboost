@@ -14,18 +14,18 @@
   <meta property="og:url" content="https://smartcheckoutwidgets.com/blog/shopify-delivery-date-picker/">
   <meta property="og:site_name" content="Smart Checkout Widgets">
   <meta property="og:locale" content="en_US">
-  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
+  <meta property="og:image" content="https://smartcheckoutwidgets.com/images/og/shopify-delivery-date-picker.webp">
+  <meta property="og:image:secure_url" content="https://smartcheckoutwidgets.com/images/og/shopify-delivery-date-picker.webp">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="675">
-  <meta property="og:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
+  <meta property="og:image:alt" content="A florist hands over a bouquet at the front door">
   <meta property="article:published_time" content="2026-11-25">
   <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify delivery date picker: let customers choose a date on the product page or in the cart | Smart Checkout Widgets">
   <meta name="twitter:description" content="Shopify shows delivery estimates but has no calendar for customers. Here is how to add one on any Shopify plan, set lead times and cutoffs, and decide whether checkout should require a date.">
-  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp">
-  <meta name="twitter:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
+  <meta name="twitter:image" content="https://smartcheckoutwidgets.com/images/og/shopify-delivery-date-picker.webp">
+  <meta name="twitter:image:alt" content="A florist hands over a bouquet at the front door">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +48,7 @@
     "@id": "https://smartcheckoutwidgets.com/blog/shopify-delivery-date-picker/"
   },
   "image": [
-    "https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp"
+    "https://smartcheckoutwidgets.com/images/og/shopify-delivery-date-picker.webp"
   ],
   "datePublished": "2026-11-25",
   "dateModified": "2026-11-25",
@@ -87,11 +87,12 @@
     {"@type": "Question", "name": "Does a delivery date picker work without Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The calendar runs in your theme and the checkout check is a Shopify validation rule, so both work on every Shopify plan. The feature is part of the app's Growth, Advanced and Pro plans."}},
     {"@type": "Question", "name": "Where do I see the date?", "acceptedAnswer": {"@type": "Answer", "text": "On the order in Shopify admin, under Additional details. For Buy it now orders it is on the product line."}},
     {"@type": "Question", "name": "Can I require a date before checkout?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date."}},
+    {"@type": "Question", "name": "Can each pickup location have its own days?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Customers choose the location at checkout, and every location uses the same pickup days, lead time and cutoff."}},
     {"@type": "Question", "name": "Which themes does it work with?", "acceptedAnswer": {"@type": "Answer", "text": "We tried 22 theme demo stores, including Dawn and Horizon. If it lands in the wrong place, you can point it at a class name or ID in your theme. Headless storefronts are not supported."}}
   ]
 }
   </script>
-  <link rel="stylesheet" href="/style.css?v=20260925c">
+  <link rel="stylesheet" href="/style.css?v=20261125b">
 </head>
 <body class="page-inner">
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -117,57 +118,79 @@
     <section class="post-hero">
       <div class="post-hero-copy">
         <h1>Shopify delivery date picker: let customers choose a date on the product page or in the cart</h1>
+        <p>Shopify can estimate when an order will arrive. If your customers need to pick the day themselves, you need a calendar, and it works on any plan.</p>
         <div class="meta-row">
           <span>Published November 25, 2026</span>
-          <span>Smart Checkout Widgets</span>
+          <span>5 min read</span>
           <span><a href="/blog/" style="color: inherit;">All articles</a></span>
         </div>
       </div>
+      <figure class="post-cover"><img src="/images/blog/delivery-date-cover.webp" width="1920" height="1086" alt="A florist hands a wrapped bouquet of peonies to a customer at the front door" fetchpriority="high"></figure>
     </section>
     <section class="post-layout">
       <article class="post-content">
-<p>Shopify can show a customer when an order might arrive. It has no calendar where the customer picks the day. If you sell flowers, cakes, furniture or anything that needs someone at home, that choice usually ends up in the order note or in an email the next morning.</p>
-<p>Smart Checkout Widgets now has a delivery date calendar. It works on every Shopify plan, because it lives in your theme and the checkout part uses Shopify's validation rules, which are open to all plans. The calendar itself is part of the app's paid plans.</p>
+<p>Flowers, cakes and sofas all need someone at home on the right day. Shopify has no calendar for that, so the day usually ends up in the order note or in an email the next morning.</p>
+<p>Smart Checkout Widgets adds one to your product pages, cart page and cart drawer. The calendar lives in your theme, and the part that runs in checkout uses Shopify's validation rules, which are open to every plan.</p>
 <figure class="post-figure">
-  <img src="/images/blog/delivery-date-calendar.webp" width="1600" height="1125" alt="A product page with a delivery date calendar above the Add to cart button, with closed days crossed out" loading="lazy" decoding="async">
-  <figcaption>The calendar on an example product page. Crossed-out days are closed or too soon.</figcaption>
+  <img src="/images/blog/delivery-date-calendar.webp" width="1800" height="1127" alt="A product page for a peony bouquet with a delivery date calendar above Add to cart. Mondays and Sundays are crossed out" loading="lazy" decoding="async">
+  <figcaption>A florist on a Basic plan test store. Mondays and Sundays are closed for delivery.</figcaption>
 </figure>
+<div class="post-note">
+  <p class="post-note__title">Plans</p>
+  <p>It works on every Shopify plan, Basic included. In the app it is part of Growth, Advanced and Pro.</p>
+</div>
 <h2>What the customer does</h2>
-<p>They choose how they want the order (shipping, local delivery or pickup, whichever you offer) and then a day. The choice shows on the product page, on the cart page and in the cart drawer, and it stays the same in all of them. After they buy, the date can show on the Thank you and Order status pages.</p>
-<p>You see the method and the date on the order in Shopify admin, under Additional details. With Buy it now, they are on the product line instead, because that button skips the cart.</p>
+<p>They choose how they want the order (shipping, local delivery or pickup, whichever you offer) and then a day. The choice follows them from the product page to the cart drawer and the cart page, and they can change it in any of them.</p>
+<figure class="post-figure">
+  <img src="/images/blog/delivery-date-steps.webp" width="1800" height="1150" alt="Three screens: choosing Delivery, picking a day in December, and the same date shown in the cart drawer" loading="lazy" decoding="async">
+  <figcaption>Delivery, then a day, then the same date above Check out.</figcaption>
+</figure>
+<p>You see the method and the date on the order in Shopify admin, under Additional details. Orders placed with Buy it now carry them on the product line instead, because that button skips the cart. After the purchase, the date can show on the Thank you and Order status pages.</p>
 <h2>What you decide</h2>
 <div class="table-wrap"><table>
     <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
     <tbody>
-      <tr><td>Lead days</td><td>How many days ahead the first date is. 0 allows the same day.</td></tr>
+      <tr><td>Lead time</td><td>How many days ahead the first date is. 0 allows the same day.</td></tr>
       <tr><td>Cutoff time</td><td>After this time, one more day is added. It uses your store's time zone, wherever the customer is.</td></tr>
       <tr><td>Days of the week</td><td>Which days you deliver or open for pickup.</td></tr>
       <tr><td>Closed dates</td><td>Holidays and days you are fully booked.</td></tr>
       <tr><td>How far ahead</td><td>The last day a customer can book.</td></tr>
     </tbody>
 </table></div>
-<p>Lead days, the cutoff and the days of the week are set separately for each way to receive an order. A shop can offer pickup tomorrow and delivery in three days.</p>
-<h2>Adding it to your theme</h2>
-<ol>
+<p>Lead time, cutoff and days of the week are set separately for shipping, local delivery and pickup, so a shop can offer pickup tomorrow and delivery in two days.</p>
+<figure class="post-figure">
+  <img src="/images/blog/delivery-date-ship-pickup.webp" width="1800" height="890" alt="App settings side by side. Delivery has a lead time of 2 days, a 14:00 cutoff and Tuesday to Saturday. Pickup has 1 day, 16:00 and Monday to Saturday" loading="lazy" decoding="async">
+  <figcaption>The settings behind the calendar above.</figcaption>
+</figure>
+<h2>Add it to your theme</h2>
+<ol class="post-steps">
   <li>Open Delivery Dates in the app, switch the calendar on and save.</li>
   <li>Click Switch on in theme, then save the theme.</li>
   <li>Add the Delivery date block to the Thank you and Order status pages in the checkout editor.</li>
 </ol>
-<p>The calendar looks for your Check out and Add to cart buttons and goes above them. We tried it on 22 theme demo stores on desktop and phone, including Dawn, Horizon, Prestige, Impulse, Warehouse, Turbo and Empire.</p>
-<p>If it lands in the wrong place, enter a class name or ID from your theme in the app embed settings and choose before it, after it, or inside it. That also helps with older themes. Headless storefronts won't work, since they have no theme to put it in.</p>
+<p>The calendar finds your Check out and Add to cart buttons and goes above them. We tried it on 22 theme demo stores on desktop and phone, including Dawn, Horizon, Prestige, Impulse, Warehouse, Turbo and Empire.</p>
+<p>If it lands in the wrong place, enter a class name or ID from your theme in the app embed settings and choose before, after or inside it. Headless storefronts won't work, since they have no theme to put it in.</p>
 <h2>Should checkout require a date?</h2>
-<p>You can leave the date optional or let checkout refuse an order without one. With the check on, checkout also refuses a date that has passed, and a mismatch such as a delivery date on an order the customer switches to pickup.</p>
-<p>Think about these before you turn it on:</p>
+<p>You can leave the date optional or let checkout refuse an order without one. With the check on, checkout also refuses a date that has passed, and a delivery date on an order the customer switches to pickup.</p>
+<figure class="post-figure">
+  <img src="/images/blog/delivery-date-checkout.webp" width="1800" height="972" alt="Shopify checkout with the message: Please choose a delivery date on the product or cart page before checking out" loading="lazy" decoding="async">
+  <figcaption>Checkout on the Basic plan test store, with the check on and no date chosen.</figcaption>
+</figure>
+<p>Before you turn it on:</p>
 <ul>
-  <li>Every order with a physical product will need a date, including ones from draft orders, checkout links and other online sales channels. Point of sale is not checked.</li>
+  <li>Every order with a physical product will need a date, including draft orders, checkout links and other online sales channels. Point of sale is not checked.</li>
   <li>Keep the calendar on your product pages, because Buy it now skips the cart.</li>
   <li>If you offer Shop Pay, Apple Pay, Google Pay or PayPal, try each button once. Shopify says the check covers express checkouts, and we have not tested those buttons ourselves yet.</li>
 </ul>
 <p>If your paid plan ends, the calendar and the check switch off together, so a missing calendar can't leave customers stuck at checkout.</p>
-<h2>Watch out for Shopify's own estimates</h2>
-<p>Shopify's delivery estimates don't know which date the customer chose. In our test the customer picked 27 November while the rate at checkout said 1 to 3 December. To hide those dates, go to Settings, then Shipping and delivery, and set Delivery estimates to Off. Your rates may still show a transit time.</p>
+<div class="post-note">
+  <p class="post-note__title">Shopify's own estimates</p>
+  <p>Delivery estimates don't know which date the customer chose. In our test the customer picked 27 November while the rate at checkout said 1 to 3 December. To hide those dates, go to Settings, then Shipping and delivery, and set Delivery estimates to Off. Your rates may still show a transit time.</p>
+</div>
+<h2>More than one pickup location</h2>
+<p>The calendar asks for pickup and a day. Customers choose the location itself at checkout, where Shopify lists the ones you have switched on for pickup. All locations share the same lead time, cutoff and opening days, so set them for the location with the fewest hours.</p>
 <h2>What it doesn't do yet</h2>
-<p>There are no time slots, daily order limits or extra charges for a date. One date covers the whole cart.</p>
+<p>There are no time slots, daily order limits, extra charges for a date or pickup days per location. One date covers the whole cart. If you sell flowers or cakes, the <a href="/blog/shopify-delivery-pickup-dates-florists-bakeries/">florist and bakery guide</a> has worked examples.</p>
 
         <section class="post-faq" aria-labelledby="faq-heading">
           <h2 id="faq-heading">Frequently asked questions</h2>
@@ -187,6 +210,10 @@
           <details class="faq-item">
             <summary>Can I require a date before checkout?</summary>
             <p>Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can each pickup location have its own days?</summary>
+            <p>Not yet. Customers choose the location at checkout, and every location uses the same pickup days, lead time and cutoff.</p>
           </details>
           <details class="faq-item">
             <summary>Which themes does it work with?</summary>
@@ -261,7 +288,7 @@
       </div>
     </div>
   </footer>
-  <script src="/site.js?v=20260925c"></script>
+  <script src="/site.js?v=20261125b"></script>
   <script
     src="https://agentmatica.com/loader.js"
     data-widget-src="https://agentmatica.com/widget.js"

@@ -95,3 +95,61 @@
     });
   });
 })();
+
+/* Articles: "On this page" list built from the headings. */
+(function () {
+  var layout = document.querySelector(".post-layout");
+  var content = layout && layout.querySelector(":scope > .post-content");
+  if (!content || document.querySelector(".rubik-toc")) return;
+  var heads = [].filter.call(content.querySelectorAll("h2"), function (h) { return !h.closest(".answer-brief, aside"); });
+  if (heads.length < 3) return;
+  var used = {};
+  var list = document.createElement("ol");
+  var links = heads.map(function (h) {
+    if (!h.id) {
+      var base = h.textContent.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "") || "section";
+      var id = base, n = 2;
+      while (used[id] || document.getElementById(id)) id = base + "-" + n++;
+      h.id = id;
+    }
+    used[h.id] = true;
+    var li = document.createElement("li");
+    var a = document.createElement("a");
+    a.href = "#" + h.id;
+    a.textContent = h.id === "faq-heading" ? "FAQ" : h.textContent;
+    li.appendChild(a);
+    list.appendChild(li);
+    return a;
+  });
+  var toc = document.createElement("nav");
+  toc.className = "post-toc";
+  toc.setAttribute("aria-label", "On this page");
+  toc.innerHTML = '<p class="post-toc__title">On this page</p>';
+  toc.appendChild(list);
+  layout.appendChild(toc);
+
+  var queued = false;
+  function mark() {
+    queued = false;
+    var at = 0;
+    heads.forEach(function (h, i) { if (h.getBoundingClientRect().top < 160) at = i; });
+    links.forEach(function (a, i) { i === at ? a.setAttribute("aria-current", "true") : a.removeAttribute("aria-current"); });
+  }
+  window.addEventListener("scroll", function () { if (!queued) { queued = true; requestAnimationFrame(mark); } }, { passive: true });
+  mark();
+  // A link to a heading whose id was only just added.
+  if (location.hash) { var t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView(); }
+})();
+
+/* Videos: YouTube loads only after a click. Without JavaScript the link opens YouTube. */
+document.addEventListener("click", function (event) {
+  var play = event.target.closest(".post-video__play");
+  if (!play || event.metaKey || event.ctrlKey) return;
+  event.preventDefault();
+  var frame = document.createElement("iframe");
+  frame.src = "https://www.youtube-nocookie.com/embed/" + play.getAttribute("data-video") + "?autoplay=1&rel=0";
+  frame.title = play.getAttribute("data-title") || "Video";
+  frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+  frame.allowFullscreen = true;
+  play.parentNode.replaceChildren(frame);
+});
