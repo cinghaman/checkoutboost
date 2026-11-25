@@ -45,6 +45,7 @@ post('shopify-delivery-date-picker',
 f'''
 <p>Flowers, cakes and sofas all need someone at home on the right day. Shopify has no calendar for that, so the day usually ends up in the order note or in an email the next morning.</p>
 <p>Smart Checkout Widgets adds one to your product pages, cart page and cart drawer. The calendar lives in your theme, and the part that runs in checkout uses Shopify's validation rules, which are open to every plan.</p>
+{video('BSDABRPDLUI', 'delivery-date-video', 'Shopify delivery date picker: let customers choose the day', 'The whole flow in 46 seconds, from product page to checkout.')}
 {fig('delivery-date-calendar', 'A product page for a peony bouquet with a delivery date calendar above Add to cart. Mondays and Sundays are crossed out', 'A florist on a Basic plan test store. Mondays and Sundays are closed for delivery.')}
 {note('Plans', 'It works on every Shopify plan, Basic included. In the app it is part of Growth, Advanced and Pro.')}
 <h2>What the customer does</h2>
@@ -104,6 +105,7 @@ post('shopify-delivery-pickup-dates-florists-bakeries',
  5, 'florist-bakery-cover', 'Five wrapped bouquets in buckets next to two white cake boxes on a workroom bench',
 f'''
 <p>For a florist or a bakery the date is part of the product, and a Shopify checkout doesn't ask for it. This guide sets up a calendar with the <a href="/blog/shopify-delivery-date-picker/">delivery date picker</a> in Smart Checkout Widgets. It works on every Shopify plan and is part of the app's paid plans.</p>
+{video('BSDABRPDLUI', 'delivery-date-video', 'Shopify delivery date picker: let customers choose the day', 'The whole flow in 46 seconds, from product page to checkout.')}
 <h2>Answer these first</h2>
 <ul>
   <li>How long does an order take to make? That is your lead time, and it may differ for pickup and delivery.</li>
