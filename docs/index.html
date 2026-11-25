@@ -329,6 +329,7 @@
         <li><a href="#upsells">Upsells</a></li>
         <li><a href="#shipping-rules">Shipping method rules</a></li>
         <li><a href="#payment-rules">Payment method rules</a></li>
+        <li><a href="#delivery-dates">Delivery dates</a></li>
         <li><a href="#order-editing">Order editing</a></li>
         <li><a href="#customer-accounts">Customer accounts</a></li>
         <li><a href="#branding">Checkout branding</a></li>
@@ -362,6 +363,7 @@
             <tr><td>Checkout Gifts</td><td>Free products given by an automatic discount or a discount code.</td><td>Every Shopify plan; adding the gift to the cart for the shopper needs Plus</td></tr>
             <tr><td>Payment Customizations</td><td>Hide, rename or reorder payment methods.</td><td>Every Shopify plan</td></tr>
             <tr><td>Shipping Customizations</td><td>Hide, rename or reorder delivery options.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Delivery Dates</td><td>Lets shoppers choose a delivery or pickup date before they check out. Paid plans.</td><td>Every Shopify plan</td></tr>
             <tr><td>Order Editing</td><td>Lets customers change their own order after buying. Pro plan.</td><td>Every Shopify plan</td></tr>
             <tr><td>Results</td><td>Orders, revenue, gifts, upsells and survey answers over the last 7, 30 or 90 days.</td><td>Every Shopify plan</td></tr>
             <tr><td>Checkout Branding</td><td>Edits checkout colours, fonts, buttons and layout. Pro plan.</td><td>Shopify Plus</td></tr>
@@ -727,6 +729,60 @@
         thing in either place.
       </p>
 
+      <h2 id="delivery-dates">Delivery dates</h2>
+      <p>
+        Shoppers choose shipping, local delivery or pickup and a date, on the product page, in
+        the cart or in the cart drawer. The date is saved on the order. It is part of the paid
+        plans and works on every Shopify plan.
+      </p>
+
+      <h3 id="delivery-dates-setup">Setting it up</h3>
+      <ol>
+        <li>Open <strong>Delivery Dates</strong> in the app. Switch the calendar on, choose the ways to receive an order, and save.</li>
+        <li>Click <strong>Switch on in theme</strong> and save your theme. The calendar goes above Check out in the cart and drawer, and above the buy buttons on product pages.</li>
+        <li>Add the <strong>Delivery date</strong> block to the Thank you and Order status pages in the checkout editor, so customers see their date after they buy.</li>
+      </ol>
+      <p>
+        For each way to receive an order you set the name shoppers see, the lead days, a cutoff
+        time and the days of the week. Closed dates apply to all of them. Times are in your
+        store's time zone.
+      </p>
+
+      <h3 id="delivery-dates-themes">If it is in the wrong place</h3>
+      <p>
+        In the <strong>Delivery date</strong> app embed settings, enter the class name or ID of a
+        part of your theme, then choose before it, after it, or inside it at the top or bottom.
+        The cart and the product page have their own settings. You can also add the
+        <strong>Delivery date</strong> block yourself, and the calendar then uses your block on
+        that page. Some drawers and popups have no calendar, for example when they have no
+        Check out button. The cart page covers those.
+      </p>
+
+      <h3 id="delivery-dates-required">Requiring a date</h3>
+      <p>
+        <strong>Require a date before checkout</strong> is off at first. When it is on, checkout
+        refuses an order with a physical product that has no date, or whose date has passed. It
+        also refuses an order when the date is for shipping and the customer picks pickup, or
+        the other way round. Shopify asks for one extra permission the first time.
+      </p>
+      <ul>
+        <li>Draft orders, checkout links and other online sales channels are checked too, so leave it off if you sell through those. Point of sale is not checked.</li>
+        <li>If you offer Shop Pay, Apple Pay, Google Pay or PayPal, try those buttons once after you switch it on.</li>
+        <li>If your paid plan ends, the calendar and the check switch off together and your settings are kept.</li>
+      </ul>
+
+      <h3 id="delivery-dates-estimates">Shopify's own delivery estimates</h3>
+      <p>
+        Shopify can show its own delivery dates at checkout and on the order, and they can differ
+        from the date your customer chose. To hide them at checkout, set
+        <strong>Delivery estimates</strong> to Off under Settings, Shipping and delivery. Your
+        rates may still show a transit time.
+      </p>
+      <p>
+        There are no time slots, order limits per day or extra charges for a date yet, and one
+        date covers the whole cart.
+      </p>
+
       <h2 id="order-editing">Order editing</h2>
       <p>
         Order editing is part of the Pro plan. It runs on the Thank you and Order status pages
@@ -984,7 +1040,8 @@
       <p>
         Starter, Growth and Advanced differ by how many orders a month they cover, and paid plans
         also let you limit a gift to specific customers and add
-        <a href="#customer-accounts">customer account blocks</a>. Pro adds order editing on every Shopify
+        <a href="#customer-accounts">customer account blocks</a> and a
+        <a href="#delivery-dates">delivery date calendar</a>. Pro adds order editing on every Shopify
         plan, and the stock urgency widget and checkout branding on Shopify Plus.
       </p>
 

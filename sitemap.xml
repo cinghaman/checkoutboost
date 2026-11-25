@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://smartcheckoutwidgets.com/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/docs/</loc>
@@ -10,7 +10,7 @@
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/privacy/</loc>
@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/hide-rename-reorder-shipping-methods-shopify-checkout/</loc>
-    <lastmod>2026-11-05</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/hide-cash-on-delivery-shopify-checkout/</loc>
@@ -158,7 +158,7 @@
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/shopify-sidekick-checkout-rules/</loc>
-    <lastmod>2026-10-07</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/shopify-checkout-low-stock-badge/</loc>
@@ -215,6 +215,18 @@
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/shopify-free-gift-cart-page/</loc>
     <lastmod>2026-11-05</lastmod>
+  </url>
+  <url>
+    <loc>https://smartcheckoutwidgets.com/blog/shopify-delivery-date-picker/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://smartcheckoutwidgets.com/blog/shopify-delivery-pickup-dates-florists-bakeries/</loc>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://smartcheckoutwidgets.com/blog/shopify-split-shipping-rate-rules/</loc>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://smartcheckoutwidgets.com/blog/customize-shopify-customer-account-pages/</loc>

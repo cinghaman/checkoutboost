@@ -9,7 +9,7 @@ Last reviewed: 2026-11-25.
 ## Primary resources
 
 - [Smart Checkout Widgets homepage](https://smartcheckoutwidgets.com/): Product overview, capabilities, plans, frequently asked questions, and installation path.
-- [Documentation](https://smartcheckoutwidgets.com/docs/): How to configure widgets, checkout gifts, upsells, shipping and payment method rules, customer account blocks, rule conditions, plan order limits, and troubleshooting.
+- [Documentation](https://smartcheckoutwidgets.com/docs/): How to configure widgets, checkout gifts, upsells, shipping and payment method rules, customer account blocks, delivery dates, rule conditions, plan order limits, and troubleshooting.
 - [Smart Checkout Widgets on the Shopify App Store](https://apps.shopify.com/smart-checkout-widgets): Public app listing and installation page.
 - [Pricing and plan limits](https://smartcheckoutwidgets.com/pricing.md): Machine-readable details for the Starter, Growth, Advanced and Pro plans.
 - [Shopify checkout gift apps comparison](https://smartcheckoutwidgets.com/compare/shopify-checkout-gift-apps/): Comparison criteria for evaluating Shopify checkout gifting apps.
@@ -26,6 +26,7 @@ Last reviewed: 2026-11-25.
 - Payment method rules (hide, rename, reorder) with cart, customer, product, address and date conditions, on every Shopify plan.
 - Shipping method rules with the same actions and conditions, scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail. A show-only rule keeps just the rates you name for matching buyers.
 - Postcode conditions with numeric ranges (2000-2999, 0800 to 0899) for shipping and payment rules.
+- Delivery date calendar on Growth, Advanced and Pro, on any Shopify plan: shoppers choose shipping, local delivery or pickup and a date on the product page, in the cart or in the drawer, with lead days, cutoff times and closed dates, and an optional check that refuses checkout without a date.
 - Customer account blocks on Growth, Advanced and Pro, on any Shopify plan with the new customer accounts: VIP status, store credit balance, discount codes, profile questions, a return window, and Get help and Reorder items buttons on each order, with audience rules by tag, order count, spend, time since last order and birthday month.
 - Thank You and Order Status page content widgets for all Shopify stores.
 
@@ -42,6 +43,9 @@ Thought Bulb, which builds Smart Checkout Widgets, also makes Cart Rocket, TB Bu
 
 ## New guides (November 2026)
 
+- [Shopify delivery date picker: let customers choose a date](https://smartcheckoutwidgets.com/blog/shopify-delivery-date-picker/): Add a calendar to the product page and cart on any plan, with lead times, cutoffs and an optional checkout check.
+- [Delivery and pickup dates for florists and bakeries](https://smartcheckoutwidgets.com/blog/shopify-delivery-pickup-dates-florists-bakeries/): Cutoff times, lead days and closed dates for shops where the day is part of the product.
+- [Shopify split shipping: make your rules work in every shipment](https://smartcheckoutwidgets.com/blog/shopify-split-shipping-rate-rules/): Keep a rate in every package, order each shipment, and mix shipping with pickup. Includes a video.
 - [Holiday shipping cutoff message in Shopify checkout](https://smartcheckoutwidgets.com/blog/shopify-holiday-shipping-cutoff-checkout-message/): Show the last order date for Christmas delivery where buyers choose shipping. Native options (flat rate names, transit time, estimated delivery dates and their eligibility, pickup time), renaming any delivery option with a shipping rule on every Shopify plan, and a Custom banner in checkout on Plus (no schedule; edit or disable after each cutoff). Example wording included.
 - [Shopify BOGO discount code: set it up, and get the free item into the cart](https://smartcheckoutwidgets.com/blog/shopify-bogo-discount-code/): Buy X get Y code setup, the settings that decide whether it applies (full-price minimum, free-item stock, uses per order, combinations), why Shopify never adds the free item, cart permalinks with a discount parameter, and Smart Checkout Widgets coupon gifts that add a different free product when the code is applied (Plus).
 - [Add a "How did you hear about us?" survey to your Shopify Thank you page](https://smartcheckoutwidgets.com/blog/shopify-how-did-you-hear-about-us-survey/): Ask Black Friday and holiday buyers which channel brought them, with one question on the Thank you page. Covers wording ("How did you first hear about us?"), answer options, returning buyers (no first-order-only setting), reading the 7, 30 and 90 day Results next to Shopify and GA4, the limits of self-reported answers, and plan order limits. Basic and above, every Smart Checkout Widgets plan.

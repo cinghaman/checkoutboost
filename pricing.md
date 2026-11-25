@@ -2,7 +2,7 @@
 
 Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-11-10, against the app's billing configuration.
 
-Starter, Growth and Advanced include 12 widget types and every shipping and payment method rule, and differ mainly by monthly order volume. Growth and up also include customer account blocks. Pro adds a 13th widget (stock urgency), customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
+Starter, Growth and Advanced include 12 widget types and every shipping and payment method rule, and differ mainly by monthly order volume. Growth and up also include customer account blocks and a delivery date calendar. Pro adds a 13th widget (stock urgency), customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
 
 ## Starter
 
@@ -15,14 +15,14 @@ Starter, Growth and Advanced include 12 widget types and every shipping and paym
 - **Price:** $29 USD / month, or $278.40 USD / year
 - **Order limit:** Up to 1,000 orders per month
 - **Trial:** 7-day free trial
-- **Includes:** All widgets and all rule types, plus customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items)
+- **Includes:** All widgets and all rule types, plus customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and a delivery date calendar
 
 ## Advanced
 
 - **Price:** $59 USD / month, or $566.40 USD / year
 - **Order limit:** Unlimited
 - **Trial:** 7-day free trial
-- **Includes:** All widgets and all rule types, plus customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items)
+- **Includes:** All widgets and all rule types, plus customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and a delivery date calendar
 
 ## Pro
 
