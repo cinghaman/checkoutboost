@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Phone checkout with UPI selected and Cash on Delivery unavailable for the pincode, next to a parcel">
   <meta property="article:published_time" content="2026-10-14">
-  <meta property="article:modified_time" content="2026-10-14">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to Cut COD RTO on a Shopify Store in India | Smart Checkout Widgets">
   <meta name="twitter:description" content="Return-to-origin on cash on delivery eats margin. Hide COD by pincode, order value and customer history, put UPI first, and let buyers cancel before dispatch instead of refusing at the door.">
@@ -47,7 +47,7 @@
     "https://smartcheckoutwidgets.com/images/og/reduce-cod-rto-shopify-india.webp"
   ],
   "datePublished": "2026-10-14",
-  "dateModified": "2026-10-14",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -80,7 +80,7 @@
       "name": "Can I disable cash on delivery for specific pincodes on Shopify?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Add a payment rule that hides Cash on Delivery when the ZIP / postal code matches your list. Separate pincodes with commas. It works on every Shopify plan."
+        "text": "Yes. Add a payment rule that hides Cash on Delivery when the ZIP / postal code matches your list. Separate pincodes with commas, or use ranges such as 800001-805000. It works on every Shopify plan."
       }
     },
     {
@@ -196,7 +196,7 @@
 <ol>
   <li><strong>Hide COD below a minimum order value.</strong> Condition: Cart total amount is less than your floor. Start with the value where your RTO report shows returns piling up.</li>
   <li><strong>Hide COD above a maximum.</strong> A refused ₹6,000 order hurts more than a refused ₹600 one. Condition: Cart total amount is greater than your ceiling.</li>
-  <li><strong>Hide COD for high-RTO pincodes.</strong> Take the worst pincodes from your courier's RTO report and add them to one Address ZIP / postal code condition, separated by commas.</li>
+  <li><strong>Hide COD for high-RTO pincodes.</strong> Take the worst pincodes from your courier's RTO report and add them to one Address ZIP / postal code condition, separated by commas. Ranges such as 800001-805000 work too.</li>
   <li><strong>Hide COD for first orders.</strong> Customer order count only works for signed-in customers. To cover guests too, use Customer is not logged in. Test this one carefully, because it can cost you genuine first-time buyers.</li>
   <li><strong>Put UPI and cards first.</strong> Reorder payment methods so prepaid sits at the top and COD at the bottom. A rename can add a line to the COD option, such as "Cash on Delivery: please keep exact change ready".</li>
 </ol>
@@ -219,7 +219,7 @@
           <div class="faq-list">
           <details class="faq-item">
             <summary>Can I disable cash on delivery for specific pincodes on Shopify?</summary>
-            <p>Yes. Add a payment rule that hides Cash on Delivery when the ZIP / postal code matches your list. Separate pincodes with commas. It works on every Shopify plan.</p>
+            <p>Yes. Add a payment rule that hides Cash on Delivery when the ZIP / postal code matches your list. Separate pincodes with commas, or use ranges such as 800001-805000. It works on every Shopify plan.</p>
           </details>
           <details class="faq-item">
             <summary>Can I set a minimum order value for COD?</summary>

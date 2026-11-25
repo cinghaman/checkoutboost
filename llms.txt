@@ -28,7 +28,13 @@ Last reviewed: 2026-11-25.
 - Postcode conditions with numeric ranges (2000-2999, 0800 to 0899) for shipping and payment rules.
 - Delivery date calendar on Growth, Advanced and Pro, on any Shopify plan: shoppers choose shipping, local delivery or pickup and a date on the product page, in the cart or in the drawer, with lead days, cutoff times and closed dates, and an optional check that refuses checkout without a date.
 - Customer account blocks on Growth, Advanced and Pro, on any Shopify plan with the new customer accounts: VIP status, store credit balance, discount codes, profile questions, a return window, and Get help and Reorder items buttons on each order, with audience rules by tag, order count, spend, time since last order and birthday month.
-- Thank You and Order Status page content widgets for all Shopify stores.
+- Thank You and Order Status page content widgets on every Shopify plan except Starter, with show dates.
+- Post-purchase survey on every app plan, with optional one-use discount codes for answering.
+- Self-serve order editing (Pro): address, email, phone, note, same-price swaps, lower quantities, cancellations, with a Shopify Flow trigger.
+- Checkout branding editor and low-stock badges (Pro, Shopify Plus stores).
+- Rules work inside each shipment when Shopify splits a cart. Split shipping is on every Shopify plan; ship and pickup in one order is Plus and Enterprise only.
+- A Results page with orders, gifts, upsells and survey answers, on every plan.
+- Limits: carts over 150 lines get no gift; delivery dates have no time slots or daily limits, and express checkout with a required date is untested.
 
 ## Partner guides and app comparisons (October 2026)
 

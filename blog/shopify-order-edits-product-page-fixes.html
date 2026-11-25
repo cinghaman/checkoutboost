@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="A Recent activity table with repeated size swap rows highlighted next to a magnifying glass over a product page">
   <meta property="article:published_time" content="2026-10-20">
-  <meta property="article:modified_time" content="2026-10-20">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="What Shopify Order Edits Tell You About Your Product Pages | Smart Checkout Widgets">
   <meta name="twitter:description" content="When customers keep swapping the same size or fixing the same address field, something before checkout is causing it. How to read your order edit log and what to fix for each pattern.">
@@ -47,7 +47,7 @@
     "https://smartcheckoutwidgets.com/images/og/shopify-order-edits-product-page-fixes.webp"
   ],
   "datePublished": "2026-10-20",
-  "dateModified": "2026-10-20",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -88,7 +88,7 @@
       "name": "How long is the edit history kept?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The activity list keeps 90 days. The Customer edited tag and staff note stay on the Shopify order."
+        "text": "The activity list keeps 90 days. The Customer edited tag stays on the Shopify order."
       }
     },
     {
@@ -181,7 +181,7 @@
 <h2>Where to find the record</h2>
 <ul>
   <li>The Order editing page in Smart Checkout Widgets shows how many customer edits you had in the last 30 days, and a <strong>Recent activity</strong> list with when, which order, what changed and the detail. It shows 25 rows a page and keeps 90 days. Refused and failed edits get their own badge.</li>
-  <li>In Shopify, every edited order is tagged <em>Customer edited</em> and has a staff note saying the customer changed it. Filter your orders by that tag and export them to sort by product.</li>
+  <li>In Shopify, every edited order is tagged <em>Customer edited</em>. Swaps, quantity changes and cancellations also carry a note. Filter your orders by that tag and export them to sort by product.</li>
 </ul>
 
 <h2>Patterns and what they usually mean</h2>
@@ -193,7 +193,7 @@
     <tr><td>One product swapped down a size</td><td>It runs large</td><td>The same, the other way</td></tr>
     <tr><td>Swaps between colours of one product</td><td>The photos don't match the real colour, or the swatch is unclear</td><td>Reshoot or colour-correct the photos, and name the colour in the swatch</td></tr>
     <tr><td>Swaps away from the first size or colour in the list</td><td>The picker pre-selects an option, so people add to cart without choosing</td><td>Make the customer choose before Add to cart works</td></tr>
-    <tr><td>Address fixes to the second address line</td><td>Customers skip the flat or unit number</td><td>Make the field easier to notice, or add a note under it</td></tr>
+    <tr><td>Many address fixes</td><td>Something in the address form is easy to miss</td><td>Open a few tagged orders in Shopify to see which part was wrong</td></tr>
     <tr><td>Quantities lowered on the same product</td><td>A pack size or quantity box is confusing</td><td>Say what one unit is, such as "pack of 3"</td></tr>
     <tr><td>Cancellations soon after ordering</td><td>A surprise after paying, often the delivery date or a cost</td><td>Show delivery estimates and costs before payment</td></tr>
     <tr><td>Lots of refused edits</td><td>Customers try after the window or after packing has started</td><td>Look at the window length, and say in the confirmation email how long changes are open</td></tr>
@@ -209,7 +209,7 @@
 <ol>
   <li>Open the Order editing page and read through the last month's activity.</li>
   <li>Write down any product with more than a couple of swaps, and which way they went.</li>
-  <li>Look for address fixes that repeat a field or a country.</li>
+  <li>Count the address fixes. The app's list doesn't store addresses, so open the orders in Shopify to see what changed.</li>
   <li>Check refused edits, and why they were refused.</li>
   <li>Pick one fix, make it, and check next month whether that product's edits dropped.</li>
 </ol>
@@ -229,7 +229,7 @@
           </details>
           <details class="faq-item">
             <summary>How long is the edit history kept?</summary>
-            <p>The activity list keeps 90 days. The Customer edited tag and staff note stay on the Shopify order.</p>
+            <p>The activity list keeps 90 days. The Customer edited tag stays on the Shopify order.</p>
           </details>
           <details class="faq-item">
             <summary>How many edits on a product is too many?</summary>

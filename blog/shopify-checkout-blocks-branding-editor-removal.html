@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Checkout branding settings next to a calendar with December 31 circled">
   <meta property="article:published_time" content="2026-09-25">
-  <meta property="article:modified_time" content="2026-11-23">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify is removing the Checkout Blocks branding editor on December 31, 2026: what to do | Smart Checkout Widgets">
   <meta name="twitter:description" content="The Checkout Blocks branding editor goes away on December 31, 2026. What it controlled, who is affected, your three options, and a migration checklist to finish before Black Friday.">
@@ -51,7 +51,7 @@
     "https://smartcheckoutwidgets.com/images/og/shopify-checkout-blocks-branding-editor-removal.webp"
   ],
   "datePublished": "2026-09-25",
-  "dateModified": "2026-11-23",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -126,7 +126,7 @@
     </section>
     <section class="post-layout">
       <article class="post-content">
-<p class="lead"><strong>Short version:</strong> Shopify is removing the Checkout Blocks branding editor on <strong>December 31, 2026</strong>. Your current branding stays exactly as it is, but after that date you cannot change it there. If you style a Shopify Plus checkout with Checkout Blocks, plan where those settings will live before your Black Friday code freeze, not after it.</p>
+<p class="lead"><strong>Short version:</strong> Shopify is removing the Checkout Blocks branding editor on <strong>December 31, 2026</strong>. Your current branding stays exactly as it is, but after that date you cannot change it there. If you style a Shopify Plus checkout with Checkout Blocks, plan where those settings will live, and move them after your sale freeze and before that date.</p>
 
 <h2>What is changing</h2>
 <p>In September 2026 Shopify's help center page for the Checkout Blocks branding editor said the editor "will be removed on December 31, 2026". It also said existing branding settings stay as they are, and it pointed merchants to a migration guide. The same link now shows the general Checkout Blocks article, which no longer mentions the editor or the date. Nothing breaks on January 1. What goes away is the screen you use to <em>edit</em> the branding.</p>
@@ -163,13 +163,13 @@
 <h3>3. Use an app built on the new API</h3>
 <p>Apps can give non-developers an editor on top of the same API. When you compare them, ask whether the app uses <code>checkoutAndAccountsConfigurationUpdate</code> or the older branding mutation. The older one still works for checkout, but it does not cover customer accounts or sign-in, and Shopify's API reference marks it deprecated. Smart Checkout Widgets has a branding editor for Plus stores built on the new API, on the Pro plan. It opens with your current branding loaded, whoever set it, so moving off Checkout Blocks starts with opening the page.</p>
 
-<h2>Migration checklist before your Black Friday freeze</h2>
+<h2>Migration checklist</h2>
 <ol>
   <li><strong>Record what you have.</strong> Screenshot every page of checkout on desktop and mobile, and note every value you changed in the branding editor.</li>
   <li><strong>Sort each setting.</strong> Mark whether Shopify's checkout editor can reproduce it (option 1) or whether it needs the API (options 2 and 3).</li>
   <li><strong>Rebuild on a duplicate checkout profile.</strong> Publish only after you have placed a test order on mobile and desktop and compared it with your screenshots.</li>
   <li><strong>Include your campaign styles.</strong> If you swap branding for Black Friday, decide now who will make that change after the editor is gone.</li>
-  <li><strong>Finish before your code freeze.</strong> Most stores lock checkout changes in early November. Treat that, not December 31, as your deadline.</li>
+  <li><strong>Wait until your sale freeze ends,</strong> then finish before December 31.</li>
 </ol>
 
 <h2>What stays the same</h2>

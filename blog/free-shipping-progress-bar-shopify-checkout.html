@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Phone checkout with a progress bar saying you're $12 away from free shipping">
   <meta property="article:published_time" content="2026-09-09">
-  <meta property="article:modified_time" content="2026-11-05">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify Free Shipping Bar in Checkout: Setup and Thresholds | Smart Checkout Widgets">
   <meta name="twitter:description" content="A free shipping bar turns your threshold into a goal the buyer can see. How to add one to Shopify checkout, pick the threshold and pair it with a gift.">
@@ -51,7 +51,7 @@
     "https://smartcheckoutwidgets.com/images/og/free-shipping-progress-bar-shopify-checkout.webp"
   ],
   "datePublished": "2026-09-09",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -88,7 +88,7 @@
       "name": "Can I show a free shipping progress bar inside Shopify checkout?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. The cart value progress widget renders in checkout via Shopify checkout extensibility and updates live as the cart changes. In-checkout widgets require Shopify Plus."
+        "text": "Yes. The progress bar renders in checkout via Shopify checkout extensibility and updates live as the cart changes. In-checkout widgets require Shopify Plus."
       }
     },
     {
@@ -104,7 +104,7 @@
       "name": "Can the progress bar unlock a free gift as well as free shipping?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes. Mark a second goal on the bar and pair it with an automatic gift rule at the same cart value so the gift appears when the bar fills."
+        "text": "Yes, with two bars, since each bar has one goal. Give each a cart value condition, and set the second bar's target to the same value as an automatic gift rule."
       }
     }
   ]
@@ -150,7 +150,7 @@
 <p>Most stores show a threshold bar in the cart drawer. That is fine, but many buyers skip the cart entirely and land in checkout from a buy-now button or a campaign link. Checkout is also where the shipping cost first appears as a number, which is when the threshold suddenly matters. A bar there, with the upsell widget under it, closes the loop: see the gap, see a product that fills it, add it, done.</p>
 <h2>Setting up the cart value progress widget</h2>
 <ol>
-  <li>In Smart Checkout Widgets, create a <strong>Cart value progress</strong> widget.</li>
+  <li>In Smart Checkout Widgets, create a <strong>Progress bar</strong> widget.</li>
   <li>Set the threshold. Use the same number as your free-shipping rate so the two never disagree.</li>
   <li>Write the two messages: one before the threshold ("Add $12 more for free shipping") and one after ("You've unlocked free shipping").</li>
   <li>Place the app block in Settings → Checkout → Customize, ideally above the order summary where the shipping line will appear.</li>
@@ -159,25 +159,25 @@
 <p>The bar reads the live cart, so it updates when the buyer changes a quantity with the line item options widget or adds an upsell, without a page reload.</p>
 <h2>Picking the threshold</h2>
 <p>Look at your order value distribution, not your average. Find the point just above the largest cluster of orders. If most carts land between $55 and $70, a $75 threshold pulls a large share of them up by one item. A $120 threshold on those carts is out of reach and the bar reads as a taunt. Recheck this quarterly; prices and mix drift.</p>
-<h2>Two thresholds beat one</h2>
-<p>The bar can mark more than one goal: free shipping at $75, a free gift at $120. The buyer who clears the first sees a second reason to keep going. Pair the second goal with an automatic gift rule at the same amount so the gift appears the moment the bar fills. If you offer several gifts, customer choice lets them pick, and the selection message is editable to match the bar's copy.</p>
+<h2>Two goals need two bars</h2>
+<p>Each bar has one goal. For free shipping at $75 and a free gift at $120, create two bars and give each a cart value condition: one shows below $75, the other above it. Pair the second with an automatic gift rule at the same amount so the gift appears when the bar fills. If you offer several gifts, customer choice lets them pick, and the selection message is editable to match the bar's copy.</p>
 <h2>What to put next to it</h2>
 <ul>
-  <li><strong>Upsell widget</strong> with products priced close to the typical gap. If the gap is usually $10 to $15, a $12 add-on converts; a $40 one does not.</li>
+  <li><strong>Upsell widget</strong> with products priced close to the typical gap. If the gap is usually $10 to $15, offer a $12 add-on before a $40 one.</li>
   <li><strong>Custom banner</strong> for the cut-off time if the reward is fast shipping rather than free shipping.</li>
   <li><strong>Shipping rule</strong> that re-orders the free rate to the top once the threshold is met, so the reward is visible in the delivery list too.</li>
 </ul>
 <h2>Copy that works</h2>
 <p>Say the number, not the percentage. "$12 more" is concrete; "84% there" is a maths problem. Keep the unlocked message short and specific, and never show a zero-gap bar with the pre-threshold message still on it. Test on a phone, because the bar shares the screen with the order summary and both need to be legible at once.</p>
 <h2>Measure it</h2>
-<p>Track average order value and the share of orders at or above the threshold before and after. A good bar moves the second number first. If AOV rises but total conversion falls, the threshold is too high for your traffic and the bar is pushing people away rather than up.</p>
+<p>Track average order value and the share of orders at or above the threshold before and after. If AOV rises but total conversion falls, the threshold is too high for your traffic and the bar is pushing people away rather than up.</p>
 
         <section class="post-faq" aria-labelledby="faq-heading">
           <h2 id="faq-heading">Frequently asked questions</h2>
           <div class="faq-list">
           <details class="faq-item">
             <summary>Can I show a free shipping progress bar inside Shopify checkout?</summary>
-            <p>Yes. The cart value progress widget renders in checkout via Shopify checkout extensibility and updates live as the cart changes. In-checkout widgets require Shopify Plus.</p>
+            <p>Yes. The progress bar renders in checkout via Shopify checkout extensibility and updates live as the cart changes. In-checkout widgets require Shopify Plus.</p>
           </details>
           <details class="faq-item">
             <summary>What threshold should I use for free shipping?</summary>
@@ -185,7 +185,7 @@
           </details>
           <details class="faq-item">
             <summary>Can the progress bar unlock a free gift as well as free shipping?</summary>
-            <p>Yes. Mark a second goal on the bar and pair it with an automatic gift rule at the same cart value so the gift appears when the bar fills.</p>
+            <p>Yes, with two bars, since each bar has one goal. Give each a cart value condition, and set the second bar's target to the same value as an automatic gift rule.</p>
           </details>
           </div>
         </section>

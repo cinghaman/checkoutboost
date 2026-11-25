@@ -2,7 +2,7 @@
 
 Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-11-25, against the app's billing configuration.
 
-Every plan includes 13 widget types and every shipping and payment method rule, with split shipments handled. Growth and up add a delivery date calendar, customer account blocks and gifts limited to selected customers. Pro adds the stock urgency widget, customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
+Every plan includes 13 widget types and every shipping and payment method rule, with split shipments handled. Growth and up add a delivery date calendar, customer account blocks and gifts limited to selected customers. Pro adds the stock urgency widget, customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial, one per store. Yearly billing is 20% cheaper than monthly.
 
 ## Starter
 
@@ -33,7 +33,7 @@ Every plan includes 13 widget types and every shipping and payment method rule, 
 
 ## Order limits
 
-The app pauses when a store goes over its plan's monthly order limit. Widgets, gifts, upsell discounts, and shipping and payment rules all switch off. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed or paused.
+The app pauses when a store goes over its plan's monthly order limit. Widgets, the survey, gifts, upsell discounts, delivery dates, customer account blocks, and shipping and payment rules all switch off. Checkout keeps taking orders. They resume automatically when the merchant upgrades or when a new month starts. Development stores are never billed. Stores with nothing running are never paused.
 
 ## Shopify plan requirements
 

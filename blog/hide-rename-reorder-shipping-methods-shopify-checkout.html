@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Phone delivery step with Standard renamed to Arrives in 3-5 days and one rate hidden">
   <meta property="article:published_time" content="2026-09-09">
-  <meta property="article:modified_time" content="2026-11-05">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Shopify Checkout Delivery Options: Hide, Rename and Reorder Them | Smart Checkout Widgets">
   <meta name="twitter:description" content="Control the delivery options buyers see in Shopify checkout. Hide shipping methods that do not fit the order, rename vague rates and set the order, on every Shopify plan.">
@@ -155,12 +155,13 @@
       <article class="post-content">
 <p>Shipping methods are the part of checkout most merchants never touch. The names come from the carrier or from a settings page written years ago, every rate shows to every buyer, and the cheapest option often sits last. Each of those is a small tax on conversion, and each is fixable with a rule that runs inside Shopify's own checkout.</p>
 <h2>Why the default shipping list costs you orders</h2>
-<p>A buyer at the delivery step is asking one question: when will it arrive? "Standard Shipping" does not answer it. "Economy" and "Express" side by side, with no dates, push people back to the cart to compare, and some never return. Add a courier that cannot deliver to their region, or a heavy-goods rate showing on a cart of socks, and the list starts to look untrustworthy. None of that needs a redesign. It needs three small rules.</p>
-<h2>The three actions</h2>
+<p>A buyer at the delivery step is asking one question: when will it arrive? "Standard Shipping" does not answer it. "Economy" and "Express" side by side, with no dates, push people back to the cart to compare, and some never return. Add a courier that cannot deliver to their region, or a heavy-goods rate showing on a cart of socks, and the list starts to look untrustworthy. None of that needs a redesign. It needs a few small rules.</p>
+<h2>The four actions</h2>
 <ul>
   <li><strong>Rename.</strong> Change what a rate is called without changing the rate. "Standard Shipping" becomes "Arrives in 3–5 working days". "DHL Express" becomes "Next-day delivery, order by 2pm".</li>
   <li><strong>Hide.</strong> Remove a rate when it does not apply: a pallet rate on a small cart, a domestic courier for an international address, a Saturday service on a Sunday order.</li>
-  <li><strong>Re-order.</strong> Move a rate to a fixed position, so your preferred option is first regardless of how Shopify sorted it.</li>
+  <li><strong>Show only.</strong> Keep the rates you name and hide the rest, without leaving a shipment empty.</li>
+<li><strong>Re-order.</strong> Move a rate to a fixed position, so your preferred option is first regardless of how Shopify sorted it.</li>
 </ul>
 <p>These run as a Shopify Function, which means they work on every Shopify plan, not only Plus, and they survive theme changes and checkout updates because they act on the delivery options after Shopify has calculated them.</p>
 <h2>Scope the rule to the right kind of option</h2>
@@ -173,15 +174,15 @@
   <li><strong>Cart:</strong> total, subtotal, quantity, weight in grams.</li>
   <li><strong>Customer:</strong> tag, logged in or not, order count, total spent.</li>
   <li><strong>Products:</strong> has a digital or physical product, product tag, collection.</li>
-  <li><strong>Address:</strong> country, state or province, city, postcode, with "starts with" for postcode areas.</li>
-  <li><strong>Date and time:</strong> day of week, date, in your store's local time.</li>
+  <li><strong>Address:</strong> country, state or province, city, postcode, with "starts with" and ranges such as 2000-2999 for postcodes.</li>
+  <li><strong>Date:</strong> day of week, or a date on or after, before or between, in your store's time zone.</li>
 </ul>
 <p>Text conditions accept comma-separated lists, so "country is PL, DE, FR" is one condition. Customer conditions only match a signed-in buyer; a guest checkout never matches a tag or order-count rule. And a condition on data checkout has not collected yet is false, including negative ones, so "city is not Warsaw" is false until the buyer has typed a city.</p>
 <h2>Five rules worth setting up this week</h2>
 <ol>
   <li><strong>Rename every rate with a delivery window.</strong> Buyers choose faster when the answer is in the name.</li>
   <li><strong>Hide express above a weight.</strong> If your courier will not take it, do not offer it and then cancel.</li>
-  <li><strong>Hide same-day after the cut-off.</strong> A day-of-week and date condition handles weekends and holidays.</li>
+  <li><strong>Hide same-day on weekends and holidays</strong> with a day-of-week or date condition. Rules work by day, not by hour.</li>
   <li><strong>Put free shipping first once the threshold is met.</strong> Pair it with a cart progress bar so the buyer saw it coming.</li>
   <li><strong>Show a trade rate only to tagged customers.</strong> Tag wholesale accounts and hide the pallet rate from everyone else.</li>
 </ol>

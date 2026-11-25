@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Guide: showing only certain shipping rates by postcode in Shopify">
   <meta property="article:published_time" content="2026-11-10">
-  <meta property="article:modified_time" content="2026-11-10">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to show only certain shipping rates by postcode in Shopify (ranges included) | Smart Checkout Widgets">
   <meta name="twitter:description" content="Limit a courier to rural postcodes, keep same-day delivery for your own area, or block an area you can't reach. Postcode ranges and show-only rules, on every Shopify plan.">
@@ -51,7 +51,7 @@
     "https://smartcheckoutwidgets.com/images/og/shopify-shipping-rates-by-postcode.webp"
   ],
   "datePublished": "2026-11-10",
-  "dateModified": "2026-11-18",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -136,7 +136,7 @@
 <p>One safety catch is built in. If none of the rates you named is offered at checkout, for example because the rate was renamed in Shopify, the rule hides nothing. Buyers in that area then see every rate instead of none, so a rename never stops orders.</p>
 <h2>Hide these rates</h2>
 <p>A <strong>Hide</strong> rule works the other way round, and it is the right choice when one rate should belong to one area. Same-day delivery is the usual example: hide "Same-day" for every postcode that is not in your delivery area. Buyers in the area see it, and nobody else does. This is for a same-day rate you set up yourself or get from a courier app. Shopify's own local delivery already checks the postcode against the delivery area you gave it, so it doesn't need a rule.</p>
-<p>To stop orders from an area entirely, hide every rate there: a hide rule on <code>*</code>, which matches every rate, with the postcode condition. Buyers in that area see that shipping isn't available. Checkout can't complete without a rate, so no order goes through.</p>
+<p>To stop orders from an area entirely, hide every rate there: a hide rule on <code>*</code>, which matches every rate, with the postcode condition. Buyers in that area see that shipping isn't available. Checkout can't complete without a rate, so no order goes through. If you offer express buttons such as Shop Pay, try them too.</p>
 <h2>Postcode ranges</h2>
 <p>Writing out every postcode is fine for ten of them and useless for a thousand. The postcode condition takes ranges:</p>
 <ul>

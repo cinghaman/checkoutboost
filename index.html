@@ -72,90 +72,122 @@
       }
     },
     {
-          "@type": "FAQPage",
-          "@id": "https://smartcheckoutwidgets.com/#faq",
-          "mainEntity": [
-                {
-                      "@type": "Question",
-                      "name": "Does Smart Checkout Widgets require Shopify Plus?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No. Payment and shipping method rules work on every Shopify plan, and Thank You and Order Status page widgets on every plan except Shopify's Starter plan. Widgets on the checkout page itself (gifts, upsells, custom fields, trust badges in checkout) need Shopify Plus, because Shopify only allows checkout-page customization on Plus."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Is there a free plan or trial?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Starter is free to install and covers up to 100 orders a month with every widget and rule type included. Growth, Advanced and Pro come with a 7-day free trial."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "What is the difference between the plans?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Every plan includes 13 widgets and all shipping and payment rules. Starter covers up to 100 orders a month. Growth covers up to 1,000 and adds the delivery date calendar, customer account blocks and gifts for selected customers. Advanced has the same features with unlimited orders. Pro adds self-serve order editing on every Shopify plan except Shopify's Starter plan, plus low-stock badges in checkout and the checkout branding editor for Shopify Plus stores. Yearly billing saves 20%."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "How do automatic gifts work in Shopify checkout?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "You set a rule such as a spend threshold or specific products in the cart. When the cart meets it, the app adds the gift product at checkout and discounts it to free. No code is needed. Gifts can also be tied to a discount code, and you can let the customer choose from several gifts with a cap on how many they take."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Can I hide, rename or reorder shipping and payment methods?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Rules run as Shopify Functions and can hide, rename or re-order delivery options and payment methods based on cart total, quantity, weight, customer tag, order count, product tag, collection, country, province, city, postcode (including ranges such as 2000-2999), day of week or date. Shipping rules can be scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Can I hide the Pick up option entirely?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No app can. Shopify allows hiding individual pickup locations but not the Pick up delivery method itself."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "What happens when I go over my plan's order limit?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "The app pauses when a store goes over its plan's monthly order limit. Widgets, gifts, upsell discounts, and shipping and payment rules all switch off together. Upgrading re-enables them automatically, and they also switch back on when a new month starts."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Does it work with checkout.liquid?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "No, and it does not need to. The app uses Shopify checkout extensibility, the supported replacement for checkout.liquid, so nothing breaks when Shopify updates checkout."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Can I see which sales came from ChatGPT or other AI assistants?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes, by asking. The post-purchase survey puts one question on the Thank you page, such as \"What led you to purchase today?\", with an AI assistant among the answers. The Results page shows how many buyers picked each answer and the revenue of their orders. It works on every Shopify plan from Basic up and is included on every app plan."
-                      }
-                },
-                {
-                      "@type": "Question",
-                      "name": "Does it work with Shopify Sidekick?",
-                      "acceptedAnswer": {
-                            "@type": "Answer",
-                            "text": "Yes. Ask Sidekick in your Shopify admin why a payment or shipping method is missing, and it reads your Smart Checkout Widgets rules and tells you which one is responsible. It can also list your gift campaigns and widgets and suggest a rule template. Sidekick only reads: changes happen in the app when you press Save."
-                      }
-                }
-          ]
+      "@type": "FAQPage",
+      "@id": "https://smartcheckoutwidgets.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Smart Checkout Widgets require Shopify Plus?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Payment and shipping rules work on every Shopify plan, and so do delivery dates and customer account blocks. Thank you and Order status page widgets work on every plan except Shopify's Starter plan. Widgets on the checkout page itself (gifts, upsells, custom fields, trust badges) need Shopify Plus, because Shopify only opens that page to Plus."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a free plan or trial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Starter is free and covers up to 100 orders a month, with 13 widgets and every rule type. Growth, Advanced and Pro have a 7-day free trial, one per store."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between the plans?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Every plan includes 13 widgets and all shipping and payment rules. Starter covers up to 100 orders a month. Growth covers up to 1,000 and adds the delivery date calendar, customer account blocks and gifts for selected customers. Advanced has the same features with unlimited orders. Pro adds self-serve order editing on every Shopify plan except Shopify's Starter plan, plus low-stock badges in checkout and the checkout branding editor for Shopify Plus stores. Yearly billing saves 20%."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens when I go over my plan's order limit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The app pauses. Widgets, the survey, gifts, upsell discounts, delivery dates, customer account blocks, and shipping and payment rules switch off, and checkout keeps taking orders. Everything comes back when you upgrade or when a new month starts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can customers choose a delivery date?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, on any paid app plan and any Shopify plan. A calendar on the product page and in the cart offers the days you allow for shipping, local delivery and pickup. You can also make checkout refuse an order without a date. There are no time slots or daily limits yet, and we haven't tested the express checkout buttons with a required date. Delivery date docs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can customers change an order after they buy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, on the Pro plan. Inside a window you set, they can correct the address, email or phone, swap to another variant at the same price, lower a quantity, or cancel. They can't add items or change the country. Order editing docs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do the rules work when an order ships in several packages?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Split shipping is a Shopify feature on every plan, and rules work inside each shipment, so a show-only rule never leaves a package without a rate. Ship and pickup in one order is a separate Shopify feature for Plus and Enterprise. Split shipping docs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I hide, rename or reorder shipping and payment methods?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Rules run as Shopify Functions and can use cart total, subtotal, quantity, weight, product tag, collection, customer tag, order count, total spent, whether the customer is signed in, country, province, city, postcode (including ranges such as 2000-2999), day of week or date. A show-only rule keeps just the shipping rates you name. Shipping rules can be limited to shipping rates, local delivery, carrier pickup points, local pickup locations or retail."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I hide the Pick up option entirely?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No app can. Shopify allows hiding individual pickup locations but not the Pick up delivery method itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do automatic gifts work in Shopify checkout?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You set a minimum, such as an amount or a number of products. When the cart meets it, the app adds the gift at checkout on Shopify Plus and discounts it to free. No code is needed. Gifts can also be tied to a discount code, and you can let the customer choose from several gifts with a cap on how many they take."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I see which sales came from ChatGPT or other AI assistants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For the buyers who answer. The post-purchase survey puts one question on the Thank you page, such as \"What led you to purchase today?\", with an AI assistant among the answers. Results shows how many picked each answer and the revenue of their orders. You can reply with a one-use discount code. It works on Shopify Basic and up and on every app plan. See the survey docs."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with Shopify Sidekick and other AI assistants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Sidekick in your Shopify admin can tell you which rule hides a payment or shipping method, and it only reads. You can also connect an assistant that supports MCP with a private URL, view only or with permission to edit rules and widgets. How Sidekick works with it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work with checkout.liquid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and it doesn't need to. The app uses Shopify's checkout extensibility, the supported replacement for checkout.liquid."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What happens to my setup if I uninstall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Widgets and rules stop straight away. If you reinstall within 48 hours and reactivate your plan, your widgets come back. After that Shopify has us erase the store's data."
+          }
+        }
+      ]
     }
   ]
 }
@@ -196,7 +228,7 @@
       <div class="container">
         <div class="hero__live" role="status" aria-live="polite">
           <span class="dot" aria-hidden="true"></span>
-          <span>LIVE · CHECKOUT · <strong id="live-offers">3</strong> ACTIVE RULES</span>
+          <span>EXAMPLE · CHECKOUT · <strong id="live-offers">3</strong> ACTIVE RULES</span>
         </div>
 
         <div class="hero__layout">
@@ -224,7 +256,7 @@
             <div class="checkout-card__head">
               <div>
                 <div class="checkout-card__title">Order #10482</div>
-                <div style="font-size: var(--text-xs); color: var(--color-ink-2); margin-top: 2px;">Checkout · live preview</div>
+                <div style="font-size: var(--text-xs); color: var(--color-ink-2); margin-top: 2px;">Checkout · example</div>
               </div>
               <span class="checkout-card__tag">rule · active</span>
             </div>
@@ -351,8 +383,7 @@
             <h2 class="section-head__title">Numbers you can <em>verify</em> today.</h2>
           </div>
           <p class="section-head__desc">
-            We only surface claims backed by the public app listing and product capabilities —
-            no invented conversion lifts or vanity metrics.
+            Each of these is on the app listing or in the app itself.
           </p>
         </div>
 
@@ -360,7 +391,7 @@
           <div class="stats__card">
             <div class="stats__num">5.0<small>★</small></div>
             <div class="stats__label">app store rating</div>
-            <div class="stats__note">Public rating on the Shopify App Store listing at time of publish.</div>
+            <div class="stats__note">From 5 reviews on the Shopify App Store, November 2026.</div>
           </div>
           <div class="stats__card">
             <div class="stats__num">8</div>
@@ -368,9 +399,9 @@
             <div class="stats__note">Ready-made payment and shipping rules. Open one, check it, save — it runs on every Shopify plan.</div>
           </div>
           <div class="stats__card">
-            <div class="stats__num">12</div>
+            <div class="stats__num">13</div>
             <div class="stats__label">widgets on every plan</div>
-            <div class="stats__note">Every widget and every shipping or payment rule is included on every plan. Plans differ only by monthly order volume.</div>
+            <div class="stats__note">The free plan has 13 widgets and every shipping and payment rule. Paid plans add delivery dates and customer account blocks. Pro adds order editing, branding and low-stock badges.</div>
           </div>
         </div>
       </div>
@@ -419,7 +450,7 @@
             <div class="feature__art art-list" aria-hidden="true">
               <span>✓ Secure · ships in 24h · returns</span><span class="is-on">10% off next order <b>THANKYOU10</b></span><span>When will my order ship?</span>
             </div>
-            <span class="feature__plan">Every Shopify plan</span>
+            <span class="feature__plan">Shopify Basic and up</span>
             <h3 class="feature__title">A Thank you page that earns the next order</h3>
             <p class="feature__desc">
               Trust badges, banners, custom content and FAQs on the Thank you and
@@ -432,10 +463,10 @@
             <div class="feature__art art-list" aria-hidden="true">
               <span>Google</span><span class="is-on">An AI assistant <b>picked</b></span><span>Recommended by a friend</span>
             </div>
-            <span class="feature__plan">Every Shopify plan</span>
+            <span class="feature__plan">Shopify Basic and up</span>
             <h3 class="feature__title">Find out which sales started in ChatGPT</h3>
             <p class="feature__desc">
-              A one-question survey on the Thank you page asks buyers what led them to purchase.
+              A one-question survey on the Thank you page asks buyers what led them to purchase, and can reply with a one-use discount code.
               Results shows each answer with the revenue behind it, including the AI assistant
               sales analytics often files under direct.
             </p>
@@ -472,11 +503,11 @@
             <div class="feature__art art-list" aria-hidden="true">
               <span class="is-on">Gold member <b>€500 spent</b></span><span>Get help</span><span>Reorder items</span>
             </div>
-            <span class="feature__plan">Every Shopify plan</span>
+            <span class="feature__plan">Paid plans · every Shopify plan</span>
             <h3 class="feature__title">Customer accounts worth signing in to</h3>
             <p class="feature__desc">
               VIP tiers, store credit, a code for the next order and your own profile questions
-              on the account pages, plus Get help and Reorder items buttons on every order.
+              on the account pages, plus Get help and Reorder items buttons on orders. Needs the new customer accounts.
             </p>
             <a class="feature__link" href="/blog/customize-shopify-customer-account-pages/">Customer accounts guide</a>
           </article>
@@ -489,7 +520,7 @@
             <h3 class="feature__title">Let shoppers choose a delivery date</h3>
             <p class="feature__desc">
               A calendar on the product page and in the cart, with lead days, cutoff times and
-              closed dates. Checkout can refuse an order without a date.
+              closed dates. If you want, checkout refuses an order without one.
             </p>
             <a class="feature__link" href="/blog/shopify-delivery-date-picker/">Delivery date guide</a>
           </article>
@@ -510,10 +541,10 @@
           <article class="feature" data-tilt>
             <div class="feature__art art-auto-gift" aria-hidden="true"></div>
             <span class="feature__plan feature__plan--plus">Shopify Plus</span>
-            <h3 class="feature__title">Launch automatic gifts without coupon chaos</h3>
+            <h3 class="feature__title">Add free gifts at checkout</h3>
             <p class="feature__desc">
-              Surface gift offers at checkout when thresholds are met — tied to real
-              discount logic, not manual codes merchants have to babysit.
+              The gift goes into the cart when the order qualifies, with a discount code or
+              without one, and comes out if it stops qualifying.
             </p>
             <a class="feature__link" href="/blog/automatic-shopify-checkout-gifts/">Read automatic gifting guide</a>
           </article>
@@ -692,43 +723,59 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary>Does Smart Checkout Widgets require Shopify Plus?</summary>
-            <p>No. Payment and shipping method rules work on every Shopify plan, and Thank You and Order Status page widgets on every plan except Shopify's Starter plan. Widgets on the checkout page itself (gifts, upsells, custom fields, trust badges in checkout) need Shopify Plus, because Shopify only allows checkout-page customization on Plus.</p>
+            <p>No. Payment and shipping rules work on every Shopify plan, and so do delivery dates and customer account blocks. Thank you and Order status page widgets work on every plan except Shopify's Starter plan. Widgets on the checkout page itself (gifts, upsells, custom fields, trust badges) need Shopify Plus, because Shopify only opens that page to Plus.</p>
           </details>
           <details class="faq-item">
             <summary>Is there a free plan or trial?</summary>
-            <p>Starter is free to install and covers up to 100 orders a month with every widget and rule type included. Growth, Advanced and Pro come with a 7-day free trial.</p>
+            <p>Starter is free and covers up to 100 orders a month, with 13 widgets and every rule type. Growth, Advanced and Pro have a 7-day free trial, one per store.</p>
           </details>
           <details class="faq-item">
             <summary>What is the difference between the plans?</summary>
             <p>Every plan includes 13 widgets and all shipping and payment rules. Starter covers up to 100 orders a month. Growth covers up to 1,000 and adds the delivery date calendar, customer account blocks and gifts for selected customers. Advanced has the same features with unlimited orders. Pro adds self-serve order editing on every Shopify plan except Shopify's Starter plan, plus low-stock badges in checkout and the checkout branding editor for Shopify Plus stores. Yearly billing saves 20%.</p>
           </details>
           <details class="faq-item">
-            <summary>Can I see which sales came from ChatGPT or other AI assistants?</summary>
-            <p>Yes, by asking. The post-purchase survey puts one question on the Thank you page, such as &quot;What led you to purchase today?&quot;, with an AI assistant among the answers. The Results page shows how many buyers picked each answer and the revenue of their orders. It works on every Shopify plan from Basic up and is included on every app plan. See the <a href="/docs/#survey">survey docs</a>.</p>
+            <summary>What happens when I go over my plan's order limit?</summary>
+            <p>The app pauses. Widgets, the survey, gifts, upsell discounts, delivery dates, customer account blocks, and shipping and payment rules switch off, and checkout keeps taking orders. Everything comes back when you upgrade or when a new month starts.</p>
           </details>
           <details class="faq-item">
-            <summary>How do automatic gifts work in Shopify checkout?</summary>
-            <p>You set a rule such as a spend threshold or specific products in the cart. When the cart meets it, the app adds the gift product at checkout and discounts it to free. No code is needed. Gifts can also be tied to a discount code, and you can let the customer choose from several gifts with a cap on how many they take.</p>
+            <summary>Can customers choose a delivery date?</summary>
+            <p>Yes, on any paid app plan and any Shopify plan. A calendar on the product page and in the cart offers the days you allow for shipping, local delivery and pickup. You can also make checkout refuse an order without a date. There are no time slots or daily limits yet, and we haven't tested the express checkout buttons with a required date. <a href="/docs/#delivery-dates">Delivery date docs</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can customers change an order after they buy?</summary>
+            <p>Yes, on the Pro plan. Inside a window you set, they can correct the address, email or phone, swap to another variant at the same price, lower a quantity, or cancel. They can't add items or change the country. <a href="/docs/#order-editing">Order editing docs</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do the rules work when an order ships in several packages?</summary>
+            <p>Yes. Split shipping is a Shopify feature on every plan, and rules work inside each shipment, so a show-only rule never leaves a package without a rate. Ship and pickup in one order is a separate Shopify feature for Plus and Enterprise. <a href="/docs/#split-shipping">Split shipping docs</a>.</p>
           </details>
           <details class="faq-item">
             <summary>Can I hide, rename or reorder shipping and payment methods?</summary>
-            <p>Yes. Rules run as Shopify Functions and can hide, rename or re-order delivery options and payment methods based on cart total, quantity, weight, customer tag, order count, product tag, collection, country, province, city, postcode (including ranges such as 2000-2999), day of week or date. Shipping rules can be scoped to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.</p>
+            <p>Yes. Rules run as Shopify Functions and can use cart total, subtotal, quantity, weight, product tag, collection, customer tag, order count, total spent, whether the customer is signed in, country, province, city, postcode (including ranges such as 2000-2999), day of week or date. A show-only rule keeps just the shipping rates you name. Shipping rules can be limited to shipping rates, local delivery, carrier pickup points, local pickup locations or retail.</p>
           </details>
           <details class="faq-item">
             <summary>Can I hide the Pick up option entirely?</summary>
             <p>No app can. Shopify allows hiding individual pickup locations but not the Pick up delivery method itself.</p>
           </details>
           <details class="faq-item">
-            <summary>What happens when I go over my plan's order limit?</summary>
-            <p>The app pauses when a store goes over its plan's monthly order limit. Widgets, gifts, upsell discounts, and shipping and payment rules all switch off together. Upgrading re-enables them automatically, and they also switch back on when a new month starts.</p>
+            <summary>How do automatic gifts work in Shopify checkout?</summary>
+            <p>You set a minimum, such as an amount or a number of products. When the cart meets it, the app adds the gift at checkout on Shopify Plus and discounts it to free. No code is needed. Gifts can also be tied to a discount code, and you can let the customer choose from several gifts with a cap on how many they take.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I see which sales came from ChatGPT or other AI assistants?</summary>
+            <p>For the buyers who answer. The post-purchase survey puts one question on the Thank you page, such as "What led you to purchase today?", with an AI assistant among the answers. Results shows how many picked each answer and the revenue of their orders. You can reply with a one-use discount code. It works on Shopify Basic and up and on every app plan. See the <a href="/docs/#survey">survey docs</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does it work with Shopify Sidekick and other AI assistants?</summary>
+            <p>Yes. Sidekick in your Shopify admin can tell you which rule hides a payment or shipping method, and it only reads. You can also connect an assistant that supports MCP with a private URL, view only or with permission to edit rules and widgets. <a href="/blog/shopify-sidekick-checkout-rules/">How Sidekick works with it</a>.</p>
           </details>
           <details class="faq-item">
             <summary>Does it work with checkout.liquid?</summary>
-            <p>No, and it does not need to. The app uses Shopify checkout extensibility, the supported replacement for checkout.liquid, so nothing breaks when Shopify updates checkout.</p>
+            <p>No, and it doesn't need to. The app uses Shopify's checkout extensibility, the supported replacement for checkout.liquid.</p>
           </details>
           <details class="faq-item">
-            <summary>Does it work with Shopify Sidekick?</summary>
-            <p>Yes. Ask Sidekick in your Shopify admin why a payment or shipping method is missing, and it reads your Smart Checkout Widgets rules and tells you which one is responsible. It can also list your gift campaigns and widgets and suggest a rule template. Sidekick only reads: changes happen in the app when you press Save. <a href="/blog/shopify-sidekick-checkout-rules/">How it works</a>.</p>
+            <summary>What happens to my setup if I uninstall?</summary>
+            <p>Widgets and rules stop straight away. If you reinstall within 48 hours and reactivate your plan, your widgets come back. After that Shopify has us erase the store's data.</p>
           </details>
         </div>
       </div>
@@ -796,7 +843,7 @@
       </div>
       <div class="footer__legal">
         <span class="wordmark">Smart Checkout Widgets</span>
-        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Built for Shopify checkout, every plan</span>
+        <span>&copy; 2026 <a href="https://thoughtbulb.dev" target="_blank" rel="noopener noreferrer">Thought Bulb</a> &middot; Checkout customization for every Shopify plan</span>
       </div>
     </div>
   </footer>

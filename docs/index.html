@@ -71,52 +71,116 @@
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Does this require Shopify Plus?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Shipping and payment rules, gift discounts and Results work on every Shopify plan. The Thank you and Order status page widgets and order editing work on every plan except Shopify's Starter plan. Plus is needed for widgets on the checkout page itself, for adding gifts to the cart at checkout, and for checkout branding, because Shopify only allows those on Plus."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Does it work with checkout.liquid?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, and it doesn't need to. The app uses Shopify's checkout extensibility, which replaces checkout.liquid."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I hide the \"Pick up\" option entirely?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. Shopify allows hiding individual pickup locations but not the delivery method itself. See Pickup locations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Will my rules survive a Shopify checkout update?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Rules are stored against your shop and applied by Shopify Functions at checkout, so they are unaffected by theme or checkout template changes."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What happens to my configuration if I uninstall?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Widgets and rules stop applying straight away. Shopify requires us to erase the shop's data 48 hours after an uninstall, so reinstalling within that window and reactivating your plan restores your widgets. After 48 hours the configuration has to be set up again."
-        }
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Does this require Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Shipping and payment rules, gift discounts and Results work on every Shopify plan. The Thank you and Order status page widgets and order editing work on every plan except Shopify's Starter plan. Plus is needed for widgets on the checkout page itself, for adding gifts to the cart at checkout, and for checkout branding, because Shopify only allows those on Plus."
       }
-    ]
-  }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I customize customer account pages without Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Customer account blocks work on every Shopify plan with the new customer accounts. They are part of the Growth, Advanced and Pro app plans. See Customer accounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does it work with checkout.liquid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, and it doesn't need to. The app uses Shopify's checkout extensibility, which replaces checkout.liquid."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I hide the \"Pick up\" option entirely?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Shopify lets apps hide individual pickup locations but not the delivery method itself. See Pickup locations."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my rules survive a Shopify checkout update?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Rules are stored against your shop and applied by Shopify Functions at checkout, so theme or checkout template changes don't affect them."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I require a delivery date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, on any paid app plan and every Shopify plan. It is off at first and covers orders with physical products, including draft orders, checkout links and other online channels. Point of sale is not checked. See Requiring a date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can customers add items or change the country of an order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. With order editing, quantities only go down, swaps stay at the same price, and the country and state stay fixed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I start a Shopify Flow workflow when a customer edits an order?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, with the trigger Customer edited an order."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I give a discount for answering the survey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, a one-use code on every plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did a large cart get no gift?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Carts with more than 150 lines get no gift. See Rules every gift follows."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an AI assistant change my checkout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sidekick only reads. An assistant you connect yourself can be view only, or allowed to edit rules and switch widgets on and off. Gifts stay read only. See AI assistants."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens when I go over my order limit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The app pauses and checkout keeps taking orders. Everything comes back when you upgrade or on the first of the month. See Plans and order limits."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens to my configuration if I uninstall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Widgets and rules stop applying straight away. Shopify requires us to erase the shop's data 48 hours after an uninstall, so reinstalling within that window and reactivating your plan restores your widgets. After 48 hours the configuration is gone and has to be set up again."
+      }
+    }
+  ]
+}
   </script>
 
   <style>
@@ -365,6 +429,8 @@
             <tr><td>Shipping Customizations</td><td>Hide, rename or reorder delivery options.</td><td>Every Shopify plan</td></tr>
             <tr><td>Delivery Dates</td><td>Lets shoppers choose a delivery or pickup date before they check out. Paid plans.</td><td>Every Shopify plan</td></tr>
             <tr><td>Order Editing</td><td>Lets customers change their own order after buying. Pro plan.</td><td>Every Shopify plan</td></tr>
+            <tr><td>Customer Accounts</td><td>Blocks for the pages signed-in customers see. Paid plans.</td><td>Every Shopify plan, with the new customer accounts</td></tr>
+            <tr><td>AI Assistants</td><td>Connects an assistant that supports MCP, view only or with permission to edit.</td><td>Every Shopify plan</td></tr>
             <tr><td>Results</td><td>Orders, revenue, gifts, upsells and survey answers over the last 7, 30 or 90 days.</td><td>Every Shopify plan</td></tr>
             <tr><td>Checkout Branding</td><td>Edits checkout colours, fonts, buttons and layout. Pro plan.</td><td>Shopify Plus</td></tr>
           </tbody>
@@ -441,8 +507,10 @@
       <p>
         Upsell, Custom fields, Line item fields, Line item options and Progress bar can have
         display conditions: show the widget only when the cart contains a product or a tagged
-        product, or when the cart value is above or below an amount. In the checkout editor,
-        each block can also be hidden on desktop, tablet or mobile.
+        product, or when the cart value is above or below an amount. The progress bar can also
+        depend on the shipping country, state or province. In the checkout editor, the Smart
+        Checkout Widget, Trust badges, Custom banner, Custom content and Upsell blocks can be
+        hidden on desktop, tablet or mobile.
       </p>
 
       <h3 id="stock-urgency">Stock urgency (Pro)</h3>
@@ -500,8 +568,8 @@
         banner or Custom content block with no Widget ID, the block shows the first widget whose
         dates include today. So a "last days for Christmas delivery" banner that ends on
         December 14 and an "arrives after Christmas" banner that starts on December 15 can share
-        one block and hand over on their own. Show dates only work in the named blocks; the
-        Smart Checkout Widget block ignores them.
+        one block and hand over on their own. Show dates work in the named blocks and in customer
+        accounts; the Smart Checkout Widget block ignores them.
       </p>
 
       <h2 id="survey">Post-purchase survey</h2>
@@ -527,10 +595,19 @@
         answers as what shoppers remember, and read them next to your analytics.
       </p>
 
+      <h3 id="survey-reward">A code for answering</h3>
+      <p>
+        You can reply with a one-use code such as <code>THANKS-7Q4KXM2P</code>: a percentage, an
+        amount or free shipping, with an optional minimum, that expires after 1 to 365 days. One
+        code per order, on every plan. It combines with product discounts but not with other order
+        discounts, and a free-shipping code doesn't combine with other shipping discounts. Results
+        shows codes given, codes used and their revenue.
+      </p>
+
       <h2 id="gifts">Checkout gifts</h2>
       <p>
         Gifts are Shopify discounts that make a product free. Create them under
-        <strong>Checkout Gifts</strong>, then add the <strong>Smart Gift</strong> app block to
+        <strong>Checkout Gifts</strong>, then add the <strong>Smart Gifts</strong> app block to
         the <strong>Order summary</strong> section of the checkout page in Shopify's checkout
         editor. On Shopify Plus the block adds and removes the gift for the shopper. On other
         plans there is no checkout block, but the discount still makes the gift free when the
@@ -563,10 +640,12 @@
 
       <h3 id="gift-rules">Rules every gift follows</h3>
       <ul>
-        <li>Only one gift coupon works at a time. A second gift code entered on top of the first is rejected, so two campaigns can't stack their gifts.</li>
+        <li>By default one gift code works per order, and any other gift code is removed. To let shoppers use several, turn on <strong>Allow multiple gift coupons</strong> in the Smart Gifts block's settings.</li>
+        <li>Carts with more than 150 lines get no gift.</li>
+        <li>Only automatic gifts can block discount codes. With a coupon gift, Shopify lets shoppers enter other codes.</li>
         <li>Gift discounts always combine with product, order and shipping discounts. There is no setting to change this.</li>
         <li>A minimum is a purchase amount or a number of items, counted across the whole cart, specific products, or specific collections.</li>
-        <li>On paid plans a gift can be limited to specific customers. On Starter every gift is open to all customers.</li>
+        <li>On paid plans a gift can be limited to specific customers or customer segments. On Starter every gift is open to all customers.</li>
         <li>You can duplicate a gift from its list page, which is the quickest way to start a variation of a working campaign.</li>
         <li>After you change the gift products on a discount, save it again so checkout picks up the new setup.</li>
       </ul>
@@ -697,7 +776,8 @@
       <p>
         Rules match on the option's displayed name, ignoring case, anywhere in the name. So
         <code>Express</code> matches "Express Shipping" and "Express Saver", and every option
-        that matches is affected. <code>*</code> matches every option in the rule's scope.
+        that matches is affected. In a rename rule, an entry equal to an option's full name renames
+        only that option. <code>*</code> matches every option in the rule's scope.
       </p>
       <p>
         When several entries in a rename rule match the same option, an entry equal to the
@@ -765,8 +845,10 @@
       </ol>
       <p>
         For each way to receive an order you set the name shoppers see, the lead days, a cutoff
-        time and the days of the week. Closed dates apply to all of them. Times are in your
-        store's time zone.
+        time and the days of the week. Closed dates apply to all of them, up to 100 dates or
+        ranges. Shoppers can book up to 365 days ahead. Times are in your store's time zone. The
+        method and date are saved on the order under Additional details. The calendar's own
+        words are in English; month and day names follow the shopper's language.
       </p>
 
       <h3 id="delivery-dates-themes">If it is in the wrong place</h3>
@@ -782,13 +864,15 @@
       <h3 id="delivery-dates-required">Requiring a date</h3>
       <p>
         <strong>Require a date before checkout</strong> is off at first. When it is on, checkout
-        refuses an order with a physical product that has no date, or whose date has passed. It
+        refuses an order with a physical product that has no date, or whose date is no longer offered (passed, too soon, too far ahead or a closed day). It
         also refuses an order when the date is for shipping and the customer picks pickup, or
         the other way round. Shopify asks for one extra permission the first time.
       </p>
       <ul>
         <li>Draft orders, checkout links and other online sales channels are checked too, so leave it off if you sell through those. Point of sale is not checked.</li>
         <li>If you offer Shop Pay, Apple Pay, Google Pay or PayPal, try those buttons once after you switch it on.</li>
+        <li>Keep <strong>Show on product pages</strong> on in the app embed, because Buy it now skips the cart.</li>
+        <li>Digital products never need a date. If the check itself can't run, the order goes through.</li>
         <li>If your paid plan ends, the calendar and the check switch off together and your settings are kept.</li>
       </ul>
 
@@ -808,13 +892,13 @@
       <p>
         Order editing is part of the Pro plan. It runs on the Thank you and Order status pages
         rather than in checkout, so it works on every Shopify plan except Shopify's Starter plan. Customers can change their
-        own order there for a time you choose after they buy. Development stores can use it for
+        own order there for 15 minutes to 24 hours after they buy, with a countdown. Development stores can use it for
         free while testing.
       </p>
       <h3 id="order-editing-setup">Setting it up</h3>
       <ol>
         <li>Open <strong>Order Editing</strong> in the app, tick <em>Let customers edit their orders</em>, choose the edit window and the changes to allow, and save.</li>
-        <li>Click <strong>Allow access</strong> to grant two optional permissions: <em>edit orders</em> (needed for variant swaps) and <em>manage fulfillment orders</em> (needed for holds). Address changes, lower quantities and cancellations work without them.</li>
+        <li>Click <strong>Allow access</strong> to grant two optional permissions: <em>edit orders</em> (needed for variant swaps) and <em>manage fulfillment orders</em> (needed for holds). Address, contact and note changes, lower quantities and cancellations work without them.</li>
         <li>Click <strong>Add to Thank you page</strong> to open Shopify's checkout editor on that page.</li>
         <li>In the left sidebar, under <strong>Main</strong>, click <strong>Add block</strong> and pick <em>Order editing</em> from the Apps list.</li>
         <li>Drag the block below <strong>Order details</strong> (and its Customer information) and above <strong>Action</strong>, then click <strong>Save</strong>.</li>
@@ -830,7 +914,9 @@
         <table class="docs-table">
           <thead><tr><th>Change</th><th>Rules</th><th>Money</th></tr></thead>
           <tbody>
-            <tr><td>Shipping address</td><td>Same country and same state or province. The order must need shipping.</td><td>None</td></tr>
+            <tr><td>Shipping address</td><td>Same country and same state or province. The order must need shipping.</td><td>Nothing is charged or refunded automatically. If the new address changes the tax, the order is tagged <em>Balance to review</em> so you can settle the difference.</td></tr>
+            <tr><td>Email and phone</td><td>Can be corrected but not removed.</td><td>None</td></tr>
+            <tr><td>Order note</td><td>Off at first. Up to 1,000 characters. Customers see the current note, so leave it off if you or another app keep text there.</td><td>None</td></tr>
             <tr><td>Swap variant</td><td>Paid orders only. Another in-stock variant of the same product at the same price. Not on discounted lines.</td><td>None. The swap is only saved if Shopify's new total equals the old one.</td></tr>
             <tr><td>Lower quantity or remove item</td><td>Paid orders only. Removing the last item is a cancellation instead.</td><td>Refunded to the original payment method, calculated by Shopify</td></tr>
             <tr><td>Request a removal</td><td>Offered instead of the row above when the order has a discount or a free gift. One request at a time.</td><td>None by the app. The request appears on the order in your Shopify admin, and you decide whether to remove and refund.</td></tr>
@@ -850,11 +936,17 @@
         ends. You can release it yourself at any time from the order page in Shopify without
         affecting anything else.
       </p>
+      <h3 id="order-editing-flow">Shopify Flow</h3>
+      <p>
+        The trigger <strong>Customer edited an order</strong> starts a workflow after an edit and
+        says what changed: address, contact details, note, quantity, item, a removal request or a
+        cancellation. It never carries the customer's address, email or phone.
+      </p>
       <h3 id="order-editing-tracking">Seeing what changed</h3>
       <p>
         Edited orders are tagged <code>Customer edited</code>. Shopify emails the customer
-        about variant swaps, refunds and cancellations. The Order Editing page lists the last
-        50 edits, refusals, holds and releases.
+        about variant swaps, refunds and cancellations. The Order Editing page lists
+        customer edits and any hold that could not be placed or released, kept for 90 days.
       </p>
       <p>
         Removal requests are not tagged, because nothing on the order has changed yet. Shopify
@@ -952,9 +1044,9 @@
       </p>
       <div class="callout callout--limit">
         <p>
-          <strong>Customer data.</strong> Profile answers and help messages are the only things
-          customers type that the app stores. Both are deleted when Shopify sends a request to
-          erase that customer's data.
+          <strong>Customer data.</strong> The app stores what customers type into profile
+          questions, help messages and the survey's own answer. All of it is deleted when Shopify
+          sends a request to erase that customer's data.
         </p>
       </div>
 
@@ -1089,8 +1181,8 @@
       <div class="callout callout--warn">
         <p>
           <strong>Going over your order limit.</strong> When a store goes over its plan's monthly
-          order limit, the app pauses. Widgets, gifts, upsell discounts, and shipping and
-          payment rules all switch off, and buyers see your standard shipping and payment
+          order limit, the app pauses. Widgets, the survey, gifts, upsell discounts, delivery dates,
+          customer account blocks, and shipping and payment rules all switch off, and buyers see your standard shipping and payment
           options. Checkout keeps taking orders. Everything comes back on its own when you
           upgrade to a plan that covers this month's orders, or when the count resets on the
           first of the month, with nothing to reconfigure. Rules you had already turned off
@@ -1167,6 +1259,27 @@
         Yes. Rules are stored against your shop and applied by Shopify Functions at checkout,
         so theme or checkout template changes don't affect them.
       </p>
+
+      <h3>Can I require a delivery date?</h3>
+      <p>Yes, on any paid app plan and every Shopify plan. It is off at first and covers orders with physical products, including draft orders, checkout links and other online channels. Point of sale is not checked. See <a href="#delivery-dates-required">Requiring a date</a>.</p>
+
+      <h3>Can customers add items or change the country of an order?</h3>
+      <p>No. With order editing, quantities only go down, swaps stay at the same price, and the country and state stay fixed.</p>
+
+      <h3>Can I start a Shopify Flow workflow when a customer edits an order?</h3>
+      <p>Yes, with the trigger <a href="#order-editing-flow">Customer edited an order</a>.</p>
+
+      <h3>Can I give a discount for answering the survey?</h3>
+      <p>Yes, a <a href="#survey-reward">one-use code</a> on every plan.</p>
+
+      <h3>Why did a large cart get no gift?</h3>
+      <p>Carts with more than 150 lines get no gift. See <a href="#gift-rules">Rules every gift follows</a>.</p>
+
+      <h3>Can an AI assistant change my checkout?</h3>
+      <p>Sidekick only reads. An assistant you connect yourself can be view only, or allowed to edit rules and switch widgets on and off. Gifts stay read only. See <a href="#ai-assistants">AI assistants</a>.</p>
+
+      <h3>What happens when I go over my order limit?</h3>
+      <p>The app pauses and checkout keeps taking orders. Everything comes back when you upgrade or on the first of the month. See <a href="#plans">Plans and order limits</a>.</p>
 
       <h3>What happens to my configuration if I uninstall?</h3>
       <p>

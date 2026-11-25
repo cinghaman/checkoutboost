@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="A Shopify cart with a gift code applied and a free gift line added">
   <meta property="article:published_time" content="2026-11-05">
-  <meta property="article:modified_time" content="2026-11-05">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Free Gifts on the Shopify Cart Page With a Gift Code | Smart Checkout Widgets">
   <meta name="twitter:description" content="How a Shopify theme can apply a free gift code on the cart page: look up the offer through an app proxy, add the gift line, and let checkout keep it honest.">
@@ -51,7 +51,7 @@
     "https://smartcheckoutwidgets.com/images/og/shopify-free-gift-cart-page.webp"
   ],
   "datePublished": "2026-11-05",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -140,7 +140,7 @@
 <p>A match returns <code>{ found: true, offer: { ... } }</code> with the code, the gifts, how many the buyer can choose, the requirement, and the line properties to use. Anything else returns <code>404</code> with <code>{ found: false }</code>.</p>
 <p>That 404 covers every way a code can fail: unknown, ended, not started, an automatic gift, or a discount that was deleted or switched off in Shopify. The response doesn't tell a guesser which, and the endpoint answers for one code at a time and never lists your catalog, so codes for a promotion that hasn't started stay private.</p>
 <h2>Stamping the gift line</h2>
-<p>Add the gift to the cart with the line properties from the offer. They tell the checkout block and the discount function that this line is a gift. Without them the line is an ordinary product at full price, and it counts toward the buyer's spend threshold.</p>
+<p>Add the gift to the cart with the line properties from the offer. They tell the checkout block and the discount function that this line is a gift. Without them the line counts toward the buyer's spend threshold, and checkout may not treat it as a gift.</p>
 <h2>Checking whether the cart qualifies</h2>
 <p>The lookup doesn't say whether this cart qualifies. Apply the code, then read <code>discount_codes[].applicable</code> from <code>/cart.js</code>. That value comes from the discount function, so it already covers customer eligibility and currency conversion. Don't rebuild those rules in the theme, because the two will drift apart.</p>
 <h2>Keep the checkout block on</h2>

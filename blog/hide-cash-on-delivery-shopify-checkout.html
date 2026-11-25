@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Checkout payment step with Cash on Delivery hidden by a rule for carts over $500">
   <meta property="article:published_time" content="2026-09-09">
-  <meta property="article:modified_time" content="2026-09-09">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="How to hide cash on delivery in Shopify checkout by cart value, country or customer | Smart Checkout Widgets">
   <meta name="twitter:description" content="Cash on delivery drives refusals and return costs. Here is how to show it only where it makes sense, using payment method rules that run on any Shopify plan.">
@@ -51,7 +51,7 @@
     "https://smartcheckoutwidgets.com/images/og/hide-cash-on-delivery-shopify-checkout.webp"
   ],
   "datePublished": "2026-09-09",
-  "dateModified": "2026-09-09",
+  "dateModified": "2026-11-25",
   "author": {
     "@type": "Organization",
     "name": "Smart Checkout Widgets",
@@ -156,18 +156,18 @@
 <p>Cash on delivery is a conversion tool in some markets and a liability in others. The order gets placed, the parcel ships, and the buyer is not home or has changed their mind. You pay outbound and return shipping on a sale that never happened. The answer is rarely to switch it off entirely. It is to show it only to the orders where it works.</p>
 <h2>Where cash on delivery goes wrong</h2>
 <ul>
-  <li><strong>High-value carts.</strong> Refusal rates climb with the amount at the door.</li>
+  <li><strong>High-value carts.</strong> A refused parcel costs more when the order is large.</li>
   <li><strong>Cross-border orders.</strong> Your courier may not even support it there, and the customs step doubles the refusal window.</li>
   <li><strong>First-time buyers.</strong> No history, no prepayment, no commitment.</li>
   <li><strong>Bulky or made-to-order products.</strong> Return shipping wipes out the margin.</li>
 </ul>
 <h2>Payment method rules in one minute</h2>
-<p>A payment method rule in Smart Checkout Widgets does one of three things to the payment methods Shopify has already produced: hide, rename, or re-order. It runs as a Shopify Function, so it works on every Shopify plan and applies before the buyer sees the payment step. Rules match the payment method's displayed name, case-insensitively, anywhere in the name, so "Cash" matches "Cash on Delivery (COD)".</p>
+<p>A payment method rule in Smart Checkout Widgets can hide (or show), rename or re-order the payment methods Shopify has already produced. It runs as a Shopify Function, so it works on every Shopify plan and applies before the buyer sees the payment step. Rules match the payment method's displayed name, case-insensitively, anywhere in the name, so "Cash" matches "Cash on Delivery (COD)".</p>
 <h2>Four rules that cover most stores</h2>
 <h3>1. Hide cash on delivery above a cart value</h3>
-<p>Action: hide. Match: "Cash on Delivery". Condition: cart total greater than 500. Pick the number from your own refusal data, not a guess. Most stores find a clear threshold where refusals jump.</p>
+<p>Action: hide. Match: "Cash on Delivery". Condition: cart total greater than 500. Pick the number from your own refusal data, not a guess.</p>
 <h3>2. Hide it outside your home market</h3>
-<p>Action: hide. Condition: country is not PL, DE, CZ. Text conditions take comma-separated lists, so one condition covers every market where the option is safe. Postcode "starts with" conditions let you cut out remote areas within a country too.</p>
+<p>Action: hide. Condition: country is not PL, DE, CZ. Text conditions take comma-separated lists, so one condition covers every market where the option is safe. Postcode ranges and "starts with" conditions let you cut out remote areas within a country too.</p>
 <h3>3. Show it only to customers who have paid before</h3>
 <p>Action: show. Condition: customer order count greater than 0. Customer conditions match only a signed-in buyer, so a guest checkout never qualifies. That is the behaviour you want here: the buyer has to be someone you know.</p>
 <h3>4. Hide it for made-to-order and bulky collections</h3>

@@ -20,7 +20,7 @@
   <meta property="og:image:height" content="675">
   <meta property="og:image:alt" content="Order status page with options to change the address, swap a size or cancel">
   <meta property="article:published_time" content="2026-10-02">
-  <meta property="article:modified_time" content="2026-11-05">
+  <meta property="article:modified_time" content="2026-11-25">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Let Customers Edit Their Shopify Order After Checkout | Smart Checkout Widgets">
   <meta name="twitter:description" content="Shopify has no self-serve order editing. How to let customers change the address, swap a size, lower a quantity or cancel from the Thank you and Order status pages.">
@@ -46,7 +46,7 @@
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://smartcheckoutwidgets.com/blog/shopify-customer-order-editing/"},
   "image": ["https://smartcheckoutwidgets.com/images/og/shopify-customer-order-editing.webp"],
   "datePublished": "2026-10-02",
-  "dateModified": "2026-11-05",
+  "dateModified": "2026-11-25",
   "author": {"@type": "Organization", "name": "Smart Checkout Widgets", "url": "https://smartcheckoutwidgets.com/"},
   "publisher": {"@type": "Organization", "name": "Smart Checkout Widgets", "url": "https://smartcheckoutwidgets.com/", "logo": {"@type": "ImageObject", "url": "https://smartcheckoutwidgets.com/images/smart_widget_icon_for_shopify.jpg"}},
   "inLanguage": "en-US",
@@ -62,7 +62,7 @@
     {"@type": "Question", "name": "Does self-serve order editing need Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "No. It runs on the Thank you and Order status pages, which apps can extend on every Shopify plan except Starter."}},
     {"@type": "Question", "name": "How are refunds handled when a customer removes an item?", "acceptedAnswer": {"@type": "Answer", "text": "Smart Checkout Widgets asks Shopify to calculate the refund, the same way the Refund button in the admin does, including tax and discounts, and refunds it to the original payment method."}},
     {"@type": "Question", "name": "Can an order ship before the customer finishes editing?", "acceptedAnswer": {"@type": "Answer", "text": "Not if you turn on the fulfillment hold. New orders are held until the edit window ends and released automatically. You can release a hold yourself from the order page at any time."}},
-    {"@type": "Question", "name": "Can customers add items or upgrade to a more expensive variant?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Every change available today needs no new payment: address changes, same-price swaps, lower quantities and cancellations. Changes that need the customer to pay more are on the roadmap."}}
+    {"@type": "Question", "name": "Can customers add items or upgrade to a more expensive variant?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Every change available today needs no new payment: address, email, phone and note changes, same-price swaps, lower quantities and cancellations. Changes that need the customer to pay more aren't available."}}
   ]
 }
   </script>
@@ -102,19 +102,20 @@
     </section>
     <section class="post-layout">
       <article class="post-content">
-<p class="lead"><strong>Short version:</strong> Shopify has no self-serve order editing. A customer who typed the wrong apartment number or picked the wrong size has to email you, and you fix it by hand, if you catch it before the parcel leaves. Smart Checkout Widgets puts an <strong>Order editing</strong> block on the Thank you and Order status pages, so customers fix those mistakes themselves within a time window you set. It works on every Shopify plan and is part of the Pro plan.</p>
+<p class="lead"><strong>Short version:</strong> Shopify has no self-serve order editing. A customer who typed the wrong apartment number or picked the wrong size has to email you, and you fix it by hand, if you catch it before the parcel leaves. Smart Checkout Widgets puts an <strong>Order editing</strong> block on the Thank you and Order status pages, so customers fix those mistakes themselves within a time window you set. It works on every Shopify plan except Starter and is part of the Pro plan.</p>
 
 <h2>What Shopify does and does not do</h2>
 <p>Staff with the Edit orders permission can change unfulfilled orders in the admin. Customer accounts let shoppers view orders, reorder and request returns. Nothing lets the customer change the order itself. So every "can I change my address?" or "I meant a medium" becomes a support ticket, and a missed one becomes a reshipment.</p>
 
 <h2>What customers can change</h2>
 <ul>
-  <li><strong>Shipping address</strong>, within the same country and state or province, so shipping rates, taxes and duties stay correct.</li>
+  <li><strong>Shipping address</strong>, within the same country and state or province. If the new address changes the tax, the order is tagged Balance to review.</li>
+<li><strong>Email and phone</strong>, to correct a typo, and the <strong>order note</strong> if you switch it on.</li>
   <li><strong>Size, color or other option</strong>: a swap to an in-stock variant of the same product at the same price.</li>
   <li><strong>Quantity</strong>: lower it or remove an item. Shopify calculates the refund, including tax and discounts, and sends it to the original payment method.</li>
   <li><strong>Cancel the order</strong>, with a full refund and the stock put back.</li>
 </ul>
-<p>Every one of these needs no new payment from the customer. Adding items and upgrading to a pricier variant need the customer to pay the difference, and they are on the roadmap rather than half-done.</p>
+<p>Every one of these needs no new payment from the customer. Adding items and upgrading to a pricier variant need the customer to pay the difference, and they aren't available yet.</p>
 
 <h2>When a refund isn't straightforward: removal requests</h2>
 <p>Taking an item off an order that used a discount code or came with a free gift is messy. The discount may no longer apply, the gift may no longer be earned, and an automatic refund could give back the wrong amount. So on those orders the customer gets a <strong>Request removal</strong> button instead of removing the item themselves.</p>
@@ -143,7 +144,7 @@
 </ol>
 
 <h2>How this compares with dedicated order-editing apps</h2>
-<p>Dedicated apps charge for this on its own, typically from around $99 a month upwards, with tiers that rise with order volume. They also go further: integrations with warehouses and fulfillment services, edits that collect extra payment, and upsells inside the edit flow. If you need those, they are worth the money. If what you need is fewer "please change my order" emails, order editing is included in Smart Checkout Widgets Pro at $99 a month with unlimited orders, alongside every widget, gift and checkout rule.</p>
+<p>Dedicated apps charge for this on its own, from free plans with a small number of edits to several hundred dollars a month at high volume (<a href="/blog/shopify-order-editing-app-pricing/">prices compared</a>). They also go further: integrations with warehouses and fulfillment services, edits that collect extra payment, and upsells inside the edit flow. If you need those, they are worth the money. If what you need is fewer "please change my order" emails, order editing is included in Smart Checkout Widgets Pro at $99 a month with unlimited orders, alongside every widget, gift and checkout rule.</p>
 
 <p>Once the edit window has closed, customers can still ask about an order from their account. See <a href="/blog/shopify-customer-account-reorder-and-help/">Reorder and Get help buttons in customer accounts</a>.</p>
 
@@ -168,7 +169,7 @@
           </details>
           <details class="faq-item">
             <summary>Can customers add items or upgrade to a more expensive variant?</summary>
-            <p>Not yet. Every change available today needs no new payment: address changes, same-price swaps, lower quantities and cancellations. Changes that need the customer to pay more are on the roadmap.</p>
+            <p>Not yet. Every change available today needs no new payment: address, email, phone and note changes, same-price swaps, lower quantities and cancellations. Changes that need the customer to pay more aren't available.</p>
           </details>
           </div>
         </section>
