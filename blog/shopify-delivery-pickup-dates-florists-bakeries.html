@@ -83,12 +83,38 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can I set different cutoff times for delivery and pickup?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup."}},
-    {"@type": "Question", "name": "Can I set a lead time per product?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. The lead time applies to the whole store for each way to receive an order."}},
-    {"@type": "Question", "name": "Can each shop have its own pickup days?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Customers choose the shop at checkout, and all locations share the same pickup days, lead time and cutoff."}},
-    {"@type": "Question", "name": "Can customers choose a time slot?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. They choose a day."}},
-    {"@type": "Question", "name": "Can I limit how many orders I take per day?", "acceptedAnswer": {"@type": "Answer", "text": "There is no automatic limit. Add the day to your closed dates when it is full."}},
-    {"@type": "Question", "name": "Which time zone is the cutoff in?", "acceptedAnswer": {"@type": "Answer", "text": "Your store's time zone, for every customer."}}
+    {
+      "@type": "Question",
+      "name": "Can I set different cutoff times for delivery and pickup?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I close days when I am fully booked?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Add a date or a range to your closed dates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can customers collect from different shops?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. They choose the shop at checkout, from the locations you have switched on for pickup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which time zone is the cutoff in?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Your store's time zone, for every customer."
+      }
+    }
   ]
 }
   </script>
@@ -181,11 +207,11 @@
   <li>Set the lead time for the slowest product. Simple, and bread customers wait longer than they need to.</li>
   <li>Set it for the fastest product and say on the cake's page that it needs four days. You then check cake orders by hand.</li>
 </ul>
-<p>Lead times per product are not available yet, so the first way is safer if cakes are most of what you sell.</p>
+<p>The first way is safer if cakes are most of what you sell.</p>
 <h2>Two or more shops</h2>
-<p>Customers choose pickup and a day in the calendar, then pick the shop at checkout from the locations you have switched on for pickup in Shopify. Every location uses the same pickup days. If one shop closes on Mondays and the other doesn't, untick Monday for both, or keep Monday and say on the product page which shop is open.</p>
+<p>Customers choose pickup and a day in the calendar, then pick the shop at checkout from the locations you have switched on for pickup in Shopify. Set pickup days that suit all your shops.</p>
 <h2>Holidays and busy days</h2>
-<p>Add closed dates for public holidays and for days you can't take any more orders. A range works too, so one entry covers a week off. There is no automatic limit on orders per day, so close a busy day yourself when it is full.</p>
+<p>Add closed dates for public holidays and for days you can't take any more orders. A range works too, so one entry covers a week off. Close a day as soon as it is full.</p>
 <p>For Valentine's Day or Mother's Day, close the days before and after if you only deliver on the day itself.</p>
 <h2>Require the date</h2>
 <p>Switch on Require a date before checkout if an order without a date is useless to you. Checkout then also stops a customer who picks a delivery date and later chooses pickup. Leave it off if you take orders through draft orders or checkout links, since those are checked as well. Try your express buttons, such as Shop Pay, once after you switch it on.</p>
@@ -205,20 +231,12 @@
             <p>Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup.</p>
           </details>
           <details class="faq-item">
-            <summary>Can I set a lead time per product?</summary>
-            <p>Not yet. The lead time applies to the whole store for each way to receive an order.</p>
+            <summary>Can I close days when I am fully booked?</summary>
+            <p>Yes. Add a date or a range to your closed dates.</p>
           </details>
           <details class="faq-item">
-            <summary>Can each shop have its own pickup days?</summary>
-            <p>Not yet. Customers choose the shop at checkout, and all locations share the same pickup days, lead time and cutoff.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Can customers choose a time slot?</summary>
-            <p>Not yet. They choose a day.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Can I limit how many orders I take per day?</summary>
-            <p>There is no automatic limit. Add the day to your closed dates when it is full.</p>
+            <summary>Can customers collect from different shops?</summary>
+            <p>Yes. They choose the shop at checkout, from the locations you have switched on for pickup.</p>
           </details>
           <details class="faq-item">
             <summary>Which time zone is the cutoff in?</summary>

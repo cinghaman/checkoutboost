@@ -58,11 +58,38 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Can Shopify customers edit their own orders?", "acceptedAnswer": {"@type": "Answer", "text": "Not natively. Staff can edit unfulfilled orders in the Shopify admin, and customer accounts let shoppers view orders and request returns, but there is no built-in way for a customer to change an order after checkout. That needs an app."}},
-    {"@type": "Question", "name": "Does self-serve order editing need Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "No. It runs on the Thank you and Order status pages, which apps can extend on every Shopify plan except Starter."}},
-    {"@type": "Question", "name": "How are refunds handled when a customer removes an item?", "acceptedAnswer": {"@type": "Answer", "text": "Smart Checkout Widgets asks Shopify to calculate the refund, the same way the Refund button in the admin does, including tax and discounts, and refunds it to the original payment method."}},
-    {"@type": "Question", "name": "Can an order ship before the customer finishes editing?", "acceptedAnswer": {"@type": "Answer", "text": "Not if you turn on the fulfillment hold. New orders are held until the edit window ends and released automatically. You can release a hold yourself from the order page at any time."}},
-    {"@type": "Question", "name": "Can customers add items or upgrade to a more expensive variant?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Every change available today needs no new payment: address, email, phone and note changes, same-price swaps, lower quantities and cancellations. Changes that need the customer to pay more aren't available."}}
+    {
+      "@type": "Question",
+      "name": "Can Shopify customers edit their own orders?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not natively. Staff can edit unfulfilled orders in the Shopify admin, and customer accounts let shoppers view orders and request returns, but there is no built-in way for a customer to change an order after checkout. That needs an app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does self-serve order editing need Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It runs on the Thank you and Order status pages, which apps can extend on every Shopify plan except Starter."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How are refunds handled when a customer removes an item?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Smart Checkout Widgets asks Shopify to calculate the refund, the same way the Refund button in the admin does, including tax and discounts, and refunds it to the original payment method."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an order ship before the customer finishes editing?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not if you turn on the fulfillment hold. New orders are held until the edit window ends and released automatically. You can release a hold yourself from the order page at any time."
+      }
+    }
   ]
 }
   </script>
@@ -115,7 +142,7 @@
   <li><strong>Quantity</strong>: lower it or remove an item. Shopify calculates the refund, including tax and discounts, and sends it to the original payment method.</li>
   <li><strong>Cancel the order</strong>, with a full refund and the stock put back.</li>
 </ul>
-<p>Every one of these needs no new payment from the customer. Adding items and upgrading to a pricier variant need the customer to pay the difference, and they aren't available yet.</p>
+<p>Every one of these needs no new payment from the customer.</p>
 
 <h2>When a refund isn't straightforward: removal requests</h2>
 <p>Taking an item off an order that used a discount code or came with a free gift is messy. The discount may no longer apply, the gift may no longer be earned, and an automatic refund could give back the wrong amount. So on those orders the customer gets a <strong>Request removal</strong> button instead of removing the item themselves.</p>
@@ -166,10 +193,6 @@
           <details class="faq-item">
             <summary>Can an order ship before the customer finishes editing?</summary>
             <p>Not if you turn on the fulfillment hold. New orders are held until the edit window ends and released automatically. You can release a hold yourself from the order page at any time.</p>
-          </details>
-          <details class="faq-item">
-            <summary>Can customers add items or upgrade to a more expensive variant?</summary>
-            <p>Not yet. Every change available today needs no new payment: address, email, phone and note changes, same-price swaps, lower quantities and cancellations. Changes that need the customer to pay more aren't available.</p>
           </details>
           </div>
         </section>

@@ -50,15 +50,15 @@ f'''
 <p>If your paid plan ends, the calendar and the check switch off together, so a missing calendar can't leave customers stuck at checkout.</p>
 {note("Shopify's own estimates", "Delivery estimates don't know which date the customer chose. In our test the customer picked 27 November while the rate at checkout said 1 to 3 December. To hide those dates, go to Settings, then Shipping and delivery, and set Delivery estimates to Off. Your rates may still show a transit time.")}
 <h2>More than one pickup location</h2>
-<p>The calendar asks for pickup and a day. Customers choose the location itself at checkout, where Shopify lists the ones you have switched on for pickup. All locations share the same lead time, cutoff and opening days, so set them for the location with the fewest hours.</p>
-<h2>What it doesn't do yet</h2>
-<p>There are no time slots, daily order limits, extra charges for a date or pickup days per location. One date covers the whole cart. If you sell flowers or cakes, the <a href="/blog/shopify-delivery-pickup-dates-florists-bakeries/">florist and bakery guide</a> has worked examples.</p>
+<p>The calendar asks for pickup and a day. Customers choose the location itself at checkout, where Shopify lists the ones you have switched on for pickup. Set pickup days that suit all of them.</p>
+<h2>For florists and bakeries</h2>
+<p>One date covers the whole cart. If you sell flowers or cakes, the <a href="/blog/shopify-delivery-pickup-dates-florists-bakeries/">florist and bakery guide</a> has worked examples.</p>
 ''',
 [('Does Shopify have a built-in delivery date picker?', "No. Shopify can show estimated delivery dates, but customers can't choose a day without an app."),
  ('Does a delivery date picker work without Shopify Plus?', "Yes. The calendar runs in your theme and the checkout check is a Shopify validation rule, so both work on every Shopify plan. The feature is part of the app's Growth, Advanced and Pro plans."),
  ('Where do I see the date?', 'On the order in Shopify admin, under Additional details. For Buy it now orders it is on the product line.'),
  ('Can I require a date before checkout?', 'Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date.'),
- ('Can each pickup location have its own days?', 'Not yet. Customers choose the location at checkout, and every location uses the same pickup days, lead time and cutoff.'),
+ ('Can customers choose a pickup location?', 'Yes, at checkout, from the locations you have switched on for pickup in Shopify.'),
  ('Which themes does it work with?', 'We tried 22 theme demo stores, including Dawn and Horizon. If it lands in the wrong place, you can point it at a class name or ID in your theme. Headless storefronts are not supported.')],
  [INSTALL, docs('delivery-dates', 'Delivery dates docs')])
 
@@ -98,11 +98,11 @@ f'''
   <li>Set the lead time for the slowest product. Simple, and bread customers wait longer than they need to.</li>
   <li>Set it for the fastest product and say on the cake's page that it needs four days. You then check cake orders by hand.</li>
 </ul>
-<p>Lead times per product are not available yet, so the first way is safer if cakes are most of what you sell.</p>
+<p>The first way is safer if cakes are most of what you sell.</p>
 <h2>Two or more shops</h2>
-<p>Customers choose pickup and a day in the calendar, then pick the shop at checkout from the locations you have switched on for pickup in Shopify. Every location uses the same pickup days. If one shop closes on Mondays and the other doesn't, untick Monday for both, or keep Monday and say on the product page which shop is open.</p>
+<p>Customers choose pickup and a day in the calendar, then pick the shop at checkout from the locations you have switched on for pickup in Shopify. Set pickup days that suit all your shops.</p>
 <h2>Holidays and busy days</h2>
-<p>Add closed dates for public holidays and for days you can't take any more orders. A range works too, so one entry covers a week off. There is no automatic limit on orders per day, so close a busy day yourself when it is full.</p>
+<p>Add closed dates for public holidays and for days you can't take any more orders. A range works too, so one entry covers a week off. Close a day as soon as it is full.</p>
 <p>For Valentine's Day or Mother's Day, close the days before and after if you only deliver on the day itself.</p>
 <h2>Require the date</h2>
 <p>Switch on Require a date before checkout if an order without a date is useless to you. Checkout then also stops a customer who picks a delivery date and later chooses pickup. Leave it off if you take orders through draft orders or checkout links, since those are checked as well. Try your express buttons, such as Shop Pay, once after you switch it on.</p>
@@ -112,10 +112,8 @@ f'''
 <p>Each order shows its method and date under Additional details in Shopify admin. Add the Delivery date block to the Thank you and Order status pages too, so customers can check the day themselves.</p>
 ''',
 [('Can I set different cutoff times for delivery and pickup?', 'Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup.'),
- ('Can I set a lead time per product?', 'Not yet. The lead time applies to the whole store for each way to receive an order.'),
- ('Can each shop have its own pickup days?', 'Not yet. Customers choose the shop at checkout, and all locations share the same pickup days, lead time and cutoff.'),
- ('Can customers choose a time slot?', 'Not yet. They choose a day.'),
- ('Can I limit how many orders I take per day?', 'There is no automatic limit. Add the day to your closed dates when it is full.'),
+ ('Can I close days when I am fully booked?', 'Yes. Add a date or a range to your closed dates.'),
+ ('Can customers collect from different shops?', 'Yes. They choose the shop at checkout, from the locations you have switched on for pickup.'),
  ('Which time zone is the cutoff in?', "Your store's time zone, for every customer.")],
  [INSTALL, docs('delivery-dates', 'Delivery dates docs')])
 

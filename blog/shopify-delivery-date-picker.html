@@ -83,12 +83,54 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does Shopify have a built-in delivery date picker?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shopify can show estimated delivery dates, but customers can't choose a day without an app."}},
-    {"@type": "Question", "name": "Does a delivery date picker work without Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The calendar runs in your theme and the checkout check is a Shopify validation rule, so both work on every Shopify plan. The feature is part of the app's Growth, Advanced and Pro plans."}},
-    {"@type": "Question", "name": "Where do I see the date?", "acceptedAnswer": {"@type": "Answer", "text": "On the order in Shopify admin, under Additional details. For Buy it now orders it is on the product line."}},
-    {"@type": "Question", "name": "Can I require a date before checkout?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date."}},
-    {"@type": "Question", "name": "Can each pickup location have its own days?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Customers choose the location at checkout, and every location uses the same pickup days, lead time and cutoff."}},
-    {"@type": "Question", "name": "Which themes does it work with?", "acceptedAnswer": {"@type": "Answer", "text": "We tried 22 theme demo stores, including Dawn and Horizon. If it lands in the wrong place, you can point it at a class name or ID in your theme. Headless storefronts are not supported."}}
+    {
+      "@type": "Question",
+      "name": "Does Shopify have a built-in delivery date picker?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Shopify can show estimated delivery dates, but customers can't choose a day without an app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a delivery date picker work without Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The calendar runs in your theme and the checkout check is a Shopify validation rule, so both work on every Shopify plan. The feature is part of the app's Growth, Advanced and Pro plans."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do I see the date?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "On the order in Shopify admin, under Additional details. For Buy it now orders it is on the product line."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I require a date before checkout?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can customers choose a pickup location?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, at checkout, from the locations you have switched on for pickup in Shopify."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which themes does it work with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We tried 22 theme demo stores, including Dawn and Horizon. If it lands in the wrong place, you can point it at a class name or ID in your theme. Headless storefronts are not supported."
+      }
+    }
   ]
 }
   </script>
@@ -197,9 +239,9 @@
   <p>Delivery estimates don't know which date the customer chose. In our test the customer picked 27 November while the rate at checkout said 1 to 3 December. To hide those dates, go to Settings, then Shipping and delivery, and set Delivery estimates to Off. Your rates may still show a transit time.</p>
 </div>
 <h2>More than one pickup location</h2>
-<p>The calendar asks for pickup and a day. Customers choose the location itself at checkout, where Shopify lists the ones you have switched on for pickup. All locations share the same lead time, cutoff and opening days, so set them for the location with the fewest hours.</p>
-<h2>What it doesn't do yet</h2>
-<p>There are no time slots, daily order limits, extra charges for a date or pickup days per location. One date covers the whole cart. If you sell flowers or cakes, the <a href="/blog/shopify-delivery-pickup-dates-florists-bakeries/">florist and bakery guide</a> has worked examples.</p>
+<p>The calendar asks for pickup and a day. Customers choose the location itself at checkout, where Shopify lists the ones you have switched on for pickup. Set pickup days that suit all of them.</p>
+<h2>For florists and bakeries</h2>
+<p>One date covers the whole cart. If you sell flowers or cakes, the <a href="/blog/shopify-delivery-pickup-dates-florists-bakeries/">florist and bakery guide</a> has worked examples.</p>
 
         <section class="post-faq" aria-labelledby="faq-heading">
           <h2 id="faq-heading">Frequently asked questions</h2>
@@ -221,8 +263,8 @@
             <p>Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date.</p>
           </details>
           <details class="faq-item">
-            <summary>Can each pickup location have its own days?</summary>
-            <p>Not yet. Customers choose the location at checkout, and every location uses the same pickup days, lead time and cutoff.</p>
+            <summary>Can customers choose a pickup location?</summary>
+            <p>Yes, at checkout, from the locations you have switched on for pickup in Shopify.</p>
           </details>
           <details class="faq-item">
             <summary>Which themes does it work with?</summary>

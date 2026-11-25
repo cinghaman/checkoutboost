@@ -83,11 +83,46 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "When is the Checkout Blocks branding editor being removed?", "acceptedAnswer": {"@type": "Answer", "text": "Shopify says it will be removed on December 31, 2026. Existing branding settings remain unchanged, but you cannot edit them there after that date."}},
-    {"@type": "Question", "name": "Will my checkout branding reset when the editor is removed?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shopify states that existing branding settings remain unchanged. Only the ability to edit them in Checkout Blocks goes away."}},
-    {"@type": "Question", "name": "What replaces the Checkout Blocks branding editor?", "acceptedAnswer": {"@type": "Answer", "text": "For simple branding, Shopify's own checkout editor, available on every plan. For advanced branding on Shopify Plus, the Checkout and Accounts Configuration API introduced in API version 2026-04, used directly or through an app."}},
-    {"@type": "Question", "name": "Does this affect stores that are not on Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Checkout Blocks branding editor was only available on Shopify Plus. Other plans style checkout in Shopify's checkout editor, which is not changing."}},
-    {"@type": "Question", "name": "Is checkoutBrandingUpsert still usable?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for checkout-only styling. Shopify's guide says it remains supported, while the API reference marks it deprecated and points to checkoutAndAccountsConfigurationUpdate. Use the new API for anything you are building now, or if you want one setup across checkout, customer accounts and sign-in."}}
+    {
+      "@type": "Question",
+      "name": "When is the Checkout Blocks branding editor being removed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Shopify says it will be removed on December 31, 2026. Existing branding settings remain unchanged, but you cannot edit them there after that date."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will my checkout branding reset when the editor is removed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Shopify states that existing branding settings remain unchanged. Only the ability to edit them in Checkout Blocks goes away."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What replaces the Checkout Blocks branding editor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For simple branding, Shopify's own checkout editor, available on every plan. For advanced branding on Shopify Plus, the Checkout and Accounts Configuration API introduced in API version 2026-04, used directly or through an app."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does this affect stores that are not on Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The Checkout Blocks branding editor was only available on Shopify Plus. Other plans style checkout in Shopify's checkout editor, which is not changing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is checkoutBrandingUpsert still usable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for checkout-only styling. Shopify's guide says it remains supported, while the API reference marks it deprecated and points to checkoutAndAccountsConfigurationUpdate. Use the new API for anything you are building now, or if you want one setup across checkout, customer accounts and sign-in."
+      }
+    }
   ]
 }
   </script>

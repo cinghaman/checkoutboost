@@ -83,12 +83,54 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Does this need Shopify Plus?", "acceptedAnswer": {"@type": "Answer", "text": "No. Shipping method rules run on every Shopify plan, because Shopify allows delivery customizations below Plus."}},
-    {"@type": "Question", "name": "Can I use postcode ranges?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, for numeric postcodes. Use \"is in range\" with values such as 2000-2999, 0800 to 0899, or a list that mixes ranges and single codes."}},
-    {"@type": "Question", "name": "What happens if I rename a rate a show-only rule names?", "acceptedAnswer": {"@type": "Answer", "text": "If none of the named rates is offered, the rule hides nothing, so buyers see every rate instead of none."}},
-    {"@type": "Question", "name": "How do I stop orders from one area?", "acceptedAnswer": {"@type": "Answer", "text": "Hide every rate for those postcodes. Buyers there see that shipping isn't available, and checkout can't complete without a rate."}},
-    {"@type": "Question", "name": "Do ranges work for UK or Canadian postcodes?", "acceptedAnswer": {"@type": "Answer", "text": "No, those start with letters. Use \"starts with\" and a list of prefixes instead."}},
-    {"@type": "Question", "name": "Can I charge more for some postcodes?", "acceptedAnswer": {"@type": "Answer", "text": "Not with a rule alone, because rules don't change prices. Add a higher-priced rate in Shopify, then use rules so only those postcodes see it."}}
+    {
+      "@type": "Question",
+      "name": "Does this need Shopify Plus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Shipping method rules run on every Shopify plan, because Shopify allows delivery customizations below Plus."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use postcode ranges?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, for numeric postcodes. Use \"is in range\" with values such as 2000-2999, 0800 to 0899, or a list that mixes ranges and single codes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I rename a rate a show-only rule names?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If none of the named rates is offered, the rule hides nothing, so buyers see every rate instead of none."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I stop orders from one area?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Hide every rate for those postcodes. Buyers there see that shipping isn't available, and checkout can't complete without a rate."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do ranges work for UK or Canadian postcodes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, those start with letters. Use \"starts with\" and a list of prefixes instead."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I charge more for some postcodes?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not with a rule alone, because rules don't change prices. Add a higher-priced rate in Shopify, then use rules so only those postcodes see it."
+      }
+    }
   ]
 }
   </script>

@@ -83,10 +83,38 @@
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type": "Question", "name": "Do I need a developer for cart-page gifts?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The app provides the offer lookup, but the theme has to call it, show the gift and add the line. Without theme work, use the checkout block on its own."}},
-    {"@type": "Question", "name": "Can buyers list every gift code through the endpoint?", "acceptedAnswer": {"@type": "Answer", "text": "No. It answers for one code at a time and returns the same 404 for every code that isn't a live gift offer."}},
-    {"@type": "Question", "name": "Does the checkout block still need to be installed?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Nothing removes a gift on the cart page, so the checkout block is what takes a gift off when the buyer no longer qualifies."}},
-    {"@type": "Question", "name": "How do I know if the cart qualifies?", "acceptedAnswer": {"@type": "Answer", "text": "Apply the code and read discount_codes[].applicable from /cart.js. That is the discount function's own answer."}}
+    {
+      "@type": "Question",
+      "name": "Do I need a developer for cart-page gifts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The app provides the offer lookup, but the theme has to call it, show the gift and add the line. Without theme work, use the checkout block on its own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can buyers list every gift code through the endpoint?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. It answers for one code at a time and returns the same 404 for every code that isn't a live gift offer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does the checkout block still need to be installed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Nothing removes a gift on the cart page, so the checkout block is what takes a gift off when the buyer no longer qualifies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if the cart qualifies?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Apply the code and read discount_codes[].applicable from /cart.js. That is the discount function's own answer."
+      }
+    }
   ]
 }
   </script>
@@ -125,7 +153,7 @@
     </section>
     <section class="post-layout">
       <article class="post-content">
-<p>Most stores let the checkout block handle free gifts. Some brands want the gift visible earlier: the buyer types a code on the cart page and sees the gift in the cart before checkout starts. This guide is for the developer or agency building that. It needs theme work, so if you have no developer on the store, the checkout block alone is the better choice.</p>
+<p>Most stores let the checkout block handle free gifts. Some brands want the gift visible earlier: the buyer types a code on the cart page and sees the gift in the cart before checkout starts. This guide is for the developer or agency building that. It needs theme work, so without a developer, use the checkout block alone.</p>
 <h2>How the pieces fit</h2>
 <p>Smart Checkout Widgets answers one question for the theme: what is this gift code worth? The theme does the rest.</p>
 <ol>
@@ -145,7 +173,7 @@
 <p>The lookup doesn't say whether this cart qualifies. Apply the code, then read <code>discount_codes[].applicable</code> from <code>/cart.js</code>. That value comes from the discount function, so it already covers customer eligibility and currency conversion. Don't rebuild those rules in the theme, because the two will drift apart.</p>
 <h2>Keep the checkout block on</h2>
 <p>Nothing removes a gift on the cart page. If a buyer drops below the threshold or removes the code, the line stays in the cart until something takes it out. The checkout block does that, so leave it placed in checkout even when the cart page does all the visible work.</p>
-<p>One gap remains. Express checkout buttons can skip the block, and a cart-page gift can travel with them. If your store leans on express checkout, test that path with a real order before launch.</p>
+<p>Express checkout buttons can skip the block, so place a test order with them before launch.</p>
 <h2>Before you launch</h2>
 <ul>
   <li>Try a live code, an ended code and a made-up code. The last two should look identical to the theme.</li>

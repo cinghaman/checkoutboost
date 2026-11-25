@@ -104,7 +104,7 @@
       "name": "Can I hide the \"Pick up\" option entirely?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Shopify lets apps hide individual pickup locations but not the delivery method itself. See Pickup locations."
+        "text": "Shopify lets apps hide individual pickup locations, while the delivery method itself stays. See Pickup locations."
       }
     },
     {
@@ -125,14 +125,6 @@
     },
     {
       "@type": "Question",
-      "name": "Can customers add items or change the country of an order?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. With order editing, quantities only go down, swaps stay at the same price, and the country and state stay fixed."
-      }
-    },
-    {
-      "@type": "Question",
       "name": "Can I start a Shopify Flow workflow when a customer edits an order?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -145,14 +137,6 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Yes, a one-use code on every plan."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Why did a large cart get no gift?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Carts with more than 150 lines get no gift. See Rules every gift follows."
       }
     },
     {
@@ -641,7 +625,6 @@
       <h3 id="gift-rules">Rules every gift follows</h3>
       <ul>
         <li>By default one gift code works per order, and any other gift code is removed. To let shoppers use several, turn on <strong>Allow multiple gift coupons</strong> in the Smart Gifts block's settings.</li>
-        <li>Carts with more than 150 lines get no gift.</li>
         <li>Only automatic gifts can block discount codes. With a coupon gift, Shopify lets shoppers enter other codes.</li>
         <li>Gift discounts always combine with product, order and shipping discounts. There is no setting to change this.</li>
         <li>A minimum is a purchase amount or a number of items, counted across the whole cart, specific products, or specific collections.</li>
@@ -847,8 +830,7 @@
         For each way to receive an order you set the name shoppers see, the lead days, a cutoff
         time and the days of the week. Closed dates apply to all of them, up to 100 dates or
         ranges. Shoppers can book up to 365 days ahead. Times are in your store's time zone. The
-        method and date are saved on the order under Additional details. The calendar's own
-        words are in English; month and day names follow the shopper's language.
+        method and date are saved on the order under Additional details. Month and day names follow the shopper's language.
       </p>
 
       <h3 id="delivery-dates-themes">If it is in the wrong place</h3>
@@ -884,8 +866,7 @@
         rates may still show a transit time.
       </p>
       <p>
-        There are no time slots, order limits per day or extra charges for a date yet, and one
-        date covers the whole cart.
+        One date covers the whole cart.
       </p>
 
       <h2 id="order-editing">Order editing</h2>
@@ -1083,7 +1064,7 @@
       <ul>
         <li>Totals: orders, revenue and average order value.</li>
         <li>Gifts: orders with a gift, gifts given and their value, and the average value of orders with a gift next to orders without one. That comparison is not the same as proof the gift caused the difference.</li>
-        <li>Upsells: orders with an upsell, items sold and revenue. Only items added with the checkout Upsell block count. Clicks on Thank you page offers are not counted yet.</li>
+        <li>Upsells: orders with an upsell, items sold and revenue. Only items added with the checkout Upsell block count.</li>
         <li>Survey answers: how many shoppers picked each answer, its share, the revenue of those orders and its share of revenue, plus the latest typed-in answers.</li>
         <li>Block views for each widget type on checkout, Thank you and Order status.</li>
       </ul>
@@ -1250,8 +1231,8 @@
 
       <h3>Can I hide the "Pick up" option entirely?</h3>
       <p>
-        No. Shopify lets apps hide individual pickup locations but not the delivery method
-        itself. See <a href="#pickup-locations">Pickup locations</a>.
+        Shopify lets apps hide individual pickup locations, while the delivery method itself
+        stays. See <a href="#pickup-locations">Pickup locations</a>.
       </p>
 
       <h3>Will my rules survive a Shopify checkout update?</h3>
@@ -1263,17 +1244,11 @@
       <h3>Can I require a delivery date?</h3>
       <p>Yes, on any paid app plan and every Shopify plan. It is off at first and covers orders with physical products, including draft orders, checkout links and other online channels. Point of sale is not checked. See <a href="#delivery-dates-required">Requiring a date</a>.</p>
 
-      <h3>Can customers add items or change the country of an order?</h3>
-      <p>No. With order editing, quantities only go down, swaps stay at the same price, and the country and state stay fixed.</p>
-
       <h3>Can I start a Shopify Flow workflow when a customer edits an order?</h3>
       <p>Yes, with the trigger <a href="#order-editing-flow">Customer edited an order</a>.</p>
 
       <h3>Can I give a discount for answering the survey?</h3>
       <p>Yes, a <a href="#survey-reward">one-use code</a> on every plan.</p>
-
-      <h3>Why did a large cart get no gift?</h3>
-      <p>Carts with more than 150 lines get no gift. See <a href="#gift-rules">Rules every gift follows</a>.</p>
 
       <h3>Can an AI assistant change my checkout?</h3>
       <p>Sidekick only reads. An assistant you connect yourself can be view only, or allowed to edit rules and switch widgets on and off. Gifts stay read only. See <a href="#ai-assistants">AI assistants</a>.</p>
