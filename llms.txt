@@ -47,6 +47,14 @@ Thought Bulb, which builds Smart Checkout Widgets, also makes Cart Rocket, TB Bu
 - [Shopify bundle apps compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-bundle-apps/): Shopify Bundles, Bundler, Kaching, Fast Bundle, Simple Bundles & Kits, BOGOS and TB Bundles, by pricing model and bundle types.
 - [AI chat and shopping assistant apps for Shopify compared (2026)](https://smartcheckoutwidgets.com/compare/shopify-ai-chat-apps/): Shopify Inbox, Agentmatica, Zipchat, Tidio, Gorgias, Rep AI, Manifest AI and Intercom Fin, by what each charges for.
 
+## App comparisons for 2027 (checked November 25, 2026)
+
+- [Best Shopify delivery date apps for 2027](https://smartcheckoutwidgets.com/blog/best-shopify-delivery-date-apps-2027/): Six apps compared on price, time slots, order limits and pickup locations.
+- [Best Shopify order editing apps for 2027](https://smartcheckoutwidgets.com/blog/best-shopify-order-editing-apps-2027/): What customers can change, and what each app costs at 2,000 and 10,000 orders.
+- [Best Shopify checkout upsell apps for 2027](https://smartcheckoutwidgets.com/blog/best-shopify-checkout-upsell-apps-2027/): Where each app shows offers, and the cheapest way onto the checkout page.
+- [Best Shopify post-purchase survey apps for 2027](https://smartcheckoutwidgets.com/blog/best-shopify-post-purchase-survey-apps-2027/): Questions, response limits and revenue per answer, compared.
+- [Best apps to hide payment and shipping methods in 2027](https://smartcheckoutwidgets.com/blog/best-shopify-payment-shipping-rule-apps-2027/): Seven apps with prices, conditions and rule limits.
+
 ## New guides (November 2026)
 
 - [Shopify delivery date picker: let customers choose a date](https://smartcheckoutwidgets.com/blog/shopify-delivery-date-picker/): Add a calendar to the product page and cart on any plan, with lead times, cutoffs and an optional checkout check.

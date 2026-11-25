@@ -2253,3 +2253,18 @@ body.page-inner .post-hero { padding-top: 120px; }
 .post-hero h1 { max-width: 28ch; }
 @media (max-width: 760px) { body.page-inner .post-hero { padding-top: 48px; } }
 .tier__features { margin-bottom: var(--space-md); }
+
+/* Price bars in comparison posts */
+.post-bars { margin: 2.25em 0; padding: 26px 28px; background: #fff; border: var(--rule-hair); border-radius: var(--radius-lg); }
+.post-bars__title { font-family: var(--font-display); font-weight: 700; font-size: 1.1875rem; color: var(--color-ink-0); margin: 0 0 1em !important; }
+.post-bars__row { display: grid; grid-template-columns: minmax(110px, 190px) 1fr; gap: 16px; align-items: center; padding: 5px 0; font-size: 1rem; line-height: 1.35; }
+.post-bars__row > span { color: var(--color-ink-0); font-weight: 500; }
+.post-bars__bar { display: flex; align-items: center; gap: 10px; font-weight: 600; color: var(--color-ink-0); white-space: nowrap; }
+.post-bars__bar i { display: block; height: 22px; min-width: 4px; width: calc(var(--v) * (100% - 96px)); border-radius: 5px; background: var(--color-companion); }
+.post-bars__row.is-us .post-bars__bar i { background: var(--color-accent); }
+.post-bars figcaption { margin-top: 14px; }
+.post-layout > .post-content .post-apps h3 { margin-top: 1.5em; }
+@media (max-width: 700px) {
+  .post-bars { padding: 20px; }
+  .post-bars__row { grid-template-columns: 1fr; gap: 4px; padding: 7px 0; }
+}
