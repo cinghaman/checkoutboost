@@ -19,11 +19,11 @@ post('best-shopify-delivery-date-apps-2027','Best Shopify delivery date apps for
  'Zapiet, Pickeasy, Stellar, DingDoong, Buunto and Smart Checkout Widgets compared on price, time slots, order limits, pickup locations and checkout rules, from their App Store listings.',
  'Wrapped parcels and a bouquet under a wall planner','Six delivery date and pickup apps, what each one offers, and which shop each suits.',7,'best-shopify-delivery-date-apps-2027','Wrapped parcels and a bouquet on a bench under a wall planner with coloured stickers',
 f'''
-<p><strong>Short answer:</strong> choose Smart Checkout Widgets when customers need to pick a day and you want payment and shipping rules, order editing and Thank you page blocks in the same app. Choose Zapiet for many locations with POS, and Pickeasy or Stellar for time slots and order limits.</p>
+<p><strong>Short answer:</strong> choose Smart Checkout Widgets when customers pick a day and a time window and you want payment and shipping rules, order editing and Thank you page blocks in the same app. Choose Zapiet for many locations with POS, and Pickeasy or Stellar for order limits per slot.</p>
 {DIS}
 <h2>The six apps side by side</h2>
 {table(['App','Customers choose','Pickup locations','Paid plans from'],[
-[US,'A day, required at checkout if you want','All your Shopify locations','$29'],
+[US,'A day and a time slot, required at checkout if you want','All your Shopify locations','$29'],
 [A('click-and-collect','Zapiet'),'A day and a time slot','1 to 100 by plan','$49.99'],
 [A('order-delivery-date-time','Pickeasy'),'A day and a time slot','1 to 20 by plan, more at $59.99','$9.99'],
 [A('order-delivery-date-by-identixweb','Stellar'),'A day and a time slot','3, or unlimited at $29.99','$14.99'],
@@ -41,8 +41,8 @@ f'''
 <h3>DingDoong and Buunto: bakeries and florists starting out</h3>
 <p>DingDoong starts at $6.99 for 100 orders and can add a surcharge for weekend or peak-hour delivery. Buunto sets different schedules per product or collection, and adds surcharges and a postcode checker from $19.99.</p>
 <h3>Smart Checkout Widgets: a date plus the rest of checkout</h3>
-<p>Our calendar covers days, lead times, cutoffs, weekdays and closed dates, set separately for shipping, local delivery and pickup. Checkout can refuse an order without a date, on every Shopify plan.</p>
-{fig('delivery-date-calendar-2','A product page for a bouquet with a delivery date calendar above Add to cart','Our calendar on a Basic plan test store.')}
+<p>Our calendar covers days, time windows, lead times, cutoffs, weekdays and closed dates, set separately for shipping, local delivery and pickup. Checkout can refuse an order without a date or time, on every Shopify plan.</p>
+{fig('delivery-time-windows','A product page for a dahlia bouquet with Delivery, Wednesday December 2 and two time windows above Add to cart','Our calendar with time windows on a Basic plan test store.')}
 {video('BSDABRPDLUI','delivery-date-video','Shopify delivery date picker: let customers choose the day','Our calendar in 46 seconds.')}
 <p>The $29 plan also includes payment and shipping rules, Thank you page blocks, a post-purchase survey and customer account blocks, for stores up to 1,000 orders a month. The setup is in our <a href="/blog/shopify-delivery-date-picker/">delivery date guide</a>.</p>
 <h2>Five questions before you choose</h2>
@@ -55,7 +55,7 @@ f'''
 </ol>
 {SRC([('click-and-collect','Zapiet'),('order-delivery-date-time','Pickeasy'),('order-delivery-date-by-identixweb','Stellar'),('delivery-date-omega','DingDoong'),('buunto-date-picker','Buunto')])}
 ''',
-[('What is the best Shopify delivery date app?','It depends on what you schedule. Smart Checkout Widgets suits stores that need a day and want checkout rules, order editing and a survey in the same app. Zapiet suits many locations with POS, and Pickeasy and Stellar cover time slots and order limits.'),
+[('What is the best Shopify delivery date app?','It depends on what you schedule. Smart Checkout Widgets suits stores that need a day and a time window and want checkout rules, order editing and a survey in the same app. Zapiet suits many locations with POS, and Pickeasy and Stellar cover order limits per slot.'),
 ('Which delivery date apps have a free plan?','Pickeasy (10 orders a month), Buunto (10), DingDoong (20) and Stellar (up to 50 orders) list one. Zapiet and Smart Checkout Widgets have a trial for this feature.'),
 ('Do I need Shopify Plus for a delivery date picker?','No. Calendars on the product page and cart work on every plan. Showing a calendar on the checkout page itself needs Plus.'),
 ('Can a delivery date be required at checkout?','In Smart Checkout Widgets, yes, on every Shopify plan. Check how any other app enforces it.')],

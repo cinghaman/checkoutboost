@@ -117,6 +117,14 @@
     },
     {
       "@type": "Question",
+      "name": "Can customers choose a delivery time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Add time windows to shipping, local delivery or pickup, each on the days you choose, and customers pick one after the date. The time is saved on the order. See Time windows."
+      }
+    },
+    {
+      "@type": "Question",
       "name": "Can I require a delivery date?",
       "acceptedAnswer": {
         "@type": "Answer",
@@ -810,8 +818,8 @@
 
       <h2 id="delivery-dates">Delivery dates</h2>
       <p>
-        Shoppers choose shipping, local delivery or pickup and a date, on the product page, in
-        the cart or in the cart drawer. The date is saved on the order. It is part of the paid
+        Shoppers choose shipping, local delivery or pickup and a date, and a time window if you
+        offer them, on the product page, in the cart or in the cart drawer. The choice is saved on the order. It is part of the paid
         plans and works on every Shopify plan. The
         <a href="https://youtu.be/BSDABRPDLUI" target="_blank" rel="noopener">video</a> shows it.
       </p>
@@ -830,7 +838,21 @@
         For each way to receive an order you set the name shoppers see, the lead days, a cutoff
         time and the days of the week. Closed dates apply to all of them, up to 100 dates or
         ranges. Shoppers can book up to 365 days ahead. Times are in your store's time zone. The
-        method and date are saved on the order under Additional details. Month and day names follow the shopper's language.
+        method, date and time are saved on the order under Additional details. Month and day names follow the shopper's language.
+      </p>
+
+      <h3 id="delivery-dates-times">Time windows</h3>
+      <p>
+        Under each way to receive an order, <strong>Add delivery time</strong> (or
+        <strong>Add pickup time</strong>) adds a window with a start, an end, an optional name
+        such as Morning, and its days of the week. Up to 12 per method. Shoppers pick a window
+        after the date. A day with no window is not offered, and a window on today's date closes
+        when it starts. Leave the list empty to ask for a date only.
+      </p>
+      <p>
+        The window is saved on the order as <strong>Delivery time</strong>, next to the date, and
+        shows on the Thank you and Order status pages. If you rename or remove a window, customers
+        who already chose it see a message asking them to pick another.
       </p>
 
       <h3 id="delivery-dates-themes">If it is in the wrong place</h3>
@@ -846,7 +868,7 @@
       <h3 id="delivery-dates-required">Requiring a date</h3>
       <p>
         <strong>Require a date before checkout</strong> is off at first. When it is on, checkout
-        refuses an order with a physical product that has no date, or whose date is no longer offered (passed, too soon, too far ahead or a closed day). It
+        refuses an order with a physical product that has no date, or whose date is no longer offered (passed, too soon, too far ahead or a closed day). When you offer time windows, it also refuses an order without one, or with one that day does not have. It
         also refuses an order when the date is for shipping and the customer picks pickup, or
         the other way round. Shopify asks for one extra permission the first time.
       </p>
@@ -1240,6 +1262,9 @@
         Yes. Rules are stored against your shop and applied by Shopify Functions at checkout,
         so theme or checkout template changes don't affect them.
       </p>
+
+      <h3>Can customers choose a delivery time?</h3>
+      <p>Yes. Add time windows to shipping, local delivery or pickup, each on the days you choose, and customers pick one after the date. The time is saved on the order. See <a href="#delivery-dates-times">Time windows</a>.</p>
 
       <h3>Can I require a delivery date?</h3>
       <p>Yes, on any paid app plan and every Shopify plan. It is off at first and covers orders with physical products, including draft orders, checkout links and other online channels. Point of sale is not checked. See <a href="#delivery-dates-required">Requiring a date</a>.</p>

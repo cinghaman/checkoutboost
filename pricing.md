@@ -15,7 +15,7 @@ Every plan includes 13 widget types and every shipping and payment method rule, 
 - **Price:** $29 USD / month, or $278.40 USD / year
 - **Order limit:** Up to 1,000 orders per month
 - **Trial:** 7-day free trial
-- **Includes:** Everything in Starter, plus a delivery and pickup date calendar with an optional check at checkout, customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and gifts limited to selected customers
+- **Includes:** Everything in Starter, plus a delivery and pickup date calendar with optional time windows and an optional check at checkout, customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and gifts limited to selected customers
 
 ## Advanced
 

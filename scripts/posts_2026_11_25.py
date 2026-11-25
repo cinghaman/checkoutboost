@@ -14,9 +14,10 @@ f'''
 {fig('delivery-date-calendar-2', 'A product page for a peony bouquet with a delivery date calendar above Add to cart. Mondays and Sundays are crossed out', 'A florist on a Basic plan test store. Mondays and Sundays are closed for delivery.')}
 {note('Plans', 'It works on every Shopify plan, Basic included. In the app it is part of Growth, Advanced and Pro.')}
 <h2>What the customer does</h2>
-<p>They choose how they want the order (shipping, local delivery or pickup, whichever you offer) and then a day. The choice follows them from the product page to the cart drawer and the cart page, and they can change it in any of them.</p>
+<p>They choose how they want the order (shipping, local delivery or pickup, whichever you offer) and then a day. If you add time windows, they also pick one of that day's windows, such as 09:00 to 12:00. The choice follows them from the product page to the cart drawer and the cart page, and they can change it in any of them.</p>
 {fig('delivery-date-steps', 'Three screens: choosing Delivery, picking a day in December, and the same date shown in the cart drawer', 'Delivery, then a day, then the same date above Check out.')}
-<p>You see the method and the date on the order in Shopify admin, under Additional details. Orders placed with Buy it now carry them on the product line instead, because that button skips the cart. After the purchase, the date can show on the Thank you and Order status pages.</p>
+{fig('delivery-time-windows', 'A dahlia bouquet product page. The calendar shows Delivery on Wednesday, December 2, with two time windows: Morning and 14:00 to 18:00', 'With time windows on, the customer picks one after the day. This store offers Morning every delivery day and an afternoon window on weekdays.')}
+<p>You see the method, the date and the time window on the order in Shopify admin, under Additional details. Orders placed with Buy it now carry them on the product line instead, because that button skips the cart. After the purchase, the date and time can show on the Thank you and Order status pages.</p>
 <h2>What you decide</h2>
 <div class="table-wrap"><table>
     <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
@@ -24,11 +25,12 @@ f'''
       <tr><td>Lead time</td><td>How many days ahead the first date is. 0 allows the same day.</td></tr>
       <tr><td>Cutoff time</td><td>After this time, one more day is added. It uses your store's time zone, wherever the customer is.</td></tr>
       <tr><td>Days of the week</td><td>Which days you deliver or open for pickup.</td></tr>
+      <tr><td>Time windows</td><td>Optional. Up to 12 windows, such as 09:00 to 12:00 or one you call Evening, each on the days you choose. A window on today's date closes when it starts.</td></tr>
       <tr><td>Closed dates</td><td>Holidays and days you are fully booked.</td></tr>
       <tr><td>How far ahead</td><td>The last day a customer can book.</td></tr>
     </tbody>
 </table></div>
-<p>Lead time, cutoff and days of the week are set separately for shipping, local delivery and pickup, so a shop can offer pickup tomorrow and delivery in two days.</p>
+<p>Lead time, cutoff, days of the week and time windows are set separately for shipping, local delivery and pickup, so a shop can offer pickup tomorrow from 08:00 and evening delivery in two days. Leave the windows empty and customers choose a day only.</p>
 {fig('delivery-date-ship-pickup', 'App settings side by side. Delivery has a lead time of 2 days, a 14:00 cutoff and Tuesday to Saturday. Pickup has 1 day, 16:00 and Monday to Saturday', 'The settings behind the calendar above.')}
 <h2>Add it to your theme</h2>
 <ol class="post-steps">
@@ -39,7 +41,7 @@ f'''
 <p>The calendar finds your Check out and Add to cart buttons and goes above them. We tried it on 22 theme demo stores on desktop and phone, including Dawn, Horizon, Prestige, Impulse, Warehouse, Turbo and Empire.</p>
 <p>If it lands in the wrong place, enter a class name or ID from your theme in the app embed settings and choose before, after or inside it. Headless storefronts won't work, since they have no theme to put it in.</p>
 <h2>Should checkout require a date?</h2>
-<p>You can leave the date optional or let checkout refuse an order without one. With the check on, checkout also refuses a date that has passed, and a delivery date on an order the customer switches to pickup.</p>
+<p>You can leave the date optional or let checkout refuse an order without one. With the check on, checkout also refuses a date that has passed, a missing or unknown time window when you offer them, and a delivery date on an order the customer switches to pickup.</p>
 {fig('delivery-date-checkout', 'Shopify checkout with the message: Please choose a delivery date on the product or cart page before checking out', 'Checkout on the Basic plan test store, with the check on and no date chosen.')}
 <p>Before you turn it on:</p>
 <ul>
@@ -57,7 +59,8 @@ f'''
 [('Does Shopify have a built-in delivery date picker?', "No. Shopify can show estimated delivery dates, but customers can't choose a day without an app."),
  ('Does a delivery date picker work without Shopify Plus?', "Yes. The calendar runs in your theme and the checkout check is a Shopify validation rule, so both work on every Shopify plan. The feature is part of the app's Growth, Advanced and Pro plans."),
  ('Where do I see the date?', 'On the order in Shopify admin, under Additional details. For Buy it now orders it is on the product line.'),
- ('Can I require a date before checkout?', 'Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date.'),
+ ('Can customers choose a delivery time?', 'Yes. Add time windows to shipping, local delivery or pickup and customers pick one after the date. Each window runs on the days you choose, and the time is saved on the order.'),
+ ('Can I require a date before checkout?', 'Yes. It is off by default. When you switch it on, checkout refuses orders with a physical product that have no valid date, or no time window when you offer them.'),
  ('Can customers choose a pickup location?', 'Yes, at checkout, from the locations you have switched on for pickup in Shopify.'),
  ('Which themes does it work with?', 'We tried 22 theme demo stores, including Dawn and Horizon. If it lands in the wrong place, you can point it at a class name or ID in your theme. Headless storefronts are not supported.')],
  [INSTALL, docs('delivery-dates', 'Delivery dates docs')])
@@ -102,6 +105,7 @@ f'''
 <h2>Two or more shops</h2>
 <p>Customers choose pickup and a day in the calendar, then pick the shop at checkout from the locations you have switched on for pickup in Shopify. Set pickup days that suit all your shops.</p>
 <h2>Holidays and busy days</h2>
+<p>Add time windows when the hour matters. A bakery can offer pickup from 08:00 to 10:00 and 15:00 to 17:00, and a florist can run a Saturday morning delivery window only. Customers pick the window after the day, and each order shows it next to the date.</p>
 <p>Add closed dates for public holidays and for days you can't take any more orders. A range works too, so one entry covers a week off. Close a day as soon as it is full.</p>
 <p>For Valentine's Day or Mother's Day, close the days before and after if you only deliver on the day itself.</p>
 <h2>Require the date</h2>
@@ -109,10 +113,11 @@ f'''
 {fig('delivery-date-checkout', 'Checkout asking the customer to choose a delivery date first', 'An order without a date, refused at checkout.')}
 <p>The calendar doesn't change your shipping setup. Local delivery areas, pickup locations and their prices still come from Shopify. If some postcodes can't have delivery, a <a href="/blog/shopify-shipping-rates-by-postcode/">shipping rule by postcode</a> handles that.</p>
 <h2>In the workroom</h2>
-<p>Each order shows its method and date under Additional details in Shopify admin. Add the Delivery date block to the Thank you and Order status pages too, so customers can check the day themselves.</p>
+<p>Each order shows its method, date and time window under Additional details in Shopify admin. Add the Delivery date block to the Thank you and Order status pages too, so customers can check the day themselves.</p>
 ''',
 [('Can I set different cutoff times for delivery and pickup?', 'Yes. Lead time, the cutoff and the days of the week are set separately for shipping, local delivery and pickup.'),
  ('Can I close days when I am fully booked?', 'Yes. Add a date or a range to your closed dates.'),
+ ('Can customers choose a pickup or delivery time?', 'Yes. Add time windows, such as 08:00 to 10:00, to pickup or delivery. Customers pick one after the day.'),
  ('Can customers collect from different shops?', 'Yes. They choose the shop at checkout, from the locations you have switched on for pickup.'),
  ('Which time zone is the cutoff in?', "Your store's time zone, for every customer.")],
  [INSTALL, docs('delivery-dates', 'Delivery dates docs')])
