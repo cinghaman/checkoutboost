@@ -702,6 +702,23 @@
         option's full name wins. Otherwise the longest match wins.
       </p>
 
+      <h3 id="split-shipping">Split shipments and pickup in one order</h3>
+      <p>
+        When Shopify splits a cart into several shipments, or mixes shipping and store pickup,
+        each part has its own options. Rules handle that like this:
+      </p>
+      <ul>
+        <li>A <strong>Show only</strong> rule keeps the named options where they are offered. A shipment that offers none of them keeps all of its own, so the customer can still check out.</li>
+        <li>Reorder positions are counted from 1 inside each shipment.</li>
+        <li>Hide and rename rules match by name in every shipment.</li>
+        <li>Set <strong>Apply to</strong> to shipping rates if a rule must never touch store pickup.</li>
+      </ul>
+      <p>
+        The <a href="https://youtu.be/KqUg7xFt4Hw" target="_blank" rel="noopener">split shipping video</a>
+        shows this in a checkout. Splitting a cart and mixing shipping with pickup are Shopify
+        features, and Shopify decides which stores have them.
+      </p>
+
       <h2 id="payment-rules">Payment method rules</h2>
       <p>
         Payment method rules rename, hide and reorder payment methods the same way. The most
@@ -784,7 +801,7 @@
             <tr><td>Store credit</td><td>The customer's Shopify store credit balance. Hidden when there is none.</td><td>Profile, Orders</td></tr>
             <tr><td>Discount code</td><td>A code to copy, with a button that applies it and opens the store, or copies a link to share</td><td>Profile, Orders, Order status, announcement bar</td></tr>
             <tr><td>Profile fields</td><td>Your own questions: text, a date or a choice</td><td>Profile</td></tr>
-            <tr><td>Return window</td><td>Days left to return, counted from delivery (or shipping when no delivery was reported), and final-sale items by product tag</td><td>Order status</td></tr>
+            <tr><td>Return window</td><td>Days left to return, counted from delivery (or shipping when no delivery was reported), and final-sale items by product tag. When an order ships in several packages, it waits for the last one.</td><td>Order status</td></tr>
             <tr><td>Get help with an order</td><td>A button on each order: your answers for the order's stage, then a topic and message</td><td>Order menu</td></tr>
             <tr><td>Reorder items</td><td>A button on each order: pick items and quantities, then go to checkout</td><td>Order menu</td></tr>
           </tbody>
