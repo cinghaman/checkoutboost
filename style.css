@@ -2252,3 +2252,4 @@ ol.post-steps li::before { content: counter(step); position: absolute; left: 20p
 body.page-inner .post-hero { padding-top: 120px; }
 .post-hero h1 { max-width: 28ch; }
 @media (max-width: 760px) { body.page-inner .post-hero { padding-top: 48px; } }
+.tier__features { margin-bottom: var(--space-md); }

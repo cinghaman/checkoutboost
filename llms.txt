@@ -118,8 +118,8 @@ Thought Bulb, which builds Smart Checkout Widgets, also makes Cart Rocket, TB Bu
 ## Plans
 
 - **Starter:** Free; up to 100 orders per month.
-- **Growth:** $29 per month or $278.40 per year; up to 1,000 orders per month.
-- **Advanced:** $59 per month or $566.40 per year; unlimited orders.
+- **Growth:** $29 per month or $278.40 per year; up to 1,000 orders per month, plus the delivery date calendar, customer account blocks and gifts for selected customers.
+- **Advanced:** $59 per month or $566.40 per year; everything in Growth with unlimited orders.
 - **Pro:** $99 per month or $950.40 per year; unlimited orders, plus customer order editing on every Shopify plan except Shopify's Starter plan, and the stock urgency widget and checkout branding editor on Shopify Plus.
 - Paid plans can limit a gift to specific customers and add customer account blocks. Each store gets one 7-day free trial of a paid plan.
 

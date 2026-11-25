@@ -1,28 +1,28 @@
 # Pricing — Smart Checkout Widgets
 
-Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-11-10, against the app's billing configuration.
+Source: the app's billing configuration and https://smartcheckoutwidgets.com/#pricing. Last reviewed 2026-11-25, against the app's billing configuration.
 
-Starter, Growth and Advanced include 12 widget types and every shipping and payment method rule, and differ mainly by monthly order volume. Growth and up also include customer account blocks and a delivery date calendar. Pro adds a 13th widget (stock urgency), customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
+Every plan includes 13 widget types and every shipping and payment method rule, with split shipments handled. Growth and up add a delivery date calendar, customer account blocks and gifts limited to selected customers. Pro adds the stock urgency widget, customer order editing and checkout branding. Growth, Advanced and Pro include a 7-day free trial. Yearly billing is 20% cheaper than monthly.
 
 ## Starter
 
 - **Price:** Free. No subscription is created.
 - **Order limit:** Up to 100 orders per month
-- **Includes:** All widgets and all rule types
+- **Includes:** 13 widgets, all rule types, the post-purchase survey with one-use reward codes, Sidekick answers and the AI assistant connection
 
 ## Growth
 
 - **Price:** $29 USD / month, or $278.40 USD / year
 - **Order limit:** Up to 1,000 orders per month
 - **Trial:** 7-day free trial
-- **Includes:** All widgets and all rule types, plus customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and a delivery date calendar
+- **Includes:** Everything in Starter, plus a delivery and pickup date calendar with an optional check at checkout, customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and gifts limited to selected customers
 
 ## Advanced
 
 - **Price:** $59 USD / month, or $566.40 USD / year
 - **Order limit:** Unlimited
 - **Trial:** 7-day free trial
-- **Includes:** All widgets and all rule types, plus customer account blocks (VIP status, store credit, discount codes, profile questions, return window, Get help and Reorder items) and a delivery date calendar
+- **Includes:** Everything in Growth, with unlimited orders
 
 ## Pro
 
@@ -37,7 +37,7 @@ The app pauses when a store goes over its plan's monthly order limit. Widgets, g
 
 ## Shopify plan requirements
 
-Checkout UI widgets require Shopify Plus, because Shopify limits checkout customization to Plus. The shipping and payment method rules (Shopify Functions) and customer account blocks work on every Shopify plan. Thank You and Order Status page widgets work on every plan except Shopify's Starter plan. Customer account blocks need Shopify's new customer accounts.
+Checkout UI widgets require Shopify Plus, because Shopify limits checkout customization to Plus. The shipping and payment method rules (Shopify Functions), the delivery date calendar and customer account blocks work on every Shopify plan. Thank You and Order Status page widgets work on every plan except Shopify's Starter plan. Customer account blocks need Shopify's new customer accounts.
 
 ## Install
 
