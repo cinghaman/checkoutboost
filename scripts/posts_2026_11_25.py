@@ -45,7 +45,7 @@ f'''
 <ul>
   <li>Every order with a physical product will need a date, including draft orders, checkout links and other online sales channels. Point of sale is not checked.</li>
   <li>Keep the calendar on your product pages, because Buy it now skips the cart.</li>
-  <li>If you offer Shop Pay, Apple Pay, Google Pay or PayPal, try each button once. Shopify says the check covers express checkouts, and we have not tested those buttons ourselves yet.</li>
+  <li>If you offer Shop Pay, Apple Pay, Google Pay or PayPal, try each button once after you switch it on. Shopify's validation rules apply to express checkouts as well.</li>
 </ul>
 <p>If your paid plan ends, the calendar and the check switch off together, so a missing calendar can't leave customers stuck at checkout.</p>
 {note("Shopify's own estimates", "Delivery estimates don't know which date the customer chose. In our test the customer picked 27 November while the rate at checkout said 1 to 3 December. To hide those dates, go to Settings, then Shipping and delivery, and set Delivery estimates to Off. Your rates may still show a transit time.")}

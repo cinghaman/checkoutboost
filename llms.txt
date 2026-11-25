@@ -12,6 +12,7 @@ Last reviewed: 2026-11-25.
 - [Documentation](https://smartcheckoutwidgets.com/docs/): How to configure widgets, checkout gifts, upsells, shipping and payment method rules, customer account blocks, delivery dates, rule conditions, plan order limits, and troubleshooting.
 - [Smart Checkout Widgets on the Shopify App Store](https://apps.shopify.com/smart-checkout-widgets): Public app listing and installation page.
 - [Pricing and plan limits](https://smartcheckoutwidgets.com/pricing.md): Machine-readable details for the Starter, Growth, Advanced and Pro plans.
+- [App comparisons](https://smartcheckoutwidgets.com/compare/): All comparison pages.
 - [Smart Checkout Widgets vs Checkout Plus](https://smartcheckoutwidgets.com/compare/smart-checkout-widgets-vs-checkout-plus/): Features and prices side by side, checked November 25, 2026.
 - [Video: Shopify delivery date picker](https://youtu.be/BSDABRPDLUI): 46 seconds, from product page to checkout.
 - [Video: Shopify split shipping and ship and pickup](https://youtu.be/KqUg7xFt4Hw): One minute.
@@ -37,7 +38,7 @@ Last reviewed: 2026-11-25.
 - Checkout branding editor and low-stock badges (Pro, Shopify Plus stores).
 - Rules work inside each shipment when Shopify splits a cart. Split shipping is on every Shopify plan; ship and pickup in one order is Plus and Enterprise only.
 - A Results page with orders, gifts, upsells and survey answers, on every plan.
-- Limits: carts over 150 lines get no gift; delivery dates have no time slots or daily limits, and express checkout with a required date is untested.
+- Limits: carts over 150 lines get no gift; delivery dates are by day, without time slots or daily limits.
 
 ## Partner guides and app comparisons (October 2026)
 
